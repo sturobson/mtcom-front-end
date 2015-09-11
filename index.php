@@ -67,9 +67,6 @@
         <ul class="sg-navlist">
           <?php listMarkupAsListItems('blocks'); ?>
         </ul>
-      </div>
-
-      <div class="sg-nav-group">
         <h2 class="sg-nav-h2 sg-subnav-title">Containers</h2>
         <ul class="sg-navlist">
           <?php listMarkupAsListItems('containers'); ?>
@@ -125,10 +122,11 @@
           <?php showMarkup('blocks'); ?>
         </div>
 
-
-        <div class="sg-pattern-styles">
-          <h1 class="sg-h1">Containers<small> - Design and markup patterns unique to your site.</small></h1>
+        <div class="sg-base-styles">
+          <h1 class="sg-h1">Containers<small> - Page Containers</small></h1>
           <?php showMarkup('containers'); ?>
+        </div>
+
 
         </div><!--/.sg-pattern-styles-->
 
