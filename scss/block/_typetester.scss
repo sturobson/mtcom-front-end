@@ -73,7 +73,7 @@
   }
 
   * {
-    user-select: none;  // Prevents from marking text
+    user-select: none; // Prevents from marking text
   }
 }
 .b-typetester__meta-row {
@@ -321,8 +321,6 @@
       margin-top:($spacing-unit * 7);
     }
 
-
-
     @include breakpoint(medium) {
 
       .g-container {
@@ -425,7 +423,6 @@
    ------------------------------------------------------------ */
 // Font Selector in Home
 .b-typetester__meta-select {
-
   @include breakpoint(medium) {
     min-width:none;
     display:table-cell;
@@ -434,9 +431,7 @@
     padding:(1 * $spacing-unit) (5 * $spacing-unit) (1 * $spacing-unit) (2 * $spacing-unit);
   }
 }
-
 .b-typetester.b-typetester--home {
-
   .b-typetester__meta-select-mobile, .b-typetester__meta-select {
     @include breakpoint(medium) {
       max-width:none;

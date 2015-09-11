@@ -2,20 +2,18 @@
   &.g-container {
     padding-left:0;
     padding-right:0;
-		overflow:visible;
+    overflow:visible;
   }
   .b-media__image {
-	  img {
-	    display:block;		  
-	  	border-bottom:1px solid $color-three;
-	  }
+    img {
+      display:block;		  
+      border-bottom:1px solid $color-three;
+    }
   }
   .b-lead {
     @include breakpoint(fromAdaptiveToFluid) {
       padding-left: 0.75rem;
       padding-right: 0.75rem;
     }
-  }  
+  }
 }
-
-

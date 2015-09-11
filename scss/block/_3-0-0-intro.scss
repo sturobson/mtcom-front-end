@@ -7,7 +7,7 @@
     margin-bottom:9 * $spacing-unit;
     
     @include breakpoint(medium) {
-    	margin-bottom:7 * $spacing-unit;
+      margin-bottom:7 * $spacing-unit;
     }
     
     @include breakpoint(fromAdaptiveToFluid) {
@@ -18,9 +18,7 @@
     margin-top:0;
     
     img {
-	    display:block;
+      display:block;
     }
   }
 }
-
-

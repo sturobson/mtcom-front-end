@@ -12,9 +12,7 @@
   }
   @include breakpoint(fromAdaptiveToFluid) {
     min-height:18rem; /*288px*/
-  	height:auto;  
-		padding-bottom:4rem;/*64px*/
+    height:auto;
+    padding-bottom:4rem;/*64px*/
   }    
 }
-
-

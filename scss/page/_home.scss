@@ -8,16 +8,17 @@
   width: 100%;
   height:calc(100% - 133px); // fine tuning
   overflow-y:scroll;
+  
   @include vertical-breakpoint(narrow) {
-      height:100%;
-    }
+    height:100%;
+  }
 
   @include breakpoint(medium) {
     height:calc(100% - 138px); // fine tuning
+    
     @include vertical-breakpoint(narrow) {
       height:100%;
     }
-
   }
 
   .b-1-0-0-header.g-container {

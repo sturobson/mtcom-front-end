@@ -47,3 +47,19 @@ input::-ms-clear {
 input, textarea {
     font-size: initial;
 }
+
+// Breakpoints needed for JavaScript
+body:after {
+  content:"large";
+  display:none;
+  
+  @include breakpoint(medium) {
+    content:"medium";
+  }
+  @include breakpoint(fromAdaptiveToFluid) {
+    content:"fromAdaptiveToFluid";
+  }
+  @include breakpoint(small) {
+    content:"small";
+  }  
+}
