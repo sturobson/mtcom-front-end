@@ -1,0 +1,13 @@
+/* ------------------------------------------------------------
+   Accordion Global Classes, mainly used for JS
+   ------------------------------------------------------------ */
+.g-accordion-toggle {
+  .g-accordion-toggle__icon {
+    background:url('../../images/icon-triangle-down.svg') no-repeat center right;
+  }
+}
+.g-accordion-toggle--selected {
+  .g-accordion-toggle__icon {
+    background:url('../../images/icon-triangle-up.svg') no-repeat center right;
+  }
+}

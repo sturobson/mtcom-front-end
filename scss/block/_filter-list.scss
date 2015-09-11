@@ -1,0 +1,28 @@
+.b-filter-list {
+  margin-top: 6 * $spacing-unit;
+  color:$color-one;
+}
+.b-filter-list__list {
+  @include responsive-text-size('europa');
+  font-family: $malabar;
+  list-style: none;
+  @include vendor(column-count, 4);  
+  @include vendor(column-gap, (2 * gutter(14)) );  
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    @include vendor(column-count, 2);  
+  }
+}
+.b-filter-list__list-item {
+  color: $color-three;
+  @include vendor(transition, 0.5s ease-out);
+    
+  &.b-filter-list__list-item--selected {
+    color: $color-one;
+    @include vendor(transition, 0.5s ease-in);
+  }
+}
+.b-filter-list__list-link {
+  color:$color-one;
+  border-bottom:1px solid $color-two;
+}

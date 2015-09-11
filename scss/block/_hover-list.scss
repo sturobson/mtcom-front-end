@@ -1,0 +1,75 @@
+.b-hover-list {
+  margin-top:2px;
+    
+  &.b-hover-list--clients {
+    margin-bottom: 4 * $spacing-unit;
+  }
+  .b-hover-list__link {
+    display:inline-block;
+    padding-top:0.25rem;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      padding-top:0;
+      padding-bottom:0.125rem;
+    }    
+  }
+  .b-hover-list__list {
+    list-style: none;
+    margin-left: -$spacing-unit !important;
+    @include responsive-text-size('saturn');
+    
+    &.b-hover-list__list--paragraph {
+      @include responsive-text-size('neptune');
+    }
+    
+    &.b-hover-list__list--teaser, &.b-hover-list__list--filter {
+      @include responsive-text-size('uranus'); 
+    }  
+  }  
+}
+.b-hover-list__item {
+  display:inline-block;  
+  font-family: $malabar;
+  margin-bottom: 2px; // avoids bg color collapsing
+  margin-right:$spacing-unit;
+  padding:0 $spacing-unit;
+  @include vendor(transition, $transition);
+  border-radius: $border-radius; // prevents from animation hover hickups
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    margin-right:0;
+  }
+  
+  &:hover {
+    background-color: $color-ten;
+    border-radius: $border-radius;
+    
+    .b-hover-list__link {
+      border-bottom:1px solid transparent;
+    }
+  }
+  
+  &:last-child {
+    margin-right:0;
+    
+    .b-hover-list__link {
+      padding-right:0;  
+    }
+  }
+  
+  &.b-hover-list__item--selected {
+    background-color: $color-five;
+    border-radius: $border-radius;    
+
+    .b-hover-list__link {
+      border-bottom: 1px solid transparent;//prevent jumping
+    }
+  }  
+  
+  .b-hover-list__link {
+    cursor:pointer; // Tabs do not have an href
+    @include vendor (transition, border-bottom $transition);
+    border-bottom: 1px solid $color-four;
+  }  
+      
+}

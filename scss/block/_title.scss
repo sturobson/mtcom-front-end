@@ -1,0 +1,6 @@
+.b-title {
+  .b-title__text {
+    @include responsive-text-size('uranus');    
+    font-family: $malabar-heavy;  
+  }
+}

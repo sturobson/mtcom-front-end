@@ -1,0 +1,23 @@
+.b-button-group {
+  text-align:center;
+
+  .b-button {
+    margin-left: $spacing-unit;
+    margin-right: $spacing-unit;
+    
+    .b-button__item {
+      width:100%;
+      min-width:0 !important;
+    }
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      margin-left:auto;
+      margin-right:auto;
+      
+      &:first-child {
+        margin-left:auto;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,451 @@
+.b-typetester {
+  margin-top: 3 * $spacing-unit;
+}
+.b-typetester__canvas {
+  height:100%;
+  width:100%;
+  position: relative;
+  vertical-align: middle;
+  min-height:20.25rem;/*384px*/
+  background-color:$color-seven;
+  @include vendor(box-shadow, 0px 0px 0px 1px $color-three); //box shadow to prevent grid issues
+  padding-left:0;
+  padding-right:0;
+  overflow:hidden;
+
+  &:hover {
+    @include vendor(box-shadow, 0px 0px 0px 1px $color-one); //box shadow to prevent grid issues
+  }
+
+  @include breakpoint(medium) {
+    min-height:16.5rem;/*264px*/
+  }
+  @include breakpoint(fromAdaptiveToFluid) {
+    min-height:11rem;/*176px*/
+  }
+
+  @include breakpoint(small) {
+    padding-left:0;
+    padding-right:0;
+    min-height:10rem;/*160px*/
+  }
+}
+.b-typetester__write {
+  word-wrap: break-word;
+  display:inline-block; //prevents content editable element from creating divs inside
+  width:100%;
+  @include responsive-text-size ('titan');
+  padding:(11 * $spacing-unit) span(1) (10 * $spacing-unit) span(1);
+  color:$color-one;
+
+  @include breakpoint(medium) {
+    padding:(8 * $spacing-unit) span(1) (7 * $spacing-unit) span(1);
+  }
+
+  @include breakpoint(fromAdaptiveToFluid) {
+    padding:(6 * $spacing-unit) span(1) (12 * $spacing-unit) span(1);
+  }
+
+  @include breakpoint(small) {
+    padding:(5 * $spacing-unit) (2 * $spacing-unit) (10 * $spacing-unit) (2 * $spacing-unit);
+  }
+
+  &:focus {
+    outline:none;
+  }
+}
+.b-typetester__meta {
+  font-family:$kootenay;
+  @include responsive-text-size('venus');
+  letter-spacing:0.03125rem;/*0.5px*/
+  position: absolute;
+  display:inline-block;
+  width:100%;
+  padding:(3 * $spacing-unit) span(1);
+  left:0;
+  bottom:0;
+
+  @include breakpoint(medium) {
+    padding:0;
+    border-top:1px solid $color-three;
+    display:table;
+    width:100%;
+  }
+
+  * {
+    user-select: none;  // Prevents from marking text
+  }
+}
+.b-typetester__meta-row {
+  @include breakpoint(medium) {
+    display:table-row;
+    width:100%;
+  }
+}
+.b-typetester__title {
+  font-family:$kootenay-bold;
+  margin-right: $spacing-unit / 2;
+
+  @include breakpoint(medium) {
+    display:none;
+  }
+}
+.b-typetester__about-wrapper {
+
+  @include breakpoint(medium) {
+    border-left:1px solid $color-three;
+    display:table-cell;
+    padding:0 0 0 (1 * $spacing-unit);
+    overflow:hidden;
+    white-space: nowrap;
+    padding:0 ( 2 * $spacing-unit );
+    width:68px;
+  }
+}
+.b-typetester__about {
+  float:right;
+  @include vendor (transition, border-bottom $transition);
+  border-bottom:1px solid $color-two;
+
+  &:hover {
+    border-bottom:1px solid $color-five;
+  }
+
+  @include breakpoint(medium) {
+    float:left;
+    margin:(1 * $spacing-unit) 0 (1 * $spacing-unit) 0;
+  }
+  @include breakpoint(small) {
+    margin:0;
+  }
+}
+.b-typetester__title,
+.b-typetester__meta-list,
+.b-typetester__list-item,
+.b-typetester__list-trigger {
+  float:left;
+}
+.b-typetester__meta-list {
+  list-style:none;
+
+  @include breakpoint(medium) {
+    display:none;
+  }
+
+  &.b-typetester__meta-list--weight {
+    padding-right:$spacing-unit;
+
+    .b-typetester__list-item.b-typetester__list-item--selected .b-typetester__list-trigger {
+      &:hover {
+        background:$color-five;
+      }
+    }
+
+    .b-typetester__list-item .b-typetester__list-trigger {
+      border-radius: 0.1875rem;
+      @include vendor(transition, background-color $transition);
+
+      &:hover {
+        background-color: $color-four;
+        border-radius: 0.1875rem;
+      }
+    }
+  }
+
+  &.b-typetester__meta-list--style {
+    .b-typetester__list-item {
+      .b-typetester__list-trigger {
+        background: url("../../image/checkbox-inactive.png") no-repeat left/0.8125rem;
+        padding-left:3 * $spacing-unit;
+      }
+    }
+
+    .b-typetester__list-item--selected {
+      .b-typetester__list-trigger {
+        background: url("../../image/checkbox-active.png") no-repeat left/0.8125rem;
+        border-radius:0;
+      }
+    }
+  }
+}
+.b-typetester__list-item {
+  margin: 0 ($spacing-unit / 2);
+
+  &.b-typetester__list-item--selected {
+    .b-typetester__list-trigger {
+      background-color: $color-five;
+      border-radius: 0.1875rem;
+      padding-bottom:1px;
+    }
+  }
+  &.b-typetester__list-item--inactive {
+    cursor:default;
+
+    .b-typetester__list-trigger {
+      color: $color-four;
+      background:none;
+      pointer-events: none;
+      cursor:default;
+    }
+  }
+
+}
+.b-typetester__list-trigger {
+  padding: 0 ($spacing-unit / 2);
+  cursor:pointer;
+}
+
+/* ------------------------------------------------------------
+   Show Control Elements on Focus
+   ------------------------------------------------------------ */
+.b-typetester__meta-list {
+    @include vendor(transition, opacity ease-in-out 0.3s);
+    opacity: 0;
+
+    &.b-typetester__meta-list--visible {
+      opacity: 1;
+  }
+}
+.b-typetester__meta-list-home {
+  .b-typetester__meta-list {
+      @include vendor(transition, none);
+      opacity: 1;
+
+      &.b-typetester__meta-list--visible {
+        opacity: 1;
+    }
+  }
+}
+/* ------------------------------------------------------------
+   Cursor & Animation
+   ------------------------------------------------------------ */
+.initial .b-typetester__cursor {
+  position: absolute;
+  display: inline-block;
+  font-family:Arial, sans-serif !important;
+  font-weight:normal !important;
+  color: $color-five;
+  opacity: 1;
+  transform: translateY(0.02em);
+  @include vendor(animation, 1.5s blink step-end infinite);
+}
+.b-typetester.b-typetester--home {
+  .b-typetester__cursor {
+    @include responsive-text-size('pluto');
+    transform: translateY(0.02em);
+  }
+}
+
+// Cursor Animation
+@keyframes blink {
+  from,to { color: transparent; }
+  50% { color: $color-five; }
+}
+@-moz-keyframes blink {
+  from,to { color: transparent; }
+  50% { color: $color-five; }
+}
+@-webkit-keyframes blink {
+  from,to { color: transparent; }
+  50% { color: $color-five; }
+}
+@-ms-keyframes blink {
+  from,to { color: transparent; }
+  50% { color: $color-five; }
+}
+
+
+/* ------------------------------------------------------------
+   Home Typetester
+   ------------------------------------------------------------ */
+.b-typetester.b-typetester--home {
+  display:table;
+  width:100%;
+  margin-top:0;
+
+  .b-typetester__canvas {
+    background:none;
+    border: none;
+    vertical-align: top;
+    padding-left:0;
+    padding-right:0;
+    overflow:visible;
+    box-shadow:none;
+    min-height:0 !important;
+  }
+  .b-typetester__uptown, .b-typetester__downtown {
+    width:100%;
+  }
+  .b-typetester__uptown {
+    .g-row {
+      height:100%;
+    }
+  }
+  .b-typetester__downtown {
+  }
+  .b-typetester__write {
+    @include responsive-text-size('saturn');
+    padding:0 0 0 0;
+
+    a {
+      position: relative;
+      cursor:pointer;
+      z-index:100;
+      border-bottom:1px solid $color-one;
+      @include vendor(transition, border-bottom $transition);
+
+      &:hover {
+        border-bottom: 1px solid $color-five;
+      }
+    }
+  }
+  .b-typetester__canvas-wrapper {
+    float:none;
+    height:100%;
+
+    @include breakpoint(small) {
+      float:left;
+    }
+  }
+  .b-typetester__meta-wrapper {
+    width:100%;
+    display:table-row;
+    position: fixed;
+    bottom:0;
+    border-top:1px solid $color-three;
+    background-color: white;
+    @include vertical-breakpoint(narrow) {
+      display:inline-block;
+      position:initial;
+      bottom:initial;
+      margin-top:($spacing-unit * 7);
+    }
+
+
+
+    @include breakpoint(medium) {
+
+      .g-container {
+        padding-left:0;
+        padding-right:0;
+      }
+
+      .g-block {
+        max-width:100%;
+        .g-row {
+          max-width:100%;
+          width:100%;
+          margin:0;
+          .g-col {
+            padding-left:0;
+            padding-right:0;
+          }
+        }
+      }
+    }
+  }
+  .b-typetester__meta {
+    position: relative;
+    padding-top:(4 * $spacing-unit);
+    padding-bottom:(4 * $spacing-unit);
+    @include responsive-text-size('earth');
+    border-top:none;
+
+    @include breakpoint(medium) {
+      padding-top:0;
+      padding-bottom:0;
+    }
+  }
+  .b-typetester__meta-select-mobile {
+    @include breakpoint(medium) {
+      border-right:none;
+    }
+  }
+  .b-typetester__meta-list {
+    padding:(1 * $spacing-unit) 0;
+
+    &.b-typetester__meta-list--weight {
+      padding-left:(3 * $spacing-unit);
+    }
+    &.b-typetester__meta-list--style {
+      margin-left:$spacing-unit;
+
+      .b-typetester__list-item {
+        .b-typetester__list-trigger {
+          padding-left:3.33333333 * $spacing-unit;
+        }
+      }
+      .b-typetester__list-item--selected {
+        .b-typetester__list-trigger {
+          padding-left:3.33333333 * $spacing-unit;
+        }
+      }
+    }
+  }
+  .b-typetester__about {
+    margin:(1 * $spacing-unit) 0;
+  }
+
+}
+/* ------------------------------------------------------------
+   Typetester Mobile Select
+   ------------------------------------------------------------ */
+// Type Tester Select Fields
+.b-typetester__meta-select-mobile, .b-typetester__meta-select {
+  display:inline-block;
+  float:left;
+  border:1px solid $color-one;
+  border-radius:0;
+  padding:(1 * $spacing-unit) (5 * $spacing-unit) (1 * $spacing-unit) (2 * $spacing-unit);
+  background:url('../../image/select.png');
+  background-repeat:no-repeat;
+  background-size:6px;
+  background-position:right (2 * $spacing-unit) center;
+  min-width:12rem;/*192px*/
+  &:focus {
+    outline:none;
+  }
+}
+// Type Tester Select Fields
+.b-typetester__meta-select-mobile {
+  display:none;
+
+  @include breakpoint(medium) {
+    display: inline-block;
+    min-width:none;
+    display:table-cell;
+    width:100%;
+    border:none;
+    padding:(1 * $spacing-unit) (5 * $spacing-unit) (1 * $spacing-unit) (2 * $spacing-unit);
+  }
+}
+
+/* ------------------------------------------------------------
+   Typetester Mobile Select Home Specifics
+   ------------------------------------------------------------ */
+// Font Selector in Home
+.b-typetester__meta-select {
+
+  @include breakpoint(medium) {
+    min-width:none;
+    display:table-cell;
+    width:100%;
+    border:none;
+    padding:(1 * $spacing-unit) (5 * $spacing-unit) (1 * $spacing-unit) (2 * $spacing-unit);
+  }
+}
+
+.b-typetester.b-typetester--home {
+
+  .b-typetester__meta-select-mobile, .b-typetester__meta-select {
+    @include breakpoint(medium) {
+      max-width:none;
+      padding:(2 * $spacing-unit) (5 * $spacing-unit) (2 * $spacing-unit) (2 * $spacing-unit);
+    }
+  }
+  .b-typetester__meta-select-mobile {
+    @include breakpoint(medium) {
+      border-top:1px solid $color-three;
+    }
+  }
+}

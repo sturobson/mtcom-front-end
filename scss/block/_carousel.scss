@@ -1,0 +1,134 @@
+.b-carousel {
+
+  position: relative;
+  overflow: hidden;
+  // background: green;
+
+  .b-carousel__list {
+    position: relative;
+    float: left;
+    width: 100%;    
+    margin: 0 !important;
+    // background: yellow; 
+    &:after { content: ''; display: table; clear: both; }
+  }
+  .b-carousel__item { 
+    list-style: none; 
+    float: left;
+    width: 100%;
+  }
+  .b-carousel__figure {
+    width: 100%;
+  }
+  .b-carousel__image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    
+    padding-top: 67.01298701%; 
+    // IMPORTANT: aspect ratio of an image = 516 (h) / 770 (w) * 100
+    
+    @media only screen and (min-width: $breakpoint_tablet) {
+      margin-bottom: 0.625rem; //10px
+    }
+  }
+  .b-carousel__image {
+    display: block; 
+    width: 100%;
+    position: absolute; 
+    left: 0; 
+    top: 0;
+  }
+  .b-carousel__caption {
+    // background: red;
+    clear: both;
+    position: absolute;
+    left: -9999%; 
+    top: -9999%;
+    @include responsive-text-size('mercury');
+    
+    @media only screen and (min-width: $breakpoint_tablet) {
+      position: static;
+      left: auto;
+      margin-left:6.8125rem; //109px
+      
+      @media only screen and (min-width: $breakpoint_desktop + 1) {
+        margin-left: 9rem; //144px
+      }
+    }
+    
+    p { margin: 0; }
+  }
+}
+
+.b-carousel__prev-next {
+  
+  width: 100%;
+  background: #fff;
+  
+  @media only screen and (min-width: $breakpoint_tablet) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top:24.5rem; //392px
+    width:6.8125rem; //109px
+    
+    @media only screen and (min-width: $breakpoint_desktop + 1) {
+      top: 32.9375rem; //527px
+      width: 9rem; //144px
+    }
+  }
+  
+  ul {
+    height:2rem; // 32px)
+    &:after { content: ' '; display: table; clear: both; }
+    
+    @media only screen and (min-width: $breakpoint_tablet) {
+      border-right: 1px solid $color-three;
+      width:5.375rem;//85px
+
+      @media only screen and (min-width: $breakpoint_desktop + 1) {
+        width:7.5rem;
+      }
+    }
+  }
+  
+  .b-nav__prev-next__item { 
+    list-style: none;
+    float: left; 
+    width: 50%; 
+    // background: red; 
+    @media only screen and (min-width: $breakpoint_tablet) {
+      border-left: 1px solid $color-three;
+    }
+  }
+  
+  .b-nav__prev-next__link {
+    display: block;
+    width: 100%;
+    font-family: $malabar;
+    font-size: 24px;
+    line-height: 2rem; 
+    height:2rem;
+    padding: 0 0.25rem;//4px
+    overflow: hidden;
+    text-indent: -9999px;
+    
+    background: url(../../image/expertise-icons/arrows-tablet.png);
+    @include image-2x('../../image/expertise-icons/arrows-tablet-@2x.png', 800px, 26px);
+
+    &.b-nav__prev__link {
+      background-position: 0 50%;
+    }
+    &.b-nav__next__link {
+      background-position: 100% 50%;
+    }
+    
+    @media only screen and (min-width: $breakpoint_desktop) {
+      background: url(../../image/expertise-icons/arrows-desktop.png);
+      @include image-2x('../../image/expertise-icons/arrows-desktop-@2x.png', 120px, 30px);
+    }
+    
+  }
+  
+}

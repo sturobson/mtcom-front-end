@@ -1,0 +1,14 @@
+.b-tab-content {
+  margin-top:4 * $spacing-unit;
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    margin-top:$spacing-unit;
+  }
+}
+.b-tab-content__item {
+  display:none;
+  
+  &.b-tab-content__item--selected {
+    display:block;
+  }
+}

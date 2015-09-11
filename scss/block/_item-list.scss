@@ -1,0 +1,114 @@
+@charset "UTF-8"; // this needs to be inserted because of the use of the special char ›
+
+.b-item-list {
+  margin-top: 4 * $spacing-unit;
+}
+.b-item-list__list, .b-item-list__item-meta ul {
+  list-style: none;
+}
+.b-item-list__list {
+  @include responsive-text-size('neptune');
+  font-family: $malabar;
+
+  .b-item-list__item {
+    border-bottom:1px solid $color-three;
+    float:left;
+    width:100%;
+
+    &:first-child {
+      border-top:1px solid $color-three;
+    }
+    @include breakpoint(phablet) {
+      &:last-child {
+        border-bottom:1px solid transparent;
+      }
+    }
+
+    .b-item-list__item-title {
+      float:left;
+      width:100%;
+      padding-top:4 * $spacing-unit;
+
+      @include breakpoint(fromAdaptiveToFluid) {
+        padding-top:2 * $spacing-unit;
+      }
+    }
+  }
+}
+.b-item-list__item-meta {
+  @include responsive-text-size('mercury');
+  font-family: $kootenay;
+  color: $color-two;
+  float:left;
+  width:100%;
+  padding-bottom:4 * $spacing-unit;
+  letter-spacing:0.03125rem;
+
+  @include breakpoint(fromAdaptiveToFluid) {
+    padding-bottom:2 * $spacing-unit;
+  }
+
+  // Restructuring for easy output
+  &.b-item-list__item-meta--breadcrumb {
+    ul {
+      li {
+        @include responsive-text-size('ariel');
+        color: $color-two;
+        float:left;
+
+        & a {
+          color: $color-two;
+          &:hover {
+            color: $color-one;
+            letter-spacing:0.03125rem;
+            @include responsive-text-size('ariel');
+            font-family: $kootenay;
+            padding-bottom: 0.0625rem;
+            border-bottom: 1px solid $color-five;
+            @include vendor(transition, $transition);
+         }
+
+        }
+
+        &:after {
+          content:"›";
+          padding-left: $spacing-unit;
+          padding-right: $spacing-unit;
+        }
+        &:last-child {
+          &:after {
+            content:none;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+  &.b-item-list__item-meta--job {
+    color: $color-one;
+  }
+}
+/* ------------------------------------------------------------
+   Search Result List Tweaking
+   ------------------------------------------------------------ */
+.b-14-0-0-search-result-list {
+  .b-item-list__item:first-child {
+    border-top:none;
+
+    .b-item-list__item-title {
+      padding-top:0;
+    }
+  }
+  .b-item-list__item-title {
+    font-family:$malabar-bold;
+
+    em {
+      font-family:$malabar-bold-italic;
+    }
+  }
+  .b-item-list__item-excerpt {
+    em {
+      font-family:$malabar-italic;
+    }
+  }
+}

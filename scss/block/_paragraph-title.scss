@@ -1,0 +1,6 @@
+.b-paragraph-title {
+  .b-paragraph-title__text {
+    @include responsive-text-size('neptune');    
+    font-family: $malabar-bold;    
+  }
+}

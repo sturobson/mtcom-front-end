@@ -1,0 +1,12 @@
+.b-error-message {
+  display:none;
+}
+
+.b-error-message__output {
+  font-family:$kootenay;
+  @include responsive-text-size('venus');
+  padding:(2 * $spacing-unit) (4 * $spacing-unit);
+  background:$color-ten;
+  border:1px solid $color-three;
+  border-top:none;  
+}

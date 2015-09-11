@@ -1,0 +1,163 @@
+/* ------------------------------------------------------------
+   Grid System thanks to lovely Susy susy.oddbird.net
+   ------------------------------------------------------------ */
+// General Grid Definition
+$susy: (
+  columns: 14,
+  gutters: 24px/48px,  
+  container: 1008px,
+  math: fluid,
+  gutter-position: inside,  
+  global-box-sizing: content-box,
+);
+
+// Susy Shorthands
+$default: 12 (48px 24px) split inside fluid;
+$grid-desktop: 12 (48px 24px) split inside static;
+$grid-desktop-wide: 14 (48px 24px) split inside;
+$grid-tablet: 12 (30px 24px) split static;
+$grid-tablet-wide: 14 (30px 24px) split static;
+
+/* ------------------------------------------------------------
+   Grid Container and Wrappers
+   ------------------------------------------------------------ */
+.g-container {
+  padding-left: gutter(14) / 2;
+  padding-right: gutter(14) / 2;
+  float:left;
+  width:100%;
+  text-align:center;
+}
+.g-block {
+  @include container();
+  display:inline-block;
+  text-align: left;
+  width: 100%;
+  
+  //Clearfix Pt. 1
+  &:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;  
+  }
+  //Clearfix Pt. 2
+  display: block;
+
+  .g-row-wide {
+    @include span(14 no-gutters); 
+            
+    .g-col { @include span(14 of 14); }
+    .g-col-1 { @include span(1 of 14); }
+    .g-col-2 { @include span(2 of 14); }
+    .g-col-2-3 {@include span(2.3333333333 of 14);}
+    .g-col-3 { @include span(3 of 14); }
+    .g-col-4 { @include span(4 of 14); }
+    .g-col-4-6 { @include span(4.6666666667 of 14); } // the grid breaker (expertise)
+    .g-col-5 { @include span(5 of 14); }
+    .g-col-6 { @include span(6 of 14); }
+    .g-col-7 { @include span(7 of 14); }
+    .g-col-8 { @include span(8 of 14); }
+    .g-col-9 { @include span(9 of 14); }
+    .g-col-9-3 {@include span(9.3333333333 of 14)} // the grid breaker (expertise)
+    .g-col-10 { @include span(10 of 14); }
+    .g-col-11 { @include span(11 of 14); }
+    .g-col-12 { @include span(12 of 14); }
+    .g-col-13 { @include span(13 of 14); }
+  }
+  .g-row-medium {
+    @include span(14 no-gutters); 
+    padding: 0 ( span(1) - gutter(14) );
+    
+    .g-col {
+      @include span(14 no-gutters);      
+    }
+  }  
+  .g-row {
+    @include span(12 no-gutters); 
+    margin:0 span(1);
+      
+    .g-col { @include span(12 of 12); }
+    .g-col-1 { @include span(1 of 12); }
+    .g-col-2 { @include span(2 of 12); }
+    .g-col-2-4 { @include span(2.4 of 12);} // the grid breaker (footer)
+    .g-col-3 { @include span(3 of 12); }
+    .g-col-4 { @include span(4 of 12); }
+    .g-col-5 { @include span(5 of 12); }
+    .g-col-6 { @include span(6 of 12); }
+    .g-col-7 { @include span(7 of 12); }
+    .g-col-8 { @include span(8 of 12); }
+    .g-col-9 { @include span(9 of 12); }
+    .g-col-10 { @include span(10 of 12); }
+    .g-col-11 { @include span(11 of 12); }
+    .g-col-12 { @include span(12 of 14); }
+  	.g-col-13 { @include span(13 of 14); }
+  }  
+}
+/* ------------------------------------------------------------
+   Responsive Behavior of the columns
+   ------------------------------------------------------------ */
+@include breakpoint(medium) {
+  .g-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .g-block {
+    @include container(750px);
+
+    .g-row, .g-row-medium {
+    }      
+  }  
+}
+@include breakpoint(fromAdaptiveToFluid) {
+	.g-container {
+		padding-left: 0.75rem;//12px
+		padding-right: 0.75rem;//12px    
+	}
+	.g-block {
+  	.g-row {
+    	margin-left:span(1 of 14);
+    	margin-right:span(1 of 14);
+    	
+      .g-col-4 {
+        width:span(6 of 12);
+      }    	
+  	}
+    .g-row-wide, .g-row-medium {
+      width:100%;
+      margin-left:0;
+      margin-right:0;
+      padding-left:0;
+      padding-right:0;
+    } 	
+	}	
+}
+@include breakpoint(small) {
+  
+  .g-container {
+    padding-left: 0.75rem;//12px
+    padding-right: 0.75rem;//12px    
+  }
+  .g-block {
+    max-width: none;
+    
+    .g-row-wide, .g-row, .g-row-medium {
+      width:100%;
+      margin-left:0;
+      margin-right:0;
+      padding-left:0;
+      padding-right:0;
+      
+      .g-col, .g-col-1, .g-col-2, .g-col-2-3, .g-col-2-4, .g-col-3, .g-col-4, .g-col-4-6, .g-col-5, .g-col-6, .g-col-7, .g-col-8, .g-col-9, .g-col-9-3, .g-col-10, .g-col-11 {
+        float: left;
+        width:100%;        
+        margin-left:0;
+        margin-right:0;
+        padding-left:0;
+        padding-right:0;
+      }
+    }
+  }
+}

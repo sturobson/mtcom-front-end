@@ -1,0 +1,14 @@
+.b-3-2-0-intro-search {
+  border-top:1px solid $color-three;
+  border-bottom:1px solid $color-three;  
+  background:$color-seven;
+  padding-top:4 * $spacing-unit;
+  padding-bottom:4 * $spacing-unit;
+  margin-bottom:6 * $spacing-unit;
+    
+  &.b-3-2-0-intro-search--interaction {
+    display:none;
+  }
+}
+
+

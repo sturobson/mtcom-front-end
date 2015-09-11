@@ -1,0 +1,26 @@
+.b-3-0-0-intro {
+  background: $color-six;
+  border-bottom:1px solid $color-three;
+  color:$color-one;
+
+  .b-lead {
+    margin-bottom:9 * $spacing-unit;
+    
+    @include breakpoint(medium) {
+    	margin-bottom:7 * $spacing-unit;
+    }
+    
+    @include breakpoint(fromAdaptiveToFluid) {
+      margin-bottom:3 * $spacing-unit;
+    }
+  }
+  .b-media {
+    margin-top:0;
+    
+    img {
+	    display:block;
+    }
+  }
+}
+
+

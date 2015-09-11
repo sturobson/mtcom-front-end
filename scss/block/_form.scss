@@ -1,0 +1,407 @@
+.b-form {
+  margin-top: 4 * $spacing-unit;
+
+  @include breakpoint(fromAdaptiveToFluid) {
+    margin-top: $spacing-unit;
+  }
+  
+  &.b-form--download {
+    margin-top: 4 * $spacing-unit;
+    
+    .b-form__canvas.g-col {
+      @include breakpoint(fromAdaptiveToFluid) {
+        padding-left:gutter(12);
+        padding-right:gutter(12);
+      }
+    }
+    
+  }
+
+  &.b-form--expertise {
+    margin-top: 0;
+
+    .g-row-medium {
+      padding:0 gutter(14);
+    }
+
+    .b-button {
+      margin-top:0;
+    }
+
+    &.b-form--expertise-open .b-form__form .g-block {
+      margin-bottom: 4 * $spacing-unit;
+    }
+
+  }
+
+  .b-form__form {
+    .b-form__canvas {
+      display:none;
+    }
+    .b-form__table {
+      display:table;
+      width:100%;
+      padding-top: (2 * $spacing-unit);
+      padding-bottom:(2 * $spacing-unit);
+      background:$color-seven;
+      border:1px solid $color-three;
+      height:100%;
+
+      @include breakpoint(fromAdaptiveToFluid) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      &.b-form__table--downloads {
+        .b-form__table-cell {
+          width:50%;
+        }
+      }
+    }
+    .b-form__table-row {
+      display:table-row;
+      width:100%;
+      height:100%;
+
+      &:first-child {
+        .b-form__table-cell {
+          .jvFloat {
+            margin-top:-(2 * $spacing-unit);
+
+            @include breakpoint(fromAdaptiveToFluid) {
+              margin-top:0;
+            }
+          }
+        }
+      }
+      &:last-child {
+        .b-form__table-cell {
+
+          &:last-child {
+            .jvFloat {
+              @include breakpoint(fromAdaptiveToFluid) {
+                border-bottom:none;
+              }
+            }
+          }
+          .jvFloat {
+            margin-bottom:-(2 * $spacing-unit);
+            border-bottom:none;
+
+            @include breakpoint(fromAdaptiveToFluid) {
+              border-bottom:1px solid $color-three;
+              margin-bottom:0;
+            }
+          }
+        }
+      }
+    }
+    .b-form__table-cell {
+      display:table-cell;
+
+      @include breakpoint(fromAdaptiveToFluid) {
+        display:inline-block;
+        width:100%;
+      }
+
+      &:last-child {
+        border-left:1px solid $color-three;
+
+        @include breakpoint(fromAdaptiveToFluid) {
+          border-left:none;
+        }
+      }
+    }
+  }
+  .b-form__input, .b-form__select {
+    padding:1.125rem 0;margin:-1.125rem 0; //Increase Clickable Area    
+  }
+  .jvFloat--active {
+    .b-form__input, .b-form__select {
+      padding:1.5rem 0 0 0;margin:-1.5rem 0 0 0; //Increase Clickable Area    
+    }
+  }
+    
+  .b-form__input {
+    @include responsive-text-size('earth');
+    @include placeholder {
+    color: $color-three;
+    }
+    min-height:auto;
+    width:100%;
+    
+    &:focus {
+      @include placeholder {
+        color: $color-ten;
+      }
+    }
+  }
+  .b-form__input.b-form__input--textarea {
+    font-family: $malabar;
+    float:left;
+    resize:none;
+    padding: 1rem 10.271041369% 0 10.271041369%;
+    margin-top:0;
+    height:100%;
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      padding: (4 * $spacing-unit) ( span(1) );
+    }
+    @include breakpoint(small) {
+      padding: (4 * $spacing-unit) (2 * $spacing-unit);
+    }
+  }
+  .b-form__select {
+    float:left;
+    width:100%;
+    background:url('../../image/icon-triangle-down.svg') no-repeat center right;
+    border-right:12px solid transparent; //padding-right for toggle-icon     
+
+    .b-form__select-item--disabled {
+      color: $color-two !important;
+    }
+  }
+  .b-button {
+    margin-top:4 * $spacing-unit;
+  }
+
+/* ------------------------------------------------------------
+   Float Labels by github.com/maman/JVFloat.js
+   ------------------------------------------------------------ */
+  .jvFloat {
+    @include responsive-text-size('earth');
+    position:relative;
+    font-family: $kootenay;
+    float:left;
+    width:100% - ( 8 * gutter(14) ) ;
+    margin:0 ( 4 * gutter(14) );
+    padding: (4 * $spacing-unit) 0 (4 * $spacing-unit) 0;
+    border-bottom:1px solid $color-three;
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      margin:0 span(1);      
+      width:100% -  (2 * span(1) );
+    }
+    @include breakpoint(small) {
+      margin:0 (2 * $spacing-unit);
+      width:calc(100% - 24px);
+    }
+
+    .email-error {
+      color: red;
+    }    
+  
+    .b-form__select {
+      color: $color-three;
+    }
+    
+    .placeHolder {
+      display:none !important;
+    }    
+
+    &.jvFloat--active {
+      padding: (6 * $spacing-unit) 0 (2 * $spacing-unit) 0;
+      
+      .placeHolder {
+        display:block !important;
+      }      
+
+      .b-form__select {
+        color: $color-one;     
+
+        //balance out left indendation in firefox
+        @-moz-document url-prefix() {
+          margin-left:-4px;
+        }
+        //balance out left indendation in IE
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          margin-left:-3px;
+        }       
+      }
+    }
+  }
+  .jvFloat .placeHolder.required {
+    color: $color-five;
+  }
+  // Start CSS3 Animations on supported browser
+  .jvFloat .placeHolder {
+    @include responsive-text-size('earth');
+    font-family:$kootenay;
+    position: absolute;
+    top: 2 * $spacing-unit;
+    left: 0;
+    width: auto;
+    color: $color-three;
+    visibility: hidden;
+  }
+  // Allows textarea floating placeholder to be positioned distinctly from the normal .placeHolder class (Required when working with Multiline text areas)
+  .jvFloat .placeHolder.textarea {
+    /*top: 0px;*/
+  }
+  .jvFloat .placeHolder.active {
+    display: block;
+    visibility: visible;
+  }
+}
+
+/* ------------------------------------------------------------
+   Contact Form
+   ------------------------------------------------------------ */
+
+.b-form.b-form--contact {
+
+  // Reset Border
+  .b-form__table-row:last-child .b-form__table-cell:last-child .jvFloat {
+    @include breakpoint(fromAdaptiveToFluid) {
+      border-bottom:1px solid $color-three;
+    }
+  }
+
+  // Reset Borders
+  .b-form__table-row:last-child .b-form__table-cell .jvFloat {
+    border-bottom:1px solid $color-three;
+  }
+  .b-form__table-row:last-child .b-form__table-cell .jvFloat:first-child {
+    margin-top:-(2 * $spacing-unit);
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      margin-top:0;
+      border-bottom:1px solid $color-three;
+    }
+  }
+  .b-form__table-row:last-child .b-form__table-cell .jvFloat:last-child {
+    border-bottom:none;
+    margin-bottom:-(2 * $spacing-unit);
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      border-bottom:none;
+      margin-bottom:0;
+    }
+  }
+  // Reset Margins
+  .b-form__table-row:last-child .b-form__table-cell .jvFloat {
+    margin-top:0;
+    margin-bottom:0;
+  }
+  
+  .initial .b-form__table-cell:last-child {
+    @include breakpoint(fromAdaptiveToFluid) {
+      display:none;      
+    }
+  }
+
+  // Right Panel Fade In
+  .b-form__table-cell {
+    &:last-child {
+      @include vendor(transition, opacity ease-in-out 0.5s);
+      opacity: 0;
+
+      @include breakpoint(fromAdaptiveToFluid) {
+        margin-top:2 * $spacing-unit;
+        background:$color-seven;
+        border:1px solid $color-three;
+        opacity:1;
+      }
+    }
+  }
+  .b-form__table-cell--visible {
+    &:last-child {
+      opacity: 1;
+
+      @include breakpoint(fromAdaptiveToFluid) {
+        float:left;
+      }
+    }
+  }
+
+  .b-form__form {
+    .b-form__canvas {
+      pointer-events: auto;
+      display:inline;
+      position:relative;
+      
+      .b-form__select {
+        pointer-events: all;//reset pointer events
+      }      
+
+      * {
+        //cursor:inherit;
+      }
+    }
+    .b-form__canvas.initial {
+      * {
+        cursor:pointer;//before clicking on white canvas
+        .b-form__select {
+          pointer-events: none;//avoids flashing of the select
+        }
+      }
+      .b-form__table-cell {
+        &:last-child {
+          border-left:none;// no borders in white canvas
+        }
+      }
+    }
+  }
+
+  .b-form__table {
+    display:table;
+    width:100%;
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      background:none;
+      border:none;
+    }
+
+    &.b-form__table--contact {
+      &:hover {
+        border: 1px solid $color-one;
+        
+        @include breakpoint(fromAdaptiveToFluid) {
+          border:none;
+          
+          .b-form__table-cell {
+            border: 1px solid $color-one !important;
+          }
+        }
+      }
+      .b-form__table-cell {
+        &:first-child {
+          width:span(10 of 14);
+
+          @include breakpoint(fromAdaptiveToFluid) {
+            width:span(14 of 14);
+            background:$color-seven;
+            border:1px solid $color-three;
+            height:12rem;/*192px*/
+          }
+        }
+      }
+    }
+  }
+  .b-form-sent-image {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    padding:0 ( gutter(14) );
+
+    .b-form-sent-image__image {
+      height:100%;
+      width:100%;
+      background:white;
+    }
+
+  }
+
+  .b-button {
+    @include vendor (transition, opacity ease-in-out 0.5s);
+    opacity: 0;
+
+    &.b-button--visible {
+      opacity: 1;
+    }
+  }
+
+}

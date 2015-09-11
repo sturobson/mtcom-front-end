@@ -1,0 +1,31 @@
+.b-type-to-show {
+  &.b-type-to-show--search {
+    .b-type-to-show__input {
+      @include responsive-text-size('saturn');
+      margin-top:$spacing-unit;
+      font-family: $malabar;
+      width:100%;
+      float:left;
+      border-bottom:1px solid $color-three;
+      
+      @include placeholder {
+        color: $color-two;
+      }
+    }
+  }
+  &.b-type-to-show--newsletter {
+    .b-type-to-show__input {
+      @include responsive-text-size('uranus');
+      margin-top:$spacing-unit;
+      font-family: $malabar;
+      width:100%;
+      float:left;
+      border-bottom:1px solid $color-three;
+      @include placeholder {
+        color: $color-two;
+      }  
+      
+    }
+  }
+
+}

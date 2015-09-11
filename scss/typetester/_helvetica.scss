@@ -1,0 +1,46 @@
+.helvetica {
+  
+  .b-typetester__write {
+    font-family: 'Helvetica';
+    
+    &.weight-300, &.weight-300 * {
+      font-weight: 300;
+      
+      &.italic, &.italic * {
+        font-style:italic;        
+      }
+      &.condensed, &.condensed * {
+        letter-spacing:-4px;
+      }
+      &.wide, &.wide * {
+        letter-spacing:4px;
+      }      
+    }
+    &.weight-500, &.weight-500 * {
+      font-weight: 500;
+      
+      &.italic, &.italic * {
+        font-style:italic;        
+      }
+      &.condensed, &.condensed * {
+        letter-spacing:-4px;
+      }
+      &.wide, &.wide * {
+        letter-spacing:4px;
+      }      
+    }
+    &.weight-800, &.weight-800 * {
+      font-weight: 800;
+      
+      &.italic, &.italic * {
+        font-style:italic;        
+      }
+      &.condensed, &.condensed * {
+        letter-spacing:-4px;
+      }
+      &.wide, &.wide * {
+        letter-spacing:4px;
+      }      
+    }       
+  }        
+}

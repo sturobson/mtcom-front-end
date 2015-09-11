@@ -1,0 +1,274 @@
+/* ------------------------------------------------------------
+   Article
+   ------------------------------------------------------------ */
+
+.b-expertise.g-container {
+  margin-bottom: 4 * $spacing-unit;
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    width: 100%; 
+    background: $color-seven;
+    padding-top: 2.5 * $spacing-unit;
+    padding-bottom: 2.5 * $spacing-unit;
+    border-top: 1px solid $color-three;
+    border-bottom: 1px solid $color-three;     
+  }
+  
+}
+.b-expertise__article-wrapper {
+  font-family: $malabar;
+}
+
+.b-expertise__article {
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    background:white;
+    border:none;
+    margin-bottom: 0;
+    padding-bottom:0;
+  }
+  
+}
+.b-expertise__article-download {
+  padding-bottom:20 * $spacing-unit;
+  
+  @include breakpoint(medium) {
+    padding-bottom:14 * $spacing-unit;            
+  }                       
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    padding-bottom:10 * $spacing-unit;            
+  }  
+}
+.b-expertise__article-outer,.b-expertise__article-inner {
+  display:inline-block;  
+}
+.b-expertise__article-inner {
+  background: $color-seven;
+  @include vendor(box-shadow, 0px 0px 0px 1px $color-three);
+  padding-bottom: 8 * $spacing-unit; // 3rem
+  float: left;
+  width: 100%;
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    box-shadow:none;
+    padding-bottom:0;
+    background:none;    
+  }
+}
+.b-expertise__article-title {
+  font-weight: normal;
+  font-family: $malabar-heavy;
+  margin-top:5 * $spacing-unit;
+  @include responsive-text-size('saturn');
+  @include layout($grid-desktop);
+  margin-left: span(1);
+  margin-right:span(1);  
+  
+  @include breakpoint(medium) {
+    @include layout($grid-tablet);
+    margin-left: span(1) + (2 * gutter(14) );
+    margin-right:span(1) + (2 * gutter(14) );
+    margin-top:5 * $spacing-unit;
+    margin-bottom:3 * $spacing-unit;  
+  }
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    @include layout($default);
+    margin-top: 2 * $spacing_unit;
+    margin-left:span(1 of 14);
+    margin-right:span(1 of 14);
+  }
+    
+  @include breakpoint(small) {
+    margin-left:0;
+    margin-right:0;
+  }
+  
+}
+
+.b-expertise__article .b-expertise__article-image--hero {
+  margin: 5 * $spacing-unit 0;
+  @include layout($grid-desktop);
+  padding-left: gutter(14);
+  padding-right: gutter(14);
+  
+  @include breakpoint(medium) {
+    @include layout($grid-tablet);
+    padding-left: 2 * gutter(14);
+    padding-right:2 * gutter(14);
+  }
+  @include breakpoint(fromAdaptiveToFluid) {
+    margin-top: 2 * $spacing_unit;    
+    padding-left:0;
+    padding-right:0;
+  }
+
+  img {
+    min-width: 100%; 
+    max-width: 100%; 
+    display: block; 
+  }
+  
+}
+
+.b-expertise .b-expertise__article .b-expertise__article-meta { 
+  color: #282828;
+  @include layout($grid-desktop);  
+  width: span(4);
+  padding-right:2 * gutter(14);
+  padding-left:span(1);
+  float:left;
+  @include responsive-text-size('mars');  
+  
+  @include breakpoint(medium) {
+    @include layout($grid-tablet);
+    margin-left:span(1);
+    width: span(3 of 14) + 2 * gutter(14);   
+    padding:0;
+  }
+  
+  a {
+    color: #282828;
+    text-decoration: none;
+    border-bottom: 1px solid #282828;
+    @include vendor(transition, #{all $transition ease});
+    
+    &:hover {
+      border-bottom-color: #fff;
+    }
+  } 
+  @include breakpoint(fromAdaptiveToFluid) {
+    @include layout($default);    
+    margin: 5 * $spacing_unit span(1 of 14);
+    float: none;
+    width: 100%;
+    clear: both;
+  }
+    
+  @include breakpoint(small) {
+    margin: 5 * $spacing_unit 0;
+  }
+}
+
+
+.b-expertise .b-expertise__article .b-expertise__article-text { 
+  color: #282828;  
+  @include responsive-text-size('neptune');
+  @include layout($grid-desktop);  
+  width: span(8) + (4 * gutter(14));
+  padding-left:0;
+  padding-right:0; 
+  float: right;
+  margin-right: span(1);
+  
+  p, ul, ol, dl, table {
+    margin-top: 5 * $spacing-unit;
+    
+    &:first-child {
+      margin-top:0;
+    }
+  }
+  
+  @include breakpoint(medium) {
+    @include layout($grid-tablet);
+    margin-right:span(1) + (2 * gutter(14) );
+    width:span(9);
+  }
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    @include layout($default);    
+    margin-left:span(1 of 14);
+    margin-right:span(1 of 14);
+    float: none;
+    width: auto;
+    clear: both; 
+  }
+  
+  @include breakpoint(small) {
+    margin: 5 * $spacing_unit 0;
+  }
+  
+  
+  .b-masonry__bodycopy-gallery { 
+    
+    &.b-masonry__bodycopy-gallery--slider { 
+      position: relative;
+      margin: 5 * $spacing-unit 0;
+      width:768px;
+      margin-left:-144px;
+      
+      @include breakpoint(medium) {
+        width:35.625rem; //570px
+        margin-left: -6.8125rem; //-109px
+      }
+      @include breakpoint(fromAdaptiveToFluid) {
+        width:100%;
+        margin-left:0;
+      }    
+    }
+    
+    &.b-masonry__bodycopy-gallery--hang-left {
+      margin-top: 5 * $spacing-unit;
+      margin-right:0;
+      margin-bottom:(2.5 * $spacing_unit);
+      width:192px;
+      margin-left:-216px;
+      float:left;
+      
+      @include breakpoint(medium) {
+        width:162px;
+        margin-left:-186px;     
+      }
+      
+      @include breakpoint(fromAdaptiveToFluid) {
+        margin-left:0;
+      }    
+      
+      .b-masonry__bodycopy-gallery--hang-left__item {
+        list-style: none;
+        width: 100%;
+        padding-bottom: $spacing_unit;
+        img { display: block; min-width: 100%; }
+      }
+      
+      @include breakpoint(fromAdaptiveToFluid) {
+        clear: both; 
+        width: 100%; 
+        padding: 0;
+        margin-bottom: 4 * $spacing_unit;
+        
+        .b-gallery__hang-left__list {
+          display: block;
+          width: auto;
+          margin-left: -$spacing-unit;
+          &:after { content: ''; display: table; clear: both; }
+        }
+        
+        .b-masonry__bodycopy-gallery--hang-left__item {
+          float: left;
+          margin: 0;
+          padding-left: $spacing-unit; 
+          width: 33.33333333%;
+        }
+        
+        & .b-gallery__hang-left__list--single .b-masonry__bodycopy-gallery--hang-left__item {
+          width: 100%;
+        }
+        & .b-gallery__hang-left__list--double .b-masonry__bodycopy-gallery--hang-left__item {
+          width: 50%;
+        }
+        & .b-gallery__hang-left__list--triple .b-masonry__bodycopy-gallery--hang-left__item {
+          width: 33.33333333%;
+        }
+        & .b-gallery__hang-left__list--quadruple .b-masonry__bodycopy-gallery--hang-left__item {
+          width: 25%;
+        }
+
+      }
+      
+    }
+  }
+}
+
+@import '../block/carousel';

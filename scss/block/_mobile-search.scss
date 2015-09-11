@@ -1,0 +1,41 @@
+.b-mobile-search__input-wrapper, .b-mobile-search__submit-wrapper {
+  width:100%;
+}
+.b-mobile-search__submit-wrapper {
+  padding-top:$spacing-unit;
+  padding-bottom:(2 * $spacing-unit);
+  display:none;
+
+  &.b-mobile-search__submit-wrapper--visible {
+    display:inline-block;
+  }
+}
+.b-mobile-search__input {
+  @include breakpoint(fromAdaptiveToFluid) {
+    font-size:2.25rem;
+    line-height:5.25rem;
+    height:5.25rem;
+    width:100%;     
+  }
+  @include breakpoint(small) {
+    font-size:1.625rem;
+    line-height:4rem;
+    height:4rem;
+  }
+
+  @include placeholder {
+    color: $color-four;
+  }
+}
+.b-mobile-search__submit {
+  @include responsive-text-size('earth');
+  font-family: $kootenay-bold;
+  color: $color-seven;
+  background: $color-five;
+  padding:(2 * $spacing-unit) (3 * $spacing-unit);
+  border:1px solid $color-eight;
+  cursor:pointer;
+  @include vendor(transition, $transition);
+  display:table;
+  width:100%;
+}

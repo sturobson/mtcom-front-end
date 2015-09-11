@@ -1,0 +1,88 @@
+.b-media {
+  margin-top:3 * $spacing-unit;
+  position:relative;
+  text-align: center;
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    margin-top:$spacing-unit;
+  }
+  
+  .b-media__wrapper {
+    position:relative;
+  }
+  .b-media__vcenter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;  
+  }
+  .b-media__vcenter-inner {
+    display: table;
+    width: 100%;
+    max-width: 1080px;
+    max-width: 67.5rem;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .b-button {
+    display: table-cell;
+    vertical-align: middle;    
+  }
+  
+  .b-media__image {
+    .b-media__caption {
+      @include responsive-text-size('venus');  
+      font-family: $kootenay; 
+      display:inline-block;
+      width:100%;       
+      margin:(2 * $spacing-unit) 0 (2 * $spacing-unit);
+      text-align: left;
+      
+      a {
+        border-bottom:1px solid $color-two;        
+      }
+    }
+  }
+  
+  // Elastic Video Container for iFrame embedding
+  .b-media__video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow:hidden;
+    
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }  
+  
+}
+.b-media.b-media--full-width.g-block {
+  max-width:100%;
+  margin-top:9 * $spacing-unit;
+  
+  @include breakpoint(medium) {
+  	margin-top:7 * $spacing-unit;
+  }
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+  	margin-top:3 * $spacing-unit;
+  }
+  
+  .g-row {
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+    
+    .g-col {
+      padding-left:0;
+      padding-right:0;
+      
+    }
+  }
+}

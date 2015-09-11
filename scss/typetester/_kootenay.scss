@@ -1,0 +1,33 @@
+.kootenay {
+    
+  .b-typetester__write {
+    &.weight-100, &.weight-100 *  {
+      font-family:$kootenay;
+      
+      &.italic, &.italic * {
+        font-family:$kootenay-italic;
+      }
+    }
+    &.weight-200, &.weight-200 * {
+       font-family:$kootenay-semibold;
+       
+      &.italic, &.italic * {
+        font-family:$kootenay-semibold-italic;
+      }
+    }
+    &.weight-300, &.weight-300 * {
+       font-family:$kootenay-bold;
+       
+      &.italic, &.italic * {
+        font-family:$kootenay-bold-italic;
+      }
+    }
+    &.weight-400, &.weight-400 * {
+      font-family:$kootenay-extrabold;
+
+      &.italic, &.italic * {
+        font-family:$kootenay-extrabold-italic;
+      }
+    }            
+  }        
+}

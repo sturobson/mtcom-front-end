@@ -1,0 +1,85 @@
+.b-button {
+  margin-top:6 * $spacing-unit;
+  min-width:9rem;
+  display:inline-block;
+  white-space: nowrap;
+  
+  @include breakpoint(medium) {
+	  min-width:7rem;
+  }
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+	  min-width:9rem;
+	  margin-top:3 * $spacing-unit;
+	  display: table;
+	  margin-left:auto;
+	  margin-right:auto;
+  }  
+	
+	&.b-button--expertise {
+  	margin-top:0;
+	}
+	&.b-button--search {
+    margin-top: 4 * $spacing-unit !important;
+	}
+	&.b-button--newsletter {
+    margin-top: 3 * $spacing-unit;	
+  }	
+  &.b-button--search, &.b-button--newsletter {
+    .b-button__item {
+      text-align: center;
+      padding:(2 * $spacing-unit) (3 * $spacing-unit);
+    
+      @include breakpoint(fromAdaptiveToFluid) {
+        margin-top: 2 * $spacing-unit;
+      }
+      
+      &.b-button__item--visible {
+        opacity: 1;
+        @include vendor (transition, all $transition ease-in);        
+      }
+    }
+  }
+  &.b-button--newsletter {
+    .b-button__item {
+      opacity: 0;
+      @include vendor (transition, all $transition ease-out);        
+      
+      &.b-button__item--visible {
+        opacity: 1;
+        @include vendor (transition, all $transition ease-in);
+      }
+    }
+  }
+
+  .b-button__item {
+    @include responsive-text-size('earth');
+    //font-family: $kootenay-bold;
+    font-family:$kootenay-semibold;
+    letter-spacing:0.03125rem;     
+    color: $color-seven;
+    background: $color-five;
+    margin:0 auto;
+    padding:(2 * $spacing-unit) (3 * $spacing-unit);
+    border:1px solid $color-eight;
+    cursor:pointer;  
+    @include vendor (transition, $transition);    
+    display:table;
+    @include vendor(user-select, none);
+    text-align: center;
+    min-width:9rem;
+    
+    &:hover {
+      background: $color-eight;
+      border:1px solid $color-nine;
+    }  
+    
+    &:disabled {
+      pointer-events: none;      
+      cursor:default;
+      background: $color-ten;
+      color: $color-three;
+      border:1px solid $color-three;      
+    }    
+  }   
+}

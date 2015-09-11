@@ -1,0 +1,17 @@
+.b-subtitle {
+  .b-subtitle__text {
+    margin-top:$spacing-unit;
+    @include responsive-text-size('uranus');    
+    font-family: $malabar;
+    
+    a {
+      border-bottom:1px solid $color-one;
+      @include vendor(transition, border-bottom $transition);
+      
+      &:hover {
+        border-bottom:1px solid $color-five;
+      }      
+    }    
+    
+  }
+}

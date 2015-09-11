@@ -1,0 +1,88 @@
+// Needs to be done by columns otherwise active state of language nav is cut off.
+.b-footer-list {
+  @include breakpoint(fromAdaptiveToFluid) {
+    padding-left:0 !important;
+    padding-right:0 !important;    
+  }
+}
+.b-footer-list__list, .b-footer-list__secondlevel {
+  @include responsive-text-size('venus');
+  font-family: $kootenay;  
+  list-style: none;
+  
+  .b-footer-list__item, .b-footer-list__secondlevel-item {  
+    float:left;
+    width:100%;
+    
+    .b-footer-list__link, .b-footer-list__secondlevel-link {
+      @include responsive-text-size('venus'); 
+      @include vendor(transition, border-bottom $transition);
+      border-bottom:1px solid transparent;              
+      float:left;
+      display:block;
+      letter-spacing:0.03125rem;/*0.5px*/
+      
+      &:hover {
+        border-bottom:1px solid $color-two;
+      }
+    }    
+  }
+}
+.b-footer-list__list {
+  display:table; // needed to stretch border to bottom
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    display:block;         
+    @include vendor(column-count, 2);  
+    @include vendor(column-gap, 1.5rem);
+    overflow: hidden;                
+  }    
+       
+  .b-footer-list__item.g-col-2-3 {
+    float:none;
+    border-left:1px solid $color-three;
+    display:table-cell; // needed to stretch border to bottom
+    margin-left:0.75rem;
+    
+    @include breakpoint(fromAdaptiveToFluid) {
+      width:100%;
+      display:inline-block; 
+      border:none;
+    }
+  
+    &:first-child {
+      border-left:none;
+    }
+    &.b-footer-list__item--legal {
+      display:none;
+  
+      @include breakpoint(fromAdaptiveToFluid) {
+        display:block; 
+      }
+    }
+  }
+  .b-footer-list__link {
+    font-family: $kootenay-bold;
+  }
+}
+.b-footer-list__secondlevel {
+  
+  .b-footer-list__secondlevel-item:last-child {
+    padding-bottom:2 * $spacing-unit;
+  }
+  .b-footer-list__secondlevel-item--selected {
+    margin-left:-$spacing-unit;
+          
+    .b-footer-list__secondlevel-link {
+      padding-left:$spacing-unit;
+      padding-right:$spacing-unit;
+      background:$color-five;
+      border-radius: $border-radius;
+      padding-bottom: 0.125rem;
+      
+      &:hover {
+        border-bottom:1px solid transparent;
+      }                 
+    }
+  }
+}

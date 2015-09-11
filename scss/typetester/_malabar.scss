@@ -1,0 +1,26 @@
+.malabar {
+  
+  .b-typetester__write {
+    &.weight-400, &.weight-400 * {      
+      font-family: 'Malabar W04 Regular';
+
+      &.italic, &.italic * {
+        font-family: 'Malabar W04 Italic';
+      }    
+    }
+    &.weight-700, &.weight-700 * {
+      font-family: 'Malabar W04 Bold';
+
+      &.italic, &.italic *{
+        font-family: 'Malabar W04 Bold Italic';
+      }    
+    }
+    &.weight-800, &.weight-800 * {
+      font-family: 'Malabar W04 Heavy';
+
+      &.italic, &.italic * {
+        font-family: 'Malabar W04 Heavy Italic';
+      }    
+    }
+  }        
+}

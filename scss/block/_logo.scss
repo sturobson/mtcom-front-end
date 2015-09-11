@@ -1,0 +1,17 @@
+.b-logo {
+  float:left;
+  background-repeat:no-repeat; //responsive checker, needed for JS
+  
+  @include breakpoint(medium) {
+    background-repeat:repeat-x; //responsive checker, needed for JS
+  }
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    background-repeat:repeat; //responsive checker, needed for JS
+  }
+  
+  .b-logo__link {
+    font-size:1.125rem;line-height: 1.5rem; /*stays 18px and 24px, no responsive-text-size*/
+    font-family: $kootenay;
+  }
+}

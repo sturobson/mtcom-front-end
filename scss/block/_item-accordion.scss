@@ -1,0 +1,70 @@
+.b-item-accordion {
+  .b-item-accordion__list {
+    @include responsive-text-size('neptune');  
+    font-family: $malabar;
+    list-style:none; 
+    
+    .b-item-accordion__item {
+      border-bottom:1px solid $color-three;
+      float:left;
+      width:100%;
+      
+      &:first-child {
+        border-top:1px solid $color-three;
+      }
+      .b-item-accordion__item-title {
+        float:left;
+        width:100%;
+        padding-top:4 * $spacing-unit;
+        
+        @include breakpoint(fromAdaptiveToFluid) {
+          padding-top:2 * $spacing-unit;
+        }        
+      }
+    }
+  }  
+  .b-item-accordion__item-header {
+    width:100%;
+    display:table;
+  }        
+  .b-item-accordion__item-meta {
+    @include responsive-text-size('arcturus');
+    font-family: $malabar;
+    padding-bottom: 4 * $spacing-unit;
+    color:$color-three;
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      padding-bottom:2 * $spacing-unit;
+    }    
+    
+    .b-item-accordion__item-subtitle {
+      color:$color-one;
+    }
+  }
+  .b-item-accordion__item-content {
+    @include responsive-text-size('ariel');  
+    float:left;
+    width:100%;
+    padding-bottom: 4 * $spacing-unit;
+    display:none;    
+  }   
+  .b-item-accordion__toggle {
+    cursor:pointer;
+    text-align: left;
+    width:100%;
+    display:table-row;
+  }
+  .b-item-accordion__item-title-wrapper {
+    display:table-cell;
+    width: calc(100% - 3.375rem);
+  }  
+  .b-item-accordion__toggle-icon {
+    display:table-cell;    
+    width:3.0625rem;      
+    height:100%;
+    border-right:12px solid transparent; //padding-right for toggle-icon            
+  }
+  .b-item-accordion__toggle.b-item-list__toggle--selected .b-item-list__toggle-icon {
+    border-right:12px solid transparent; //padding-right for toggle-icon12 /          
+  }
+}

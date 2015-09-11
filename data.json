@@ -1,0 +1,36 @@
+{
+  "colors":[
+    {
+      "colorName":"Black", "colorHex":"#222222"
+    },
+    {
+      "colorName":"Slate", "colorHex":"#183c47"
+    },
+    {
+      "colorName":"Grey", "colorHex":"#C8C8C8"
+    },
+    {
+      "colorName":"Light grey", "colorHex":"#C8C8C8"
+    },
+    {
+      "colorName":"Cream", "colorHex":"#FAF7F5"
+    },
+    {
+      "colorName":"Red", "colorHex":"#FF5E6A"
+    },
+    {
+      "colorName":"Blue", "colorHex":"#0080BC"
+    },
+    {
+      "colorName":"Yellow", "colorHex":"#FFAE24"
+    },
+    {
+      "colorName":"Green", "colorHex":"#00AF40"
+    }
+  ],
+  "fonts": [
+    {
+      "fontName":"thing", "fontFam":"things"
+    }
+  ]
+}

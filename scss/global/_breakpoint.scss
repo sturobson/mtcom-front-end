@@ -1,0 +1,12 @@
+$breakpoints: (
+  large:  0, // default
+  medium: 1023px,
+  fromAdaptiveToFluid: 748px,  // transition from adaptive to responsive
+  phablet: 666px,
+  small:  479px,
+  tiny:  400px,
+);
+
+$vertical-breakpoints: (
+	narrow: 400px
+);

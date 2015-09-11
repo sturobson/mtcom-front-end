@@ -1,0 +1,82 @@
+.p-article {
+  float:left;
+  width: 100%;
+  background-color:$color-six;   
+  
+  .b-head, .b-main, .b-related, .b-foot {
+    float:left;
+    width: 100%;    
+  }
+  
+  /* ------------------------------------------------------------
+     Main Area with inner separators
+     ------------------------------------------------------------ */  
+  .b-main {
+    border-bottom:1px solid $color-three;
+    
+    .g-container {     
+            
+      > .g-block:first-child {
+        .g-row:first-child {
+          background: url('../../image/separator.png') center top no-repeat; /*needs to be a PNG since SVG browser rendering is inconsistent*/
+          background-size: ( span(12 of 12) - 2 * gutter(12) ) 1px;
+          padding-top:14 * $spacing-unit;
+          
+          @include breakpoint(medium) {
+            padding-top:10 * $spacing-unit;
+          }          
+          @include breakpoint(fromAdaptiveToFluid) {
+            padding-top:7 * $spacing-unit;
+          }
+          @include breakpoint(small) {
+          	background-size: span(12 of 12) 1px;
+          }                  
+        }
+      }
+      &:first-child {
+        .g-block:first-child {
+          .g-row:first-child {
+            background:none;
+          }
+        }
+      }
+    }
+  }
+  
+  /* ------------------------------------------------------------
+     Related Area with outer separators
+     ------------------------------------------------------------ */  
+  .b-related {
+    margin-bottom:20 * $spacing-unit;
+    
+    @include breakpoint(medium) {
+      margin-bottom:14 * $spacing-unit;
+    }
+    @include breakpoint(fromAdaptiveToFluid) {
+      margin-bottom:10 * $spacing-unit;            
+    }    
+  
+    .g-container {
+      border-top:1px solid $color-three;
+      padding-top:14 * $spacing-unit;
+      padding-bottom:20 * $spacing-unit;
+      
+      @include breakpoint(medium) {
+        padding-top:10 * $spacing-unit;        
+        padding-bottom:14 * $spacing-unit;            
+      }                       
+      
+      @include breakpoint(fromAdaptiveToFluid) {
+        padding-top:7 * $spacing-unit;        
+        padding-bottom:10 * $spacing-unit;            
+      }
+      
+      &:first-child {
+        border-top:none;
+      }
+      &:last-child {
+        padding-bottom:0;
+      }
+    }
+  }
+}

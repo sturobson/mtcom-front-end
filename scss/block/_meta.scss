@@ -1,0 +1,45 @@
+.b-meta {
+  font-size:1.125rem;line-height: 1.5rem; /*stays 18px and 27px, no responsive-text-size*/
+  font-family: $kootenay;	
+  padding-top: 5 * $spacing-unit; /*30px*/
+  float:right;
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    display:none;
+    padding-top: 3 * $spacing-unit; /*36px*/
+  }
+}
+.b-meta__list {
+  list-style:none;
+  float:right;
+
+  .b-meta__item {
+    float:left;
+    margin-left: 3 * $spacing-unit;
+
+    &:first-child {
+      margin-left:0;
+    }
+    
+    .b-meta__link {
+      border-bottom:1px solid transparent;
+      @include vendor (transition, border-bottom $transition);
+      
+      &:hover {
+        border-bottom:1px solid $color-two;
+      }
+    }
+
+    &.b-meta__item--selected {
+	    font-family: $kootenay-bold;
+    }
+  }
+}
+//Search Text
+.b-meta__search {
+  .b-meta__search-text {
+    &.b-meta__search-text--active {
+      display:none;
+    }
+  }
+}

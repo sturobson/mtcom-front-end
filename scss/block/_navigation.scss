@@ -1,0 +1,360 @@
+@charset "UTF-8"; // this needs to be inserted because of the use of the special char ›
+
+/* ------------------------------------------------------------
+   Navigation
+   ------------------------------------------------------------ */
+
+// Reduce Opacity of the Site when Nav is active
+.js-nav-active {
+  .b-head, .b-1-0-0-header {
+    z-index:99999999;
+    position: relative;
+  }
+  .p-home {
+    height:100%;
+  }
+}
+.b-navigation {
+  float:left;
+  padding-left: 0 !important; /*override standard column padding*/
+  position:relative;
+
+  @include breakpoint(fromAdaptiveToFluid) {
+    width:100%;
+  }
+
+  // Padding is set on Elements, to increase click target size
+  .b-logo, .b-navigation__nav, .b-meta {
+    padding-top: 5 * $spacing-unit; /*30px*/
+    padding-bottom: 5 * $spacing-unit; /*30px*/
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      padding-top: 3 * $spacing-unit; /*36px*/
+      padding-bottom: 4 * $spacing-unit; /*36px*/
+    }
+  }
+
+  .b-navigation__list, .b-navigation__breadcrumb {
+    font-size:1.125rem;line-height: 1.5rem; /*stays 18px and 24px, no responsive-text-size*/
+    font-family:$kootenay;
+    float:left;
+    clear:left;
+
+    .b-navigation__item, .b-navigation__breadcrumb__item {
+      float:left;
+    }
+    .b-navigation__breadcrumb__item h2 {
+      display:inline;
+
+      @include breakpoint(phablet) {
+        display:none;
+      }
+    }
+  }
+  .b-navigation__link {
+    display:inline;
+    border-bottom:1px solid transparent;
+    @include vendor(transition, border-bottom $transition);
+    @include breakpoint(fromAdaptiveToFluid) {
+    border-bottom:none;
+      @include breakpoint(fromAdaptiveToFluid) {
+        @include vendor(transition, none);
+      }
+    }
+
+    &:hover {
+      border-bottom:1px solid $color-two;
+      
+      @include breakpoint(fromAdaptiveToFluid) {
+        border-bottom:none;
+      }
+    }
+  }
+}
+.b-navigation__list {
+  z-index:999;
+
+  @include breakpoint(fromAdaptiveToFluid) {
+    display:none;
+    position: absolute !important;
+    width: 100%;
+    top: 11 * $spacing-unit;;
+    left: 0;
+  }
+
+  .b-navigation__item {
+    margin-left: 3 * $spacing-unit;
+    float:left;
+    display:inline;
+    width:auto;
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      font-family:$malabar-heavy;
+      font-size:2.25rem;line-height:2.25rem;
+      margin-left:0;
+      display:inline-block;
+      width:100%;
+      background:$color-six;
+      border-top:1px solid $color-three;
+    }
+
+    @include breakpoint(small) {
+      font-size:1.625rem;line-height:1.625rem;
+    }
+
+    &:last-child {
+      @include breakpoint(fromAdaptiveToFluid) {
+        border-bottom:1px solid $color-three;
+        @include vendor (box-shadow, 0 8px 6px -6px rgba(0,0,0,0.3));
+      }
+    }
+
+    .b-navigation__link {
+      @include breakpoint(fromAdaptiveToFluid) {
+        float:left;
+        padding-top:(4 * $spacing-unit);
+        padding-bottom:(4 * $spacing-unit);
+        width:100%;
+        display:block;
+      }
+      @include breakpoint(small) {
+        padding-top:(3 * $spacing-unit);
+        padding-bottom:(3 * $spacing-unit);
+      }
+    }
+    &.b-navigation__item--search {
+      background:$color-seven;
+    }
+    &.b-navigation__item--search, &.b-navigation__item--login {
+      display:none;
+
+      @include breakpoint(fromAdaptiveToFluid) {
+        display:inline;
+      }
+    }
+
+    &.b-navigation__item--login {
+      display:none;
+
+      @include breakpoint(fromAdaptiveToFluid) {
+        display:inline;
+      }
+    }
+
+    &.b-navigation__item--selected {
+      .b-navigation__link {
+        font-family: $kootenay-bold;
+
+        @include breakpoint(fromAdaptiveToFluid) {
+          font-family:$malabar-heavy;
+        }
+      }
+    }
+  }
+}
+.b-navigation__breadcrumb {
+
+  .b-navigation__breadcrumb__item {
+    margin-left: 3 * $spacing-unit;
+    position: relative;
+
+    @include breakpoint(phablet) {
+      &:last-child {
+        &:after {
+          content:"...";
+        }
+      }
+    }
+
+    &:before {
+      @include responsive-text-size('earth');
+      content:"›";
+      //margin: 0 0 0 0.453125rem; //pixel fine tuning, this equates to 7.25px
+      float:left;
+      position:absolute;
+      left:-(2 * $spacing-unit);
+
+      /* IE10+ Tweak*/
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        top:11px;
+      }
+
+    }
+
+    &.b-navigation__breadcrumb__item--selected {
+      .b-navigation__breadcrumb__item__link {
+        font-family: $kootenay-bold;
+      }
+    }
+
+    .b-navigation__breadcrumb__item_link {
+      @include responsive-text-size('earth');
+      font-family: $kootenay;
+    }
+  }
+}
+/* ------------------------------------------------------------
+   Show Main Navigation on hover / Interaction
+   ------------------------------------------------------------ */
+
+.b-navigation__nav.b-navigation__nav--breadcrumb {
+  .b-navigation__breadcrumb, .b-navigation__list {
+    &.visible {
+      display:inline;
+    }
+  }
+  .b-navigation__breadcrumb, .b-navigation__list {
+    &.invisible {
+      display:none;
+    }
+  }
+}
+.b-navigation__nav {
+  float:left;
+
+  .b-navigation__breadcrumb {
+    display:none;
+  }
+  .b-navigation__list {
+    position: relative !important;/*only for once*/
+    display:inline;
+
+    @include breakpoint(fromAdaptiveToFluid) {
+      position: absolute !important;/*only for once*/
+      display:none;
+    }
+    &.opened {
+      display:inline;
+
+      @include breakpoint(fromAdaptiveToFluid) {
+        display:inline;
+      }
+    }
+  }
+}
+.b-navigation__nav.b-navigation__nav--breadcrumb {
+  .b-navigation__breadcrumb {
+    display:inline;
+  }
+  .b-navigation__list {
+    display:none;
+  }
+}
+
+/* ------------------------------------------------------------
+   Disable Hover on Mobile
+   ------------------------------------------------------------ */
+@include breakpoint(fromAdaptiveToFluid) {
+  .js-nav-active {
+    .b-navigation__nav.b-navigation__nav--breadcrumb {
+      .b-navigation__list {
+        display:inline;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------------------------
+   Responsive-Nav.JS 1.0.39 by @viljamis
+   ------------------------------------------------------------ */
+.nav-toggle {
+  display:none;
+  font-size:1.125rem;line-height: 1.5rem; /*stays 18px and 24px, no responsive-text-size*/
+  font-family:$kootenay-bold;
+  text-transform: uppercase;
+  position:absolute;
+  color:$color-five;
+  right:0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  user-select: none;
+  padding:(2 * $spacing-unit) 0;
+  margin:-(2 * $spacing-unit) 0;
+
+  @include breakpoint(fromAdaptiveToFluid) {
+    display:inline;
+  }
+
+}
+.mobile-nav-bg {
+  position:absolute;
+  top:100px;
+  left:0px;
+  width:100%;
+  height:100%;
+  display:inline-block;
+  background:url('../../image/mobile-nav-bg.png') repeat;
+}
+/* ------------------------------------------------------------
+   Grid Adaptations on Mobile
+   ------------------------------------------------------------ */
+@include breakpoint(fromAdaptiveToFluid) {
+
+  .b-1-0-0-header.g-container {
+    padding-left:0;
+    padding-right:0;
+
+    .g-block {
+    }
+    .g-row {
+      margin-left:0;
+      margin-right:0;
+      width:100%;
+    }
+    .g-col {
+      padding-left:0;
+      padding-right:0;
+    }
+  }
+}
+
+/* ------------------------------------------------------------
+   Grid Adaptations on Mobile
+   ------------------------------------------------------------ */
+
+@include breakpoint(fromAdaptiveToFluid) {
+  .b-logo {
+    padding-left:span(1 of 14) + gutter(14);
+    margin-left:0.75rem;
+  }
+  .b-navigation__list .b-navigation__item {
+    padding-left:span(1 of 14) + gutter(14);
+    padding-right:span(1 of 14) + gutter(14);
+  }
+  .b-navigation__list .b-navigation__item .b-navigation__link {
+    padding-left:0.75rem;
+    padding-right:0.75rem;
+  }
+  .nav-toggle {
+    padding-right:span(1 of 14) + gutter(14);
+    margin-right:0.75rem;
+  }
+  .b-mobile-search__input-wrapper, .b-mobile-search__submit-wrapper {
+    padding-left:0.75rem;
+    padding-right:0.75rem;
+  }
+}
+@include breakpoint(small) {
+  .b-logo {
+    padding-left:0;
+  }
+  .b-navigation__list .b-navigation__item {
+    padding-left:0;
+    padding-right:0;
+  }
+  .nav-toggle {
+    padding-right:0;
+    margin-right:0.75rem;
+  }
+}
+.b-navigation__overlay {
+  position: absolute;
+  text-indent:-9999em;
+  width:100%;
+  height:100%;
+  background-color: rgba(255,255,255, 0.8); 
+  z-index:88888888;
+  top:0;
+  left:0;
+  cursor:pointer;
+}

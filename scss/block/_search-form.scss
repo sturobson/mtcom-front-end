@@ -1,0 +1,14 @@
+.b-search-form {
+  .b-search-form__input {
+    @include responsive-text-size('saturn');
+    margin-top:$spacing-unit;
+    font-family: $malabar;
+    width:100%;
+    float:left;
+    border-bottom:1px solid $color-three;
+    
+    @include placeholder {
+      color: $color-two;
+    }
+  }
+}

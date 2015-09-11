@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------
+   Global Site Settings
+   ------------------------------------------------------------ */
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */    
+  width:100%;/*needed for IE*/
+}
+* {
+  font-size: 100%;
+  font-weight:normal;
+  color:$color-one;  
+  
+  &:focus {
+    //outline:1px solid $color-ten;
+    outline:none;
+  }
+  select:focus {
+    outline:1px solid $color-ten;
+  }
+}
+body {
+  font-size: $main-font-size;/*16px base font size*/
+  background-color:$color-six;
+  width:100%;/*needed for IE*/
+  position:relative;
+}   
+img {
+  max-width:100%;
+}
+input, input[type="search"] {
+  -webkit-appearance:none; //reset for safari on ios
+  border-radius: 0; //reset for safari on ios  
+}
+
+// Selections in 
+::selection {
+  background: #FF929A; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FF929A; /* Gecko Browsers */
+}
+
+//Remove X from IE
+input::-ms-clear {
+    display: none;
+}
+input, textarea {
+    font-size: initial;
+}

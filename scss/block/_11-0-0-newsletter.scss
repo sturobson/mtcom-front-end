@@ -1,0 +1,11 @@
+.b-11-0-0-newsletter {
+  padding-bottom:8 * $spacing-unit !important; // exception because of type-to-show button below
+  
+  @include breakpoint(medium) {
+    padding-bottom:3 * $spacing-unit !important;
+  }
+  
+  @include breakpoint(fromAdaptiveToFluid) {
+    padding-bottom:2 * $spacing-unit !important;
+  }
+}
