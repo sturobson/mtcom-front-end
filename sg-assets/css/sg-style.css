@@ -101,8 +101,7 @@ body {
  Utility Classes
 ---------------------------------------------------------------------------- */
 .sg-container {
-  padding: 0 16px; /* For older browsers */
-  padding: 0 1rem;
+  padding: 0;
 }
 
 .sg-container:before,
@@ -116,6 +115,33 @@ body {
   content:"";
   display:table;
   line-height:0
+}
+.sg-section .sg-h2,
+.sg-section .sg-markup-controls,
+.sg-section .sg-doc {
+  padding: 0 16px;
+  padding: 0 1rem;
+  margin: 0 0 16px 0;
+}
+.sg-section .sg-h2 {
+  padding-top: 16px;
+  padding-top: 1rem;
+}
+.sg-section .sg-doc {
+  padding-bottom: 16px;
+}
+
+.sg-section .sg-doc p {
+    max-width: 54em;
+}
+
+.sg-container .sg-h1,
+.sg-about p,
+.sg-font-list {
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
 }
 
 .sg-container:after,
@@ -265,7 +291,6 @@ body {
 /* Typography
 ---------------------------------------------------------------------------- */
 .sg-h1,
-.sg-h2,
 .sg-h3 {
   margin-bottom: 1em;
   margin-top: 0;
@@ -278,7 +303,6 @@ body {
 
 .sg-h2 {
   font-size: 1.5em;
-  margin-bottom: 1.6em;
   margin-left: -1.75em;
   margin-right: -0.75em;
   padding: .75em;
@@ -552,7 +576,8 @@ body {
 .sg-sidebar {
   padding-top: 72px;
   position: fixed !important;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .sg-header {
@@ -567,21 +592,9 @@ body {
 }
 
 
-.js .sg-nav-group .sg-navlist {
-  display: none;
-}
-.js .sg-nav-h2 {
-  position: relative;
-}
-.sg-subnav-title span {
-  position: absolute;
-  right: 0;
-}
-.js .sg-nav-group--about .sg-nav-h2:after {
-  display: none;
-}
-
-
-.show {
-  display: block !important;
+.sg-font-list {
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
 }

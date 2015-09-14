@@ -183,8 +183,8 @@ body {
   line-height: 2;
   margin: 0;
   padding: 0;
+  color: white !important;
 }
-
 .sg-logo-full {
   display: none;
 }
