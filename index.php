@@ -26,7 +26,7 @@
 	<script src="javascript/vendor/respond.js"></script>
 	<script src="javascript/vendor/html5shiv-printshiv.js"></script>
 	<script src="javascript/vendor/rem.min.js"></script>
-	<script src="javascript/vendor/placeholders.min.js"></script>
+	<script src="javascript/vendor/<img src="./image/placeholder.png" alt="a placeholder image" />s.min.js"></script>
   <![endif]-->
 
 

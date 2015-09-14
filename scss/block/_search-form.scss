@@ -6,7 +6,7 @@
     width:100%;
     float:left;
     border-bottom:1px solid $color-three;
-    
+
     @include placeholder {
       color: $color-two;
     }

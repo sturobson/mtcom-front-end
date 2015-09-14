@@ -4,17 +4,17 @@
   @include breakpoint(fromAdaptiveToFluid) {
     margin-top: $spacing-unit;
   }
-  
+
   &.b-form--download {
     margin-top: 4 * $spacing-unit;
-    
+
     .b-form__canvas.g-col {
       @include breakpoint(fromAdaptiveToFluid) {
         padding-left:gutter(12);
         padding-right:gutter(12);
       }
     }
-    
+
   }
 
   &.b-form--expertise {
@@ -114,14 +114,14 @@
     }
   }
   .b-form__input, .b-form__select {
-    padding:1.125rem 0;margin:-1.125rem 0; //Increase Clickable Area    
+    padding:1.125rem 0;margin:-1.125rem 0; //Increase Clickable Area
   }
   .jvFloat--active {
     .b-form__input, .b-form__select {
-      padding:1.5rem 0 0 0;margin:-1.5rem 0 0 0; //Increase Clickable Area    
+      padding:1.5rem 0 0 0;margin:-1.5rem 0 0 0; //Increase Clickable Area
     }
   }
-    
+
   .b-form__input {
     @include responsive-text-size('earth');
     @include placeholder {
@@ -129,7 +129,7 @@
     }
     min-height:auto;
     width:100%;
-    
+
     &:focus {
       @include placeholder {
         color: $color-ten;
@@ -154,8 +154,8 @@
   .b-form__select {
     float:left;
     width:100%;
-    background:url('../../image/icon-triangle-down.svg') no-repeat center right;
-    border-right:12px solid transparent; //padding-right for toggle-icon     
+    background:url('./image/icon-triangle-down.svg') no-repeat center right;
+    border-right:12px solid transparent; //padding-right for toggle-icon
 
     .b-form__select-item--disabled {
       color: $color-two !important;
@@ -179,7 +179,7 @@
     border-bottom:1px solid $color-three;
 
     @include breakpoint(fromAdaptiveToFluid) {
-      margin:0 span(1);      
+      margin:0 span(1);
       width:100% -  (2 * span(1) );
     }
     @include breakpoint(small) {
@@ -189,25 +189,25 @@
 
     .email-error {
       color: red;
-    }    
-  
+    }
+
     .b-form__select {
       color: $color-three;
     }
-    
-    .placeHolder {
+
+    .placeholder {
       display:none !important;
-    }    
+    }
 
     &.jvFloat--active {
       padding: (6 * $spacing-unit) 0 (2 * $spacing-unit) 0;
-      
-      .placeHolder {
+
+      .placeholder {
         display:block !important;
-      }      
+      }
 
       .b-form__select {
-        color: $color-one;     
+        color: $color-one;
 
         //balance out left indendation in firefox
         @-moz-document url-prefix() {
@@ -216,15 +216,15 @@
         //balance out left indendation in IE
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           margin-left:-3px;
-        }       
+        }
       }
     }
   }
-  .jvFloat .placeHolder.required {
+  .jvFloat .placeholder.required {
     color: $color-five;
   }
   // Start CSS3 Animations on supported browser
-  .jvFloat .placeHolder {
+  .jvFloat .placeholder {
     @include responsive-text-size('earth');
     font-family:$kootenay;
     position: absolute;
@@ -234,11 +234,11 @@
     color: $color-three;
     visibility: hidden;
   }
-  // Allows textarea floating placeholder to be positioned distinctly from the normal .placeHolder class (Required when working with Multiline text areas)
-  .jvFloat .placeHolder.textarea {
+  // Allows textarea floating placeholder to be positioned distinctly from the normal .placeholder class (Required when working with Multiline text areas)
+  .jvFloat .placeholder.textarea {
     /*top: 0px;*/
   }
-  .jvFloat .placeHolder.active {
+  .jvFloat .placeholder.active {
     display: block;
     visibility: visible;
   }
@@ -283,10 +283,10 @@
     margin-top:0;
     margin-bottom:0;
   }
-  
+
   .initial .b-form__table-cell:last-child {
     @include breakpoint(fromAdaptiveToFluid) {
-      display:none;      
+      display:none;
     }
   }
 
@@ -319,10 +319,10 @@
       pointer-events: auto;
       display:inline;
       position:relative;
-      
+
       .b-form__select {
         pointer-events: all;//reset pointer events
-      }      
+      }
 
       * {
         //cursor:inherit;
@@ -355,10 +355,10 @@
     &.b-form__table--contact {
       &:hover {
         border: 1px solid $color-one;
-        
+
         @include breakpoint(fromAdaptiveToFluid) {
           border:none;
-          
+
           .b-form__table-cell {
             border: 1px solid $color-one !important;
           }

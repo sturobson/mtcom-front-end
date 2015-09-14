@@ -1,18 +1,18 @@
 .b-item-checkbox-list {
-  margin-top: 4 * $spacing-unit;  
+  margin-top: 4 * $spacing-unit;
 }
 .b-item-checkbox-list__list, .b-item-checkbox-list__item-meta ul {
   list-style: none;
 }
 .b-item-checkbox-list__list {
-  @include responsive-text-size('neptune');  
-  font-family: $malabar;  
-  
+  @include responsive-text-size('neptune');
+  font-family: $malabar;
+
   .b-item-checkbox-list__item {
     border-bottom:1px solid $color-three;
     float:left;
-    width:100%;    
-    
+    width:100%;
+
     &:first-child {
       border-top:1px solid $color-three;
     }
@@ -27,25 +27,25 @@
   width:calc(100% + 1.75rem);
   margin-left:-1.75rem;
   display:table;
-  
+
   @include breakpoint(small) {
     width:100%;
-    margin-left:0;    
+    margin-left:0;
   }
-  
+
 }
 .b-item-checkbox-list__item-content {
-  @include responsive-text-size('ariel');  
+  @include responsive-text-size('ariel');
   float:left;
   width:100%;
   padding-bottom: 4 * $spacing-unit;
-  display:none;    
-}      
+  display:none;
+}
 .b-item-checkbox-list__checkbox-wrapper, .b-item-checkbox-list__toggle {
   display:table-cell;
   vertical-align: middle;
   padding: (4 * $spacing-unit) 0;
-  
+
   @include breakpoint(fromAdaptiveToFluid) {
     padding: (2 * $spacing-unit) 0;
   }
@@ -55,7 +55,7 @@
 }
 .b-item-checkbox-list__checkbox-wrapper {
   width: calc(100% - 3.375rem);
-  
+
   // stretch to full width since toggle is not visible on mobile
   @include breakpoint(small) {
     width:100%;
@@ -64,51 +64,51 @@
 .b-item-checkbox-list__checkbox {
   position: relative;
   -webkit-appearance: none;
-  background: url("../../image/checkbox-inactive.png") no-repeat center/0.875rem;
+  background: url("./image/checkbox-inactive.png") no-repeat center/0.875rem;
   width: 0.875rem;
   cursor: pointer;
   margin-top:-1px;
-  
+
   // Targeting IE10+
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     float:left;
-  }  
+  }
 
   &:checked {
     background:url('../../image/checkbox-active.png') no-repeat center/0.875rem;
   }
 }
 .b-item-checkbox-list__label {
-  cursor:pointer;  
+  cursor:pointer;
   padding-left:1rem;
-  
+
   // Targeting IE10+
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     float:left;
-  }  
-  
+  }
+
 }
 .b-item-checkbox-list__label, .b-item-checkbox-list__checkbox {
-    display:table-cell;  
+    display:table-cell;
 }
 .b-item-checkbox-list__toggle {
   text-align: center;
   cursor:pointer;
   width:3.0625rem;
-  
+
   // hide toggle on mobile
   @include breakpoint(small) {
     display:none;
-  } 
+  }
 }
 .b-item-checkbox-list__toggle-icon {
   display:inline-block;
   width:100%;
   height:100%;
-  border-right:12px solid transparent; //padding-right for toggle-icon            
+  border-right:12px solid transparent; //padding-right for toggle-icon
 }
 .b-item-checkbox-list__toggle.b-item-checkbox-list__toggle--selected .b-item-checkbox-list__toggle-icon {
-  border-right:12px solid transparent; //padding-right for toggle-icon12 /          
+  border-right:12px solid transparent; //padding-right for toggle-icon12 /
 }
 .b-item-checkbox-list__item-meta {
   letter-spacing:0;

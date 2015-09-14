@@ -3,11 +3,11 @@
    ------------------------------------------------------------ */
 .g-accordion-toggle {
   .g-accordion-toggle__icon {
-    background:url('../../image/icon-triangle-down.svg') no-repeat center right;
+    background:url('./image/icon-triangle-down.svg') no-repeat center right;
   }
 }
 .g-accordion-toggle--selected {
   .g-accordion-toggle__icon {
-    background:url('../../image/icon-triangle-up.svg') no-repeat center right;
-  }  
+    background:url('./image/icon-triangle-up.svg') no-repeat center right;
+  }
 }

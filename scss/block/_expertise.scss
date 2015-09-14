@@ -489,7 +489,7 @@
   .b-masonry__inner-link__em .b-masonry__inner-link {@include social_icons('em')}
 }
 
-// Placeholder text color MUST have separate selectors
+// placeholder text color MUST have separate selectors
   @include placeholder {
     color: #8e3d43;
   }
@@ -513,7 +513,7 @@
     width: 100%;
 
     .jvFloat {
-      .placeHolder {
+      .placeholder {
         @include responsive-text-size('venus');
         font-family:$kootenay;
         position: relative;
