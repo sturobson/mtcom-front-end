@@ -1,0 +1,223 @@
+$ui-library-color: rgb(102, 151, 255);
+$ui-library-color--light: mix(white, $ui-library-color, 85%);
+$ui-library-color--dark: mix(black, $ui-library-color, 15%);
+$color-divider: #c8c8c8;
+$background-color--level2: #eee;
+
+.b-ui-library__nav,
+.b-ui-library__introduction-title,
+.b-ui-library__introduction-paragraph,
+.b-ui-library__section-title {
+  font-family: $kootenay;
+  text-align: left;
+}
+
+.b-ui-library__section-title {
+  font-family: $kootenay-bold;
+  color:$ui-library-color;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.b-ui-library__section-title,
+.b-ui-library__container-variation-name, 
+.b-ui-library__introduction-paragraph {
+  @include responsive-text-size('earth');
+
+}
+.b-ui-library__container-variation-name {
+  font-family: $kootenay;
+  color:$ui-library-color;
+}
+.b-ui-library__nav {
+  font-size:12px;
+  line-height:36px;
+  color: $color-one;
+  position: fixed;
+  right: 0;
+  background: white;
+  z-index: 99999999;
+  width: 180px;
+  border-left:1px solid transparent; // prevents jumping text
+  
+  @media screen and (min-width: 1281px) {
+    min-width:225px;
+  }
+
+  &.open {
+    height: 100%;
+    overflow-y: scroll;
+    border-left: 1px solid $color-one;
+  }
+}
+
+.b-ui-library__nav-title {
+  font-family: $kootenay-bold;
+  cursor: pointer;
+  background: $ui-library-color;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  &:hover {
+    background: $ui-library-color--dark;
+  }
+}
+.expandable:after {
+  content: "+";
+  font-size: 1rem;
+  width: 12px;
+  display: inline-block;
+  float: right;
+}
+.open.expandable:after {
+  content: "–";
+}
+.b-ui-library__list-level2 {
+  display: none;
+  width: 100%;
+
+  &.open {
+    display: inline-block;
+  }
+}
+
+.b-ui-library__nav-title {
+  padding: 0 10px;
+}
+.b-ui-library__item {
+  border-bottom:1px solid $color-divider;
+}
+
+.b-ui-library__item-link {
+  padding: 0 10px;
+
+  &:hover {
+    background: $background-color--level2;
+  }
+
+  &.open {
+    color: $ui-library-color;
+    font-family:$kootenay-bold;
+  }
+	
+  &.b-ui-library__item-link--selected {
+    color: $ui-library-color;
+    font-family:$kootenay-bold;
+  }	
+}
+
+.b-ui-library__item-level2 {
+  padding:0 5px 0 25px;
+    
+  &--selected {
+    a {
+      color: $ui-library-color;
+      font-family:$kootenay-bold;
+    }
+  }
+
+  .b-ui-library__list-level2.open &:hover {
+    background: $background-color--level2;
+  }
+}
+
+.b-ui-library__item-level2,
+.b-ui-library__item-link,
+.b-ui-library__item-link-level2 {
+  display: block;
+  width: 100%;
+}
+
+.b-ui-library__page-section {
+  float: left;
+  width: 100%;
+  padding: 48px 0 60px;
+  border-top: 1px solid $color-three;
+
+  &:first-of-type {
+    border-top: none;
+  }
+}
+.b-ui-library__html, .b-ui-library__js, .b-ui-library__scss, .b-ui-library__blocks {
+  background-color:white;
+}
+.b-ui-library__block-list,
+.b-ui-library__child-list {
+  font-family: $kootenay;
+  @include responsive-text-size('neptune');
+  list-style-position: inside;
+
+  &-link {
+    border-bottom: 1px solid $color-two;
+
+    &:hover {
+      border-bottom: 1px solid $color-five;
+    }
+  }
+}
+
+.b-ui-library__file-name {
+  display: inline-block;
+  background-color: $background-color--level2;
+  padding: 0.35em 0.7em; // padding of highlightJS
+  font-size: 0.75rem;
+  color: #888;
+  border: 1px solid $color-divider; // background-color of highlightJS color scheme
+  border-bottom: none;
+}
+
+pre + .b-ui-library__file-name { // if there are multiple codeblocks add a spacing to them
+  margin-top: 18px;
+}
+
+.b-ui-library__paragraph {
+  &--italic {
+    font-family: $kootenay-italic;
+  }
+}
+.b-ui-library__introduction-paragraph {   
+  * {
+    font-family:$kootenay;
+    @include responsive-text-size('earth');
+  }
+  ul {
+    list-style-position: inside;
+  }
+  // styling for all 
+  ul, p {
+    margin-bottom:18px;
+    color:$color-one;
+  }
+  p a {
+    border-bottom:1px solid $color-two;
+  }
+  // titles
+  h1, h2, h3, h4, h5, h6 {
+    color:$ui-library-color;
+    display:inline-block;
+    float:left;
+    width:100%;
+  }
+  h3 {
+    font-family: $kootenay-bold;
+    margin-top:18px;
+    margin-bottom:18px;
+  }
+  h4 {
+    font-family: $kootenay;
+  }
+  h3 + h4 {
+    margin:-18px 0 18px 0;
+  }
+  code {
+    background:$background-color--level2;
+  } 
+}
+// Hide Navigation in UI Library
+.p-home--ui-library {
+  .b-navigation__nav, .b-meta {
+    display:none;
+  }
+}

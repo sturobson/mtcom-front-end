@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Style Guide Boilerplate Styles -->
-  <link rel="stylesheet" href="css/sg-style.css">
+  <link rel="stylesheet" href="sg-assets/css/sg-style.css">
   <!--[if lt IE 9]><link rel="stylesheet" href="css/sg-style-old-ie.css"><![endif]-->
 
   <!-- Prisim Syntax Highlighting Styles -->
-  <link rel="stylesheet" href="vendor/prism/prism.css">
+  <link rel="stylesheet" href="sg-assets/vendor/prism/prism.css">
 
   <!--js-->
   <script type="text/javascript" src="http://fast.fonts.net/jsapi/09128ffc-80cc-4be1-8c03-b24992264c8c.js"></script>
@@ -137,9 +137,9 @@
   <script src="javascript/vendor/jquery-1.11.2.min.js"></script>
   <script src="javascript/vendor/jvfloat.min.js"></script>
   <script src="javascript/monotype.js"></script>
-  <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
+  <!--[if gt IE 8]><!--><script src="sg-assets/vendor/prism/prism.js"></script><!--<![endif]-->
   <script src="scripts/patterns.js"></script>
-  <script src="scripts/sg-scripts.js"></script>
+  <script src="sg-assets/scripts/sg-scripts.js"></script>
   <script>
 
   $.getJSON('data.json', function(data) {
