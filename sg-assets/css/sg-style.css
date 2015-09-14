@@ -569,3 +569,23 @@ body {
 }
 
 }
+
+
+.js .sg-nav-group .sg-navlist {
+  display: none;
+}
+.js .sg-nav-h2 {
+  position: relative;
+}
+.sg-subnav-title span {
+  position: absolute;
+  right: 0;
+}
+.js .sg-nav-group--about .sg-nav-h2:after {
+  display: none;
+}
+
+
+.show {
+  display: block !important;
+}
