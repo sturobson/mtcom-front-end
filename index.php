@@ -63,11 +63,17 @@
       </div>
 
       <div class="sg-nav-group">
-        <h2 class="sg-nav-h2 sg-subnav-title"><a href="blocks.php">Blocks</a></h2>
-      </div>
-      <div class="sg-nav-group">
-        <h2 class="sg-nav-h2 sg-subnav-title"><a href="containers.php">Containers</a></h2>
-      </div>
+      <h2 class="sg-h2 sg-subnav-title">Blocks</h2>
+      <ul class="sg-navlist">
+        <?php listMarkupAsListItems('blocks'); ?>
+      </ul>
+    </div>
+    <div class="sg-nav-group">
+      <h2 class="sg-h2 sg-subnav-title">Containers</h2>
+      <ul class="sg-navlist">
+        <?php listMarkupAsListItems('containers'); ?>
+      </ul>
+    </div>
     </div><!--/.sg-sidebar-->
 
     <div id="main" class="sg-main" role="main">
@@ -112,6 +118,16 @@
             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
           </div><!--/.sg-font-stacks-->
         </div><!--/.sg-info-->
+
+        <div class="sg-base-styles">
+         <h1 class="sg-h1">Blocks</h1>
+         <?php showMarkup('blocks'); ?>
+       </div><!--/.sg-base-styles-->
+
+       <div class="sg-pattern-styles">
+         <h1 class="sg-h1">Containers<small> - Design and markup patterns unique to your site.</small></h1>
+         <?php showMarkup('containers'); ?>
+       </div><!--/.sg-pattern-styles-->
 
       </div><!--/.sg-container-->
     </div><!--/.sg-main-->
