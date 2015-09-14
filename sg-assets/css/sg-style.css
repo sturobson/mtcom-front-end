@@ -598,3 +598,10 @@ body {
   padding-right: 16px;
   padding-right: 1rem;
 }
+
+
+
+.sg-logo span,
+.sg-logo a {
+  color: #FFF !important;
+}
