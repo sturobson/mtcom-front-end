@@ -233,10 +233,6 @@ body {
   }
 }
 
-.sg-nav-group {
-  margin-bottom: 2.5em;
-}
-
 .sg-navlist,
 .sg-navlist li {
   margin: 0;
@@ -565,7 +561,7 @@ body {
   width: 100%;
 }
 .sg-main {
-  padding-top: 56px;
+  padding-top: 96px;
 }
 
 }
