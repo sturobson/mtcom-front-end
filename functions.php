@@ -43,7 +43,6 @@
           include($documentation);
           echo '</div>';
         }
-        echo '<h3 class="sg-h3">Example</h3>';
         include('markup/'.$type.'/'.$file);
         echo '</div>';
         echo '<div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button> <a class="sg-btn--top" href="#top">Back to Top</a></div>';
