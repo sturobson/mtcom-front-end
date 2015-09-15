@@ -1,6 +1,6 @@
 {
   "name": "UI Library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/monotype-digital-design/UILibrary",
   "authors": [
     "Stu Robson <stu@alwaystwisted.com>"
@@ -14,11 +14,6 @@
   "ignore": [
     ".git",
     "gulpfile.js",
-    "package.json",
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "package.json"
   ]
 }
