@@ -1,7 +1,7 @@
 {
-  "name": "Design Language",
-  "version": "0.4.0",
-  "homepage": "https://github.com/monotype-digital-design/designlanguage",
+  "name": "UI Library",
+  "version": "0.0.1",
+  "homepage": "https://github.com/monotype-digital-design/UILibrary",
   "authors": [
     "Stu Robson <stu@alwaystwisted.com>"
   ],
@@ -14,6 +14,11 @@
   "ignore": [
     ".git",
     "gulpfile.js",
-    "package.json"
+    "package.json",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ]
 }

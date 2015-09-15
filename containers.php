@@ -57,7 +57,7 @@
       <div class="sg-nav-group">
         <h2 class="sg-nav-h2 sg-subnav-title">Containers <span class="sg-toggle">more</span></h2>
         <ul class="sg-navlist">
-          <?php listMarkupAsListItems('containers'); ?>
+          <?php listFilesInFolder('markup'); ?>
         </ul>
       </div>
     </div><!--/.sg-sidebar-->
@@ -66,7 +66,7 @@
       <div class="sg-container">
         <div class="sg-base-styles">
           <h1 class="sg-h1">Containers<small> - Page Containers</small></h1>
-          <?php showMarkup('containers'); ?>
+          <?php renderFilesInFolder('markup'); ?>
         </div>
 
       </div><!--/.sg-container-->
