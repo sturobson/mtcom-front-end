@@ -155,14 +155,14 @@
   &.b-typetester__meta-list--style {
     .b-typetester__list-item {
       .b-typetester__list-trigger {
-        background: url("./image/checkbox-inactive.png") no-repeat left/0.8125rem;
+        background: url("../images/checkbox-inactive.png") no-repeat left/0.8125rem;
         padding-left:3 * $spacing-unit;
       }
     }
 
     .b-typetester__list-item--selected {
       .b-typetester__list-trigger {
-        background: url("./image/checkbox-active.png") no-repeat left/0.8125rem;
+        background: url("../images/checkbox-active.png") no-repeat left/0.8125rem;
         border-radius:0;
       }
     }
@@ -395,7 +395,7 @@
   border:1px solid $color-one;
   border-radius:0;
   padding:(1 * $spacing-unit) (5 * $spacing-unit) (1 * $spacing-unit) (2 * $spacing-unit);
-  background:url('./image/select.png');
+  background:url('./images/select.png');
   background-repeat:no-repeat;
   background-size:6px;
   background-position:right (2 * $spacing-unit) center;

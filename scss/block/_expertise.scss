@@ -688,8 +688,8 @@
       }
       .b-filters__item--toggler {
         display: block;
-        background: url(../../image/expertise-icons/dropdown-arrow.png) no-repeat 100% -14px;
-        @include image-2x('../../image/expertise-icons/dropdown-arrow-@2x.png', 16px, 38px);
+        background: url(../../images/expertise-icons/dropdown-arrow.png) no-repeat 100% -14px;
+        @include image-2x('../../images/expertise-icons/dropdown-arrow-@2x.png', 16px, 38px);
         @include vendor(transition, none);
         padding:0;
       }

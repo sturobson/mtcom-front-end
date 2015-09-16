@@ -39,7 +39,7 @@
 }
 
 /* ------------------------------------------------------------
-   <img src="./image/placeholder.png" alt="a placeholder image" /> Mixin (used for unifying text color)
+   <img src="../images/placeholder.png" alt="a placeholder image" /> Mixin (used for unifying text color)
    ------------------------------------------------------------ */
 
 
@@ -133,7 +133,7 @@
 
 // Gets Social Icons as scalalable svgs
 @mixin social_icons($type) {
-  background: url(#{'../../image/expertise-icons/' + $type +'.svg'});
+  background: url(#{'../../images/expertise-icons/' + $type +'.svg'});
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
