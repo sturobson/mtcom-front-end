@@ -64,8 +64,8 @@ var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
 
 // JavaScript Configarables
 
-var JSInput   = ['./scripts/**/*.js', '!./scripts/js-patterns/**/*.js', '!./scripts/vendor/**/*.js'];
-var JSConcat  = './scripts/js-patterns/**/*.js';
+var JSInput   = ['./scripts/monotype.js'];
+var JSConcat  = ['./javascript/block/**/*.js', './javascript/global/**/*.js'];
 var JSOutput  = './tmp/scripts/';
 
 
@@ -113,15 +113,15 @@ gulp.task('sass:build', function () {
 gulp.task('concatScripts', function () {
   return gulp
   .src(JSConcat)
-  .pipe(concat('patterns.js'))
-  .pipe(gulp.dest('scripts/'));
+  .pipe(concat('monotype.js'))
+  .pipe(gulp.dest('javascript/'));
 })
 
 gulp.task('concatScripts:build', function () {
   return gulp
   .src(JSConcat)
-  .pipe(concat('patterns.js'))
-  .pipe(gulp.dest('dist/scripts'));
+  .pipe(concat('monotype.js'))
+  .pipe(gulp.dest('dist/javascript/'));
 })
 
 gulp.task('scripts', function () {
@@ -276,6 +276,6 @@ gulp.task('default', ['sass', 'concatScripts',  'watch', 'php-serve']);
 gulp.task('tidy', ['delete']);
 
 // used for when making things
-gulp.task('dev', ['copyit', 'sass',  'watch', 'concatScripts', 'php-serve']);
+gulp.task('dev', ['copyit', 'sass',  'watch', 'php-serve']);
 // used for when ready to publish
 gulp.task('build', ['del', 'copyit', 'sass:build', 'concatScripts:build', 'scripts:build']);
