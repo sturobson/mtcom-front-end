@@ -131,10 +131,6 @@ body {
   padding-bottom: 16px;
 }
 
-.sg-section .sg-doc p {
-    max-width: 54em;
-}
-
 .sg-container .sg-h1,
 .sg-about p,
 .sg-font-list {
@@ -183,8 +179,9 @@ body {
 .sg-font1,
 .sg-logo,
 .sg-about p,
+.sg-markup-controls,
 .sg-color-value  {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Kootenay Pro1277143", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
 }
 
@@ -196,8 +193,9 @@ body {
 .sg-h2,
 .sg-h3,
 .sg-color-name,
+.sg-markup-controls,
 .sg-font-list dt  {
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Kootenay Pro1277143", "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 500;
 }
 
