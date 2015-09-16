@@ -1,123 +1,62 @@
 $(function() {
   'use strict';
-  
-  //////////////////////////////////////////////////////////
-  // Import CSS Breakpoints
-  //////////////////////////////////////////////////////////
-  var breakpoint = {};
-  breakpoint.refreshValue = function () {
-    this.value = window.getComputedStyle(document.querySelector('body'), ':after').getPropertyValue('content').replace(/\"/g, '');
-  };
-  $(window).resize(function () {
-    breakpoint.refreshValue();
-  }).resize();  
-  
+
   //////////////////////////////////////////////////////////
   // b-navigation
   //////////////////////////////////////////////////////////
-  
-  if ($('.b-navigation__list').length) {
-    
-    // Initializing Mobile Nav – responsive-nav.com
-    var nav = responsiveNav('.b-navigation__list', {
-      animate: false,
-      label: 'Menu',
-      open: function(){
-        $('.nav-toggle').text('Close');
-        $('body').prepend("<div class='b-navigation__overlay'>&nbsp;</div>");
-      },
-      close: function(){
-        $('.nav-toggle').text('Menu');
-        $('.b-navigation__overlay').remove();
-        $('.b-mobile-search__input').blur();//prevents from zooming in when search was focused
-      },
-    });
 
-    $('body').on('click', '.b-navigation__overlay', function() {
-      nav.close();
-    });
+  // Initializing Mobile Nav – responsive-nav.com
+  var nav = responsiveNav('.b-navigation__list', {
+    animate: false,
+    label: 'Menu',
+    open: function(){
+      $('.nav-toggle').text('Close');
+      $("body").prepend("<div class='b-navigation__overlay'>&nbsp;</div>");
+    },
+    close: function(){
+      $('.nav-toggle').text('Menu');
+      $('.b-navigation__overlay').remove();
+      $('.b-mobile-search__input').blur();//prevents from zooming in when search was focused
+    },
+  });
 
-    //Auto dismiss menu bar
-    $(document).on('scroll', function(event) {
-      if($('.b-navigation__list').hasClass('opened')) {
-        var scrollY = 0;
-        var thresholder_int = 3;
-        if(window.pageYOffset != undefined){
-          scrollY = pageYOffset;
-        } else {
-          var sy, d= document, r= d.documentElement, b= d.body;
-          scrollY = r.scrollTop || b.scrollTop || 0;
-        }
-        var menuHeight = 0;
-        $('.b-head').children().each(function(){
-          menuHeight += $(this).outerHeight(true);
-        });
-        menuHeight = Math.max(menuHeight, 400)
-        if (scrollY > menuHeight * thresholder_int ) {
-          nav.close();
-        }
-      }
-    });
+  $('body').on('click', '.b-navigation__overlay', function() {
+    nav.close();
+  });
 
-    // Close Navigation when clicking outside of Header
-    $(document).on('click', function(event) {
-      if ($('.b-navigation__list').hasClass('opened') ) {
-        if($(event.target).parents('.b-1-0-0-header').length === 0) {
-          nav.close();
-          return false;
-        }
-      }
-    });
-    
-  }
-  
-  var navResize = function() {
-    
-    // Breakpoint between Tablet and Desktop, sniffed from CSS
-    if (breakpoint.value == 'medium') {
-      
-      // Close Mobile Nav when going back to Desktop
-      if (typeof nav != 'undefined') {
-        nav.close();
-      }
-
-    // Breakpoint below Tablet, sniffed from CSS
-    } else if (breakpoint.value == 'fromAdaptiveToFluid') {
-
-      // Prevent logo to reveal first level navigation
-      if( $('.b-navigation__nav').hasClass('b-navigation__nav--breadcrumb') ) {
-        $('.b-logo').off('mouseover');
-        $('.b-navigation').off('mouseleave');
-      }
-    
-    // Breakpoint Desktop and above, sniffed from CSS
-    } else {
-      
-      // Make logo reveal first level navigation
-      if( $('.b-navigation__nav').hasClass('b-navigation__nav--breadcrumb') ) {
-        $('.b-logo').on('mouseover', function() {
-          $('.b-navigation__list li').removeClass('b-navigation__item--selected');
-          $('.b-navigation__list').addClass('visible');
-          $('.b-navigation__breadcrumb').addClass('invisible');
-        });
-        $('.b-navigation').on('mouseleave', function() {
-          $('.b-navigation__list').removeClass('visible');
-          $('.b-navigation__breadcrumb').removeClass('invisible');
-        });
-      }
-      
-      // Close Mobile Nav when going back to Desktop
-      if (typeof nav != 'undefined') {
-        nav.close();
-      }
-      
+  //Auto dismiss menu bar
+  $(document).on("scroll", function(event) {
+   if($('.b-navigation__list').hasClass('opened')) {
+     var scrollY = 0;
+     var thresholder_int = 3;
+     if(window.pageYOffset != undefined){
+      scrollY = pageYOffset;
     }
+    else{
+      var sy, d= document, r= d.documentElement, b= d.body;
+      scrollY = r.scrollTop || b.scrollTop || 0;
+    }
+
+    var menuHeight = 0;
+    $('.b-head').children().each(function(){
+      menuHeight += $(this).outerHeight(true);
+    });
+    menuHeight = Math.max(menuHeight, 400)
+    if (scrollY > menuHeight * thresholder_int ) {
+      nav.close();
+    }
+
   }
-  
-  navResize();
-  
-  $(window).resize(function() {
-    navResize();
+});
+
+  // Close Navigation when clicking outside of Header
+  $(document).on('click', function(event) {
+    if ( $('.b-navigation__list').hasClass('opened') ) {
+      if( $(event.target).parents('.b-1-0-0-header').length === 0) {
+        nav.close();
+        return false;
+      }
+    }
   });
 
   //////////////////////////////////////////////////////////
@@ -184,25 +123,14 @@ $(function() {
     var $target = $('.b-mobile-search__input').parents('.b-mobile-search').find('.b-mobile-search__submit-wrapper');
     $target.toggleClass('b-mobile-search__submit-wrapper--visible', isNotEmpty ); 
   }
-  
+
+
   // Enable Button after Typing more than one Character
   $('.b-search-form__input').keyup(function(){
     $(".b-mobile-search__input").val($(this).val());
     enableSearchButton()
-  });
-  
-  var searchResize = function() {
-    if (breakpoint.value == 'fromAdaptiveToFluid') {
-      // Hide Search Interaction Field on Mobile
-      closeSearch();
-    }
-  }
-  
-  searchResize();
-  $(window).resize(function() {
-    searchResize();
-  })// end b-search
-  
+  });// end b-search
+
   //////////////////////////////////////////////////////////
   // b-mobile-search
   //////////////////////////////////////////////////////////
@@ -354,7 +282,7 @@ $(function() {
     $(this).parent().addClass(formToggleClass);
   });
 
-  $('.<img src="./image/placeholder.png" alt="a placeholder image" />.active').on('click', function(){
+  $('.placeHolder.active').on('click', function(){
     $(this).siblings('g-floatlabel').click();
   });
 
@@ -385,14 +313,14 @@ $(function() {
         var email=$(this).val();
         var emailReg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
         if( !emailReg.test( email ) ) {
-          $(this).siblings('.<img src="./image/placeholder.png" alt="a placeholder image" />').html('<span class="email-error">Email seems invalid</span');
+          $(this).siblings('.placeHolder').html('<span class="email-error">Email seems invalid</span');
           emailvalid = false;
         } else {
-          $(this).siblings('.<img src="./image/placeholder.png" alt="a placeholder image" />').html('Email');
+          $(this).siblings('.placeHolder').html('Email');
           emailvalid = true;
         }
         if ($(this).val() === '') {
-          $(this).siblings('.<img src="./image/placeholder.png" alt="a placeholder image" />').html('Email');
+          $(this).siblings('.placeHolder').html('Email');
         }
     });
 
@@ -455,10 +383,10 @@ $(function() {
   var cursorHTML = '<span class="b-typetester__cursor">|</span>';
 
   var leaveTypetester = function(){
-    // If the typetester is empty, display a <img src="./image/placeholder.png" alt="a placeholder image" />
+    // If the typetester is empty, display a placeholder
     if($(this).text().trim().replace(/\|/g, '') === ''){
       $(this)
-        .html( $(this).attr('<img src="./image/placeholder.png" alt="a placeholder image" />') + cursorHTML)
+        .html( $(this).attr('placeholder') + cursorHTML)
         .addClass('initial');
     }
   };
@@ -532,7 +460,9 @@ $(function() {
     // font feature triggers
     } else {
 
+      //////////////////////////////////////////////////////////
       // italic trigger
+      //////////////////////////////////////////////////////////
       if ( $(this).parent().hasClass('italic') ) {
 
         if ( $(this).parent().hasClass('b-typetester__list-item--selected') ) {
@@ -600,7 +530,9 @@ $(function() {
         $(this).parents('.b-typetester').find('.b-typetester__write').toggleClass('italic');
       }
 
+      //////////////////////////////////////////////////////////
       // condensed trigger
+      //////////////////////////////////////////////////////////
       if ( $(this).parent().hasClass('condensed') ) {
 
         if ( $(this).parent().hasClass('b-typetester__list-item--selected') ) {
@@ -653,7 +585,9 @@ $(function() {
         $(this).parents('.b-typetester').find('.b-typetester__write').toggleClass('condensed');
 
       }
+      //////////////////////////////////////////////////////////
       // wide trigger
+      //////////////////////////////////////////////////////////
       if ( $(this).parent().hasClass('wide') ) {
 
         if ( $(this).parent().hasClass('b-typetester__list-item--selected') ) {
@@ -708,12 +642,77 @@ $(function() {
       }
     }
   });
-  
-  // This Functions syncs Typetester Desktop List and Mobile Select
-  var typetesterResize = function() {
-    
-    // Breakpoint between Tablet and Desktop, sniffed from CSS
-    if (breakpoint.value == 'small' || breakpoint.value == 'fromAdaptiveToFluid' || breakpoint.value == 'medium' ) {
+
+  //////////////////////////////////////////////////////////
+  // b-typetester home
+  //////////////////////////////////////////////////////////
+
+  // Default Typetester
+  $('.b-typetester__meta-list-home').load( 'html/typetester-home/malabar.html', function() {
+    var dataID = $('.b-typetester__meta-list--weight .b-typetester__list-item--selected .b-typetester__list-trigger').data('id');
+    var className = 'weight-';
+    $(this).parents('.b-typetester--home').find('.b-typetester__write').attr('class', 'b-typetester__write initial').addClass(className + dataID).attr('data-id', dataID);
+    typetesterMobile();
+  });
+
+  // Adapt Weight List according to Select and apply default class to write container
+  $('.b-typetester--home .b-typetester__meta-select').on('change', function() {
+    var typetesterFontName = $(this).val();
+
+    $(this).parents('.b-typetester--home').attr('class', 'b-typetester b-typetester--home');
+    $(this).parents('.b-typetester--home').addClass(typetesterFontName);
+    $(this).parents('.b-typetester--home').find('.b-typetester__meta-list-home').load( 'html/typetester-home/' + typetesterFontName + '.html', function() {
+      var dataID = $('.b-typetester__meta-list--weight .b-typetester__list-item--selected .b-typetester__list-trigger').data('id');
+      var className = 'weight-';
+      $(this).parents('.b-typetester--home').find('.b-typetester__write').attr('class', 'b-typetester__write initial').addClass(className + dataID);
+      typetesterMobile();
+    });
+
+  });
+
+  // Make Links Clickable on Home
+  $('.b-typetester--home .b-typetester__write').on('click', function(ev){
+    if (ev.target.tagName === 'A'){
+      window.location.href = ev.target.getAttribute('href');
+    }
+  });
+
+  //////////////////////////////////////////////////////////
+  // b-typetester mobile
+  //////////////////////////////////////////////////////////
+
+  var typetesterMobile = function(){
+    // this will be fired when select has changed
+    $('.b-typetester__meta-select-mobile').change(function(){
+      var selectClasses = $(this).find('option:selected').attr('class').replace(/italic\-/gi, 'italic ');
+
+      var selectWeight = $(this).find('option:selected').attr('data-id');
+
+      // remove classes from write container
+      $(this).parents('.b-typetester').find('.b-typetester__write').attr('class', 'b-typetester__write initial').attr('data-id', '');
+
+      // add selected classes to write container
+      $(this).parents('.b-typetester').find('.b-typetester__write').addClass(selectClasses).attr('data-id', selectWeight);
+
+      // if no classes available, set write container to corresponding weight, without the styles
+      if (selectClasses !== undefined ) {
+        $(this).parents('.b-typetester').find('.b-typetester__write').addClass(selectClasses).attr('data-id', selectWeight);
+      }
+    }); // end change function
+  }; // end typetester mobile function
+
+  // this function generates the select dropdown menu
+  typetesterMobile();
+
+  //////////////////////////////////////////////////////////
+  // Viewport Check
+  //////////////////////////////////////////////////////////
+
+  function checkSize(){
+
+    if ($(".b-logo").css("background-repeat") === "repeat-x" ){
+
+      // Tablet Breakpoint Sniffed from CSS
 
       // Treat typetesters separately (if there are multiple instances on a site
       $('.b-typetester__write').each(function() {
@@ -751,7 +750,25 @@ $(function() {
           .prop('selected',true);
       });
 
+      // Close Mobile Nav when going back to Desktop
+      nav.close();
+
+    } else if ($(".b-logo").css("background-repeat") === "repeat") {
+
+      // Medium Breakpoint Sniffed from CSS
+
+      // Prevent logo to reveal first level navigation
+      if( $('.b-navigation__nav').hasClass('b-navigation__nav--breadcrumb') ) {
+        $('.b-logo').off('mouseover');
+        $('.b-navigation').off('mouseleave');
+      }
+
+      // Hide Search Interaction Field on Mobile
+      closeSearch();
+
     } else {
+
+      // Desktop Breakpoint Sniffed from CSS
 
       // Transfers typetester write classes when viewport is changed from tablet to desktop
       $('.b-typetester__write').each(function() {
@@ -778,73 +795,33 @@ $(function() {
           $(this).parents('.b-typetester').find('.b-typetester__meta-list--style .wide').removeClass('b-typetester__list-item--inactive').addClass('b-typetester__list-item--selected');
         }
       });
+
+      // Make logo reveal first level navigation
+      if( $('.b-navigation__nav').hasClass('b-navigation__nav--breadcrumb') ) {
+        $('.b-logo').on('mouseover', function() {
+          $('.b-navigation__list li').removeClass('b-navigation__item--selected');
+          $('.b-navigation__list').addClass('visible');
+          $('.b-navigation__breadcrumb').addClass('invisible');
+        });
+        $('.b-navigation').on('mouseleave', function() {
+          $('.b-navigation__list').removeClass('visible');
+          $('.b-navigation__breadcrumb').removeClass('invisible');
+        });
+      }
+
+      // Close Mobile Nav when going back to Desktop
+      nav.close();
     }
   }
-  
-  typetesterResize();
-  
-  $(window).resize(function() {
-    typetesterResize();
-  });
-  
+
   //////////////////////////////////////////////////////////
-  // b-typetester home
+  // Check Size on Load
   //////////////////////////////////////////////////////////
+  checkSize();
 
-  // Default Typetester
-  $('.b-typetester__meta-list-home').load( 'html/typetester-home/malabar.html', function() {
-    var dataID = $('.b-typetester__meta-list--weight .b-typetester__list-item--selected .b-typetester__list-trigger').data('id');
-    var className = 'weight-';
-    $(this).parents('.b-typetester--home').find('.b-typetester__write').attr('class', 'b-typetester__write initial').addClass(className + dataID).attr('data-id', dataID);
-    typetesterMobile();
-  });
-
-  // Adapt Weight List according to Select and apply default class to write container
-  $('.b-typetester--home .b-typetester__meta-select').on('change', function() {
-    var typetesterFontName = $(this).val();
-
-    $(this).parents('.b-typetester--home').attr('class', 'b-typetester b-typetester--home');
-    $(this).parents('.b-typetester--home').addClass(typetesterFontName);
-    $(this).parents('.b-typetester--home').find('.b-typetester__meta-list-home').load( 'html/typetester-home/' + typetesterFontName + '.html', function() {
-      var dataID = $('.b-typetester__meta-list--weight .b-typetester__list-item--selected .b-typetester__list-trigger').data('id');
-      var className = 'weight-';
-      $(this).parents('.b-typetester--home').find('.b-typetester__write').attr('class', 'b-typetester__write initial').addClass(className + dataID);
-      typetesterMobile();
-    });
-
-  });
-
-  // Make Links Clickable on Home
-  $('.b-typetester--home .b-typetester__write').on('click', function(ev){
-    if (ev.target.tagName === 'A'){
-      window.location.href = ev.target.getAttribute('href');
-    }
-  });
-  
   //////////////////////////////////////////////////////////
-  // b-typetester mobile select
+  // Check Size on Window Resize
   //////////////////////////////////////////////////////////
-  
-  // Typetester mobile: applies styles from select to b-typetester__write container
-  var typetesterMobile = function(){
-    $('.b-typetester__meta-select-mobile').change(function(){
-      var selectClasses = $(this).find('option:selected').attr('class').replace(/italic\-/gi, 'italic ');
-      
-      var selectWeight = $(this).find('option:selected').attr('data-id');
-
-      // remove classes from write container
-      $(this).parents('.b-typetester').find('.b-typetester__write').attr('class', 'b-typetester__write initial').attr('data-id', '');
-
-      // add selected classes to write container
-      $(this).parents('.b-typetester').find('.b-typetester__write').addClass(selectClasses).attr('data-id', selectWeight);
-
-      // if no classes available, set write container to corresponding weight, without the styles
-      if (selectClasses !== undefined ) {
-        $(this).parents('.b-typetester').find('.b-typetester__write').addClass(selectClasses).attr('data-id', selectWeight);
-      }
-    }); // end change function
-  }; // end typetester mobile function
-
-  typetesterMobile();
+  $(window).resize(checkSize);
 
 }); // end document ready

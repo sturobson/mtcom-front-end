@@ -20,10 +20,10 @@ $(function() {
   var cursorHTML = '<span class="b-typetester__cursor">|</span>';
 
   var leaveTypetester = function(){
-    // If the typetester is empty, display a <img src="./image/placeholder.png" alt="a placeholder image" />
+    // If the typetester is empty, display a <img src="./images/placeholder.png" alt="a placeholder image" />
     if($(this).text().trim().replace(/\|/g, '') === ''){
       $(this)
-        .html( $(this).attr('<img src="./image/placeholder.png" alt="a placeholder image" />') + cursorHTML)
+        .html( $(this).attr('<img src="./images/placeholder.png" alt="a placeholder image" />') + cursorHTML)
         .addClass('initial');
     }
   };

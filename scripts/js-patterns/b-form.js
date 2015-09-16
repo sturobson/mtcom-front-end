@@ -18,7 +18,7 @@ $(function() {
     $(this).parent().addClass(formToggleClass);
   });
 
-  $('.<img src="./image/placeholder.png" alt="a placeholder image" />.active').on('click', function(){
+  $('.<img src="./images/placeholder.png" alt="a placeholder image" />.active').on('click', function(){
     $(this).siblings('g-floatlabel').click();
   });
 
@@ -49,14 +49,14 @@ $(function() {
         var email=$(this).val();
         var emailReg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
         if( !emailReg.test( email ) ) {
-          $(this).siblings('.<img src="./image/placeholder.png" alt="a placeholder image" />').html('<span class="email-error">Email seems invalid</span');
+          $(this).siblings('.<img src="./images/placeholder.png" alt="a placeholder image" />').html('<span class="email-error">Email seems invalid</span');
           emailvalid = false;
         } else {
-          $(this).siblings('.<img src="./image/placeholder.png" alt="a placeholder image" />').html('Email');
+          $(this).siblings('.<img src="./images/placeholder.png" alt="a placeholder image" />').html('Email');
           emailvalid = true;
         }
         if ($(this).val() === '') {
-          $(this).siblings('.<img src="./image/placeholder.png" alt="a placeholder image" />').html('Email');
+          $(this).siblings('.<img src="./images/placeholder.png" alt="a placeholder image" />').html('Email');
         }
     });
 

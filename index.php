@@ -5,7 +5,6 @@
 <meta charset="utf-8">
   <title>Monotype Digital Design Language Pattern Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000">
 
   <!-- Replace below stylesheet with your own stylesheet -->
 
@@ -19,6 +18,14 @@
   <link rel="stylesheet" href="sg-assets/vendor/prism/prism.css">
 
   <!--js-->
+
+  <script src="javascript/vendor/jquery.js"></script>
+  <script src="javascript/vendor/jvfloat.min.js"></script>
+  <script src="javascript/monotype.js"></script>
+  <!--[if gt IE 8]><!--><script src="sg-assets/vendor/prism/prism.js"></script><!--<![endif]-->
+  <script src="sg-assets/scripts/sg-scripts.js"></script>
+
+
   <script type="text/javascript" src="http://fast.fonts.net/jsapi/09128ffc-80cc-4be1-8c03-b24992264c8c.js"></script>
   <!--end js-->
 
@@ -26,7 +33,7 @@
 	<script src="javascript/vendor/respond.js"></script>
 	<script src="javascript/vendor/html5shiv-printshiv.js"></script>
 	<script src="javascript/vendor/rem.min.js"></script>
-	<script src="javascript/vendor/<img src="./image/placeholder.png" alt="a placeholder image" />s.min.js"></script>
+	<script src="javascript/vendor/<img src="./images/placeholder.png" alt="a placeholder image" />s.min.js"></script>
   <![endif]-->
 
 
@@ -133,12 +140,7 @@
     </div><!--/.sg-main-->
   </div><!--/.sg-wrapper-->
 
-  <script src="javascript/vendor/jquery-1.11.2.min.js"></script>
-  <script src="javascript/vendor/jvfloat.min.js"></script>
-  <script src="javascript/monotype.js"></script>
-  <!--[if gt IE 8]><!--><script src="sg-assets/vendor/prism/prism.js"></script><!--<![endif]-->
-  <script src="scripts/patterns.js"></script>
-  <script src="sg-assets/scripts/sg-scripts.js"></script>
+
   <script>
 
   $.getJSON('data.json', function(data) {
