@@ -59,7 +59,7 @@ body {
   padding-left: 0 1rem;
   padding-right: 16px; /* For older browsers */
   padding-right: 0 1rem;
-  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 .js .sg-sidebar {
@@ -92,7 +92,7 @@ body {
   }
 
   .sg-main {
-    float: right;
+    float: left;
     width: 80%;
   }
 }
@@ -578,6 +578,7 @@ body {
   position: fixed !important;
   overflow-y: scroll;
   overflow-x: hidden;
+  right: 0;
 }
 
 .sg-header {
@@ -586,7 +587,7 @@ body {
   width: 100%;
 }
 .sg-main {
-  padding-top: 96px;
+  padding-top: 56px;
 }
 
 }
@@ -604,4 +605,35 @@ body {
 .sg-logo span,
 .sg-logo a {
   color: #FFF !important;
+}
+
+
+
+
+
+.js .sg-nav-group--containers .sg-navlist,
+.js .sg-nav-group--blocks .sg-navlist {
+  display: none;
+}
+
+
+.js .sg-nav-group--containers .sg-subnav-title,
+.js .sg-nav-group--blocks .sg-subnav-title {
+  position: relative;
+  font-style: 1em;
+}
+
+
+.js .sg-nav-group--containers .sg-subnav-title:after,
+.js .sg-nav-group--blocks .sg-subnav-title:after {
+  content: '+';
+  position: absolute;
+  right: 1.5em;
+  font-style: 2em;
+  font-weight: bold;
+}
+
+
+.js .active .sg-navlist {
+  display: block !important;
 }

@@ -61,14 +61,14 @@
         </ul>
       </div>
 
-      <div class="sg-nav-group">
-      <h2 class="sg-h2 sg-subnav-title">Blocks</h2>
+      <div class="sg-nav-group sg-nav-group--blocks">
+      <h2 class="sg-nav-h2 sg-subnav-title">Blocks</h2>
       <ul class="sg-navlist">
         <?php listMarkupAsListItems('blocks'); ?>
       </ul>
     </div>
-    <div class="sg-nav-group">
-      <h2 class="sg-h2 sg-subnav-title">Containers</h2>
+    <div class="sg-nav-group sg-nav-group--containers">
+      <h2 class="sg-nav-h2 sg-subnav-title">Containers</h2>
       <ul class="sg-navlist">
         <?php listMarkupAsListItems('containers'); ?>
       </ul>
@@ -138,7 +138,7 @@
   <script src="/javascript/vendor/jquery.js"></script>
   <script src="/javascript/vendor/jvfloat.min.js"></script>
 
-  
+
   <script src="/javascript/monotype.js"></script>
 
 
@@ -159,9 +159,12 @@
   });
   </script>
   <script>
-  $('.sg-toggle').click(function() {
-  $('.sg-navlist').toggleClass("show"); //you can list several class names
-  });
+    $(".sg-nav-group--blocks .sg-nav-h2").click(function() {
+      $(this).parent().toggleClass("active");
+    });
+    $(".sg-nav-group--containers .sg-nav-h2").click(function() {
+      $(this).parent().toggleClass("active");
+    });
   </script>
 </body>
 </html>
