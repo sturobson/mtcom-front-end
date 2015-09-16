@@ -18,14 +18,6 @@
   <link rel="stylesheet" href="sg-assets/vendor/prism/prism.css">
 
   <!--js-->
-
-  <script src="javascript/vendor/jquery.js"></script>
-  <script src="javascript/vendor/jvfloat.min.js"></script>
-  <script src="javascript/monotype.js"></script>
-  <!--[if gt IE 8]><!--><script src="sg-assets/vendor/prism/prism.js"></script><!--<![endif]-->
-  <script src="sg-assets/scripts/sg-scripts.js"></script>
-
-
   <script type="text/javascript" src="http://fast.fonts.net/jsapi/09128ffc-80cc-4be1-8c03-b24992264c8c.js"></script>
   <!--end js-->
 
@@ -140,6 +132,13 @@
     </div><!--/.sg-main-->
   </div><!--/.sg-wrapper-->
 
+
+  <script src="/javascript/vendor/jquery-1.11.2.min.js"></script>
+    <script src="/javascript/vendor/jvfloat.min.js"></script>
+    <script src="/javascript/monotype.js"></script>
+    <!--[if gt IE 8]><!--><script src="sg-assets/vendor/prism/prism.js"></script><!--<![endif]-->
+    <script src="scripts/patterns.js"></script>
+    <script src="/sg-assets/scripts/sg-scripts.js"></script>
 
   <script>
 

@@ -1053,10 +1053,10 @@ $(function() {
   var cursorHTML = '<span class="b-typetester__cursor">|</span>';
 
   var leaveTypetester = function(){
-    // If the typetester is empty, display a <img src="./images/placeholder.png" alt="a placeholder image" />
+    // If the typetester is empty, display a placeholder
     if($(this).text().trim().replace(/\|/g, '') === ''){
       $(this)
-        .html( $(this).attr('<img src="./images/placeholder.png" alt="a placeholder image" />') + cursorHTML)
+        .html( $(this).attr('placeholder') + cursorHTML)
         .addClass('initial');
     }
   };
@@ -1363,15 +1363,15 @@ $(function() {
         var email=$(this).val();
         var emailReg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
         if( !emailReg.test( email ) ) {
-          $(this).siblings('.<img src="./images/placeholder.png" alt="a placeholder image" />').html('<span style="color:red">Email seems invalid</span');
+          $(this).siblings('.placeHolder').html('<span style="color:red">Email seems invalid</span');
           emailvalid = false;
         } else {
-          $(this).siblings('.<img src="./images/placeholder.png" alt="a placeholder image" />').html('Email');
+          $(this).siblings('.placeHolder').html('Email');
           emailvalid = true;
         }
       });
       if ($(this).val() === '') {
-        $(this).siblings('.<img src="./images/placeholder.png" alt="a placeholder image" />').html('Email');
+        $(this).siblings('.placeHolder').html('Email');
       }
     }
 
