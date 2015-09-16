@@ -33,6 +33,7 @@
     foreach ($files as $file):
         $filename = preg_replace("/\.html$/i", "", $file);
         $title = preg_replace("/\-/i", " ", $filename);
+        $txt = 'txt';
         $documentation = 'doc/'.$type.'/'.$file;
         echo '<div class="sg-markup sg-section">';
         echo '<div class="sg-display">';
