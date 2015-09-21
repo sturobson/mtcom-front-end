@@ -155,7 +155,7 @@ gulp.task('copyit', function() {
 gulp.task('copyBuild', function() {
   gulp.src('doc/**/*')
   .pipe(gulp.dest('dist/doc'));
-  gulp.src('**/*.php')
+  gulp.src(['**/*.php', '!node_modules/**/*.php'])
   .pipe(gulp.dest('dist/'));
   gulp.src('images/**/*')
   .pipe(gulp.dest('dist/images'));
