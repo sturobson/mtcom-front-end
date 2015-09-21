@@ -200,7 +200,7 @@
         <div class="g-col">
           <div class="b-typetester__canvas">
             <div data-id="800" class="b-typetester__write initial weight-800" placeholder="Welcome to the Monotype UI Library. <a href=&quot;/pages&quot;>Pages</a> are made up of <a href=&quot;/containers-pages&quot;>Containers</a> which are built by <a href=&quot;/blocks&quot;>Blocks</a>." contenteditable="true">
-              Welcome to the Monotype UI Library. <a href="/pages">Pages</a> are made up of <a href="/containers-pages">Containers</a> which are built by <a href="/blocks">Blocks</a>.<span class="b-typetester__cursor">|</span>
+              Welcome to the Monotype UI Library. <a href="pages.php">Pages</a> are made up of <a href="containers.php">Containers</a> which are built by <a href="blocks.php">Blocks</a>.<span class="b-typetester__cursor">|</span>
             </div>
           </div><!--end b-typetester-canvas-->
         </div><!--end g-col-->
