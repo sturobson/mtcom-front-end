@@ -90,12 +90,12 @@
     </div><!--/.sg-wrapper-->
 
     <!--[if gt IE 8]><!--><script src="sg-assets/vendor/prism/prism.js"></script><!--<![endif]-->
-    <script src="/sg-assets/scripts/sg-scripts.js"></script>
+    <script src="sg-assets/scripts/sg-scripts.js"></script>
 
-    <script src="/javascript/vendor/jquery.js"></script>
-    <script src="/javascript/vendor/jvfloat.min.js"></script>
+    <script src="javascript/vendor/jquery.js"></script>
+    <script src="javascript/vendor/jvfloat.min.js"></script>
 
-    <script src="/javascript/monotype.js"></script>
+    <script src="javascript/monotype.js"></script>
 
 
     <script>
