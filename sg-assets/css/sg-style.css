@@ -124,8 +124,8 @@ body {
   margin: 0 0 16px 0;
 }
 .sg-section .sg-h2 {
-  padding-top: 16px;
-  padding-top: 1rem;
+  padding-top: 32px;
+  padding-top: 2rem;
 }
 .sg-section .sg-doc {
   padding-bottom: 16px;
@@ -307,7 +307,7 @@ body {
   padding-left: 1.75em;
   text-transform: capitalize;
   color: #222;
-  border-top: 3px solid #ccc;
+
 }
 
 .sg-nav-h2 {
@@ -330,8 +330,8 @@ body {
 /* Buttons
 ---------------------------------------------------------------------------- */
 .sg-btn {
-  background: #cbcbcb;
-  border: none;
+  background: #FAF7F5;
+  border: 1px solid #222;
   color: #222;
   float: left;
   font-size: 16px; /* For older browsers */
@@ -363,7 +363,7 @@ body {
 }
 
 .sg-btn--select {
-  border-radius: 0 0.2em;
+  border: 0;
   position: absolute;
   right: 1px;
   top: 1px;
@@ -513,7 +513,8 @@ body {
   position: relative;
 }
 .sg-source .sg-btn {
-  margin-top: 0;
+  margin-top: -1px;
+  margin-right: -1px;
 }
 
 .sg-source pre {
@@ -634,4 +635,32 @@ body {
 
 .js .active .sg-navlist {
   display: block !important;
+}
+
+
+.sg-info,
+.sg-h1,
+.sg-section .sg-h2,
+.sg-source,
+.sg-section .sg-markup-controls {
+  max-width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 100%;
+  display: block;
+}
+
+
+.sg-display {
+  border-top: 3px solid #ccc;
+}
+
+.sg-section .sg-display h2 {
+  margin-bottom: 32px;
+}
+
+
+.sg-source pre {
+  border-radius: 0 !important;
 }
