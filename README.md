@@ -46,7 +46,7 @@ $ cd Sites
 ```
 - Clone the repo from Github onto your machine
 ```
-$ git clone git@github.com:sturobson/design-patterns.git
+$ git clone git@github.com:monotype-digital-design/UILibrary.git
 ```
 - Once the repo has installed enter the directory:
 ```
