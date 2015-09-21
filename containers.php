@@ -50,10 +50,10 @@
           <h2 class="sg-nav-h2 sg-subnav-title"><a href="index.php">About</a></h2>
           <ul class="sg-navlist">
             <li>
-              <a href="#sg-about">Getting Started</a>
+              <a href="index.php#sg-about">Getting Started</a>
             </li>
             <li>
-              <a href="#sg-colors">Colors</a>
+              <a href="index.php#sg-colors">Colors</a>
             </li>
           </ul>
         </div>
