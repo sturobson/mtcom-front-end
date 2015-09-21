@@ -648,6 +648,7 @@ body {
 
 .sg-info,
 .sg-h1,
+.sg-section .sg-doc,
 .sg-section .sg-h2,
 .sg-source,
 .sg-section .sg-markup-controls {
@@ -657,6 +658,9 @@ body {
   text-align: left;
   width: 100%;
   display: block;
+}
+.sg-section .sg-doc .sg-h2 {
+  padding: 0;
 }
 
 
