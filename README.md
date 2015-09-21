@@ -71,16 +71,7 @@ As well as opening a browser window so you can see the pattern library you are a
 
 ![Local Server Information](readme-images/local-server-info.png)
 
-## Building the UI Pattern Library
 
-When you are ata point where you need to update the live version of the pattern library on a server you will need to build out a production version of the HTML,CSS, JS and any iamges involved.
-
-To create a 'build folder' of the project:
-```
-$ gulp build
-```
-
-This creates a folder called `dist`. This is the folder can then be used to update the living version.
 
 ## Adding A New Pattern Workflow
 
