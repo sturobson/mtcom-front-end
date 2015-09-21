@@ -57,7 +57,13 @@
             </li>
           </ul>
         </div>
-
+        <div class="sg-nav-group sg-nav-group--blocks">
+          <h2 class="sg-nav-h2 sg-subnav-title">Pages</h2>
+          <ul class="sg-navlist">
+            <li><a href="home.php">Home</a></li>
+            <!-- <li><a href="overview.php">Overview</a></li> -->
+          </ul>
+        </div>
         <div class="sg-nav-group sg-nav-group--blocks">
           <h2 class="sg-nav-h2 sg-subnav-title">Blocks</h2>
           <ul class="sg-navlist">
