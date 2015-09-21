@@ -226,7 +226,7 @@ To have the latest version of the UI Library on ux.monotype.com you will need to
 This will delete an existing temporary or build folder then type
 
 ```
-  $ gulp Build
+  $ gulp build
 ```
 
 This will create a new folder called 'dist' where all the relevant HTML, PHP, CSS and Javascript is for you to then copy and paste into the relevant folder for it to appear on ux.monotype.com
