@@ -55,9 +55,6 @@
           <li>
             <a href="#sg-colors">Colors</a>
           </li>
-          <li>
-            <a href="#sg-fontStacks">Fonts</a>
-          </li>
         </ul>
       </div>
 
