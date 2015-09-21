@@ -59,7 +59,7 @@
         </div>
         <div class="sg-nav-group sg-nav-group--pages">
           <h2 class="sg-nav-h2 sg-subnav-title">Pages</h2>
-          <ul class="sg-navlist" style="display:block;">
+          <ul class="sg-navlist">
             <li><a style="color: #222;" href="home.php">Home</a></li>
             <!-- <li><a href="overview.php">Overview</a></li> -->
           </ul>
@@ -325,6 +325,7 @@
     $(".sg-nav-group--blocks .sg-nav-h2").click(function() {
       $(this).parent().toggleClass("active");
     });
+    $(".sg-nav-group--pages .sg-nav-h2").parent().addClass("active");
     $(".sg-nav-group--pages .sg-nav-h2").click(function() {
       $(this).parent().toggleClass("active");
     });
