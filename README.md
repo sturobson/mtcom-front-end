@@ -50,7 +50,7 @@ $ git clone git@github.com:monotype-digital-design/UILibrary.git
 ```
 - Once the repo has installed enter the directory:
 ```
-$ cd design-patterns
+$ cd UILibrary
 ```
 - Install the Gulp plugins using NPM:
 ```
