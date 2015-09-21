@@ -215,6 +215,22 @@ If you want to have your latest commits ready for use by others you will need to
 
 Doing this will make the latest version of the UI Pattern Library available to anything that uses it via Bower.
 
+### Creating a Build for the website
+
+To have the latest version of the UI Library on ux.monotype.com you will need to create a build or 'dist' folder of all the files needed. To do this make sure everything is up-to-date and you have created and pushed a release. Then whilst you are in the folder for the UI Library in the command line type:
+
+```
+  $ gulp del
+```
+
+This will delete an existing temporary or build folder then type
+
+```
+  $ gulp Build
+```
+
+This will create a new folder called 'dist' where all the relevant HTML, PHP, CSS and Javascript is for you to then copy and paste into the relevant folder for it to appear on ux.monotype.com
+
 
 ## How to write your Sass
 
@@ -269,4 +285,4 @@ If you find yourself repeating a declaration in your CSS a few times it may be w
 
 ### Mixins
 
-By default there are only a limited amount of mixins in the UI Pattern Library. They are more to make writing code easier than doing anything fancy. If you take a look at the `_mixin.scss` file that's in the `global` folder in the `scss` folder there is a mixin that will make writing media queries, responsive typography and <img src="./images/placeholder.png" alt="a placeholder image" />'s easier when using a pattern. As this UI Pattern Library can make it's way into various aspects of the company mixins should be kept to a minimum so that it is easy to understand what they do.
+By default there are only a limited amount of mixins in the UI Pattern Library. They are more to make writing code easier than doing anything fancy. If you take a look at the `_mixin.scss` file that's in the `global` folder in the `scss` folder there is a mixin that will make writing media queries, responsive typography and placeholders's easier when using a pattern. As this UI Pattern Library can make it's way into various aspects of the company mixins should be kept to a minimum so that it is easy to understand what they do.
