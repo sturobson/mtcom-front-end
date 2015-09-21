@@ -14,11 +14,6 @@ var autoprefixer    = require('gulp-autoprefixer');
 var notify          = require("gulp-notify");
 var minifyCss       = require('gulp-minify-css');
 
-// JavaScript Stuff
-
-var concat          = require('gulp-concat');
-var uglify          = require('gulp-uglify');
-
 // Image Stuff
 
 var imagemin        = require('gulp-imagemin');
@@ -58,7 +53,7 @@ var DistFolder = './dist';
 // Sass Configarables
 var SassInput = './scss/**/*.scss';
 var SassOutput = './tmp/css';
-var SassOutputBuild = './dist/styles/';
+var SassOutputBuild = './dist/css/';
 var SassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 
@@ -103,39 +98,6 @@ gulp.task('sass:build', function () {
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(minifyCss())
     .pipe(gulp.dest(SassOutputBuild));
-});
-
-
-// -----------------------------------------------------------------------------
-// JavaScript things
-// -----------------------------------------------------------------------------
-
-gulp.task('concatScripts', function () {
-  return gulp
-  .src(JSConcat)
-  .pipe(concat('monotype.js'))
-  .pipe(gulp.dest('javascript/'));
-})
-
-gulp.task('concatScripts:build', function () {
-  return gulp
-  .src(JSConcat)
-  .pipe(concat('monotype.js'))
-  .pipe(gulp.dest('dist/javascript/'));
-})
-
-gulp.task('scripts', function () {
-  return gulp
-  .src(JSInput)
-  .pipe(uglify())
-  .pipe(gulp.dest(JSOutput));
-});
-
-gulp.task('scripts:build', function () {
-  return gulp
-  .src(JSInput)
-  .pipe(uglify())
-  .pipe(gulp.dest('dist/scripts'));
 });
 
 
@@ -187,6 +149,24 @@ gulp.task('php-serve', function () {
 gulp.task('copyit', function() {
   gulp.src('css/**/*')
   .pipe(gulp.dest('tmp/css'))
+});
+
+
+gulp.task('copyBuild', function() {
+  gulp.src('doc/**/*')
+  .pipe(gulp.dest('dist/doc'));
+  gulp.src('**/*.php')
+  .pipe(gulp.dest('dist/'));
+  gulp.src('images/**/*')
+  .pipe(gulp.dest('dist/images'));
+  gulp.src('javascript/**/*')
+  .pipe(gulp.dest('dist/javascript'));
+  gulp.src('markup/**/*')
+  .pipe(gulp.dest('dist/markup'));
+  gulp.src('sg-assets/**/*')
+  .pipe(gulp.dest('dist/sg-assets'));
+  gulp.src('data.json')
+  .pipe(gulp.dest('dist/'));
 });
 
 // -----------------------------------------------------------------------------
@@ -271,11 +251,11 @@ gulp.task('release', function() { return inc('major'); })
 
 
 // all the tasks in the world
-gulp.task('default', ['sass', 'concatScripts',  'watch', 'php-serve']);
+gulp.task('default', ['sass', 'watch', 'php-serve']);
 // single, one time set-up to move everything and delete things
 gulp.task('tidy', ['delete']);
 
 // used for when making things
 gulp.task('dev', ['copyit', 'sass',  'watch', 'php-serve']);
 // used for when ready to publish
-gulp.task('build', ['del', 'copyit', 'sass:build', 'concatScripts:build', 'scripts:build']);
+gulp.task('build', ['sass:build', 'copyBuild']);
