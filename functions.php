@@ -51,6 +51,7 @@
         echo htmlspecialchars(file_get_contents('markup/'.$type.'/'.$file));
         echo '</code></pre>';
         echo '</div>';
+        echo '</div>';
     endforeach;
   }
 ?>
