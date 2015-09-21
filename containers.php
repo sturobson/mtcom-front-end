@@ -57,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="sg-nav-group">
+        <div class="sg-nav-group sg-nav-group--pages">
           <h2 class="sg-nav-h2 sg-subnav-title">Pages</h2>
           <ul class="sg-navlist">
             <li><a href="home.php">Home</a></li>
@@ -116,6 +116,9 @@
     </script>
     <script>
     $(".sg-nav-group--blocks .sg-nav-h2").click(function() {
+      $(this).parent().toggleClass("active");
+    });
+    $(".sg-nav-group--pages .sg-nav-h2").click(function() {
       $(this).parent().toggleClass("active");
     });
     $(".sg-nav-group--containers .sg-nav-h2").click(function() {

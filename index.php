@@ -32,8 +32,8 @@
 </head>
 <body id="top" class="p-overview">
   <a href="#main" class="sg-visually-hidden sg-visually-hidden-focusable">Skip to main content</a>
-
-  <div id="top" class="sg-header" role="banner">
+  <span class="anchor" id="top"></span>
+  <div class="sg-header" role="banner">
     <div class="sg-container">
       <h1 class="sg-logo">
 
@@ -57,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="sg-nav-group">
+        <div class="sg-nav-group sg-nav-group--pages">
           <h2 class="sg-nav-h2 sg-subnav-title">Pages</h2>
           <ul class="sg-navlist">
             <li><a href="home.php">Home</a></li>
@@ -81,12 +81,13 @@
       <div id="main" class="sg-main" role="main">
         <div class="sg-container">
           <div class="sg-info">
-            <div class="sg-about sg-section">
+            <span class="anchor" id="sg-about"></span>
+            <div class="sg-section">
               <h1 id="sg-about"class="sg-h1">Getting Started</h1>
               <p>Welcome to the Monotype UI Library. Pages are made up of Containers which are built by Blocks.</p>
             </div><!--/.sg-about-->
-
-            <div class="sg-section sg-methodology">
+            <span class="anchor" id="sg-methodology"></span>
+            <div class="sg-section">
               <h1 class="sg-h1">Approach</h1>
               <p>The <a href="http://next.theguardian.com/blog/container-model-blended-content/">Container Model</a> is designed to structure a  site’s code and content to make it clear and less redundant. In the same way that traditional shipping containers are used to sort and organize goods, the Container Model believes that content can be compartmentalized and stacked in a manner that is reusable and understandable.</p>
               <p>The following document gives a quick overview of the architectural principles and terms used to build the new Monotype site. </p>
@@ -158,6 +159,9 @@
     </script>
     <script>
     $(".sg-nav-group--blocks .sg-nav-h2").click(function() {
+      $(this).parent().toggleClass("active");
+    });
+    $(".sg-nav-group--pages .sg-nav-h2").click(function() {
       $(this).parent().toggleClass("active");
     });
     $(".sg-nav-group--containers .sg-nav-h2").click(function() {

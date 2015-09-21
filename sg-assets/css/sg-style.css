@@ -132,8 +132,8 @@ body {
 }
 
 .sg-container .sg-h1,
-.sg-about p,
-.sg-methodology p,
+#sg-about ~ .sg-section p,
+#sg-methodology ~ .sg-section p,
 .sg-font-list {
   padding-left: 16px;
   padding-left: 1rem;
@@ -179,8 +179,8 @@ body {
 /* SG Font 1 */
 .sg-font1,
 .sg-logo,
-.sg-about p,
-.sg-methodology p,
+#sg-about ~ .sg-section p,
+#sg-methodology ~ .sg-section p,
 .sg-markup-controls,
 .sg-color-value  {
   font-family: "Kootenay Pro1277143", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -326,8 +326,8 @@ body {
   padding: 0 16px;
 }
 
-.sg-about p,
-.sg-methodology p {
+#sg-about ~ .sg-section p,
+#sg-methodology p~ .sg-section  {
   font-size: 1.1em;
 }
 
@@ -616,20 +616,23 @@ body {
 
 
 .js .sg-nav-group--containers .sg-navlist,
-.js .sg-nav-group--blocks .sg-navlist {
+.js .sg-nav-group--blocks .sg-navlist,
+.js .sg-nav-group--pages .sg-navlist {
   display: none;
 }
 
 
 .js .sg-nav-group--containers .sg-subnav-title,
-.js .sg-nav-group--blocks .sg-subnav-title {
+.js .sg-nav-group--blocks .sg-subnav-title,
+.js .sg-nav-group--pages .sg-subnav-title {
   position: relative;
   font-style: 1em;
 }
 
 
 .js .sg-nav-group--containers .sg-subnav-title:after,
-.js .sg-nav-group--blocks .sg-subnav-title:after {
+.js .sg-nav-group--blocks .sg-subnav-title:after,
+.js .sg-nav-group--pages .sg-subnav-title:after {
   content: '+';
   position: absolute;
   right: 1.5em;
@@ -668,4 +671,12 @@ body {
 
 .sg-source pre {
   border-radius: 0 !important;
+}
+
+
+.anchor{
+  display: block;
+  height: 60px; /*same height as header*/
+  margin-top: -60px; /*same height as header*/
+  visibility: hidden;
 }
