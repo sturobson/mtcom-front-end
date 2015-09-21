@@ -1,5 +1,4 @@
 <?php
-
   // Display title of each markup samples as a list item
   function listMarkupAsListItems ($type) {
     $files = array();
@@ -33,13 +32,13 @@
     foreach ($files as $file):
         $filename = preg_replace("/\.html$/i", "", $file);
         $title = preg_replace("/\-/i", " ", $filename);
-        $txt = 'txt';
         $documentation = 'doc/'.$type.'/'.$file;
         echo '<div class="sg-markup sg-section">';
         echo '<div class="sg-display">';
         echo '<h2 id="sg-'.$filename.'" class="sg-h2">'.$title.'</h2>';
         if (file_exists($documentation)) {
           echo '<div class="sg-doc">';
+          echo '<h3 class="sg-h2">Information</h3>';
           include($documentation);
           echo '</div>';
         }
@@ -51,7 +50,6 @@
         echo '<pre class="line-numbers"><code class="language-markup">';
         echo htmlspecialchars(file_get_contents('markup/'.$type.'/'.$file));
         echo '</code></pre>';
-        echo '</div>';
         echo '</div>';
     endforeach;
   }
