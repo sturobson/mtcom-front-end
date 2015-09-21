@@ -328,6 +328,12 @@
     $(".sg-nav-group--containers .sg-nav-h2").click(function() {
       $(this).parent().toggleClass("active");
     });
+    $('.sg-nav-group--blocks .sg-navlist li a').attr('href',function(i,v) {
+      return "blocks.php" + v;
+    });
+    $('.sg-nav-group--containers .sg-navlist li a').attr('href',function(i,v) {
+      return "containers.php" + v;
+    });
     </script>
   </body>
   </html>

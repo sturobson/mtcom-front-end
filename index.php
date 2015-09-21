@@ -57,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="sg-nav-group sg-nav-group--blocks">
+        <div class="sg-nav-group">
           <h2 class="sg-nav-h2 sg-subnav-title">Pages</h2>
           <ul class="sg-navlist">
             <li><a href="home.php">Home</a></li>
@@ -125,15 +125,7 @@
             </div><!--/.sg-colors-->
           </div><!--/.sg-info-->
 
-          <div class="sg-base-styles">
-            <h1 class="sg-h1">Blocks</h1>
-            <?php showMarkup('blocks'); ?>
-          </div><!--/.sg-base-styles-->
 
-          <div class="sg-pattern-styles">
-            <h1 class="sg-h1">Containers<small> - Design and markup patterns unique to your site.</small></h1>
-            <?php showMarkup('containers'); ?>
-          </div><!--/.sg-pattern-styles-->
 
         </div><!--/.sg-container-->
       </div><!--/.sg-main-->
@@ -170,6 +162,12 @@
     });
     $(".sg-nav-group--containers .sg-nav-h2").click(function() {
       $(this).parent().toggleClass("active");
+    });
+    $('.sg-nav-group--blocks .sg-navlist li a').attr('href',function(i,v) {
+      return "blocks.php" + v;
+    });
+    $('.sg-nav-group--containers .sg-navlist li a').attr('href',function(i,v) {
+      return "containers.php" + v;
     });
     </script>
   </body>
