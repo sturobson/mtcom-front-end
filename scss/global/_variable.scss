@@ -35,20 +35,20 @@ $spacing-unit:0.375rem/*6px*/;
 'Kootenay Pro ExtraBold1280365'; // extrabold italic
 */
 
-$malabar: 'Malabar ET W08 Regular', serif;
-$malabar-italic: 'Malabar ET W08 Italic', serif;
-$malabar-bold: 'Malabar W04 Bold', serif;
-$malabar-bold-italic: 'Malabar W04 Bold Italic', serif;
-$malabar-heavy: 'Malabar W04 Heavy', serif;
-$malabar-heavy-italic: 'Malabar W04 Heavy Italic', serif;
-$kootenay: 'Kootenay Pro1277143', sans-serif;
-$kootenay-italic: 'Kootenay Pro1277141', sans-serif;
-$kootenay-semibold: 'Kootenay Pro SemiBold', sans-serif;
-$kootenay-semibold-italic: 'Kootenay Pro SemiBold1280370', sans-serif;
-$kootenay-bold: 'Kootenay Pro', sans-serif;
-$kootenay-bold-italic: 'Kootenay Pro1277139', sans-serif;
-$kootenay-extrabold: 'Kootenay Pro ExtraBold', sans-serif;
-$kootenay-extrabold-italic: 'Kootenay Pro ExtraBold1280365', sans-serif;
+$malabar: 'Malabar ET W08 Regular', Georgia, Times, "Times New Roman", serif;
+$malabar-italic: 'Malabar ET W08 Italic', Georgia, Times, "Times New Roman", serif;
+$malabar-bold: 'Malabar W04 Bold', Georgia, Times, "Times New Roman", serif;
+$malabar-bold-italic: 'Malabar W04 Bold Italic', Georgia, Times, "Times New Roman", serif;
+$malabar-heavy: 'Malabar W04 Heavy', Georgia, Times, "Times New Roman", serif;
+$malabar-heavy-italic: 'Malabar W04 Heavy Italic', Georgia, Times, "Times New Roman", serif;
+$kootenay: 'Kootenay Pro1277143', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$kootenay-italic: 'Kootenay Pro1277141', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$kootenay-semibold: 'Kootenay Pro SemiBold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$kootenay-semibold-italic: 'Kootenay Pro SemiBold1280370', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$kootenay-bold: 'Kootenay Pro', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$kootenay-bold-italic: 'Kootenay Pro1277139', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$kootenay-extrabold: 'Kootenay Pro ExtraBold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$kootenay-extrabold-italic: 'Kootenay Pro ExtraBold1280365', Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 
 /* ------------------------------------------------------------
@@ -87,7 +87,7 @@ $breakpoint_desktop: map-get($breakpoints, medium);
 $expertise_margin_tablet: 24px;
 $expertise_margin_desktop: 24px;
 
-// - - - - - - - - - - - - - - 
+// - - - - - - - - - - - - - -
 
 $type_1_tablet_width: 228px;
 $type_2_tablet_width: 454px;
@@ -96,7 +96,7 @@ $type_3_tablet_width: 732px;
 $type_2_tablet_height: 706px;
 $type_tablet_height: 342px;
 
-// - - - - - - - - - - - - - - 
+// - - - - - - - - - - - - - -
 
 $type_1_desktop_width: 312px;
 $type_2_desktop_width: 648px;
@@ -104,7 +104,3 @@ $type_3_desktop_width: 984px;
 
 $type_2_desktop_height: 960px;
 $type_desktop_height: 468px;
-
-
-
-
