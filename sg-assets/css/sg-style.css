@@ -133,6 +133,7 @@ body {
 
 .sg-container .sg-h1,
 .sg-about p,
+.sg-methodology p,
 .sg-font-list {
   padding-left: 16px;
   padding-left: 1rem;
@@ -179,6 +180,7 @@ body {
 .sg-font1,
 .sg-logo,
 .sg-about p,
+.sg-methodology p,
 .sg-markup-controls,
 .sg-color-value  {
   font-family: "Kootenay Pro1277143", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -288,8 +290,7 @@ body {
 
 /* Typography
 ---------------------------------------------------------------------------- */
-.sg-h1,
-.sg-h3 {
+.sg-h1 {
   margin-bottom: 1em;
   margin-top: 0;
 }
@@ -305,6 +306,7 @@ body {
   margin-right: -0.75em;
   padding: .75em;
   padding-left: 1.75em;
+  margin-bottom: 1.8em;
   text-transform: capitalize;
   color: #222;
 
@@ -320,9 +322,12 @@ body {
 
 .sg-h3 {
   font-size: 1.2em;
+  margin: 16px 0;
+  padding: 0 16px;
 }
 
-.sg-about p {
+.sg-about p,
+.sg-methodology p {
   font-size: 1.1em;
 }
 
@@ -406,8 +411,8 @@ body {
 /* Sections
 ---------------------------------------------------------------------------- */
 .sg-section {
-  margin-bottom: 48px; /* For older browsers */
-  margin-bottom: 4rem;
+  margin-bottom: 24px; /* For older browsers */
+  margin-bottom: 2rem;
   padding-bottom: 16px; /* For older browsers */
   padding-bottom: 1rem;
 
