@@ -85,6 +85,7 @@ $border-radius:0.1875rem;/*3px*/
 $tweakpoint_mobile: map-get($breakpoints, small);
 $tweakpoint_tablet: map-get($breakpoints, phablet);
 $breakpoint_tablet: map-get($breakpoints, fromAdaptiveToFluid);
+$breakpoint_desktop-mini: 1031px;
 $breakpoint_desktop: map-get($breakpoints, medium);
 
 $expertise_margin_tablet: 24px;
