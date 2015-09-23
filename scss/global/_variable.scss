@@ -64,11 +64,11 @@ $color-two: #787878; /*dark grey*/
 $color-three: #C8C8C8;/*grey*/
 $color-four: #D2D2D2;/*light grey*/
 $color-five-a: #FF6672;/*red*/ // This used to be the main colour
-$color-five: #0080BC;/*blue*/
+$color-five: #73b4da;/*blue*/
 $color-six: #FAF7F5;/*sepia (background)*/
 $color-seven: #FFFFFF;/*white*/
 $color-eight-a: #7F2E34;/*border color*/
-$color-eight: darken(#0080BC, 10%);
+$color-eight: darken(saturate(adjust-hue(#73b4da, -2.9948), 41.8079), 33.3333);
 $color-nine-a: #3F1619;/*border color hover*/
 $color-nine: darken(#0080BC, 20%);
 $color-ten: #E2E2E2;/*soft grey*/
