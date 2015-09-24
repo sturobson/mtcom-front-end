@@ -30,7 +30,7 @@
 
 
 </head>
-<body id="top" class="p-overview">
+<body id="top" class="p-article">
   <a href="#main" class="sg-visually-hidden sg-visually-hidden-focusable">Skip to main content</a>
 
   <div id="top" class="sg-header" role="banner">

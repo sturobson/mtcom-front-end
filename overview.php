@@ -82,6 +82,172 @@
       <div id="main" class="sg-main" role="main">
         <div class="sg-container">
         </div><!--/.sg-container-->
+        <header class="b-1-0-0-header g-container">
+          <div class="g-block">
+            <div class="g-row">
+              <div class="g-col">
+                <div class="b-navigation">
+                  <h1 class="b-logo">
+                    <a class="b-logo__link" href="http://prototype.mon.ia.net" title="Home">Monotype</a>
+                    <!--end b-logo__link-->
+                  </h1>
+                  <!--end b-logo-->
+                  <nav class="b-navigation__nav">
+                    <ul class="b-navigation__list">
+                      <!--Search-->
+                      <li class="b-navigation__item b-navigation__item--search">
+                        <form action="/search-result?" class="b-mobile-search">
+                          <div class="b-mobile-search__input-wrapper">
+                            <input class="b-mobile-search__input" type="text" placeholder="Search"/>
+                          </div>
+                          <div class="b-mobile-search__submit-wrapper">
+                            <input type="submit" class="b-mobile-search__submit" title="" value="Search" />
+                          </div>
+                        </form>
+                        <!--end b-mobile-search-form-->
+                      </li>
+                      <li class="b-navigation__item"> <a class="b-navigation__link" href="http://prototype.mon.ia.net/typefaces" title="Fonts">Fonts</a> </li>
+                      <li class="b-navigation__item"> <a class="b-navigation__link" href="http://prototype.mon.ia.net/technology" title="Technology">Technology</a> </li>
+                      <li class="b-navigation__item"> <a class="b-navigation__link" href="http://prototype.mon.ia.net/expertise" title="Expertise">Expertise</a> </li>
+                      <li class="b-navigation__item"> <a class="b-navigation__link" href="http://prototype.mon.ia.net/company" title="Company">Company</a> </li>
+                    </ul>
+                    <!--end b-navigation__list-->
+                    <ul class="b-navigation__breadcrumb">
+                      <li class="b-navigation__breadcrumb__item b-navigation__breadcrumb__item--selected">
+                        <h2>
+                          <a class="b-navigation__breadcrumb__item__link" href="http://prototype.mon.ia.net" title="Home">Home</a>
+                        </h2>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!--end b-navigation__navigation-->
+                </div>
+                <aside class="b-meta b-meta--interaction">
+                  <ul class="b-meta__list">
+                    <!-- <li class="b-meta__item">
+                    <a class="b-login b-meta__link" href="" title="">Login</a>
+                  </li>
+                  -->
+                  <li class="b-meta__item ">
+                    <a class="b-meta__search initial b-meta__link" href="search-result?" title="">
+                      <span class="b-meta__search-text b-meta__search-text--inactive">Search</span> <span class="b-meta__search-text b-meta__search-text--active">Close Search</span>
+                      <!--This allows setting a text in CMS-->
+                    </a>
+                  </li>
+                  <!--end b-meta__item-->
+                </ul>
+                <!--end b-meta__list-->
+              </aside>
+              <!--end b-meta-->
+            </div>
+            <!--end g-col-->
+          </div>
+          <!--end g-row-->
+        </div>
+        <!--end g-block-->
+        </header>
+        <!--end b-1-0-0-header-->
+
+
+        <footer class="b-2-0-0-footer">
+          <div class="g-container b-footer-list">
+            <div class="g-block">
+              <ul class="b-footer-list__list g-row-wide">
+                <li class="b-footer-list__item g-col-2-3">
+                  <a class="b-footer-list__link" href="http://prototype.mon.ia.net" title="Home">Monotype Inc.</a>
+                  <ul class="b-footer-list__secondlevel">
+                    <li class="b-footer-list__secondlevel-item">
+                      <p>Copyright 2015</p>
+                    </li>
+                  </ul>
+                  <!--end b-footer-list__secondlevel-->
+                </li>
+                <!--end b-footer-list__item-->
+                <li class="b-footer-list__item g-col-2-3">
+                  <a class="b-footer-list__link" href="http://prototype.mon.ia.net/typefaces" title="Fonts">Fonts</a>
+                  <ul class="b-footer-list__secondlevel">
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/typefaces/fonts-for-print" title="Fonts for Print">Fonts for Print</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/typefaces/web-fonts" title="Web Fonts">Web Fonts</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/typefaces/fonts-for-games" title="Fonts for Games">Fonts for Games</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/typefaces/fonts-for-apps" title="Fonts for Apps">Fonts for Apps</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/typefaces/fonts-for-cars" title="Fonts for Cars">Fonts for Cars</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/typefaces/custom-fonts" title="Custom Fonts">Custom Fonts</a> </li>
+                  </ul>
+                  <!--end b-footer-list__secondlevel-->
+                </li>
+                <!--end b-footer-list__item-->
+                <li class="b-footer-list__item g-col-2-3">
+                  <a class="b-footer-list__link" href="http://prototype.mon.ia.net/technology" title="Technology">Technology</a>
+                  <ul class="b-footer-list__secondlevel">
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/technology/font-rendering" title="Legibility">Legibility</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/technology/memory-efficiency" title="Memory Efficiency">Memory Efficiency</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/technology/language-control" title="Language Control">Language Control</a> </li>
+                  </ul>
+                  <!--end b-footer-list__secondlevel-->
+                </li>
+                <!--end b-footer-list__item-->
+                <li class="b-footer-list__item g-col-2-3">
+                  <a class="b-footer-list__link" href="http://prototype.mon.ia.net/expertise" title="Expertise">Expertise</a>
+                  <ul class="b-footer-list__secondlevel"></ul>
+                  <!--end b-footer-list__secondlevel-->
+                </li>
+                <!--end b-footer-list__item-->
+                <li class="b-footer-list__item g-col-2-3">
+                  <a class="b-footer-list__link" href="http://prototype.mon.ia.net/company" title="Company">Company</a>
+                  <ul class="b-footer-list__secondlevel">
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/company/business" title="Business">Business</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/company/news-and-events" title="News and Events">News and Events</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/company/careers" title="Careers">Careers</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="http://prototype.mon.ia.net/company/contac" title="Contact">Contact</a> </li>
+                  </ul>
+                  <!--end b-footer-list__secondlevel-->
+                </li>
+                <!--end b-footer-list__item-->
+                <li class="b-footer-list__item b-footer-list__item--legal g-col-2-3">
+                  <a class="b-footer-list__link" href="" title="">Legal</a>
+                  <ul class="b-footer-list__secondlevel">
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="#" title="">Trademark</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="#" title="">T&C</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="#" title="">Privacy Policy</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="#" title="">MTX</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="#" title="">EULA</a> </li>
+                  </ul>
+                  <!--end b-footer-list__secondlevel-->
+                </li>
+                <!--end b-footer-list__item-->
+                <li class="b-footer-list__item b-footer-list__item--language g-col-2-3">
+                  <a class="b-footer-list__link" href="" title="">Language</a>
+                  <ul class="b-footer-list__secondlevel">
+                    <li class="b-footer-list__secondlevel-item b-footer-list__secondlevel-item--selected"> <a class="b-footer-list__secondlevel-link" href="" title="">English</a> </li>
+                    <li class="b-footer-list__secondlevel-item"> <a class="b-footer-list__secondlevel-link" href="" title="">German</a> </li>
+                  </ul>
+                  <!--end b-footer-list__secondlevel-->
+                </li>
+                <!--end b-footer-list__item-->
+              </ul>
+              <!--end b-footer-list-->
+            </div>
+            <!--end g-block-->
+          </div>
+          <!--end g-container-->
+          <div class="g-container b-footer-legal">
+            <div class="g-block">
+              <div class="g-row-wide">
+                <ul class="b-footer-legal__list g-col">
+                  <li class="b-footer-legal__item"> <a class="b-footer-legal__link" href="#" title="">Trademarks</a> </li>
+                  <li class="b-footer-legal__item"> <a class="b-footer-legal__link" href="#" title="">T&C</a> </li>
+                  <li class="b-footer-legal__item"> <a class="b-footer-legal__link" href="#" title="">Privacy Policy</a> </li>
+                  <li class="b-footer-legal__item"> <a class="b-footer-legal__link" href="#" title="">MTX</a> </li>
+                  <li class="b-footer-legal__item"> <a class="b-footer-legal__link" href="#" title="">EULA</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--end b-2-0-0-footer-->
+
+
+
       </div><!--/.sg-main-->
     </div><!--/.sg-wrapper-->
 
