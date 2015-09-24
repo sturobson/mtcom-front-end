@@ -57,12 +57,12 @@
             </li>
           </ul>
         </div>
-        <div class="sg-nav-group sg-nav-group--blocks">
+        <div class="sg-nav-group sg-nav-group--pages">
           <h2 class="sg-nav-h2 sg-subnav-title">Pages</h2>
           <ul class="sg-navlist" style="display:block;">
-            <li><a href="home.php">Home</a></li>
-            <li><a href="overview.php">Overview</a></li>
-            <li><a style="color: #222;" href="article.php">Article</a></li>
+            <li><a href="./home.php">Home</a></li>
+            <li><a href="./overview.php">Overview</a></li>
+            <li><a style="color: #222;" href="./article.php">Article</a></li>
           </ul>
         </div>
         <div class="sg-nav-group sg-nav-group--blocks">
