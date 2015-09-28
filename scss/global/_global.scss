@@ -63,3 +63,24 @@ body:after {
     content:"small";
   }
 }
+
+
+
+.g-container p  {
+  strong {
+    font-family: $malabar-bold;
+    font-weight: inherit !important;
+    vertical-align: baseline !important;
+  }
+  em {
+    font-family: $malabar-italic;
+    font-weight: inherit !important;
+    vertical-align: baseline !important;
+  }
+  strong em,
+  em strong {
+    font-family: $malabar-bold-italic;
+    font-weight: inherit !important;
+    vertical-align: baseline !important;
+  }
+}
