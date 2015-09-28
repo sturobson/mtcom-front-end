@@ -60,8 +60,8 @@
         <div class="sg-nav-group sg-nav-group--pages">
           <h2 class="sg-nav-h2 sg-subnav-title">Pages</h2>
           <ul class="sg-navlist">
-            <li><a style="color: #222;" href="home.php">Home</a></li>
-            <li><a href="article.php">Article</a></li>
+            <li><a style="color: #222;" href="./home.php">Home</a></li>
+            <li><a href="./article.php">Article</a></li>
             <li><a href="./overview.php">Overview</a></li>
           </ul>
         </div>
