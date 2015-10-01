@@ -211,7 +211,7 @@
             <div class="b-paragraph g-block">
               <div class="g-row">
                 <div class="b-paragraph__text g-col">
-                  <p>You probably don’t need us to tell you, but the average adult in developed societies spends upward of six hours a day looking at screens – TVs, computers, smartphones and tablets. As the choice of what to watch widens, we become increasingly picky. We demand more perfect experiences from our devices, all the time. Text plays an undeniable role in these experiences. </p>
+                  <p>You probably don’t need us to tell you, but the average <strong>adult in developed </strong> <em>societies spends</em> upward of six hours a day looking at screens – TVs, computers, smartphones and tablets. As the choice of what to watch widens, we become increasingly picky. We demand more perfect experiences from our devices, all the time. Text plays an undeniable role in these experiences. </p>
                   <p>Monotype has developed advanced software to render, scale, optimize and display type as vividly as ink on paper, on any device. Effortlessly, too: we design our software and tools with speed and memory efficiency top of mind. Slow type is no type. Our core technologies offer engineers total control over type, so they can deliver great-looking text effortlessly, internationally, on any device.</p>
                 </div><!--end g-col-->
               </div><!--end g-row-->
