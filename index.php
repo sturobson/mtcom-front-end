@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Monotype Digital Design Language Pattern Library</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
   <!-- Replace below stylesheet with your own stylesheet -->
 
