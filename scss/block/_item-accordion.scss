@@ -19,7 +19,15 @@
         
         @include breakpoint(fromAdaptiveToFluid) {
           padding-top:2 * $spacing-unit;
-        }        
+        }
+        
+       article a, article a:hover {
+       	color: #73b4da
+       } 
+       
+       article a:hover {
+       	border-bottom:1px solid #73b4da;
+       }       
       }
     }
   }  
