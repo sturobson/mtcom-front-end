@@ -390,6 +390,10 @@
 					@include rem(margin-left, -144px);
 				}
 			}
+			
+			img {
+				width: 100%;
+			}
 		}
 
 		&.b-masonry__bodycopy-gallery--hang-left {
