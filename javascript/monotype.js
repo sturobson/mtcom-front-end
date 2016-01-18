@@ -600,3 +600,51 @@ $(function() {
   }).resize();
 
 }); // end document ready
+
+
+// Carousel Specimen Show/Hide
+$(".image-selector #img-one").click(function() {
+  $(".image-selector li").removeClass();
+  $(".carousel--item").removeClass("visible").addClass("hidden");
+  $(".img-one").removeClass("hidden");
+  $(".img-one").addClass("visible");
+  $(this).addClass("selected");
+  return false;
+});
+
+$(".image-selector #img-two").click(function() {
+  $(".image-selector li").removeClass();
+  $(".carousel--item").removeClass("visible").addClass("hidden");
+  $(".img-two").removeClass("hidden");
+  $(".img-two").addClass("visible");
+  $(this).addClass("selected");
+  return false;
+});
+
+
+$(".image-selector #img-three").click(function() {
+  $(".image-selector li").removeClass();
+  $(".carousel--item").removeClass("visible").addClass("hidden");
+  $(".img-three").removeClass("hidden");
+  $(".img-three").addClass("visible");
+  $(this).addClass("selected");
+  return false;
+});
+
+$(".image-selector #img-four").click(function() {
+  $(".image-selector li").removeClass();
+  $(".carousel--item").removeClass("visible").addClass("hidden");
+  $(".img-four").removeClass("hidden");
+  $(".img-four").addClass("visible");
+  $(this).addClass("selected");
+  return false;
+});
+
+$(".image-selector #img-five").click(function() {
+  $(".image-selector li").removeClass();
+  $(".carousel--item").removeClass("visible").addClass("hidden");
+  $(".img-five").removeClass("hidden");
+  $(".img-five").addClass("visible");
+  $(this).addClass("selected");
+  return false;
+});
