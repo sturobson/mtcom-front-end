@@ -1,0 +1,31 @@
+
+
+/* ------------------------------------------------------------
+   Expertise Breakpoints
+   ------------------------------------------------------------ */
+$tweakpoint_mobile: map-get($breakpoints, small);
+$tweakpoint_tablet: map-get($breakpoints, phablet);
+$breakpoint_tablet: map-get($breakpoints, fromAdaptiveToFluid);
+$breakpoint_desktop-mini: 1031px;
+$breakpoint_desktop: map-get($breakpoints, medium);
+
+$expertise_margin_tablet: 24px;
+$expertise_margin_desktop: 24px;
+
+// - - - - - - - - - - - - - -
+
+$type_1_tablet_width: 228px;
+$type_2_tablet_width: 454px;
+$type_3_tablet_width: 732px;
+
+$type_2_tablet_height: 706px;
+$type_tablet_height: 342px;
+
+// - - - - - - - - - - - - - -
+
+$type_1_desktop_width: 312px;
+$type_2_desktop_width: 648px;
+$type_3_desktop_width: 984px;
+
+$type_2_desktop_height: 960px;
+$type_desktop_height: 468px;
