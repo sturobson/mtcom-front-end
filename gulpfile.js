@@ -175,19 +175,16 @@ gulp.task('copyBuild', function() {
 
 gulp.task('watch', function() {
   gulp.watch(SassInput, ['sass'])
-  gulp.watch(JSConcat, ['concatScripts'])
-    .on('change', function(event) {
-      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-    });
-    gulp.watch([
-        '**/*.html',
-        '*.php',
-        'css/*.css',
-        'scss/*.scss',
-        'images/**/*',
-        'scripts/**/*'
-    ]).on('change', reload);
-    gulp.watch(['tmp/css/**/*.css']);
+  gulp.watch(JSConcat, ['concatScripts']);
+  gulp.watch([
+    '**/*.html',
+    '*.php',
+    'css/*.css',
+    'scss/*.scss',
+    'images/**/*',
+    'scripts/**/*'
+  ]).on('change', reload);
+  gulp.watch(['tmp/css/**/*.css']);
 });
 
 
