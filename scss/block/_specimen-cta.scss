@@ -1,0 +1,50 @@
+// global variables from mt-com
+///////////////////////////////
+
+$black: #000;
+$white: #fff;
+$mt-blue: #00a3ef;
+
+
+// local variables for the component
+////////////////////////////////////
+
+
+$cta-background-color: $white;
+$cta-color: $black;
+$cta-color--hover: $mt-blue;
+$cta-outlet-line: $black;
+
+.b-specimen-cta  {
+  background-color: $cta-background-color;
+  font-family: "Malabar ET W08 Regular", Georgia, Times, "Times New Roman", serif;
+  @media (min-width: 27.5em) {
+    padding: 1em 0;
+  }
+}
+.specimens__outlets > * {
+  box-sizing: border-box;
+}
+.specimens__outlet {
+  border-left: 1px solid $cta-outlet-line;
+  fill: $cta-color;
+  float: left;
+  transition: fill .15s linear;
+  width: 49%;
+  &:first-child {
+    border-left: 0;
+  }
+  &:hover {
+    fill: $cta-color--hover;
+    transition: fill .2s linear;
+  }
+  @media (max-width: 27.4375em) {
+    &:nth-of-type(3) {
+      border-left: 0;
+      clear: left;
+    }
+  }
+  @media (min-width: 27.5em) {
+    width: 25%;
+  }
+}

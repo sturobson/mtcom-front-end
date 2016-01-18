@@ -1,0 +1,69 @@
+.image-selector {
+  list-style-type: none;
+  margin: 5px 0 1em -1.5em;
+  li {
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-weight: 400;
+    padding: 0 .5em;
+    line-height: 2;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+
+    li.selected {
+      border-bottom: 2px solid $color-five;
+      color: $black;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .image-selector {
+    margin: 0;
+    position: relative;
+    border: 1px solid #CCC;
+    list-style-type: none;
+
+    #carat {
+      cursor: pointer;
+      width: 80%;
+      height: 15px;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAYAAADphp8SAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMJJREFUeNpinDRlugMDAwMIUwRYgPgBEOcDsQAlBjHl5WSCDJpIoYM2MMJYQC/eB1IKZBjyAYgNmZAEEsl0zUSQrxiRRYCuWg+kAkgw5ALQEENwGKFJJEKdSiwohAc2sijQdJAhjUQasgCo/gBWg6CGTQA5mYgALkSJfhwKCQV8I9T1+A0CKgK5aAIOQw5AXc1AjIsYoGH1AV8AE2UQ1OnomiZAXctAiotAhi0AeQXKfYAvRpmIiGZYwBeiBzAyAAgwAO6ENKpThEdEAAAAAElFTkSuQmCC");
+      background-repeat: no-repeat;
+      background-position: center right;
+      padding: 0;
+      position: absolute;
+      right: 6px;
+      top: 10px;
+      transition: transform linear 0.1s;
+      display: block !important;
+    }
+    .rotate {
+      transition: transform linear 0.1s;
+      transform: rotate(180deg);
+      margin-right: 1em;
+      background-position: center left;
+      transform-origin: right center;
+    }
+  }
+  .image-selector li {
+    display: none;
+    &.selected {
+      display: block !important;
+    }
+    &.visible {
+      display: block !important;
+    }
+  }
+}
+
+.b-img-carousel .hidden {display: none !important; }
+.carousel--item img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}

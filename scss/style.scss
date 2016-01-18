@@ -7,10 +7,10 @@
 /* ------------------------------------------------------------
    Global Project Styles
    ------------------------------------------------------------ */
-@import 'global/breakpoint';    // Project Breakpoint Settings   
+@import 'global/breakpoint';    // Project Breakpoint Settings
 @import 'global/variable'; 		  // Project Variables like Font Sizes, Font Families, Colors, Spacing, etc.
-@import 'global/function';      // Project Functions 
-@import 'global/mixin';         // Project Mixins 
+@import 'global/function';      // Project Functions
+@import 'global/mixin';         // Project Mixins
 @import 'global/global'; 		    // Project Styles
 @import 'global/grid';          // Project Grid Settings
 @import 'global/typography';    // Project Typography Settings
@@ -24,7 +24,7 @@
 @import 'page/article';
 @import 'page/expertise';
 @import 'page/legal';
-   
+
 /* ------------------------------------------------------------
    Blocks
    ------------------------------------------------------------ */
@@ -69,6 +69,9 @@
 @import 'block/expertise';
 @import 'block/ui-library';
 @import 'block/social';
+@import 'block/specimen-cta';
+@import 'block/specimen-description';
+@import 'block/specimen-carousel';
 
 /* ------------------------------------------------------------
    Typetester CSS Declarations
