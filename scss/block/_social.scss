@@ -9,3 +9,60 @@
 	    }
 	}
  }
+ 
+ 
+ #share {
+ 	margin-top: 3em;
+ 	border-top: 1px solid #C8C8C8;
+ 	
+ 	h2 {
+ 		font-family: $malabar-bold;
+ 		font-size: 1.5em;
+ 		margin-bottom: 1 * $spacing-unit;
+ 		line-height: 2rem;
+ 	}
+ 	
+   .share__tools {
+ 		list-style-type: none;
+ 		
+ 		
+ 	    li {
+ 	    	width: 40px;
+ 	    	margin-right: 10px;
+ 	    	margin-bottom: 1em;
+ 	    	float: left;
+ 	    	
+ 	    	a span {
+ 	    	    display: block;
+ 	    	    overflow: hidden;
+ 	    	}
+ 	    }
+ 	    .share__tools--email {
+ 
+ 	    }
+ 	    
+ 	    .share__tool--facebook {
+ 
+ 	    }
+ 	    
+ 	    .share__tool--twitter {
+ 
+ 	    }
+ 	    
+ 	    .share__tool--googleplus {
+ 
+ 	    }
+ 	    
+ 	    .share__tool--linkedin {
+ 
+ 	    }
+ 	    
+ 	    
+ 	
+     &:hover {
+ 
+     }  
+ 
+   }
+ }
+ 
