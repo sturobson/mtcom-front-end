@@ -1,0 +1,60 @@
+.b-byline {
+	margin-bottom: 4em;
+	
+	.b-byline__boxout {
+		background-color: #1E1E1E;
+		padding-top: 3em;
+		padding-bottom: 4em;
+		
+		.byline__image {
+		
+		@media only screen and (max-width: 479px) {
+			text-align: center;
+		}
+		
+			img {
+				width: 100%;
+				margin-bottom: 1em;
+				
+				@media only screen and (max-width: 479px) {
+					width: 50%;
+				}
+			}
+		}
+		
+		.g-row p, .g-row h2 {
+			color: #FAF7F5!important;
+		}
+		
+		.g-row {
+			padding-top: 0!important;
+		}
+		
+		@media only screen and (max-width: $breakpoint_tablet - 1) {
+			padding-top: 2.5 * $spacing-unit;
+		  	padding-bottom: 2.5 * $spacing-unit;
+		  	padding-left: 0.75rem;
+		  	padding-right: 0.75rem;
+		}
+
+	}
+	
+	@media only screen and (max-width: $breakpoint_tablet - 1) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+section.b-expertise + section.b-byline {
+	margin-top: -1.875rem;
+}
+
+@media only screen and (min-width: $breakpoint_tablet) {
+
+	section.b-expertise + section.b-byline {
+		margin-top: -3.75rem;
+	}
+	
+}
+
