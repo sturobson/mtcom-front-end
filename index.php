@@ -117,14 +117,58 @@
               <p>We are using Modifiers on Blocks and Elements to signify state changes of Blocks and Elements; most of them are either used or appended by JavaScript.</p>
             </div><!--end g-container-->
 
-            <!-- Manually add your UI colors here. -->
             <div class="sg-colors sg-section">
               <h1 id="sg-colors" class="sg-h1">Colors</h1>
               <div class="sg-color-grid" id="color-grid">
+                <div class="sg-color">
+                  <div class="sg-color-swatch" style="background-color:#222222;"></div>
+                  <div class="sg-color-name">Black</div>
+                  <div class="sg-color-value">#222222</div>
+                </div>
+                <div class="sg-color">
+                  <div class="sg-color-swatch" style="background-color:#183c47;"></div>
+                  <div class="sg-color-name">Slate</div>
+                  <div class="sg-color-value">#183c47</div>
+                </div>
+                <div class="sg-color">
+                  <div class="sg-color-swatch" style="background-color:#C8C8C8;"></div>
+                  <div class="sg-color-name">Grey</div>
+                  <div class="sg-color-value">#C8C8C8</div>
+                </div>
+                <div class="sg-color">
+                  <div class="sg-color-swatch" style="background-color:#C8C8C8;"></div>
+                  <div class="sg-color-name">Light grey</div>
 
+                  <div class="sg-color-value">#C8C8C8</div>
+                </div>
 
+                <div class="sg-color">
+                  <div class="sg-color-swatch" style="background-color:#FAF7F5;"></div>
+                  <div class="sg-color-name">Cream</div>
+                  <div class="sg-color-value">#FAF7F5</div>
+                </div>
+                <div class="sg-color">
+                  <div class="sg-color-swatch" style="background-color:#FF5E6A;"></div>
+                  <div class="sg-color-name">Red</div>
+                  <div class="sg-color-value">#FF5E6A</div>
+                </div>
+                <div class="sg-color">
+                  <div class="sg-color-swatch" style="background-color:#73b4da;"></div>
+                  <div class="sg-color-name">Blue</div>
+                  <div class="sg-color-value">#73b4da</div>
+                </div>
+                <div class="sg-color">
+                  <div class="sg-color-swatch" style="background-color:#FFAE24;"></div>
+                  <div class="sg-color-name">Yellow</div>
+                  <div class="sg-color-value">#FFAE24</div>
+                </div>
+                <div class="sg-color">
+                  <div class="sg-color-swatch" style="background-color:#00AF40;"></div>
+                  <div class="sg-color-name">Green</div>
+                  <div class="sg-color-value">#00AF40</div>
+                </div>
               </div><!--/.sg-color-grid-->
-            </div><!--/.sg-colors-->
+            </div>
           </div><!--/.sg-info-->
 
 
@@ -141,23 +185,6 @@
 
     <script src="javascript/monotype.js"></script>
 
-
-    <script>
-
-    $.getJSON('data.json', function(data) {
-      var output="";
-      for (var i in data.colors) {
-        output+="<div class=\"sg-color\">"
-        + "<div class=\"sg-color-swatch\" style=\"background-color:" + data.colors[i].colorHex + ";\"></div>"
-        + "<div class=\"sg-color-name\">" + data.colors[i].colorName + "</div>"
-        + "<div class=\"sg-color-value\">" + data.colors[i].colorHex + "</div>"
-        + "</div>";
-      }
-
-      output+="</div>";
-      document.getElementById("color-grid").innerHTML=output;
-    });
-    </script>
     <script>
     $(".sg-nav-group--blocks .sg-nav-h2").click(function() {
       $(this).parent().toggleClass("active");
