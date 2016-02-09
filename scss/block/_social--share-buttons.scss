@@ -11,6 +11,15 @@
 		margin-bottom: 1 * $spacing-unit;
 		line-height: 2rem;
 	}
+	
+	.g-row {
+	   margin: 0;
+	   width: 100%;
+	}
+	
+	.g-row:first-child {
+		padding-top: 0!important;
+	}
 
 	.share__tools {
 		list-style-type: none;
