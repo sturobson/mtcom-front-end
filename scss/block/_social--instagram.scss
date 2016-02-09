@@ -1,0 +1,20 @@
+.b-insta__feed {
+	 a {
+			box-sizing: border-box;
+			img {
+				width: 33.33333%;
+				padding: 1%;
+			}
+	 }
+
+	@media (max-width: 706px) {
+		a {
+		height: auto !important;
+		width: 40% !important;
+		}
+		img {
+			height: auto !important;
+			width: 100% !important;
+		}
+	}
+}
