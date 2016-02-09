@@ -116,7 +116,13 @@
     });
     </script>
     <script>
-      $('p').selectionSharer();
+    var sharer = new SelectionSharer('p');
+    var sharer = new SelectionSharer('h1');
+    var sharer = new SelectionSharer('h2');
+    var sharer = new SelectionSharer('h3');
+    var sharer = new SelectionSharer('h4');
+    var sharer = new SelectionSharer('ul');
+    var sharer = new SelectionSharer('ol');
     </script>
   </body>
   </html>
