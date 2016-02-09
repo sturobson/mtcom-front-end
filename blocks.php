@@ -28,6 +28,8 @@
   <script src="javascript/vendor/<img src="./images/placeholder.png" alt="a placeholder image" />s.min.js"></script>
   <![endif]-->
 
+  <!-- Facebook App ID -->
+  <meta property="fb:app_id" content="1549493082038915" />
 
 </head>
 <body id="top" class="p-overview">
@@ -96,24 +98,8 @@
     <script src="javascript/vendor/jvfloat.min.js"></script>
 
     <script src="javascript/monotype.js"></script>
+    <script src="javascript/social--sharer.js"></script>
 
-
-    <script>
-
-    $.getJSON('data.json', function(data) {
-      var output="";
-      for (var i in data.colors) {
-        output+="<div class=\"sg-color\">"
-        + "<div class=\"sg-color-swatch\" style=\"background-color:" + data.colors[i].colorHex + ";\"></div>"
-        + "<div class=\"sg-color-name\">" + data.colors[i].colorName + "</div>"
-        + "<div class=\"sg-color-value\">" + data.colors[i].colorHex + "</div>"
-        + "</div>";
-      }
-
-      output+="</div>";
-      document.getElementById("color-grid").innerHTML=output;
-    });
-    </script>
     <script>
     $(".sg-nav-group--blocks .sg-nav-h2").parent().addClass("active");
     $(".sg-nav-group--blocks .sg-nav-h2").click(function() {
@@ -128,6 +114,9 @@
     $('.sg-nav-group--containers .sg-navlist li a').attr('href',function(i,v) {
       return "containers.php" + v;
     });
+    </script>
+    <script>
+      $('p').selectionSharer();
     </script>
   </body>
   </html>
