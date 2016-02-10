@@ -286,12 +286,16 @@
 	ul ul {
 		list-style-type: disc;
 	}
-
+	@media only screen and (max-width: $breakpoint_tablet - 1) {
+		ul.resources {
+			margin-left: 0;
+		}
+	}
 	ul.resources li {
 		border-bottom: 1px solid #C8C8C8;
 		width: 100%;
 		list-style-type: none;
-		padding: 0.5rem;
+		padding: 0.5rem 0;
 	}
 
 	ul.resources li:first-child {

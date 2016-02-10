@@ -67,7 +67,7 @@ body:after {
 
 
 .g-container p  {
-  strong {
+  strong, b {
     font-family: $malabar-bold;
     font-weight: inherit !important;
     vertical-align: baseline !important;
