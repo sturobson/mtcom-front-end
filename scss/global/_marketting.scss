@@ -1,0 +1,164 @@
+
+// Variables
+
+
+$marketting-header-bg-color: #ff0;
+$marketting-header-text-color: #fff;
+$marketting-body-bg-color: #0ff;
+$marketting-body-text-color: #0f0;
+$marketting-form-bg-color: #fff;
+$marketting-form-text-color: #000;
+$marketting-cta-bg-color: blue;
+$marketting-cta-text-color: white;
+
+
+// Marketo Reset
+
+
+div.lpeCElement{left:auto!important;position:relative!important;top:auto!important;z-index:0!important;height:auto!important}.mktoLabel,.mktoForm .mktoOffset,.mktoForm .mktoGutter{display:none}.mktoForm{padding:0!important}.mktoForm,.mktoFormCol,.mktoFieldWrap,.mktoButtonRow,#register-lightbox input{width:100%!important}.mktoButtonWrap{margin:0!important}.mktoFieldDescriptor{margin:0!important}
+
+// Styles
+
+
+.p-marketing {
+  .b-3-4-0-intro-full-width {
+    background-image: url('../img/background-games.png');
+    background-origin: center center;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+  }
+  .b-form__table-cell:first-child {
+    width: 65% !important;
+  }
+  .b-form__table-cell:last-child {
+    width: 35% !important;
+    border-left: 1px solid black;
+    margin-top: 2rem;
+  }
+  .b-form__table {
+    padding-bottom: 2rem;
+  }
+  .b-checkbox .g-col {
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    label {
+      font-size: 12px;
+    }
+    input {
+      width: 20px;
+    }
+  }
+  .b-checkbox {
+    .g-row {
+      width: 90.47619%;
+      margin: 0 4.7619%;
+    }
+  }
+  .b-lead__text p {
+    color: $marketting-header-text-color !important;
+  }
+  .b-button .b-button__item {
+    background-color: $marketting-cta-bg-color;
+    border-color: darken($marketting-cta-bg-color, 20%);
+    color: $marketting-cta-text-color;
+  }
+  .b-media {
+    float: left;
+    text-align: left;
+    width: 40%;
+    margin-left: 5%;
+  }
+  .b-main {
+    .b-title__text {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+  .b-form__table {
+    background-color: $marketting-form-bg-color;
+    .b-paragraph {
+      font-size: 110%;
+      float: left;
+      width: 53%;
+      ul {
+        margin-top: 0;
+      }
+    }
+  }
+  .b-form .jvFloat {
+    padding: 1em 0 .3em 0;
+    margin-top: 0 !important;
+    :first-child {
+    }
+  }
+  .b-form .b-form__input {
+    margin-top: 0;
+    padding: 0;
+  }
+  .b-paragraph--secondary .b-paragraph__text {
+    margin-top: 3rem;
+    margin-bottom: 7.5rem;
+  }
+}
+
+.b-12-0-0-marketo-form {
+  form {
+  }
+}
+.b-form__table.b-form__table--contact {
+  border: 1px solid grey;
+}
+.b-form.b-form--contact .b-form__table-cell:last-child,
+.b-form.b-form--contact .b-button {
+  opacity: 1;
+}
+.b-form.b-form--contact .b-form__table-cell:last-child {
+  float: right;
+  width: 28%;
+}
+
+.b-form__table-cell:first-child {
+  float: left;
+}
+
+.b-media {
+  text-align: left;
+}
+
+
+@media (max-width: 767px) {
+  .p-marketing {
+    .b-3-4-0-intro-full-width {
+      padding-top: 5rem;
+    }
+    .b-main {
+      box-sizing: border-box;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .b-form__table-cell {
+      box-sizing: border-box;
+      padding-left: 2%;
+      padding-right: 2%;
+      &:first-child { width: 100% !important;
+        height: auto !important;
+      &:after {
+    content:" ";
+    display:table;
+    clear:both;
+      }
+    }
+      &:last-child { width: 100% !important; height: auto !important; padding-bottom: 2rem; margin-top: 0; border-right: 0;}
+    }
+    .b-12-0-0-marketo-form {
+      padding: 0;
+    }
+    .b-media {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
