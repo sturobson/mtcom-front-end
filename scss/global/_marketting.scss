@@ -1,15 +1,17 @@
 
 // Variables
 
+$site-header-bg-color: #FAF7F5;
+$site-header-text-color: #1E1E1E;
 
-$marketting-header-bg-color: #ff0;
-$marketting-header-text-color: #fff;
-$marketting-body-bg-color: #0ff;
-$marketting-body-text-color: #0f0;
-$marketting-form-bg-color: #fff;
-$marketting-form-text-color: #000;
-$marketting-cta-bg-color: blue;
-$marketting-cta-text-color: white;
+$marketting-header-bg-color: #1E1E1E;
+$marketting-header-text-color: #FAF7F5;
+$marketting-body-bg-color: #FAF7F5;
+$marketting-body-text-color: #1E1E1E;
+$marketting-form-bg-color: #FAF7F5;
+$marketting-form-text-color: #1E1E1E;
+$marketting-cta-bg-color: #73b4da;
+$marketting-cta-text-color: #FAF7F5;
 
 
 // Marketo Reset
@@ -22,7 +24,8 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
 
 .p-marketing {
   .b-3-4-0-intro-full-width {
-    background-image: url('../img/background-games.png');
+    background-color: $marketting-header-bg-color;
+    background-image: url('http://www.placehold.it/1000x300');
     background-origin: center center;
     padding-top: 15rem;
     padding-bottom: 5rem;
@@ -70,6 +73,8 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
     margin-left: 5%;
   }
   .b-main {
+    background-color: $marketting-body-bg-color;
+    color: $marketting-body-text-color;
     .b-title__text {
       padding-top: 3rem;
       padding-bottom: 3rem;
@@ -116,6 +121,9 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
 .b-form.b-form--contact .b-form__table-cell:last-child {
   float: right;
   width: 28%;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .b-form__table-cell:first-child {
@@ -160,5 +168,33 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
       width: 100%;
       text-align: center;
     }
+  }
+}
+
+
+.p-marketing .b-form .b-form__input {
+  box-sizing: border-box;
+  border: 1px solid grey;
+  padding: .5em;
+  margin-bottom: .5rem;
+  width: 100%;
+  &::placeholder {
+    color: black;
+  }
+}
+.p-marketing {
+  .b-1-0-0-header {
+    background-color: $site-header-bg-color;
+    color: $site-header-text-color;
+  }
+  .b-form .b-form__select {
+    margin: 0;
+    margin-bottom: .5rem;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    padding: .75em .5em;
+    background-position: 95% center;
+    width: 100%;
+    color: grey;
   }
 }
