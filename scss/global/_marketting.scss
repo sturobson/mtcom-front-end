@@ -22,7 +22,7 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
 // Styles
 
 
-.p-marketing {
+.mktEditable {
   .b-3-4-0-intro-full-width {
     background-color: $marketting-header-bg-color;
     background-image: url('http://www.placehold.it/1000x300');
@@ -136,7 +136,7 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
 
 
 @media (max-width: 767px) {
-  .p-marketing {
+  .mktEditable {
     .b-3-4-0-intro-full-width {
       padding-top: 5rem;
     }
@@ -172,7 +172,7 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
 }
 
 
-.p-marketing .b-form .b-form__input {
+.mktEditable .b-form .b-form__input {
   box-sizing: border-box;
   border: 1px solid grey;
   padding: .5em;
@@ -182,7 +182,7 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
     color: black;
   }
 }
-.p-marketing {
+.mktEditable {
   .b-1-0-0-header {
     background-color: $site-header-bg-color;
     color: $site-header-text-color;
@@ -197,4 +197,9 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
     width: 100%;
     color: grey;
   }
+}
+
+
+div#innerWrapDiv {
+  width: 100% !important;
 }
