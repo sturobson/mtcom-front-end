@@ -212,7 +212,7 @@
     this.shareTwitter = function(e) {
       e.preventDefault();
 
-      var text = "â€œ"+self.smart_truncate(self.textSelection.trim(), 114)+"â€";
+      var text = "“"+self.smart_truncate(self.textSelection.trim(), 114)+"”";
       var url = 'http://twitter.com/intent/tweet?text='+encodeURIComponent(text)+'&related='+self.relatedTwitterAccounts+'&url='+encodeURIComponent(window.location.href);
 
       // We only show the via @twitter:site if we have enough room
@@ -249,7 +249,7 @@
       var text = self.textSelection.replace(/<p[^>]*>/ig,'\n').replace(/<\/p>|  /ig,'').trim();
       var email = {};
       email.subject = encodeURIComponent("Quote from "+document.title);
-      email.body = encodeURIComponent("â€œ"+text+"â€")+"%0D%0A%0D%0AFrom: "+document.title+"%0D%0A"+window.location.href;
+      email.body = encodeURIComponent("“"+text+"“")+"%0D%0A%0D%0AFrom: "+document.title+"%0D%0A"+window.location.href;
       $(this).attr("href","mailto:?subject="+email.subject+"&body="+email.body);
       self.hide();
       return true;
