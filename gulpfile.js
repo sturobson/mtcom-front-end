@@ -12,7 +12,7 @@ var sass            = require('gulp-sass');
 var sourcemaps      = require('gulp-sourcemaps');
 var autoprefixer    = require('gulp-autoprefixer');
 var notify          = require("gulp-notify");
-var minifyCss       = require('gulp-minify-css');
+var cssnano       = require('gulp-cssnano');
 
 // Image Stuff
 
@@ -96,7 +96,7 @@ gulp.task('sass:build', function () {
     .src(SassInput)
     .pipe(sass())
     .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(minifyCss())
+    .pipe(cssnano())
     .pipe(gulp.dest(SassOutputBuild));
 });
 
