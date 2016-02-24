@@ -12,7 +12,8 @@ var sass            = require('gulp-sass');
 var sourcemaps      = require('gulp-sourcemaps');
 var autoprefixer    = require('gulp-autoprefixer');
 var notify          = require("gulp-notify");
-var cssnano       = require('gulp-cssnano');
+var cssnano         = require('gulp-cssnano');
+var rewriteCSS      = require('gulp-rewrite-css');
 
 // Image Stuff
 
@@ -29,7 +30,6 @@ var path            = require('path');
 var proxy           = httpProxy.createProxyServer({});
 var reload          = browserSync.reload;
 
-
 // Housekeeping Stuff
 
 var del             = require('del');
@@ -37,9 +37,6 @@ var git             = require('gulp-git');
 var bump            = require('gulp-bump');
 var filter          = require('gulp-filter');
 var tag_version     = require('gulp-tag-version');
-
-
-
 
 // -----------------------------------------------------------------------------
 // Configuration
@@ -56,13 +53,13 @@ var SassOutput = './tmp/css';
 var SassOutputBuild = './dist/css/';
 var SassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
+var CSSUrl = 'http://www.monotype.com/Content/Vendor/image/'
 
 // JavaScript Configarables
 
 var JSInput   = ['./scripts/monotype.js'];
 var JSConcat  = ['./javascript/block/**/*.js', './javascript/global/**/*.js'];
 var JSOutput  = './tmp/scripts/';
-
 
 // Images Configurables
 
@@ -71,8 +68,6 @@ var ImagesFolder = './image';
 // BrowserSync Files to watch changes for
 
 var watchFiles = ['tmp/**/*.php', 'css/**/*.css', 'tmp/**/*.css', 'tmp/**/*.js'];
-
-
 
 // -----------------------------------------------------------------------------
 // Sass compilation
@@ -100,6 +95,18 @@ gulp.task('sass:build', function () {
     .pipe(gulp.dest(SassOutputBuild));
 });
 
+gulp.task('rewrite-url', function() {
+  var dest = './dave/';
+  return gulp.src('./tmp/css/*.css')
+    .pipe(rewriteCSS({destination:CSSUrl}))
+    .pipe(gulp.dest(dest));
+});
+
+gulp.task('urls', function(){
+  gulp.src(['./tmp/css/style.css'])
+    .pipe(replace('../images/', 'http://www.monotype.com/Content/Vendor/image/'))
+    .pipe(gulp.dest('build/file.txt'));
+});
 
 // -----------------------------------------------------------------------------
 // Image Optimisation
@@ -187,7 +194,6 @@ gulp.task('watch', function() {
   gulp.watch(['tmp/css/**/*.css']);
 });
 
-
 // -----------------------------------------------------------------------------
 // Delete Everything in Dist
 // -----------------------------------------------------------------------------
@@ -198,29 +204,9 @@ gulp.task('del', function() {
   ]);
 });
 
-gulp.task('delete', function() {
-  del([
-    './dist', './tmp', './dev/designlanguage/dist', './dev/designlanguage/*.json', './dev/designlanguage/gulpfile.js', './dev/designlanguage/LICENSE', './dev/designlanguage/README.md', 'bower_components'
-  ]);
-});
-
 // -----------------------------------------------------------------------------
 // Git Tag Bumps
 // -----------------------------------------------------------------------------
-
-/**
- * Bumping version number and tagging the repository with it.
- * Please read http://semver.org/
- *
- * You can use the commands
- *
- *     gulp patch     # makes v0.1.0 → v0.1.1
- *     gulp feature   # makes v0.1.1 → v0.2.0
- *     gulp release   # makes v0.2.1 → v1.0.0
- *
- * To bump the version numbers accordingly after you did a patch,
- * introduced a feature or made a backwards-incompatible release.
- */
 
 function inc(importance) {
     // get all the files to bump version in
@@ -246,13 +232,9 @@ gulp.task('release', function() { return inc('major'); })
 // Default task
 // -----------------------------------------------------------------------------
 
-
 // all the tasks in the world
 gulp.task('default', ['sass', 'watch', 'php-serve']);
-// single, one time set-up to move everything and delete things
-gulp.task('tidy', ['delete']);
-
 // used for when making things
 gulp.task('dev', ['copyit', 'sass',  'watch', 'php-serve']);
 // used for when ready to publish
-gulp.task('build', ['sass:build', 'copyBuild']);
+gulp.task('build', ['images', 'sass:build', 'copyBuild']);
