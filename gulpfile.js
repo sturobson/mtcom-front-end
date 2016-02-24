@@ -94,10 +94,20 @@ gulp.task('sass:build', function () {
     .pipe(gulp.dest(SassOutputBuild));
 });
 
-gulp.task('urls', function(){
-  gulp.src(['./tmp/css/style.css'])
+gulp.task('sass:deploy', function () {
+  return gulp
+    .src(SassInput)
+    .pipe(sass())
+    .pipe(autoprefixer(autoprefixerOptions))
     .pipe(replace('../images/', 'http://www.monotype.com/Content/Vendor/image/'))
-    .pipe(gulp.dest('build/file.txt'));
+    .pipe(cssnano())
+    .pipe(gulp.dest(SassOutputBuild));
+});
+
+gulp.task('urls', function(){
+  gulp.src(['./dist/css/style.css'])
+    .pipe(replace('../images/', 'http://www.monotype.com/Content/Vendor/image/'))
+    .pipe(gulp.dest('./dist/css/'));
 });
 
 // -----------------------------------------------------------------------------
@@ -229,4 +239,6 @@ gulp.task('default', ['sass', 'watch', 'php-serve']);
 // used for when making things
 gulp.task('dev', ['copyit', 'sass',  'watch', 'php-serve']);
 // used for when ready to publish
-gulp.task('build', ['images', 'sass:build', 'copyBuild']);
+gulp.task('build', ['sass:build', 'copyBuild']);
+// build task to deploy for monotype.com
+gulp.task('deploy', ['sass:deploy', 'copyBuild']);
