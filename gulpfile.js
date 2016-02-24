@@ -13,7 +13,6 @@ var sourcemaps      = require('gulp-sourcemaps');
 var autoprefixer    = require('gulp-autoprefixer');
 var notify          = require("gulp-notify");
 var cssnano         = require('gulp-cssnano');
-var rewriteCSS      = require('gulp-rewrite-css');
 
 // Image Stuff
 
@@ -93,13 +92,6 @@ gulp.task('sass:build', function () {
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(cssnano())
     .pipe(gulp.dest(SassOutputBuild));
-});
-
-gulp.task('rewrite-url', function() {
-  var dest = './dave/';
-  return gulp.src('./tmp/css/*.css')
-    .pipe(rewriteCSS({destination:CSSUrl}))
-    .pipe(gulp.dest(dest));
 });
 
 gulp.task('urls', function(){
