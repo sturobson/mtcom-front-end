@@ -2,8 +2,10 @@
 
 Welcome to Monotype's UI Pattern Library.
 
+- [Adding a new patter](#adding-a-new-pattern-workflow)
+- [Raising a bug](#raising-a-bug)
+- [Creating a release](#creating-a-release)
 
-- [Raising a bug](#)
 
 ## Getting Started
 
