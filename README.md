@@ -3,6 +3,8 @@
 Welcome to Monotype's UI Pattern Library.
 
 
+- [Raising a bug](#)
+
 ## Getting Started
 
 ### Initial Setup
@@ -277,3 +279,40 @@ If you find yourself repeating a declaration in your CSS a few times it may be w
 ### Mixins
 
 By default there are only a limited amount of mixins in the UI Pattern Library. They are more to make writing code easier than doing anything fancy. If you take a look at the `_mixin.scss` file that's in the `global` folder in the `scss` folder there is a mixin that will make writing media queries, responsive typography and placeholders's easier when using a pattern. As this UI Pattern Library can make it's way into various aspects of the company mixins should be kept to a minimum so that it is easy to understand what they do.
+
+
+
+## Raising a bug
+
+If you find a bug in the code that needs fixing, or you have been presented a bug from TFS then before you need to create an issue on Github.
+
+### Check Issues Page
+
+First check that the bug you found isn’t already listed:
+
+![Github Issues page](https://raw.githubusercontent.com/monotype-digital-design/UILibrary/master/wiki/issues.png)
+
+If it is listed check the issue information and add any comments necessary. If it is not listed create a new issue by clicking the "New Issue" button.
+
+### Create a new issue
+
+This will take you to a blank issue template.
+
+![New Github issue template page](https://raw.githubusercontent.com/monotype-digital-design/UILibrary/master/wiki/new-issue.png)
+
+Be as explicit as you can:
+
+- Make sure the title is to the point
+- add as much detail in the comment area as possible
+
+### Add labels
+
+Add some labels to the issue so it's easy to tell from a quick look if it's a bug or a feature
+
+![New Github issue template page](https://raw.githubusercontent.com/monotype-digital-design/UILibrary/master/wiki/new-issue-bug.png)
+
+### Assign someone to look at it
+
+Assigning someone to the issue will let them know there's something to look at. You can assign yourself if you will be working on the issue.
+
+![New Github issue template page](https://raw.githubusercontent.com/monotype-digital-design/UILibrary/master/wiki/new-issue-assign.png)
