@@ -1,5 +1,5 @@
 /*
- * share-selection: Medium like popover menu to share on Twitter or by email any text selected on the page
+ * share-selection: Medium like popover menu to share on Twitter or by § any text selected on the page
  *
  * -- Requires jQuery --
  * -- AMD compatible  --
@@ -249,7 +249,7 @@
       var text = self.textSelection.replace(/<p[^>]*>/ig,'\n').replace(/<\/p>|  /ig,'').trim();
       var email = {};
       email.subject = encodeURIComponent("Quote from "+document.title);
-      email.body = encodeURIComponent("“"+text+"“")+"%0D%0A%0D%0AFrom: "+document.title+"%0D%0A"+window.location.href;
+      email.body = encodeURIComponent("“"+text+"“")+"%0D%0A%0D%0A"+window.location.href+"%0D%0A%0D%0A"+"This is an article from Monotype, find more insights and resources in our Expertise section.";
       $(this).attr("href","mailto:?subject="+email.subject+"&body="+email.body);
       self.hide();
       return true;
