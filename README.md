@@ -7,7 +7,7 @@ Welcome to Monotype's UI Pattern Library.
 - [Raising a bug](#raising-a-bug)
 - [Creating a release](#creating-a-release)
 - [How to write your Sass](#How-to-write-your-Sass)
-- [Issues and Pull Requests Workflow](#Issues-and-Pull-Requests)
+- [Issues and Pull Requests Workflow](#issues-and-pull-requests)
 
 
 
