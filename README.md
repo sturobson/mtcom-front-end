@@ -2,15 +2,16 @@
 
 Welcome to Monotype's UI Pattern Library.
 
+- [Setting Up](#Setting-Up)
 - [Adding a new pattern](#adding-a-new-pattern-workflow)
 - [Raising a bug](#raising-a-bug)
 - [Creating a release](#creating-a-release)
 - [How to write your Sass](#How-to-write-your-Sass)
+- [Issues and Pull Requests Workflow](#Issues-and-Pull-Requests)
 
 
-## Getting Started
 
-### Initial Setup
+## Setting Up
 
 To use the UI Pattern Library your machine will require some software to be installed to start.
 
@@ -319,3 +320,126 @@ Add some labels to the issue so it's easy to tell from a quick look if it's a bu
 Assigning someone to the issue will let them know there's something to look at. You can assign yourself if you will be working on the issue.
 
 ![New Github issue template page](https://raw.githubusercontent.com/monotype-digital-design/UILibrary/master/wiki/new-issue-assign.png)
+
+
+
+
+
+
+# Issues and Pull Requests
+
+## Overview
+
+With the potential for more developers working with the UI Library and the potential for developers across the company to fix any bugs there is a need to define a workflow on how to use git and GitHub for the UI Library.
+
+## Branches
+
+### Master
+
+The master is the ‘single source of truth’ you should never commit directly to it, but merge code into from another branch.
+
+## Branching
+
+Always branch from master.
+
+### Branch naming conventions
+
+#### Creating a new pattern
+
+If you are adding a new pattern, amending how a pattern works then you need to give a short descriptive name prefixed with `feature.`. For example `feature.social-buttons`.
+
+#### Making a fix to existing pattern code
+
+If you are amending a pattern so that it fixes a bug or fixing any of the tooling (`gulpjs`) code then you need to give a short descriptive name prefixed with `hotfix.`. For example `hotfix.gulp-sass`.
+
+
+## Creating a new branch
+
+To create a new branch in the terminal, first make sure you are on the development branch of the repo.
+
+`$ git checkout master`
+
+Make sure this is up-to-date
+
+`$ git pull`
+
+You now have to create a new branch
+
+`$ git checkout -b your_branch`
+
+note: If you’re working on a new feature or bug and find something else that needs adding that is separate make sure you create a new branch (from Master) for this.
+
+## Pushing ‘up stream’
+
+When you have finished and have committed your work locally you will need to push the branch to github.  
+
+- `$ git push origin <branch-name>`
+- `$ git push --set-upstream origin <branch-name>`
+
+Will create a remote branch of your local branch on Github and will push any of the changes you have made.
+
+
+## Pull Request and Peer Reviews
+
+When you’ve pushed the branch you will need to log into GitHub and create a pull request.
+
+Please be as detailed as you can with the pull request and use the template provided to work with.
+
+![pull request template](wiki/pr-template.png)
+
+
+This will then be peer reviewed by the team. If this is an urgent fix please get in touch with a member of the review team to check it.
+
+
+### Workflow overview
+
+- `$ cd your/local/domain/UILibrary`
+- `$ git pull`
+- `$ git checkout -b <branch-name>`
+- work on the branch
+- commit locally
+- `$ git push origin <branch-name>`
+- log in to Github
+- create the pull request
+
+
+## Peer Review
+
+If no-one in The Working Group (TGW) is assigned to a pull request then you can assign yourself to check it out. If you created the pull request it is best practice to ask someone else to check your code.
+
+### Testing the Pull Request
+You will need to run the changes locally to make sure the changes / additions in the code within the PR work and do not break anything else.
+
+The steps to do this are:
+
+- make sure you’re in the UI Library folder  
+- `$ git fetch origin`
+- `$ git checkout <branch-name> origin/<branch-name>`
+- teet the code
+- if if passes:
+	- `$ git merge master`
+	- `$ git checkout master`  
+	- `$ git merge --no-ff <branch-name>`
+	- `$ git push origin master`
+	- comment on the Pull Request
+- if it fails:   
+	- comment on the Pull Request.
+
+## Create a release
+
+When you merge a pull request you will also need to update the UI Library’s version number (so that it can be used in mtcore). There are some gulp commands that help you [create a release](Creating-a-Release).
+
+
+## Tidying Up
+
+Once the code has been merged and the pull request is closed you will need to tidyup the repo by deleting some of the branches.
+
+### Deleting a local branch
+
+`git branch -d <branch-name>`
+
+followed by -
+
+### Deleting a remote branch
+
+`git push origin :<branch-name>`
