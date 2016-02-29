@@ -254,7 +254,7 @@
             var email = {};
             var pageTitle=document.title.replace(" | Monotype","");
             email.subject = encodeURIComponent("Quote from " + pageTitle);
-            email.body = encodeURIComponent("“"+text+"“")+"%0D%0A%0D%0A"+window.location.href+"%0D%0A%0D%0A"+"This is an article from Monotype, find more insights and resources in our Expertise section.";
+            email.body = encodeURIComponent("“"+text+"”")+"%0D%0A%0D%0A"+window.location.href+"%0D%0A%0D%0A"+"This is an article from Monotype, find more insights and resources in our Expertise section.";
             $(this).attr("href", "mailto:info@monotype.com?subject=" + email.subject + "&body=" + email.body);
             self.hide();
             return true;
