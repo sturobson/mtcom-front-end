@@ -1,0 +1,49 @@
+Please provide answers to the following questions to help us narrow down, reproduce, and fix the problem. 
+Fill out one section and delete the others and anything that's not needed.
+
+## Short Description
+
+> Be as tearse as possible in explaining what this issue is and what it is for.
+
+## Bugs
+
+If this issue is a bug:
+
+* Which version of UI Library are you building with?
+
+>
+
+* Describe the problem and the steps to reproduce it.
+
+> (Be as specific as you can and err on the side of providing too much information, including code, error messages, command lines you used to invoke the build, and so forth.)
+
+* Describe the behavior you expected and how it differed from the actual behavior.
+
+> (Be as specific as you can and err on the side of providing too much information.)
+
+
+## Features
+
+If this issue is a feature request:
+
+* Describe the scenario and benefits that the feature supports.
+
+> (Provide lots of specific detail so we understand the context around the feature.)
+
+* Describe how you're accomplishing the feature today (if possible).
+
+> (Be as specific as you can and err on the side of providing too much information.)
+
+* Describe what you'd like the new feature to do.
+
+> (There's no need to design it but suggestions are appreciated.)
+
+## Triage
+
+Issues are triaged by members of the working group, generally held fortnightly.
+Let a member of the team know if this an urgent fix.
+
+
+## Discussions and support
+
+Please do not open issues requesting support or debugging help.
