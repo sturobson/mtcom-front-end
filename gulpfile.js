@@ -36,6 +36,7 @@ var git             = require('gulp-git');
 var bump            = require('gulp-bump');
 var filter          = require('gulp-filter');
 var tag_version     = require('gulp-tag-version');
+var stylestats      = require('gulp-stylestats');
 
 // -----------------------------------------------------------------------------
 // Configuration
@@ -229,6 +230,15 @@ function inc(importance) {
 gulp.task('patch', function() { return inc('patch'); })
 gulp.task('feature', function() { return inc('minor'); })
 gulp.task('release', function() { return inc('major'); })
+
+// -----------------------------------------------------------------------------
+// Performance Tasks
+// -----------------------------------------------------------------------------
+
+gulp.task('stats', function () {
+  gulp.src('./tmp/**/*.css')
+    .pipe(stylestats());
+});
 
 // -----------------------------------------------------------------------------
 // Default task
