@@ -37,6 +37,7 @@ var bump            = require('gulp-bump');
 var filter          = require('gulp-filter');
 var tag_version     = require('gulp-tag-version');
 var stylestats      = require('gulp-stylestats');
+var checkFilesize   = require("gulp-check-filesize");
 
 // -----------------------------------------------------------------------------
 // Configuration
@@ -237,7 +238,8 @@ gulp.task('release', function() { return inc('major'); })
 
 gulp.task('stats', function () {
   gulp.src('./tmp/**/*.css')
-    .pipe(stylestats());
+    .pipe(stylestats())
+    .pipe(checkFilesize({enableGzip: true}));
 });
 
 // -----------------------------------------------------------------------------
