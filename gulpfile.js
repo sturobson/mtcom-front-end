@@ -101,7 +101,7 @@ gulp.task('sass:deploy', function () {
     .src(SassInput)
     .pipe(sass())
     .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(replace('../images/', 'http://www.monotype.com/Content/Vendor/image/'))
+    .pipe(replace('../images/', '../../'))
     .pipe(cssnano())
     .pipe(gulp.dest(SassOutputBuild));
 });
