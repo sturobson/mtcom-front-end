@@ -199,3 +199,203 @@ div.lpeCElement{left:auto!important;position:relative!important;top:auto!importa
 div#innerWrapDiv {
   width: 100% !important;
 }
+
+
+
+// Libby's CSS
+//
+
+
+label[for=Mailing_List_Opt_in__c] {
+  float: right !important;
+  font-size: .8em;
+  font-family:"Kootenay Pro SemiBold",'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight:normal;
+  color:rgb(0,0,0) !important;
+  display:block !important;
+  padding-bottom: 1.3em !important;
+  width: 90% !important;
+}
+
+.mktoHtmlText {
+  width:90% !important;
+}
+
+.mktoForm div, .mktoForm span, .mktoForm label, .mktoForm p {
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+button, .mktoButton button[type=submit], .mktoButton, .b-button .b-button__item {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: "Kootenay Pro SemiBold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 0.03125rem;
+  color: #FFFFFF;
+  background: #73b4da;
+  margin: 0 auto;
+  padding: 0.75rem 1.125rem;
+  border: 1px solid #006fa3;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: table;
+  user-select: none;
+  text-align: center;
+  min-width: 9rem;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .b-button .b-button__item {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+  button, .mktoButton button[type=submit], .mktoButton {
+    font-size:14px;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  button, .mktoButton button[type=submit], .mktoButton {
+    font-size:14px;
+  }
+}
+
+input, select, .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email],
+.mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date],
+.b-form .b-form__input, .b-form .b-form__select {
+  padding: 1.125rem 0;
+  margin: -1.125rem 0;
+}
+
+input, .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email],
+.mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date],
+select, .b-form .jvFloat--active .b-form__input, .b-form .jvFloat--active .b-form__select {
+  padding: 1.5rem 0 0 0;
+  margin: -1.5rem 0 0 0;
+}
+
+input, select, .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email],
+.mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .b-form .b-form__input {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  min-height: auto;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  border: 1px solid grey !important;
+  padding: .5em !important;
+  margin-bottom: .5em !important;
+}
+
+@media screen and (max-width: 1023px) {
+  input,  .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email],
+  .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .b-form .b-form__input {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+}
+
+input,  .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email],
+.mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .b-form .b-form__input ::-webkit-input-placeholder {
+  color: grey !important;
+}
+
+input, .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email],
+.mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .b-form .b-form__input :-moz-placeholder {
+  color: grey !important;
+}
+
+input,  .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email],
+.mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .b-form .b-form__input ::-moz-placeholder {
+  color: grey !important;
+}
+
+input,  .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email],
+.mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .b-form .b-form__input :-ms-input-placeholder {
+  color: grey !important;
+}
+
+input:focus,  .mktoForm input[type=text]:focus, .mktoForm input[type=url]:focus, .mktoForm input[type=email]:focus,
+.mktoForm input[type=tel]:focus, .mktoForm input[type=number]:focus, .mktoForm input[type=date]:focus, .b-form .b-form__input:focus ::-webkit-input-placeholder {
+  color: #E2E2E2;
+}
+
+input:focus, .mktoForm input[type=text]:focus, .mktoForm input[type=url]:focus, .mktoForm input[type=email]:focus,
+.mktoForm input[type=tel]:focus, .mktoForm input[type=number]:focus, .mktoForm input[type=date]:focus, .b-form .b-form__input:focus :-moz-placeholder {
+  color: #E2E2E2;
+}
+
+input:focus, .mktoForm input[type=text]:focus, .mktoForm input[type=url]:focus, .mktoForm input[type=email]:focus,
+.mktoForm input[type=tel]:focus, .mktoForm input[type=number]:focus, .mktoForm input[type=date]:focus, .b-form .b-form__input:focus ::-moz-placeholder {
+  color: #E2E2E2;
+}
+
+input:focus, .mktoForm input[type=text]:focus, .mktoForm input[type=url]:focus, .mktoForm input[type=email]:focus,
+.mktoForm input[type=tel]:focus, .mktoForm input[type=number]:focus, .mktoForm input[type=date]:focus, .b-form .b-form__input:focus :-ms-input-placeholder {
+  color: #E2E2E2;
+}
+
+.mktoForm textarea.mktoField, .b-form .b-form__input.b-form__input--textarea {
+  font-family: "Malabar LT W01 Regular", Georgia, Times, "Times New Roman", serif;
+  float: left;
+  resize: none;
+  padding: 1rem 10.271041369% 0 10.271041369%;
+  margin-top: 0;
+  height: 100%;
+}
+
+@media screen and (max-width: 748px) {
+  .mktoForm textarea.mktoField, .b-form .b-form__input.b-form__input--textarea {
+    padding: 1.5rem 7.14286%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mktoForm textarea.mktoField, .b-form .b-form__input.b-form__input--textarea {
+    padding: 1.5rem 0.75rem;
+  }
+}
+
+select, .mktoForm select.mktoField, .b-form .b-form__select {
+  float: left;
+  width: 100%;
+  background: url("../images/icon-triangle-down.svg") no-repeat center right;
+  border-right: 12px solid transparent;
+}
+
+select, .mktoForm select.mktoField, .b-form .b-form__select .b-form__select-item--disabled {
+  color: #787878 !important;
+}
+
+
+.b-hover-list__item {
+  display: inline-block;
+  font-family: "Malabar LT W01 Regular", Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 2px;
+  margin-right: 0.375rem;
+  padding: 0 0.375rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 0.1875rem;
+}
+
+
+@media screen and (min-width: 1023px) {
+  .mktEditable .b-main .b-form__table-cell .b-title__text {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .mktEditable .b-main .b-form__table-cell .b-title__text {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .mktEditable .b-main .b-form__table-cell .b-title__text {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+}
