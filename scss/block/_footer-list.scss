@@ -66,6 +66,15 @@
     font-family: $kootenay-bold;
   }
 }
+:lang(de) { // Specific for language DE only
+  .b-footer-list__list {
+    .b-footer-list__item.g-col-2-3 {
+      @include breakpoint(fromAdaptiveToFluid) {
+        margin-left: 3%;
+      }
+    }
+  }
+}
 .b-footer-list__secondlevel {
 
   .b-footer-list__secondlevel-item:last-child {
