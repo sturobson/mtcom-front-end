@@ -228,6 +228,7 @@
   opacity: 1;
   transform: translateY(0.02em);
   @include vendor(animation, 1.5s blink step-end infinite);
+  vertical-align: top;
 }
 .b-typetester.b-typetester--home {
   .b-typetester__cursor {
@@ -444,7 +445,6 @@
     }
   }
 }
-
 /* ------------------------------------------------------------
    Progress Bar
    ------------------------------------------------------------ */
