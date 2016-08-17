@@ -1,0 +1,75 @@
+
+.b-media.b-media--resources {
+    background: url('img/ibm-header.jpg') no-repeat center bottom;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 748px) {
+
+	.b-resources-latest.g-container {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+	.b-resources-latest__carousel {
+		padding-top: 14rem;
+		padding-bottom: 1rem;
+	}
+	
+}
+
+@media only screen and (max-width: 747px) {
+
+	.b-resources-latest__carousel {
+		background-color: rgba(51, 51, 51, 0.6);
+		padding-top: 3rem;
+	}
+}
+
+.b-resources-latest__carousel h2, .b-resources-latest__carousel .b-subtitle__text p {
+    color: #fff;
+}
+
+.b-resources-latest__carousel .b-button-group {
+    margin-top: 1rem;
+}
+
+.b-carousel__prev-next .b-nav__prev-next__link {
+    background: url(img/arrows-featured-tablet.png);
+}
+
+.b-carousel__prev-next {
+    width: 100%;
+    background: none;
+}
+
+@media only screen and (min-width: 1023px) {
+
+	.b-carousel__prev-next .b-nav__prev-next__link {
+	    background: url(img/arrows-featured.png);
+	}
+	
+}
+
+@media only screen and (min-width: 748px) {
+
+	.b-carousel__prev-next {
+	    position: static;
+	    width: 6.8125rem;
+	    margin-right: 0.6em;
+	    float: right;
+	    background: transparent;
+	 }
+	    
+	.b-carousel__prev-next .b-nav__prev-next__item {
+	    border-left: 1px solid #c8c8c8;
+	}
+	
+	.b-carousel__prev-next .b-nav__prev {
+		border-left: none;
+	}
+	.b-carousel__prev-next ul {
+	    border-right: none;
+	}
+
+}
