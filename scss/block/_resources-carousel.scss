@@ -1,7 +1,6 @@
 
-.b-media.b-media--resources {
-    background: url('img/ibm-header.jpg') no-repeat center bottom;
-    background-size: cover;
+.b-resources-latest .b-carousel .b-carousel__list {
+	position: static;
 }
 
 @media only screen and (min-width: 748px) {
@@ -11,27 +10,37 @@
 	    padding-right: 0;
 	}
 
-	.b-resources-latest__carousel {
+	.b-resources-latest__slide {
 		padding-top: 14rem;
-		padding-bottom: 1rem;
+		padding-bottom: 2rem;
 	}
 	
 }
 
 @media only screen and (max-width: 747px) {
 
-	.b-resources-latest__carousel {
+	.b-resources-latest__slide {
 		background-color: rgba(51, 51, 51, 0.6);
 		padding-top: 3rem;
+		padding-bottom: 3rem;
 	}
 }
 
-.b-resources-latest__carousel h2, .b-resources-latest__carousel .b-subtitle__text p {
+.b-resources-latest__slide h2, .b-resources-latest__slide .b-subtitle__text p {
     color: #fff;
 }
 
-.b-resources-latest__carousel .b-button-group {
+.b-resources-latest__slide .b-button-group {
     margin-top: 1rem;
+}
+
+.b-resources-latest-nav {
+	position: absolute;
+	bottom: 10px;
+	padding-bottom: -7em;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .b-carousel__prev-next .b-nav__prev-next__link {
