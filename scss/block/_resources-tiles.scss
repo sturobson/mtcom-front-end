@@ -144,11 +144,14 @@
 
 .b-resourcescontent__item .description {
 	font-family:'Malabar ET W08 Italic', Georgia, Times, Times New Roman, serif;
+	font-size: 1rem;
+	line-height: 1.5em;
 }
 
 .b-resourcescontent__item .tags {
 	font-family: 'Kootenay Pro1277143', Arial, Helvetica Neue, Helvetica, sans-serif;
-	font-size: 0.825em;
+	font-size: 0.675em;
+	    line-height: 1.5em;
 	margin-top: 1em;
 	color: #999;
 	position: absolute;
@@ -159,6 +162,7 @@
 .b-resourcescontent__item .category {
 	font-family: 'Kootenay Pro1277143', Arial, Helvetica Neue, Helvetica, sans-serif;
 	font-size: 0.925em;
+	line-height: 1.5em;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -169,6 +173,7 @@
 	padding: 1em 1.6em;
 	text-transform: uppercase;
 	color: #73b4da;
+	font-size: 0.8em;
 }
 
 
