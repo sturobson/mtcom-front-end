@@ -194,6 +194,19 @@
 
 .b-resourcescontent__item.messaging .b-type-to-show.b-type-to-show--newsletter .b-type-to-show__input {
     font-size: 1rem;
+    color: #d2d2d2;
+}
+
+.b-resourcescontent__item.messaging .b-title h2.b-title__text {
+	color: #fff;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.b-resourcescontent__item.messaging .b-subtitle .b-subtitle__text p {
+	color: #fff;
+	font-size: 0.8em;
+	line-height: 1.4;
 }
 
 
