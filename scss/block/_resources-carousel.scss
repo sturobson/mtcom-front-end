@@ -39,6 +39,10 @@
 	transform: translateX(-50%);
 }
 
+.b-resources-latest__slide, .b-resources-latest .b-media {
+	min-height: 300px;
+}
+
 .b-carousel__prev-next .b-nav__prev-next__link {
     background: url(../../images/arrows-featured-tablet.png);
 }
