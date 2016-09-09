@@ -33,7 +33,7 @@
 .b-resources-latest-nav {
 	position: absolute;
 	bottom: 10px;
-	padding-bottom: -7em;
+	padding-bottom: 0;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
@@ -43,18 +43,18 @@
 	min-height: 300px;
 }
 
-.b-carousel__prev-next .b-nav__prev-next__link {
+.b-resources-latest-nav .b-carousel__prev-next .b-nav__prev-next__link {
     background: url(../../images/arrows-featured-tablet.png);
 }
 
-.b-carousel__prev-next {
+.b-resources-latest-nav .b-carousel__prev-next {
     width: 100%;
     background: none;
 }
 
 @media only screen and (min-width: 1023px) {
 
-	.b-carousel__prev-next .b-nav__prev-next__link {
+	.b-resources-latest-nav .b-carousel__prev-next .b-nav__prev-next__link {
 	    background: url(../../images/arrows-featured.png);
 	}
 	
@@ -62,7 +62,7 @@
 
 @media only screen and (min-width: 748px) {
 
-	.b-carousel__prev-next {
+	.b-resources-latest-nav .b-carousel__prev-next {
 	    position: static;
 	    width: 6.8125rem;
 	    margin-right: 0.6em;
@@ -70,14 +70,14 @@
 	    background: transparent;
 	 }
 	    
-	.b-carousel__prev-next .b-nav__prev-next__item {
+	.b-resources-latest-nav .b-carousel__prev-next .b-nav__prev-next__item {
 	    border-left: 1px solid #c8c8c8;
 	}
 	
-	.b-carousel__prev-next .b-nav__prev {
+	.b-resources-latest-nav .b-carousel__prev-next .b-nav__prev {
 		border-left: none;
 	}
-	.b-carousel__prev-next ul {
+	.b-resources-latest-nav .b-carousel__prev-next ul {
 	    border-right: none;
 	}
 

@@ -487,6 +487,8 @@
   .b-masonry__inner-link__fb .b-masonry__inner-link {@include social_icons('fb')}
   .b-masonry__inner-link__li .b-masonry__inner-link {@include social_icons('li')}
   .b-masonry__inner-link__em .b-masonry__inner-link {@include social_icons('em')}
+  .b-masonry__inner-link__flkr .b-masonry__inner-link {@include social_icons('flkr')}
+  .b-masonry__inner-link__pin .b-masonry__inner-link {@include social_icons('pin')}
 }
 
 // placeholder text color MUST have separate selectors
