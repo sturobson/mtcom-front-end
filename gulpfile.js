@@ -28,6 +28,7 @@ var path            = require('path');
 
 var proxy           = httpProxy.createProxyServer({});
 var reload          = browserSync.reload;
+var rename          = require('gulp-rename');
 
 // Housekeeping Stuff
 
@@ -180,6 +181,21 @@ gulp.task('copyBuild', function() {
   .pipe(gulp.dest('dist/'));
 });
 
+
+gulp.task('copyFontsUK', function() {
+  del('./scss/global/variables/_v-fonts.scss');
+  gulp.src('./scss/global/variables/_v-fonts--english.scss')
+  .pipe(rename('_v-fonts.scss'))
+  .pipe(gulp.dest('./scss/global/variables/'))
+});
+
+gulp.task('copyFontsJP', function() {
+  del('./scss/global/variables/_v-fonts.scss');
+  gulp.src('./scss/global/variables/_v-fonts--japan.scss')
+  .pipe(rename('_v-fonts.scss'))
+  .pipe(gulp.dest('./scss/global/variables/'))
+});
+
 // -----------------------------------------------------------------------------
 // Watchers
 // -----------------------------------------------------------------------------
@@ -248,6 +264,9 @@ gulp.task('stats', function () {
 
 // all the tasks in the world
 gulp.task('default', ['sass', 'watch', 'php-serve']);
+gulp.task('setup:english', ['copyFontsUK']);
+gulp.task('setup:japan', ['copyFontsJP']);
+
 // used for when making things
 gulp.task('dev', ['copyit', 'sass',  'watch', 'php-serve']);
 // used for when ready to publish
