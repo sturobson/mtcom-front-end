@@ -1,22 +1,32 @@
 /* ------------------------------------------------------------
    Japanese Font Variables
    ------------------------------------------------------------ */
+$jp-overide: 'Yu Mincho', 'Hirgano Mincho';
 
+/**
+  * font-family:'Yu Gothic Std-TT D';
+  * font-family:'Yu Gothic Std-TT L';
+  * font-family:'Yu Gothic Std-TT M';
+  * font-family:'Yu Gothic Std-TT R';
+  * font-family:'Yu Gothic Std-TT B';
+  * font-family:'Yu Gothic Std-TT E1215143';
+  * font-family:'Yu Gothic Std-TT H1215146';
+  */
 
-$malabar: 'Malabar ET W08 Regular', Georgia, Times, "Times New Roman", serif;
-$malabar-italic: 'Malabar ET W08 Italic', Georgia, Times, "Times New Roman", serif;
-$malabar-bold: 'Malabar W04 Bold', Georgia, Times, "Times New Roman", serif;
-$malabar-bold-italic: 'Malabar W04 Bold Italic', Georgia, Times, "Times New Roman", serif;
-$malabar-heavy: 'Malabar W04 Heavy', Georgia, Times, "Times New Roman", serif;
-$malabar-heavy-italic: 'Malabar W04 Heavy Italic', Georgia, Times, "Times New Roman", serif;
-$kootenay: 'Kootenay Pro1277143', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$kootenay-italic: 'Kootenay Pro1277141', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$kootenay-semibold: 'Kootenay Pro SemiBold', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$kootenay-semibold-italic: 'Kootenay Pro SemiBold1280370', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$kootenay-bold: 'Kootenay Pro', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$kootenay-bold-italic: 'Kootenay Pro1277139', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$kootenay-extrabold: 'Kootenay Pro ExtraBold', Arial, "Helvetica Neue", Helvetica, sans-serif;
-$kootenay-extrabold-italic: 'Kootenay Pro ExtraBold1280365', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$malabar: $jp-overide;
+$malabar-italic: $jp-overide;
+$malabar-bold: $jp-overide;
+$malabar-bold-italic: $jp-overide;
+$malabar-heavy: $jp-overide;
+$malabar-heavy-italic: $jp-overide;
+$kootenay: 'Yu Gothic Std-TT R', $jp-overide;
+$kootenay-italic: 'Yu Gothic Std-TT R', $jp-overide;
+$kootenay-semibold: 'Yu Gothic Std-TT D', $jp-overide;
+$kootenay-semibold-italic: 'Yu Gothic Std-TT D', $jp-overide;
+$kootenay-bold: 'Yu Gothic Std-TT B', $jp-overide;
+$kootenay-bold-italic: 'Yu Gothic Std-TT B', $jp-overide;
+$kootenay-extrabold: 'Yu Gothic Std-TT E1215143', $jp-overide;
+$kootenay-extrabold-italic: 'Yu Gothic Std-TT E1215143', $jp-overide;
 
 
 /* ------------------------------------------------------------
