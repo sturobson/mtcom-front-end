@@ -5,20 +5,17 @@ $jp-overide: 'Yu Mincho', 'Hirgano Mincho';
 
 /**
   * font-family:'Yu Gothic Std-TT D';
-  * font-family:'Yu Gothic Std-TT L';
-  * font-family:'Yu Gothic Std-TT M';
   * font-family:'Yu Gothic Std-TT R';
   * font-family:'Yu Gothic Std-TT B';
   * font-family:'Yu Gothic Std-TT E1215143';
-  * font-family:'Yu Gothic Std-TT H1215146';
   */
 
-$malabar: $jp-overide;
-$malabar-italic: $jp-overide;
-$malabar-bold: $jp-overide;
-$malabar-bold-italic: $jp-overide;
-$malabar-heavy: $jp-overide;
-$malabar-heavy-italic: $jp-overide;
+$malabar: 'Yu Gothic Std-TT R', $jp-overide;
+$malabar-italic: 'Yu Gothic Std-TT R', $jp-overide;
+$malabar-bold: 'Yu Gothic Std-TT B', $jp-overide;
+$malabar-bold-italic: 'Yu Gothic Std-TT B', $jp-overide;
+$malabar-heavy: 'Yu Gothic Std-TT E1215143', $jp-overide;
+$malabar-heavy-italic: 'Yu Gothic Std-TT E1215143', $jp-overide;
 $kootenay: 'Yu Gothic Std-TT R', $jp-overide;
 $kootenay-italic: 'Yu Gothic Std-TT R', $jp-overide;
 $kootenay-semibold: 'Yu Gothic Std-TT D', $jp-overide;
@@ -33,3 +30,11 @@ $kootenay-extrabold-italic: 'Yu Gothic Std-TT E1215143', $jp-overide;
    Font Size Variables
    ------------------------------------------------------------ */
 $main-font-size: 1rem;
+
+p {
+  line-height: 41px !important;
+}
+
+p.standfirst {
+  line-height: 36px !important;
+}
