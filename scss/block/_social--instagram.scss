@@ -18,3 +18,19 @@
 		}
 	}
 }
+
+// from custom.scss file
+
+.g-row + .b-insta__feed {
+    margin-top: 1rem;
+}
+.b-insta__feed {
+    a {
+        display: inline-block;
+        margin: 0 0 1rem 1rem;
+        height: 270px;
+        opacity: 1;
+        position: relative;
+        width: 270px;
+    }
+}
