@@ -1,0 +1,25 @@
+.mt-e-paragraph {
+  @include responsive-text-size('neptune');
+  font-family: $malabar;
+  margin-top:2 * $spacing-unit;
+
+  @media (max-width: $medium) {
+    margin-top:1.6875rem;
+  }
+  @media (max-width: $small) {
+    margin-top:1.5rem;
+  }
+
+  a {
+    border-bottom:1px solid $color-one;
+    padding-bottom: 0.0625rem;
+    transition: border-bottom linear $transition;
+
+    &:hover {
+      border-bottom:1px solid $color-five;
+    }
+  }
+  &:first-of-type {
+    margin-top: 0;
+  }
+}

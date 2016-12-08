@@ -1,0 +1,40 @@
+.mt-c-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &--alt {
+    background-color: $color-one;
+    .mt-c-products__title {
+      color: $color-seven;
+    }
+  }
+  .mt-b-blurb {
+    order: 1;
+  }
+  @media (min-width: 767px) {
+    // if there are two items - make two coloums
+    .mt-b-blurb:nth-last-child(n+2), .mt-b-blurb:nth-last-child(n+2) ~ .mt-b-blurb {
+      width: calc(50% - 1.38889%);
+    }
+    // if there are three items - make one big one followed by two columns
+    .mt-b-blurb:nth-last-child(n+3), .mt-b-blurb:nth-last-child(n+3) ~ .mt-b-blurb:first-of-type {
+      width: 100%;
+    }
+    // if there are four items - make two coloums
+    .mt-b-blurb:nth-last-child(n+4), .mt-b-blurb:nth-last-child(n+4) ~ .mt-b-blurb:first-of-type {
+      width: calc(50% - 1.38889%);
+    }
+    // if there are three items - make one big one followed by two columns
+    .mt-b-blurb:nth-last-child(n+5), .mt-b-blurb:nth-last-child(n+5) ~ .mt-b-blurb:first-of-type {
+      width: 100%;
+    }
+    // if there are six items - make two coloums
+    .mt-b-blurb:nth-last-child(n+6), .mt-b-blurb:nth-last-child(n+6) ~ .mt-b-blurb:first-of-type {
+      width: calc(50% - 1.38889%);
+    }
+    // if there are more than six products in this pattern - you cray cray.
+  }
+  padding-top: 3rem;
+  padding-bottom: 7.5rem;
+}

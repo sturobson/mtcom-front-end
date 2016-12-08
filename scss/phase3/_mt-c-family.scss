@@ -1,0 +1,18 @@
+.mt-c-family {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &--alt {
+    background-color: $color-one;
+    .mt-c-products__title {
+      color: $color-seven;
+    }
+  }
+  .mt-b-blurb {
+    order: 1;
+    @media (min-width: 767px) {
+      width: calc(33.33333% - 1.38889%);
+    }
+  }
+}

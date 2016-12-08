@@ -1,0 +1,28 @@
+/*
+ *  Monotype Blurb Alt Pattern
+ *
+ *  This pattern relies on the container using flexbox
+ *
+ */
+
+
+.mt-b-blurb--alt {
+  .mt-e-logo--icon {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mt-e-button {
+    float: left;
+  }
+  .mt-e-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0;
+    display:inline-block;
+    float:left;
+    clear:both;
+  }
+}

@@ -1,5 +1,20 @@
 // Adds variables by importing each 'group' of variables separately.
+$serif-fallback: Georgia, Times, "Times New Roman", serif;
+$sans-serif-fallback: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
+$spacing-unit: 6px;
+$spacing-unit--xs: 3px;
+$spacing-unit--xxs: 0;
+$spacing-unit--s: 6px;
+$spacing-unit--m: 12px;
+$spacing-unit--r: 18px;
+$spacing-unit--l: 24px;
+$spacing-unit--xl: 36px;
+$spacing-unit--xxl: 48px;
+
+$main-font-size: 1rem;
+
+$color-eleven: #51514e; /* darker grey video background */
 @import "variables/v-colors";
 @import "variables/v-fonts";
 @import "variables/v-animations";

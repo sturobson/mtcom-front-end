@@ -1,0 +1,43 @@
+/*
+ *  Monotype Blurb Pattern
+ *
+ *  This pattern relies on the container using flexbox
+ *
+ */
+
+.mt-b-blurb {
+margin-top: 32px;
+  .mt-e-button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.mt-b-blurb__image {
+  position: relative;
+}
+
+.mt-b-blurb__img--fg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.mt-e-cta {
+  border: 1px solid transparent;
+  display: block;
+  margin-top: 1rem;
+
+  &:hover {
+    border-bottom: 1px solid $color-one;
+  }
+
+  @media (min-width: 767px) {
+    display: inline-block;
+    padding: 12px 0 0;
+    margin-left: 1rem;
+    margin-top: 36px;
+  }
+}
