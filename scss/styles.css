@@ -9330,6 +9330,10 @@ video {
   line-height: 2.226rem;
 }
 
+.mt-p-products .g-container--video .b-subtitle .b-subtitle__text p {
+  margin-bottom: 1rem;
+}
+
 /*black*/
 .mt-c-intro {
   color: #1E1E1E;
@@ -9521,6 +9525,12 @@ video {
   color: #d44f54;
 }
 
+#mel .b-3-4-1-intro-full-width-background {
+  background-size: contain;
+  height: 40rem;
+  border-bottom: none;
+}
+
 #mls .mt-e-button {
   background: #73b4da;
   border: 1px solid transparent;
@@ -9556,6 +9566,12 @@ video {
 }
 
 #mls .b-3-4-1-intro-full-width-background {
+  background-size: contain;
+  height: 40rem;
+  border-bottom: none;
+}
+
+.mt-p-products .b-3-4-1-intro-full-width-background {
   background-size: contain;
   height: 40rem;
   border-bottom: none;
