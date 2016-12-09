@@ -23,6 +23,15 @@
     }
   }
   
+  h3 {
+  	font-family: 'Malabar ET W08 Italic',Georgia,Times,Times New Roman,serif;
+  	margin-top: 1em;
+  }
+  
+  h3 + p {
+  	margin-top: 0;
+  }
+  
   a {
     border-bottom:1px solid $color-one;
     padding-bottom: 0.0625rem;

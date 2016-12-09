@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  margin-top: 1rem;
   @media (max-width: 590px) {
     flex-direction: column;
   }
@@ -21,6 +22,7 @@
   line-height: 1.5;
   flex: 1;
   width: 100%;
+  
   .mt-e-button {
     margin-top: 2.25rem;
   }

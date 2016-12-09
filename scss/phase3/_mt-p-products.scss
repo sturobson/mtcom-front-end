@@ -1,6 +1,10 @@
 .mt-p-products {
-  h1, h1 + p, h2, h2 + p {
+  h1, h1 + p, h2, h2 + p, .b-subtitle__text p  {
     text-align: center;
+  }
+  
+  h2.b-paragraph-title__text {
+  	text-align: left;
   }
 }
 
@@ -45,6 +49,12 @@
       color: $color-one;
     }
   }
+  .mt-e-button--ghost {
+      background-color: transparent;
+      border: 1px solid #666;
+      color: #666;
+  }
+  
   .g-container--alt {
     .mt-e-button:hover {
       color: $color-seven;
