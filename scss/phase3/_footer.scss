@@ -140,7 +140,7 @@ $mt-b-footer__list__item-color--border: $color-three !default;
   .mt-b-footer__item {
     border: none;
     float: left;
-    margin: 0;
+    margin-bottom: 0.5em;
     padding: 0;
     width: 100%;
   }
@@ -168,6 +168,7 @@ $mt-b-footer__list__item-color--border: $color-three !default;
   font-family: $mt-b-footer__list__text-title;
   float: left;
   width: 100%;
+  margin-bottom: 0.5em;
 
   .mt-b-footer__link {
     font-family: $mt-b-footer__list__text-title;
@@ -176,13 +177,13 @@ $mt-b-footer__list__item-color--border: $color-three !default;
 
 .mt-b-footer__link {
   @include responsive-text-size('venus');
-
+  line-height: 1.3rem;
   border-bottom: 1px solid transparent;
   color: $color-one;
   float: left;
   font-family: $mt-b-footer__list__text;
   letter-spacing: 0.03125rem;/*0.5px*/
-  padding: 0 0 .5625em;
+  padding: 0 0 .2625em;
   transition: border-bottom linear $transition;
 
   &:hover {
