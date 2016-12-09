@@ -4,11 +4,12 @@ $color-one: #1E1E1E;/*black*/
   color:$color-one;
 
   .mt-b-lead {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .mt-e-logo--icon {
     display: block;
     margin: 0 auto;
+    max-width: 80px;
   }
   .mt-e-button {
     display: table;
