@@ -8948,17 +8948,16 @@ a.text-center {
   display: block;
   float: left;
   position: relative;
-  top: 2px;
 }
 
 .mt-c-header .mt-b-nav__items--breadcrumbs > .mt-b-nav__item {
   float: left;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   padding-left: 1.125rem;
   position: relative;
 }
 
 .mt-c-header .mt-b-nav__items--breadcrumbs > .mt-b-nav__item:before {
-  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.125rem;
   content: "›";
   position: absolute;
@@ -9314,18 +9313,23 @@ video {
 }
 
 .mt-c-intro .mt-b-lead {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .mt-c-intro .mt-e-logo--icon {
   display: block;
   margin: 0 auto;
+  max-width: 80px;
 }
 
 .mt-c-intro .mt-e-button {
   display: table;
   margin: 0 auto;
   margin-top: 2.25em;
+}
+
+.mt-c-intro .mt-e-paragraph:first-of-type {
+  margin-top: 0.75rem;
 }
 
 .mt-c-intro--product {
@@ -9337,7 +9341,7 @@ video {
   font-family: Kootenay Pro1277143, Arial, Helvetica Neue, Helvetica, sans-serif;
   font-size: 0.8rem;
   color: #797878 !important;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   text-align: center;
 }
 
@@ -9515,6 +9519,12 @@ video {
 
 #mls .b-resourcescontent__item .category a {
   color: #73b4da;
+}
+
+#mls .b-3-4-1-intro-full-width-background {
+  background-size: contain;
+  height: 40rem;
+  border-bottom: none;
 }
 
 .mt-e-title {
