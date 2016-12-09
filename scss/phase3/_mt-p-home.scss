@@ -1,0 +1,89 @@
+/* Homepage */
+
+@media only screen and (min-width: 1024px) {
+
+	#home-bg:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #faf7f5; /* Old browsers */
+		background: linear-gradient(to right, #faf7f5 0%,#faf7f5 50%,#f1ebe7 50%,#f1ebe7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		opacity: 1;
+		z-index: 0;
+	}
+}
+
+
+.home {
+	padding-bottom: 3rem;
+	.g-col-7 {
+		position: relative;
+	}
+	.b-resourcescontent__item {
+		margin-top: 32px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+
+	.g-block.home .g-row-wide .g-col-7.outer {
+		float: left;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+.home.g-block {
+	max-width: 1280px;
+}
+
+
+.b-typetester.b-typetester--home .b-typetester__meta-wrapper {
+	background-color: transparent;
+	display: block;
+	border-top: none;
+}
+
+.b-typetester__meta-select, .b-typetester__meta-select-mobile {
+	background-color: #fff;
+}
+
+
+/* TEMP HOMEPAGE STYLES */
+
+.b-typetester.b-typetester--home .b-typetester__meta-wrapper {
+	position: inherit;
+	bottom: inherit;
+}
+
+/* Amend existing patterns */
+
+@media only screen and (min-width: 1024px) {
+
+	.b-typetester.b-typetester--home .b-typetester__write {
+		padding: 0;
+		line-height: 6.1vh;
+		font-size: 4.5vh;
+		padding-top: 4vh;
+	}
+}
+
+
+/* Responsive styling */
+
+
+@media screen and (max-width: 1023px) {
+
+	.b-typetester.b-typetester--home .b-typetester__meta-select {
+		padding: .75rem 1.875rem .5rem .75rem;
+		margin-top: 2rem;
+	}
+
+}

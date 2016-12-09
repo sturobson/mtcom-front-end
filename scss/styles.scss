@@ -17,7 +17,6 @@
 @import 'global/accordion';     // Project Accordion Settings
 
 
-
 /* ------------------------------------------------------------
    Pages
    ------------------------------------------------------------ */
@@ -78,11 +77,9 @@
 @import 'block/social--sharer';
 @import 'block/byline';
 @import 'block/resources-tiles';
-
 @import 'block/specimen-cta';
 @import 'block/specimen-description';
 @import 'block/specimen-carousel';
-
 
 /* ------------------------------------------------------------
    Typetester CSS Declarations
@@ -98,21 +95,22 @@
 
 @import 'phase3/mt-e-button';
 @import 'phase3/mt-e-paragraph';
+@import 'phase3/mt-e-smalltext';
 @import 'phase3/mt-e-paragraph-title';
+@import 'phase3/mt-e-title';
+@import 'phase3/mt-e-lead';
 
 @import 'phase3/mt-b-blurb';
-
 @import 'phase3/mt-b-blurb--alt';
+
 @import 'phase3/mt-c-header';
 @import 'phase3/mt-c-features';
 @import 'phase3/mt-c-family';
 @import 'phase3/mt-c-product';
 @import 'phase3/mt-c-video';
 @import 'phase3/mt-c-intro';
-@import 'phase3/mt-e-smalltext';
 @import 'phase3/mt-c-pricing';
-
-@import 'phase3/mt-e-lead';
-@import 'phase3/mt-p-products';
-@import 'phase3/mt-e-title';
 @import 'phase3/mt-c-login';
+
+@import 'phase3/mt-p-products';
+@import 'phase3/mt-p-home';
