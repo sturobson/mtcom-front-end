@@ -153,13 +153,12 @@
     display: block;
     float: left;
     position: relative;
-    top: 2px;
     > .mt-b-nav__item {
       float: left;
+      font-family: $kootenay;
       padding-left: $spacing-unit * 3;
       position: relative;
       &:before {
-        font-family: $kootenay;
         font-size:1.125rem;
         content: "›";
         position: absolute;
