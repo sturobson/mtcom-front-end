@@ -45,11 +45,11 @@
     margin-bottom: 0.25em;
     font-family: $malabar-heavy;
       a {
-        border-bottom:1px solid $mt-b-subtitle-link-border-color;
-        transition: border-bottom linear $transition;
+        border-bottom: none;
+
 
         &:hover {
-          border-bottom:1px solid $mt-b-subtitle-link-border-color--hover;
+          border-bottom: none;
         }
       }
   }

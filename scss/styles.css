@@ -8436,7 +8436,7 @@ a.text-center {
 .mt-b-footer__list--secondary .mt-b-footer__item {
   border: none;
   float: left;
-  margin: 0;
+  margin-bottom: 0.5em;
   padding: 0;
   width: 100%;
 }
@@ -8473,6 +8473,7 @@ a.text-center {
   font-family: "Kootenay Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;
   float: left;
   width: 100%;
+  margin-bottom: 0.5em;
 }
 
 .mb-b-footer__title .mt-b-footer__link {
@@ -8482,13 +8483,14 @@ a.text-center {
 .mt-b-footer__link {
   font-size: 0.9375rem;
   line-height: 1.5rem;
+  line-height: 1.3rem;
   border-bottom: 1px solid transparent;
   color: #1E1E1E;
   float: left;
   font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: 0.03125rem;
   /*0.5px*/
-  padding: 0 0 .5625em;
+  padding: 0 0 .2625em;
   -webkit-transition: border-bottom linear 0.2s;
           transition: border-bottom linear 0.2s;
 }

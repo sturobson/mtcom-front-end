@@ -176,7 +176,7 @@ $grid-tablet-wide: 14 (30px 24px) split static;
   h1, h2, h3, h4, h5, h6, p, a {
     color: $color-seven !important; // TODO: check to see if this is needed?
   }
-  a:hover {
+  p a {
     border-bottom: 1px solid $color-seven !important; // TODO: check to see if this is needed?
   }
 }
