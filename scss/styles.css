@@ -8752,6 +8752,10 @@ a.text-center {
   position: relative;
 }
 
+.mt-b-blurb__image img {
+  width: 100%;
+}
+
 .mt-b-blurb__img--fg {
   position: absolute;
   top: 50%;
