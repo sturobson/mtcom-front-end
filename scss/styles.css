@@ -3885,6 +3885,15 @@ body:after {
   }
 }
 
+.b-paragraph h3 {
+  font-family: 'Malabar ET W08 Italic',Georgia,Times,Times New Roman,serif;
+  margin-top: 1em;
+}
+
+.b-paragraph h3 + p {
+  margin-top: 0;
+}
+
 .b-paragraph a {
   border-bottom: 1px solid #1E1E1E;
   padding-bottom: 0.0625rem;
@@ -9126,7 +9135,7 @@ a.text-center {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  margin-top: 32px;
+  margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -9353,6 +9362,7 @@ video {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  margin-top: 1rem;
 }
 
 @media (max-width: 590px) {
@@ -9460,8 +9470,12 @@ video {
   border-bottom: 1px solid #73b4da;
 }
 
-.mt-p-products h1, .mt-p-products h1 + p, .mt-p-products h2, .mt-p-products h2 + p {
+.mt-p-products h1, .mt-p-products h1 + p, .mt-p-products h2, .mt-p-products h2 + p, .mt-p-products .b-subtitle__text p {
   text-align: center;
+}
+
+.mt-p-products h2.b-paragraph-title__text {
+  text-align: left;
 }
 
 #mel .mt-e-button {
@@ -9503,6 +9517,12 @@ video {
   background: transparent;
   border: 1px solid #73b4da;
   color: #1E1E1E;
+}
+
+#mls .mt-e-button--ghost {
+  background-color: transparent;
+  border: 1px solid #666;
+  color: #666;
 }
 
 #mls .g-container--alt .mt-e-button:hover {
