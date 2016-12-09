@@ -35,6 +35,11 @@
   .b-resourcescontent__item .category a {
     color: $brand__color--mel;
   }
+  .b-3-4-1-intro-full-width-background {
+  	background-size: contain;
+  	height: 40rem;
+  	border-bottom: none;
+  }
 }
 
 
@@ -75,4 +80,10 @@
   	height: 40rem;
   	border-bottom: none;
   }
+}
+
+.mt-p-products .b-3-4-1-intro-full-width-background {
+	background-size: contain;
+	height: 40rem;
+	border-bottom: none;
 }
