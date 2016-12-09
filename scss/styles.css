@@ -8789,6 +8789,33 @@ a.text-center {
   }
 }
 
+/*
+ *  Monotype Blurb Alt Pattern
+ *
+ *  This pattern relies on the container using flexbox
+ *
+ */
+.mt-b-blurb--alt .mt-e-logo--icon {
+  width: 65px;
+  height: 65px;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mt-b-blurb--alt .mt-e-button {
+  float: left;
+}
+
+.mt-b-blurb--alt .mt-e-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  clear: both;
+}
+
 .mt-b-nav {
   float: right;
   width: auto;
