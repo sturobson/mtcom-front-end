@@ -78,9 +78,7 @@ var watchFiles = ['tmp/**/*.php', 'css/**/*.css', 'tmp/**/*.css', 'tmp/**/*.js']
 gulp.task('sass', function () {
   return gulp
     .src(SassInput)
-    .pipe(sourcemaps.init())
     .pipe(sass(SassOptions)).on('error', notify.onError(function (error) {return "Problem file : " + error.message;}))
-    .pipe(sourcemaps.write())
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(browserSync.stream())
     .pipe(gulp.dest(SassOutput))
