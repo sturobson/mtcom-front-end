@@ -1,0 +1,23 @@
+$color-one: #1E1E1E;/*black*/
+
+.mt-c-intro {
+  color:$color-one;
+
+  .mt-b-lead {
+    margin-top: 3rem;
+  }
+  .mt-e-logo--icon {
+    display: block;
+    margin: 0 auto;
+  }
+  .mt-e-button {
+    display: table;
+    margin: 0 auto;
+    margin-top: 2.25em;
+  }
+}
+
+.mt-c-intro--product {
+  padding-bottom: 3.375rem;
+  padding-top: 3rem;
+}
