@@ -69,7 +69,7 @@ var ImagesFolder = './image';
 
 // BrowserSync Files to watch changes for
 
-var watchFiles = ['tmp/**/*.php', 'css/**/*.css', 'tmp/**/*.css', 'tmp/**/*.js'];
+var watchFiles = ['tmp/**/*.php', 'css/**/*.css', 'tmp/**/*.css', 'tmp/**/*.js', '**/*.scss'];
 
 // -----------------------------------------------------------------------------
 // Sass compilation
@@ -272,3 +272,6 @@ gulp.task('dev', ['copyit', 'sass',  'watch', 'php-serve']);
 gulp.task('build', ['sass:build', 'copyBuild']);
 // build task to deploy for monotype.com
 gulp.task('deploy', ['sass:deploy', 'copyBuild']);
+
+
+gulp.task('css', ['sass',  'watch']);
