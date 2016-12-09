@@ -92,7 +92,7 @@ gulp.task('sass:build', function () {
     .pipe(sass())
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(cssnano())
-    .pipe(gulp.dest(SassOutputBuild));
+    .pipe(gulp.dest('./scss/'));
 });
 
 gulp.task('sass:deploy', function () {
