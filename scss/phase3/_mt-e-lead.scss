@@ -1,0 +1,19 @@
+$mt-b-lead-text-color: $color-one !default;
+$mt-b-lead-link-color: $color-one !default;
+$mt-b-lead-link-color--hover: $color-five !default;
+
+.mt-b-lead {
+  @include responsive-text-size('saturn');
+
+  color: $mt-b-lead-text-color;
+  font-family: $malabar-heavy;
+
+  a {
+    border-bottom: 1px solid $mt-b-lead-link-color;
+    transition: border-bottom linear $transition;
+
+    &:hover {
+      border-bottom: 1px solid $mt-b-lead-link-color--hover;
+    }
+  }
+}
