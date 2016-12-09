@@ -8897,6 +8897,7 @@ a.text-center {
 }
 
 .mt-b-nav__item {
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.125rem;
   line-height: 1.5rem;
   display: block;
@@ -8967,7 +8968,6 @@ a.text-center {
 
 .mt-c-header .mt-b-nav__items--breadcrumbs > .mt-b-nav__item {
   float: left;
-  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   padding-left: 1.125rem;
   position: relative;
 }
@@ -9150,6 +9150,7 @@ a.text-center {
         -ms-flex: 0 0 40%;
             flex: 0 0 40%;
     margin-top: 0;
+    margin-right: 1.38889%;
   }
   .mt-c-features .mt-b-blurb .mt-b-blurb__body {
     -webkit-box-flex: 0;
@@ -9161,6 +9162,12 @@ a.text-center {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin-right: 0;
+    margin-left: 1.38889%;
+  }
+  .mt-c-features .mt-b-blurb:nth-child(even) .mt-b-blurb__body {
+    margin-left: 0;
+    margin-right: 1.38889%;
   }
 }
 
@@ -9494,6 +9501,25 @@ video {
 
 .mt-p-products h2.b-paragraph-title__text {
   text-align: left;
+}
+
+#mel .b-head,
+#mel .b-3-4-1-intro-full-width-background {
+  background-color: #333;
+}
+
+#mel .b-head h1, #mel .b-head h2, #mel .b-head h3, #mel .b-head h4, #mel .b-head h5, #mel .b-head h6, #mel .b-head p, #mel .b-head a, #mel .b-head span, #mel .b-head a span,
+#mel .b-3-4-1-intro-full-width-background h1,
+#mel .b-3-4-1-intro-full-width-background h2,
+#mel .b-3-4-1-intro-full-width-background h3,
+#mel .b-3-4-1-intro-full-width-background h4,
+#mel .b-3-4-1-intro-full-width-background h5,
+#mel .b-3-4-1-intro-full-width-background h6,
+#mel .b-3-4-1-intro-full-width-background p,
+#mel .b-3-4-1-intro-full-width-background a,
+#mel .b-3-4-1-intro-full-width-background span,
+#mel .b-3-4-1-intro-full-width-background a span {
+  color: #FFFFFF;
 }
 
 #mel .mt-e-button {

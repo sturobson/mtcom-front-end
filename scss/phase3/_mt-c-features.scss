@@ -17,6 +17,7 @@
       .mt-b-blurb__image {
         flex: 0 0 40%;
         margin-top: 0;
+        margin-right: 1.38889%;
       }
       .mt-b-blurb__body {
         flex: 0 0 calc(60% - 1.38889%);
@@ -25,6 +26,12 @@
       &:nth-child(even) {
         .mt-b-blurb__image {
           order: 1;
+          margin-right: 0;
+          margin-left: 1.38889%;
+        }
+        .mt-b-blurb__body {
+          margin-left: 0;
+          margin-right: 1.38889%;
         }
       }
     }

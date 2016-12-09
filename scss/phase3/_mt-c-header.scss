@@ -89,6 +89,7 @@
 }
 
 .mt-b-nav__item {
+  font-family: $kootenay;
   font-size:1.125rem;
   line-height: 1.5rem;
   display: block;
@@ -155,7 +156,6 @@
     position: relative;
     > .mt-b-nav__item {
       float: left;
-      font-family: $kootenay;
       padding-left: $spacing-unit * 3;
       position: relative;
       &:before {

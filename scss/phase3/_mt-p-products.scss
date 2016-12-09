@@ -2,7 +2,7 @@
   h1, h1 + p, h2, h2 + p, .b-subtitle__text p  {
     text-align: center;
   }
-  
+
   h2.b-paragraph-title__text {
   	text-align: left;
   }
@@ -10,6 +10,13 @@
 
 
 #mel {
+  .b-head,
+  .b-3-4-1-intro-full-width-background {
+    background-color: #333;
+    h1,h2,h3,h4,h5,h6, p, a, span, a span {
+      color: $color-seven;
+    }
+  }
   .mt-e-button {
     background: $brand__color--mel;
     border: 1px solid transparent;
@@ -59,7 +66,7 @@
       border: 1px solid #666;
       color: #666;
   }
-  
+
   .g-container--alt {
     .mt-e-button:hover {
       color: $color-seven;
@@ -74,7 +81,7 @@
   .b-resourcescontent__item .category a {
     color: $brand__color--mls;
   }
-  
+
   .b-3-4-1-intro-full-width-background {
   	background-size: contain;
   	height: 40rem;
