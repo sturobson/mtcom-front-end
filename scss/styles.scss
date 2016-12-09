@@ -16,14 +16,17 @@
 @import 'global/typography';    // Project Typography Settings
 @import 'global/accordion';     // Project Accordion Settings
 
+
+
 /* ------------------------------------------------------------
    Pages
    ------------------------------------------------------------ */
-@import 'page/home';
-@import 'page/overview';
-@import 'page/article';
-@import 'page/expertise';
-@import 'page/legal';
+@import 'page/home.scss';
+@import 'page/overview.scss';
+@import 'page/article.scss';
+@import 'page/expertise.scss';
+@import 'page/legal.scss';
+
 
 /* ------------------------------------------------------------
    Blocks
@@ -59,6 +62,7 @@
 @import 'block/navigation';
 @import 'block/paragraph-title';
 @import 'block/paragraph';
+@import 'block/related';
 @import 'block/subtitle';
 @import 'block/tab-content';
 @import 'block/teaser-list';
@@ -73,7 +77,8 @@
 @import 'block/social--instagram';
 @import 'block/social--sharer';
 @import 'block/byline';
-@import 'block/related';
+@import 'block/resources-tiles';
+
 @import 'block/specimen-cta';
 @import 'block/specimen-description';
 @import 'block/specimen-carousel';
@@ -85,6 +90,8 @@
 @import 'typetester/helvetica';
 @import 'typetester/kootenay';
 @import 'typetester/malabar';
+
+@import 'phase3/mt-utilities.scss';
 
 @import 'phase3/footer';
 @import 'phase3/quote';
@@ -105,5 +112,5 @@
 @import 'phase3/mt-c-pricing';
 
 @import 'phase3/mt-e-lead';
-
 @import 'phase3/mt-p-products';
+@import 'phase3/mt-e-title';

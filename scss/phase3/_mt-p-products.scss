@@ -28,8 +28,8 @@
     background-color: $brand__color--mel;
     color: $color-seven;
   }
-  .b-resourcescontent__item .category {
-    background-color: $brand__color--mel;
+  .b-resourcescontent__item .category a {
+    color: $brand__color--mel;
   }
 }
 
@@ -56,7 +56,7 @@
   .mt-b-footer__item--selected a {
     background-color: $brand__color--mls;
   }
-  .b-resourcescontent__item .category {
-    background-color: $brand__color--mls;
+  .b-resourcescontent__item .category a {
+    color: $brand__color--mls;
   }
 }

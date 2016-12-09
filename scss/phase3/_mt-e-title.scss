@@ -1,0 +1,4 @@
+.mt-e-title {
+    @include responsive-text-size('uranus');
+    font-family: $malabar-heavy;
+}

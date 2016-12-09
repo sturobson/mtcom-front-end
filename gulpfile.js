@@ -82,6 +82,7 @@ gulp.task('sass', function () {
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(browserSync.stream())
     .pipe(gulp.dest(SassOutput))
+    .pipe(gulp.dest('./scss/'));
 });
 
 // Production build
