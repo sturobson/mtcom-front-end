@@ -20,6 +20,10 @@ margin-top: 32px;
 
 .mt-b-blurb__image {
   position: relative;
+  
+  img {
+  	width: 100%;
+  }
 }
 
 .mt-b-blurb__img--fg {

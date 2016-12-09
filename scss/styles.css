@@ -8758,7 +8758,7 @@ a.text-center {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 100px;
+  max-width: 120px;
 }
 
 .mt-e-cta {
