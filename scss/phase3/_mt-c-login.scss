@@ -1,0 +1,46 @@
+.login__form--product {
+  .mt-e-button {
+    display: table;
+    margin-bottom: 1rem;
+  }
+}
+
+.mt-e-form__item {
+  max-width: 400px;
+  margin: 0 auto;
+  height: 56px;
+  background: $color-seven;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.login__form--product {
+  margin-top: 2rem;
+}
+
+.mt-e-form__input {
+  font-family: $kootenay;
+  font-size: 1rem;
+  color: $color-one;
+  float: left;
+  width: 100%;
+  line-height: 56px;
+  padding: 0 1rem;
+  border: 1px solid $color-one;
+}
+
+.mt-e-form__label {
+  font-family: $kootenay;
+  color: $color-one;
+  font-size: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transition: top .3s linear;
+}
+.has-value--input {
+    top: 3px;
+    font-size: 12px;
+    line-height: 10px;
+    transition: top .3s linear;
+}
