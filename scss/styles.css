@@ -756,7 +756,7 @@ body:after {
   color: #FFFFFF !important;
 }
 
-.g-container--alt a:hover {
+.g-container--alt p a {
   border-bottom: 1px solid #FFFFFF !important;
 }
 
@@ -9255,13 +9255,11 @@ a.text-center {
 }
 
 .mt-c-products .mt-e-paragraph-title a {
-  border-bottom: 1px solid #1E1E1E;
-  -webkit-transition: border-bottom linear 0.2s;
-          transition: border-bottom linear 0.2s;
+  border-bottom: none;
 }
 
 .mt-c-products .mt-e-paragraph-title a:hover {
-  border-bottom: 1px solid #73b4da;
+  border-bottom: none;
 }
 
 video {
