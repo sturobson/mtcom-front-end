@@ -14,5 +14,11 @@
     @media (min-width: 767px) {
       width: calc(33.33333% - 1.38889%);
     }
+  .mt-b-blurb__image {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 120px;
+    width: 94%;
+    }
   }
 }
