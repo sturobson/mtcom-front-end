@@ -1,6 +1,6 @@
 
 
-.plans {
+.mt-b-plans {
   display: flex;
   align-items: center;
   width: 100%;
@@ -10,44 +10,32 @@
   }
 }
 
-.plan {
+.mt-b-plans__item {
   background-color: #f1ebe7;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 4em;
   padding-left: 1.19048%;
   padding-right: 1.19048%;
+  margin-top: 1rem;
   font-family: Kootenay Pro1277143,Arial,Helvetica Neue,Helvetica,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   flex: 1;
   width: 100%;
-  
+
   .mt-e-button {
     margin-top: 2.25rem;
   }
 }
-.plan h3 {
+.mt-b-plans__item .b-subtitle__text {
   font-family: $kootenay-bold;
 }
 
+.mt-b-plans__item p {
+  margin-top: 1rem;
+}
 
-.plan {
-  margin-top: 1rem;
-  font-family: Kootenay Pro1277143, Arial, Helvetica Neue, Helvetica, sans-serif;
-}
-.plan p {
-  margin-top: 1rem;
-}
-.plan--highlight {
-  background-color: transparent;
-  border: 3px solid #cac4c1;
-  padding-bottom: 2em;
-  flex: 14%;
-  @media (max-width: 590px) {
-    order: -1;
-  }
-}
 .price {
   font-family: $malabar-heavy, Georgia, Times, Times New Roman, serif;
   font-size: 3em;
@@ -59,5 +47,16 @@
     font-family: Kootenay Pro1277143, Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 0.8rem;
     color: #797878 !important;
+  }
+}
+
+
+.mt-b-plans__item--highlight {
+  background-color: transparent;
+  border: 3px solid #cac4c1;
+  padding-bottom: 2em;
+  flex: 14%;
+  @media (max-width: 590px) {
+    order: -1;
   }
 }
