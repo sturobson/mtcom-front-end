@@ -10,10 +10,11 @@
     }
   }
   .mt-b-blurb {
-    display: flex;
-    order: 1;
+    display: block;
     margin-top: 5rem;
     @media (min-width: 768px) {
+      display: flex;
+      order: 1;
       .mt-b-blurb__image {
         flex: 0 0 40%;
         margin-top: 0;
