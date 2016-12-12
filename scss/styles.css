@@ -8579,6 +8579,10 @@ a.text-center {
   font-family: "Malabar W04 Heavy", Georgia, Times, "Times New Roman", serif;
 }
 
+.mt-b-nav__link {
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 .mt-b-nav__items--breadcrumbs .mt-b-nav__item {
   float: left;
 }
