@@ -39,7 +39,7 @@
   .mt-e-paragraph-title {
     $mt-b-subtitle-link-border-color: $color-one !default;
     $mt-b-subtitle-link-border-color--hover: $color-five !default;
-    font-size: 26px;
+    font-size: 1.6em;
     line-height: 1.3;
     margin-top: 1em;
     margin-bottom: 0.25em;
@@ -55,8 +55,20 @@
   }
 }
 
+
+
 .p-overview .b-main .g-container > .g-block:first-child .g-row-wide:first-child {
 	background: url(../../images/separator.png) center top no-repeat;
 	background-size: 97.22222% 1px;
 	padding-top: 5.25rem;
+}
+
+@media screen and (max-width: 748px) {
+	.p-overview .b-main .g-container>.g-block:first-child .g-row-wide:first-child {
+	    padding-top: 2.625rem;
+	}
+	
+	.mt-c-products .mt-e-paragraph-title {
+	  font-size: 1.2em;
+	}
 }
