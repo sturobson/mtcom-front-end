@@ -4,16 +4,19 @@
     <div class="g-row-wide">
       <div class="g-col">
         <form action="" class="login__form login__form--product">
-          <div class="mt-e-form__item">
+          <div class="mt-e-form__item mt-e-form__item--email">
             <label for="loginName" class="mt-e-form__label mt-e-form__label--text">email address</label>
             <input id="loginName" type="text" class="mt-e-form__input--text mt-e-form__input" autocomplete="off" />
           </div>
-          <div class="mt-e-form__item">
+          <div class="mt-e-form__item mt-e-form__item--password">
               <label for="loginPassword" class="mt-e-form__label mt-e-form__label--text">password</label>
             <input id="loginPassword" type="text" class="mt-e-form__input--text mt-e-form__input" autocomplete="off" />
           </div>
           <button class="mt-e-button">Login</button>
-          <a class="mt-e-paragraph text-center">Forgotten password</a>
+          <a class="mt-e-paragraph text-center" href="">Forgotten password</a>
+          <div class="mt-b-switcher">
+            <p>or <a id="js-login--switch"class="mt-b-switch">log in with <span>company credentials.</span></a>
+          </div>
         </form>
       </div>
     </div>
