@@ -24,7 +24,7 @@
     &:hover {
       background: transparent;
       border: 1px solid $brand__color--mel;
-      color: $color-one;
+      color: $color-seven;
     }
   }
   .g-container--alt {
@@ -47,6 +47,16 @@
   	height: 40rem;
   	border-bottom: none;
   }
+  .mt-e-button--ghost {
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #666;
+    &:hover {
+      background-color: #666;
+      border: 1px solid transparent;
+      color: $color-seven;
+    }
+  }
 }
 
 
@@ -66,9 +76,9 @@
       border: 1px solid #666;
       color: #666;
       &:hover {
-        background-color: $color-seven;
-        border: 0;
-        color: $color-one;
+        background-color: #666;
+        border: 1px solid transparent;
+        color: $color-seven;
       }
   }
 
