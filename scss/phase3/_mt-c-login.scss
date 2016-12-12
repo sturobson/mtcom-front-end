@@ -1,7 +1,16 @@
 .login__form--product {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #333;
+  margin-top: 2rem;
+
   .mt-e-button {
     display: table;
     margin-bottom: 1rem;
+  }
+  .mt-e-paragraph {
+    color: $color-seven !important;
   }
 }
 
@@ -15,7 +24,7 @@
 }
 
 .mt-e-form__item--password.is-hidden {
-    display: none !important;
+  display: none !important;
 }
 
 
@@ -41,30 +50,27 @@
   transition: top .3s linear;
 }
 .has-value--input {
-    top: 3px;
-    font-size: 12px;
-    line-height: 10px;
-    transition: top .3s linear;
+  top: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  transition: top .3s linear;
 }
 
 
 .mt-b-switcher {
-  float: right;
-  max-width: 600px;
+  text-align: right;
   margin: 0 auto;
-  p {
-    float: left;
-    font-family: $kootenay;
-    margin-top: 36px;
-    line-height: 3rem;
-    margin-right: 1rem;
-  }
+  font-family: $kootenay;
+  margin-top: 36px;
+  line-height: 3rem;
+  margin-right: 20%;
+  color: $color-seven !important;
   a {
     font-family: $kootenay;
-    color: $color-seven;
+    color: $color-seven !important;
   }
   a span {
-    color: $color-seven;
+    color: $color-seven !important;
   }
   transition: 0;
   .is-hidden {
