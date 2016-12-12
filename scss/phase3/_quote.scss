@@ -5,6 +5,12 @@
   margin-top: 1.6875rem;
 }
 
+@media screen and (max-width: 748px) {
+	.mt-b-quote__text {
+	  font-size: 1.2rem;
+	}
+}
+
 .mt-b-quote__credit {
   color: $color-two;
   font-family: $kootenay;
