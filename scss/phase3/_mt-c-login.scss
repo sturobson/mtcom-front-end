@@ -15,7 +15,8 @@
 }
 
 .login__form--product {
-  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .mt-e-form__input {
@@ -38,6 +39,7 @@
   left: 1rem;
   transition: top .3s linear;
 }
+
 .has-value--input {
     top: 3px;
     font-size: 12px;
