@@ -36,6 +36,14 @@ video {
     line-height: 2.226rem;
 }
 
+@media screen and (max-width: 748px) {
+	.mt-p-products .g-container--video .b-subtitle .b-subtitle__text {
+	    font-size: 1.25rem;
+	    line-height: 1.6875rem;
+	}
+}
+
 .mt-p-products .g-container--video .b-subtitle .b-subtitle__text p {
     margin-bottom: 1rem;
 }
+
