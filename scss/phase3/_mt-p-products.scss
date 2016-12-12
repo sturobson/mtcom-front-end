@@ -57,7 +57,7 @@
     color: $color-seven;
     &:hover {
       background: transparent;
-      border: 1px solid $brand__color--mls;
+      border: 1px solid $brand__color--mls--hover;
       color: $color-one;
     }
   }
@@ -65,6 +65,11 @@
       background-color: transparent;
       border: 1px solid #666;
       color: #666;
+      &:hover {
+        background-color: $color-seven;
+        border: 0;
+        color: $color-one;
+      }
   }
 
   .g-container--alt {

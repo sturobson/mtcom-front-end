@@ -25,4 +25,6 @@ $color-eleven: #51514e; /* darker grey video background */
 // brand / company specific variables
 
 $brand__color--mel: #d44f54;
+$brand__color--mel--hover: darken(saturate(adjust-hue(#d44f54, -2.9948), 41.8079), 33.3333);
 $brand__color--mls: #73b4da;
+$brand__color--mls--hover: darken(saturate(adjust-hue(#73b4da, -2.9948), 41.8079), 33.3333);
