@@ -8865,8 +8865,12 @@ a.text-center {
 }
 
 @media (max-width: 767px) {
+  .mt-c-features .mt-b-blurb {
+    margin-top: 2rem;
+  }
   .mt-c-features .mt-b-blurb .mt-b-blurb__body {
     margin-left: 1.38889%;
+    margin-top: 1rem;
   }
 }
 
@@ -9175,6 +9179,18 @@ video {
   text-align: left;
 }
 
+.mt-p-products .b-3-4-1-intro-full-width-background {
+  background-size: contain;
+  height: 45rem;
+  border-bottom: none;
+}
+
+@media (max-width: 767px) {
+  .mt-p-products .b-3-4-1-intro-full-width-background {
+    height: 40rem;
+  }
+}
+
 #mel .b-head,
 #mel .b-3-4-1-intro-full-width-background {
   background-color: #333;
@@ -9283,14 +9299,12 @@ video {
 
 #mls .b-3-4-1-intro-full-width-background {
   background-size: contain;
-  height: 40rem;
+  height: 45rem;
   border-bottom: none;
 }
 
-.mt-p-products .b-3-4-1-intro-full-width-background {
-  background-size: contain;
-  height: 40rem;
-  border-bottom: none;
+#embedtech .b-3-4-1-intro-full-width-background {
+  height: 30rem;
 }
 
 /* Homepage */

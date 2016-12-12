@@ -8,6 +8,15 @@
   }
 }
 
+.mt-p-products .b-3-4-1-intro-full-width-background {
+	background-size: contain;
+	height: 45rem;
+	border-bottom: none;
+	@media (max-width: 767px) {
+	height: 40rem;
+	}
+}
+
 
 #mel {
   .b-head,
@@ -104,8 +113,12 @@
   }
 }
 
-.mt-p-products .b-3-4-1-intro-full-width-background {
-	background-size: contain;
-	height: 40rem;
-	border-bottom: none;
+#embedtech {
+
+	.b-3-4-1-intro-full-width-background {
+		height: 30rem;
+	}
+ 
 }
+
+
