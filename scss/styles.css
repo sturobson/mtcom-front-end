@@ -8077,6 +8077,12 @@ a.text-center {
   margin-top: 1.6875rem;
 }
 
+@media screen and (max-width: 748px) {
+  .mt-b-quote__text {
+    font-size: 1.2rem;
+  }
+}
+
 .mt-b-quote__credit {
   color: #787878;
   font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
