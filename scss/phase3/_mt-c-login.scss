@@ -57,6 +57,10 @@
   }
   a {
     font-family: $kootenay;
+    color: $color-seven;
+  }
+  a span {
+    color: $color-seven;
   }
   transition: 0;
   .is-hidden {

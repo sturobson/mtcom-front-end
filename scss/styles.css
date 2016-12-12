@@ -9189,6 +9189,11 @@ video {
 
 .mt-b-switcher a {
   font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+
+.mt-b-switcher a span {
+  color: #FFFFFF;
 }
 
 .mt-b-switcher .is-hidden {
