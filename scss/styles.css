@@ -7776,7 +7776,6 @@ section.b-expertise + section.b-byline {
 
 /*
  *  NEW CSS
- *
  */
 /*
  * Utility Classes
@@ -8427,6 +8426,55 @@ a.text-center {
   line-height: 1.5em;
 }
 
+.login__form--product .mt-e-button {
+  display: table;
+  margin-bottom: 1rem;
+}
+
+.mt-e-form__item {
+  max-width: 400px;
+  margin: 0 auto;
+  height: 56px;
+  background: #FFFFFF;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.login__form--product {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.mt-e-form__input {
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #1E1E1E;
+  float: left;
+  width: 100%;
+  line-height: 56px;
+  padding: 0 1rem;
+  border: 1px solid #1E1E1E;
+}
+
+.mt-e-form__label {
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #1E1E1E;
+  font-size: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  -webkit-transition: top .3s linear;
+          transition: top .3s linear;
+}
+
+.has-value--input {
+  top: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  -webkit-transition: top .3s linear;
+          transition: top .3s linear;
+}
+
 .mt-b-nav {
   float: right;
   width: auto;
@@ -8777,16 +8825,19 @@ a.text-center {
 }
 
 .mt-c-features .mt-b-blurb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  display: block;
   margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
+  .mt-c-features .mt-b-blurb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .mt-c-features .mt-b-blurb .mt-b-blurb__image {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40%;
@@ -8996,7 +9047,7 @@ video {
 
 @media screen and (max-width: 748px) {
   .mt-p-products .g-container--video .b-subtitle .b-subtitle__text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.6875rem;
   }
 }
@@ -9035,7 +9086,7 @@ video {
   padding-top: 3rem;
 }
 
-.plans {
+.mt-b-plans {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9047,7 +9098,7 @@ video {
 }
 
 @media (max-width: 590px) {
-  .plans {
+  .mt-b-plans {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -9055,13 +9106,14 @@ video {
   }
 }
 
-.plan {
+.mt-b-plans__item {
   background-color: #f1ebe7;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 4em;
   padding-left: 1.19048%;
   padding-right: 1.19048%;
+  margin-top: 1rem;
   font-family: Kootenay Pro1277143,Arial,Helvetica Neue,Helvetica,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
@@ -9071,38 +9123,16 @@ video {
   width: 100%;
 }
 
-.plan .mt-e-button {
+.mt-b-plans__item .mt-e-button {
   margin-top: 2.25rem;
 }
 
-.plan h3 {
+.mt-b-plans__item .b-subtitle__text {
   font-family: "Kootenay Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.plan {
+.mt-b-plans__item p {
   margin-top: 1rem;
-  font-family: Kootenay Pro1277143, Arial, Helvetica Neue, Helvetica, sans-serif;
-}
-
-.plan p {
-  margin-top: 1rem;
-}
-
-.plan--highlight {
-  background-color: transparent;
-  border: 3px solid #cac4c1;
-  padding-bottom: 2em;
-  -webkit-box-flex: 14%;
-      -ms-flex: 14%;
-          flex: 14%;
-}
-
-@media (max-width: 590px) {
-  .plan--highlight {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
 }
 
 .price {
@@ -9120,52 +9150,21 @@ video {
   color: #797878 !important;
 }
 
-.login__form--product .mt-e-button {
-  display: table;
-  margin-bottom: 1rem;
+.mt-b-plans__item--highlight {
+  background-color: transparent;
+  border: 3px solid #cac4c1;
+  padding-bottom: 2em;
+  -webkit-box-flex: 14%;
+      -ms-flex: 14%;
+          flex: 14%;
 }
 
-.mt-e-form__item {
-  max-width: 400px;
-  margin: 0 auto;
-  height: 56px;
-  background: #FFFFFF;
-  position: relative;
-  margin-top: 1rem;
-}
-
-.login__form--product {
-  margin-top: 2rem;
-}
-
-.mt-e-form__input {
-  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1rem;
-  color: #1E1E1E;
-  float: left;
-  width: 100%;
-  line-height: 56px;
-  padding: 0 1rem;
-  border: 1px solid #1E1E1E;
-}
-
-.mt-e-form__label {
-  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #1E1E1E;
-  font-size: 1rem;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  -webkit-transition: top .3s linear;
-          transition: top .3s linear;
-}
-
-.has-value--input {
-  top: 3px;
-  font-size: 12px;
-  line-height: 10px;
-  -webkit-transition: top .3s linear;
-          transition: top .3s linear;
+@media (max-width: 590px) {
+  .mt-b-plans__item--highlight {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 
 .mt-p-products h1, .mt-p-products h1 + p, .mt-p-products h2, .mt-p-products h2 + p, .mt-p-products .b-subtitle__text p {
@@ -9204,7 +9203,7 @@ video {
 #mel .mt-e-button:hover {
   background: transparent;
   border: 1px solid #d44f54;
-  color: #1E1E1E;
+  color: #FFFFFF;
 }
 
 #mel .g-container--alt .mt-e-button:hover {
@@ -9230,6 +9229,18 @@ video {
   border-bottom: none;
 }
 
+#mel .mt-e-button--ghost {
+  background-color: transparent;
+  border: 1px solid #666;
+  color: #666;
+}
+
+#mel .mt-e-button--ghost:hover {
+  background-color: #666;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+
 #mls .mt-e-button {
   background: #73b4da;
   border: 1px solid transparent;
@@ -9249,9 +9260,9 @@ video {
 }
 
 #mls .mt-e-button--ghost:hover {
-  background-color: #FFFFFF;
-  border: 0;
-  color: #1E1E1E;
+  background-color: #666;
+  border: 1px solid transparent;
+  color: #FFFFFF;
 }
 
 #mls .g-container--alt .mt-e-button:hover {
@@ -9313,12 +9324,20 @@ video {
   margin-top: 32px;
 }
 
-.mt-p-home__featured .mt-b-blurb--alt {
+.g-block .g-row-wide .mt-p-home__featured .mt-b-blurb--alt {
   padding-right: 5%;
 }
 
 @media only screen and (max-width: 1023px) {
-  .mt-p-home__featured .g-block.home .g-row-wide .g-col-7 {
+  .home > .g-row-wide > .g-col-7:first-child {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .g-block .g-row-wide .mt-p-home__featured {
     float: left;
     width: 100%;
     margin-left: 0;
