@@ -9141,6 +9141,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-e-form__item--password.is-hidden {
+  display: none !important;
+}
+
 .mt-e-form__input {
   font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1rem;
