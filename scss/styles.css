@@ -8426,55 +8426,6 @@ a.text-center {
   line-height: 1.5em;
 }
 
-.login__form--product .mt-e-button {
-  display: table;
-  margin-bottom: 1rem;
-}
-
-.mt-e-form__item {
-  max-width: 400px;
-  margin: 0 auto;
-  height: 56px;
-  background: #FFFFFF;
-  position: relative;
-  margin-top: 1rem;
-}
-
-.login__form--product {
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-}
-
-.mt-e-form__input {
-  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1rem;
-  color: #1E1E1E;
-  float: left;
-  width: 100%;
-  line-height: 56px;
-  padding: 0 1rem;
-  border: 1px solid #1E1E1E;
-}
-
-.mt-e-form__label {
-  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #1E1E1E;
-  font-size: 1rem;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  -webkit-transition: top .3s linear;
-          transition: top .3s linear;
-}
-
-.has-value--input {
-  top: 3px;
-  font-size: 12px;
-  line-height: 10px;
-  -webkit-transition: top .3s linear;
-          transition: top .3s linear;
-}
-
 .mt-b-nav {
   float: right;
   width: auto;
@@ -9174,6 +9125,76 @@ video {
         -ms-flex-order: -1;
             order: -1;
   }
+}
+
+.login__form--product .mt-e-button {
+  display: table;
+  margin-bottom: 1rem;
+}
+
+.mt-e-form__item {
+  max-width: 400px;
+  margin: 0 auto;
+  height: 56px;
+  background: #FFFFFF;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.mt-e-form__input {
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #1E1E1E;
+  float: left;
+  width: 100%;
+  line-height: 56px;
+  padding: 0 1rem;
+  border: 1px solid #1E1E1E;
+}
+
+.mt-e-form__label {
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #1E1E1E;
+  font-size: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  -webkit-transition: top .3s linear;
+          transition: top .3s linear;
+}
+
+.has-value--input {
+  top: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  -webkit-transition: top .3s linear;
+          transition: top .3s linear;
+}
+
+.mt-b-switcher {
+  float: right;
+  max-width: 600px;
+  margin: 0 auto;
+  -webkit-transition: 0;
+          transition: 0;
+}
+
+.mt-b-switcher p {
+  float: left;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 36px;
+  line-height: 3rem;
+  margin-right: 1rem;
+}
+
+.mt-b-switcher a {
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.mt-b-switcher .is-hidden {
+  display: none;
+  -webkit-transition: 0;
+          transition: 0;
 }
 
 .mt-p-products h1, .mt-p-products h1 + p, .mt-p-products h2, .mt-p-products h2 + p {

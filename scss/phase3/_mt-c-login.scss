@@ -14,10 +14,7 @@
   margin-top: 1rem;
 }
 
-.login__form--product {
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-}
+
 
 .mt-e-form__input {
   font-family: $kootenay;
@@ -39,10 +36,31 @@
   left: 1rem;
   transition: top .3s linear;
 }
-
 .has-value--input {
     top: 3px;
     font-size: 12px;
     line-height: 10px;
     transition: top .3s linear;
+}
+
+
+.mt-b-switcher {
+  float: right;
+  max-width: 600px;
+  margin: 0 auto;
+  p {
+    float: left;
+    font-family: $kootenay;
+    margin-top: 36px;
+    line-height: 3rem;
+    margin-right: 1rem;
+  }
+  a {
+    font-family: $kootenay;
+  }
+  transition: 0;
+  .is-hidden {
+    display: none;
+    transition: 0;
+  }
 }
