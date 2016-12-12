@@ -1,22 +1,10 @@
 .mt-p-products {
-  h1, h1 + p, h2, h2 + p, .b-subtitle__text p  {
+  h1, h1 + p, h2, h2 + p {
     text-align: center;
-  }
-
-  h2.b-paragraph-title__text {
-  	text-align: left;
   }
 }
 
-
 #mel {
-  .b-head,
-  .b-3-4-1-intro-full-width-background {
-    background-color: #333;
-    h1,h2,h3,h4,h5,h6, p, a, span, a span {
-      color: $color-seven;
-    }
-  }
   .mt-e-button {
     background: $brand__color--mel;
     border: 1px solid transparent;
@@ -24,13 +12,16 @@
     &:hover {
       background: transparent;
       border: 1px solid $brand__color--mel;
-      color: $color-seven;
+      color: $color-one;
     }
   }
   .g-container--alt {
     .mt-e-button:hover {
       color: $color-seven;
     }
+  }
+  .mt-b-nav__items--breadcrumbs > .mt-b-nav__item:before {
+    color: $color-seven;
   }
   a:hover {
     border-bottom: 1px solid $brand__color--mel;
@@ -42,21 +33,6 @@
   .b-resourcescontent__item .category a {
     color: $brand__color--mel;
   }
-  .b-3-4-1-intro-full-width-background {
-  	background-size: contain;
-  	height: 40rem;
-  	border-bottom: none;
-  }
-  .mt-e-button--ghost {
-    background-color: transparent;
-    border: 1px solid #666;
-    color: #666;
-    &:hover {
-      background-color: #666;
-      border: 1px solid transparent;
-      color: $color-seven;
-    }
-  }
 }
 
 
@@ -67,21 +43,10 @@
     color: $color-seven;
     &:hover {
       background: transparent;
-      border: 1px solid $brand__color--mls--hover;
+      border: 1px solid $brand__color--mls;
       color: $color-one;
     }
   }
-  .mt-e-button--ghost {
-      background-color: transparent;
-      border: 1px solid #666;
-      color: #666;
-      &:hover {
-        background-color: #666;
-        border: 1px solid transparent;
-        color: $color-seven;
-      }
-  }
-
   .g-container--alt {
     .mt-e-button:hover {
       color: $color-seven;
@@ -96,16 +61,4 @@
   .b-resourcescontent__item .category a {
     color: $brand__color--mls;
   }
-
-  .b-3-4-1-intro-full-width-background {
-  	background-size: contain;
-  	height: 40rem;
-  	border-bottom: none;
-  }
-}
-
-.mt-p-products .b-3-4-1-intro-full-width-background {
-	background-size: contain;
-	height: 40rem;
-	border-bottom: none;
 }
