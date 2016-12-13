@@ -57,14 +57,15 @@
 .mt-e-button--drawer {
   z-index: 5150;
   position: relative;
-  background-color: #a7a09b;
-  border: 0;
+  background-color: $color-menu;
+  border: 1px solid $color-menu;
+  min-width: unset;
   &:hover {
-    background-color: $color-seven;
-    border: 0;
-    color: $color-one;
+    background-color: $color-menu--hover;
+    border: 1px solid $color-menu--hover;
   }
 }
+
 
 
 .mt-b-nav__items {
@@ -173,12 +174,13 @@
   .mt-b-nav__items--meta {
     display: block;
     float: right;
-    position: relative;
-    top: 2px;
     > .mt-b-nav__item {
       float: left;
       padding-right: $spacing-unit * 3;
       text-align: right;
+      &:last-of-type {
+        padding-right: 0;
+      }
     }
     .mt-e-button {
       min-width: auto;

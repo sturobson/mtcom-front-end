@@ -13,7 +13,15 @@
     color: $color-seven !important;
   }
 }
-
+.login__form {
+  a {
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+  }
+  a:hover {
+    border-bottom: 1px solid $color-seven;
+  }
+}
 .mt-e-form__item {
   max-width: 400px;
   margin: 0 auto;
@@ -58,12 +66,9 @@
 
 
 .mt-b-switcher {
-  text-align: right;
-  margin: 0 auto;
-  font-family: $kootenay;
-  margin-top: 36px;
+
+  margin-top: 1rem;
   line-height: 3rem;
-  margin-right: 20%;
   color: $color-seven !important;
   a {
     font-family: $kootenay;

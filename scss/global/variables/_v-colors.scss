@@ -15,3 +15,7 @@ $color-eight: darken(saturate(adjust-hue(#73b4da, -2.9948), 41.8079), 33.3333);
 $color-nine-a: #3F1619;/*border color hover*/
 $color-nine: darken(#0080BC, 20%);
 $color-ten: #E2E2E2;/*soft grey*/
+
+$color-menu: #a7a09b;
+
+$color-menu--hover: darken(#a7a09b, 20%);

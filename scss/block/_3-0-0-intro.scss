@@ -5,20 +5,32 @@
 
   .b-lead {
     margin-bottom:9 * $spacing-unit;
-    
+
     @include breakpoint(medium) {
       margin-bottom:7 * $spacing-unit;
     }
-    
+
     @include breakpoint(fromAdaptiveToFluid) {
       margin-bottom:3 * $spacing-unit;
     }
   }
   .b-media {
     margin-top:0;
-    
+
     img {
       display:block;
     }
+  }
+}
+
+.b-3-4-0-intro-full-width.g-container a, .b-3-4-1-intro-full-width-background.g-container a {
+  border-bottom: 1px solid $color-one;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: border-bottom .2s ease 0s;
+  transition: border-bottom .2s ease 0s;
+  z-index: 8;
+  &:hover {
+    border-bottom: 1px solid $color-five;
   }
 }
