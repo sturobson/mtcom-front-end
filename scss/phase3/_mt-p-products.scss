@@ -22,14 +22,16 @@
     background-color: #333;
   }
   .mt-b-nav__link,
-  .mt-b-lead,
-  .mt-e-paragraph,
   .mt-b-logo__link,
   .mt-b-nav__item--search span {
     color: $color-seven;
   }
   .b-3-4-1-intro-full-width-background {
     background-color: #333;
+    .mt-b-lead,
+    .mt-e-paragraph {
+      color: $color-seven;
+    }
   }
   .mt-e-button {
     background: $brand__color--mel;

@@ -9239,8 +9239,6 @@ video {
 }
 
 #mel .mt-b-nav__link,
-#mel .mt-b-lead,
-#mel .mt-e-paragraph,
 #mel .mt-b-logo__link,
 #mel .mt-b-nav__item--search span {
   color: #FFFFFF;
@@ -9248,6 +9246,11 @@ video {
 
 #mel .b-3-4-1-intro-full-width-background {
   background-color: #333;
+}
+
+#mel .b-3-4-1-intro-full-width-background .mt-b-lead,
+#mel .b-3-4-1-intro-full-width-background .mt-e-paragraph {
+  color: #FFFFFF;
 }
 
 #mel .mt-e-button {
