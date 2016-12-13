@@ -1235,6 +1235,19 @@ body:after {
   display: block;
 }
 
+.b-3-4-0-intro-full-width.g-container a, .b-3-4-1-intro-full-width-background.g-container a {
+  border-bottom: 1px solid #1E1E1E;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: border-bottom .2s ease 0s;
+  transition: border-bottom .2s ease 0s;
+  z-index: 8;
+}
+
+.b-3-4-0-intro-full-width.g-container a:hover, .b-3-4-1-intro-full-width-background.g-container a:hover {
+  border-bottom: 1px solid #73b4da;
+}
+
 .b-3-1-0-intro-filter .b-hover-list {
   margin-top: 4px;
 }
@@ -8198,12 +8211,12 @@ a.text-center {
 
 .mt-e-button--ghost {
   background-color: transparent;
-  border: 1px solid #666;
-  color: #666;
+  border: 1px solid #756d67;
+  color: #756d67;
 }
 
 .mt-e-button--ghost:hover {
-  background-color: #666;
+  background-color: #756d67;
   color: #FFF;
 }
 
@@ -8509,12 +8522,12 @@ a.text-center {
   position: relative;
   background-color: #a7a09b;
   border: 0;
+  min-width: unset;
 }
 
 .mt-e-button--drawer:hover {
-  background-color: #FFFFFF;
+  background-color: #756d67;
   border: 0;
-  color: #1E1E1E;
 }
 
 .mt-b-nav__items {
@@ -9144,6 +9157,15 @@ video {
   color: #FFFFFF !important;
 }
 
+.login__form a {
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.login__form a:hover {
+  border-bottom: 1px solid #FFFFFF;
+}
+
 .mt-e-form__item {
   max-width: 400px;
   margin: 0 auto;
@@ -9188,12 +9210,8 @@ video {
 }
 
 .mt-b-switcher {
-  text-align: right;
-  margin: 0 auto;
-  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  margin-top: 36px;
+  margin-top: 1rem;
   line-height: 3rem;
-  margin-right: 20%;
   color: #FFFFFF !important;
   -webkit-transition: 0;
           transition: 0;
@@ -9255,6 +9273,10 @@ video {
 #mel .b-3-4-1-intro-full-width-background .mt-b-lead,
 #mel .b-3-4-1-intro-full-width-background .mt-e-paragraph {
   color: #FFFFFF;
+}
+
+#mel .b-3-4-1-intro-full-width-background a:hover {
+  border-bottom: 1px solid #d44f54;
 }
 
 #mel .mt-e-button {
@@ -9326,6 +9348,10 @@ video {
   background-size: contain;
   height: 45rem;
   border-bottom: none;
+}
+
+#mls .b-3-4-1-intro-full-width-background a:hover {
+  border-bottom: 1px solid #73b4da;
 }
 
 #embedtech .b-3-4-1-intro-full-width-background {
