@@ -9127,9 +9127,21 @@ video {
   }
 }
 
+.login__form--product {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #333;
+  margin-top: 2rem;
+}
+
 .login__form--product .mt-e-button {
   display: table;
   margin-bottom: 1rem;
+}
+
+.login__form--product .mt-e-paragraph {
+  color: #FFFFFF !important;
 }
 
 .mt-e-form__item {
@@ -9176,28 +9188,24 @@ video {
 }
 
 .mt-b-switcher {
-  float: right;
-  max-width: 600px;
+  text-align: right;
   margin: 0 auto;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 36px;
+  line-height: 3rem;
+  margin-right: 20%;
+  color: #FFFFFF !important;
   -webkit-transition: 0;
           transition: 0;
 }
 
-.mt-b-switcher p {
-  float: left;
-  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  margin-top: 36px;
-  line-height: 3rem;
-  margin-right: 1rem;
-}
-
 .mt-b-switcher a {
   font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 .mt-b-switcher a span {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 .mt-b-switcher .is-hidden {
@@ -9224,6 +9232,10 @@ video {
   .mt-p-products .b-3-4-1-intro-full-width-background {
     height: 40rem;
   }
+}
+
+#mel .b-head {
+  background-color: #333;
 }
 
 #mel .mt-e-button {

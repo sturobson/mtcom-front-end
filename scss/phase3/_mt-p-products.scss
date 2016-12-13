@@ -2,7 +2,7 @@
   h1, h1 + p, h2, h2 + p {
     text-align: center;
   }
-  
+
   .b-subtitle .b-subtitle__text {
     text-align: center;
   }
@@ -18,6 +18,9 @@
 }
 
 #mel {
+  .b-head {
+    background-color: #333;
+  }
   .mt-e-button {
     background: $brand__color--mel;
     border: 1px solid transparent;
@@ -88,5 +91,3 @@
 		height: 30rem;
 	}
 }
-
-
