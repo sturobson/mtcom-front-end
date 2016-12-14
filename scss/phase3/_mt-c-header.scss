@@ -1,3 +1,19 @@
+.b-head {
+  // because the g-continaer has padding and you see the white bars on MEL
+  .g-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1010px) {
+  section.mt-b-search.search-open {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+
 .mt-b-nav {
   float: right;
   width: auto;
