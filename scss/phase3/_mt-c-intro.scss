@@ -25,3 +25,10 @@ $color-one: #1E1E1E;/*black*/
   padding-bottom: 3.375rem;
   padding-top: 3rem;
 }
+
+@media screen and (max-width: 748px) {
+	.mt-c-intro {
+	    padding-left: .75rem;
+	    padding-right: .75rem;
+	}
+}
