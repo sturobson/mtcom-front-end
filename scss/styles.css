@@ -8439,6 +8439,18 @@ a.text-center {
   line-height: 1.5em;
 }
 
+.b-head .g-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1010px) {
+  section.mt-b-search.search-open {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 .mt-b-nav {
   float: right;
   width: auto;
