@@ -18,7 +18,7 @@
   padding-left: 1.19048%;
   padding-right: 1.19048%;
   margin-top: 1rem;
-  font-family: Kootenay Pro1277143,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-family: $kootenay;
   font-size: 1rem;
   line-height: 1.5;
   flex: 1;
@@ -44,7 +44,7 @@
 .b-paragraph__text--smallprint {
   margin-top: 1rem;
   p {
-    font-family: Kootenay Pro1277143, Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-family: $kootenay;
     font-size: 0.8rem;
     color: #797878 !important;
   }

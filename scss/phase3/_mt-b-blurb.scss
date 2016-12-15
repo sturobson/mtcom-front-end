@@ -13,14 +13,14 @@ margin-top: 32px;
   }
   .mt-e-paragraph {
     a {
-      font-family: Malabar ET W08 Italic, Georgia, Times, Times New Roman, serif;
+      font-family: $malabar-bold-italic;
     }
   }
 }
 
 .mt-b-blurb__image {
   position: relative;
-  
+
   img {
   	width: 100%;
   }
@@ -39,7 +39,7 @@ margin-top: 32px;
   border: 1px solid transparent;
   display: block;
   margin-top: 1rem;
-  font-family: "Malabar ET W08 Regular", Georgia, Times, "Times New Roman", serif;
+  font-family: $malabar;
 
   &:hover {
     border-bottom: 1px solid $color-one;

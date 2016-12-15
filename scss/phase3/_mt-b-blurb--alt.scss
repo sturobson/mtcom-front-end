@@ -25,12 +25,10 @@
     float:left;
     clear:both;
   }
-  
+
   .mt-e-paragraph.description {
-    font-family: 'Malabar ET W08 Italic', Georgia, Times, Times New Roman, serif;
+    font-family: $malabar-bold-italic;
     font-size: 1rem;
     line-height: 1.5em;
   }
 }
-
-
