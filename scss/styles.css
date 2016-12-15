@@ -8269,7 +8269,7 @@ a.text-center {
 }
 
 .mt-e-smalltext {
-  font-family: Kootenay Pro1277143, Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.8rem;
   color: #797878 !important;
   margin-top: 0.5rem;
@@ -8365,7 +8365,7 @@ a.text-center {
 }
 
 .mt-b-blurb .mt-e-paragraph a {
-  font-family: Malabar ET W08 Italic, Georgia, Times, Times New Roman, serif;
+  font-family: "Malabar W04 Bold Italic", Georgia, Times, "Times New Roman", serif;
 }
 
 .mt-b-blurb__image {
@@ -8434,7 +8434,7 @@ a.text-center {
 }
 
 .mt-b-blurb--alt .mt-e-paragraph.description {
-  font-family: 'Malabar ET W08 Italic', Georgia, Times, Times New Roman, serif;
+  font-family: "Malabar W04 Bold Italic", Georgia, Times, "Times New Roman", serif;
   font-size: 1rem;
   line-height: 1.5em;
 }
@@ -9110,7 +9110,7 @@ video {
   padding-left: 1.19048%;
   padding-right: 1.19048%;
   margin-top: 1rem;
-  font-family: Kootenay Pro1277143,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   -webkit-box-flex: 1;
@@ -9141,7 +9141,7 @@ video {
 }
 
 .b-paragraph__text--smallprint p {
-  font-family: Kootenay Pro1277143, Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.8rem;
   color: #797878 !important;
 }
