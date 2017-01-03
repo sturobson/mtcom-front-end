@@ -8,7 +8,7 @@
 
   <!-- Replace below stylesheet with your own stylesheet -->
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- Style Guide Boilerplate Styles -->
   <link rel="stylesheet" href="sg-assets/css/sg-style.css">
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="sg-assets/vendor/prism/prism.css">
 
   <!--js-->
-  <script type="text/javascript" src="http://fast.fonts.net/jsapi/09128ffc-80cc-4be1-8c03-b24992264c8c.js"></script>
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/dade36f9-fde5-497f-9a17-bea9104cd1bf.css"/>
   <!--end js-->
 
   <!--[if lt IE 9]>
