@@ -249,7 +249,11 @@
 }
 .mt-b-mobile-search__input {
   @media (max-width: 767px) {
-    text-align: center !important;
+    background: white;
+    line-height: 2;
+    width: 100%;
+    text-align: center;
+    padding: 0 1em;
   }
 }
 
