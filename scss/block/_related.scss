@@ -75,7 +75,7 @@
 
   .b-relatedcontent__type-common .b-relatedcontent__inner {
     background: $color-five;
-    @include vendor(box-shadow, 0px 0px 0px 1px #8E3D43);
+    @include vendor(box-shadow, 0px 0px 0px 1px $color-two);
 
     &:hover {
       @include vendor(box-shadow, 0px 0px 0px 1px $color-one);

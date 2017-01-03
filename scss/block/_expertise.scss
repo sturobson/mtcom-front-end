@@ -115,7 +115,7 @@
 
   .b-masonry__type-common .b-masonry__inner {
     background: $color-five;
-    @include vendor(box-shadow, 0px 0px 0px 1px #8E3D43);
+    @include vendor(box-shadow, 0px 0px 0px 1px $color-two);
 
     &:hover {
       @include vendor(box-shadow, 0px 0px 0px 1px $color-one);
@@ -493,7 +493,7 @@
 
 // placeholder text color MUST have separate selectors
   @include placeholder {
-    color: #8e3d43;
+    color: $color-two;
   }
 
 /*** BOX NEWSLETTER ***/
@@ -532,7 +532,7 @@
           @include responsive-text-size('venus');
           display: block;
           visibility: visible;
-          color: #8e3d43;
+          color: $color-two;
           top: 0.175rem;
           @media only screen and (min-width: $breakpoint_tablet) {
             top: 0.2rem;
@@ -589,7 +589,7 @@
     width: 100%;
     position: absolute;
     left: -9999px;
-    color: #8e3d43;
+    color: $color-two;
   }
   .input-text {
     width: 100%;
@@ -602,7 +602,7 @@
     bottom: 5px;
 
     @include placeholder {
-      color: #8E3D43;
+      color: $color-two;
     }
 
     &:focus {
