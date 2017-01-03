@@ -3837,9 +3837,9 @@ body:after {
 
 .b-relatedcontent .b-relatedcontent__type-common .b-relatedcontent__inner {
   background: #73b4da;
-  -ms-box-shadow: 0px 0px 0px 1px #8E3D43;
-  -o-box-shadow: 0px 0px 0px 1px #8E3D43;
-  box-shadow: 0px 0px 0px 1px #8E3D43;
+  -ms-box-shadow: 0px 0px 0px 1px #787878;
+  -o-box-shadow: 0px 0px 0px 1px #787878;
+  box-shadow: 0px 0px 0px 1px #787878;
 }
 
 .b-relatedcontent .b-relatedcontent__type-common .b-relatedcontent__inner:hover {
@@ -5899,9 +5899,9 @@ body:after {
 
 .b-masonry .b-masonry__type-common .b-masonry__inner {
   background: #73b4da;
-  -ms-box-shadow: 0px 0px 0px 1px #8E3D43;
-  -o-box-shadow: 0px 0px 0px 1px #8E3D43;
-  box-shadow: 0px 0px 0px 1px #8E3D43;
+  -ms-box-shadow: 0px 0px 0px 1px #787878;
+  -o-box-shadow: 0px 0px 0px 1px #787878;
+  box-shadow: 0px 0px 0px 1px #787878;
 }
 
 .b-masonry .b-masonry__type-common .b-masonry__inner:hover {
@@ -6406,19 +6406,19 @@ body:after {
 }
 
 ::-webkit-input-placeholder {
-  color: #8e3d43;
+  color: #787878;
 }
 
 :-moz-placeholder {
-  color: #8e3d43;
+  color: #787878;
 }
 
 ::-moz-placeholder {
-  color: #8e3d43;
+  color: #787878;
 }
 
 :-ms-input-placeholder {
-  color: #8e3d43;
+  color: #787878;
 }
 
 /*** BOX NEWSLETTER ***/
@@ -6477,7 +6477,7 @@ body:after {
   line-height: 1.5rem;
   display: block;
   visibility: visible;
-  color: #8e3d43;
+  color: #787878;
   top: 0.175rem;
 }
 
@@ -6557,7 +6557,7 @@ body:after {
   width: 100%;
   position: absolute;
   left: -9999px;
-  color: #8e3d43;
+  color: #787878;
 }
 
 .b-masonry__type-common__newsletter .input-text {
@@ -6596,19 +6596,19 @@ body:after {
 }
 
 .b-masonry__type-common__newsletter .input-text ::-webkit-input-placeholder {
-  color: #8E3D43;
+  color: #787878;
 }
 
 .b-masonry__type-common__newsletter .input-text :-moz-placeholder {
-  color: #8E3D43;
+  color: #787878;
 }
 
 .b-masonry__type-common__newsletter .input-text ::-moz-placeholder {
-  color: #8E3D43;
+  color: #787878;
 }
 
 .b-masonry__type-common__newsletter .input-text :-ms-input-placeholder {
-  color: #8E3D43;
+  color: #787878;
 }
 
 .b-masonry__type-common__newsletter .input-text:focus ::-webkit-input-placeholder {
@@ -8759,7 +8759,11 @@ a.text-center {
 
 @media (max-width: 767px) {
   .mt-b-mobile-search__input {
-    text-align: center !important;
+    background: white;
+    line-height: 2;
+    width: 100%;
+    text-align: center;
+    padding: 0 1em;
   }
 }
 
