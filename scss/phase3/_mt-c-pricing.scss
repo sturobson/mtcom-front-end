@@ -58,5 +58,6 @@
   flex: 14%;
   @media (max-width: 590px) {
     order: -1;
+    flex: 1;
   }
 }
