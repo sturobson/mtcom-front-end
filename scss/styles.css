@@ -7286,8 +7286,7 @@ section.b-expertise + section.b-byline {
     clear: none;
     width: 30.333%;
     display: block;
-    height: 468px;
-    height: 33.25rem;
+    height: 36rem;
     margin-left: 3%;
   }
   .b-resourcescontent .b-resourcescontent__list .b-resourcescontent__inner {
@@ -7309,10 +7308,7 @@ section.b-expertise + section.b-byline {
     align-items: flex-start;
     padding: 24px !important;
     padding: 3.5rem 1.5rem 1.5rem 1.5rem !important;
-    height: 342px;
-    height: 21.375rem;
-    height: 468px;
-    height: 33.25rem;
+    height: 36rem;
   }
   .b-resourcescontent .b-resourcescontent__list .b-resourcescontent__item.b-resourcescontent__type-2x1 {
     width: 63.666%;
