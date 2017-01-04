@@ -9488,6 +9488,7 @@ video {
   .b-typetester.b-typetester--home .b-typetester__write {
     font-size: 51.3px;
     line-height: 69.54px;
+    padding-top: 0.5em;
   }
 }
 
