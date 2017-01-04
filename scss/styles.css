@@ -8509,7 +8509,7 @@ a.text-center {
 
 .mt-b-nav__items--drawer.is-active {
   background-color: rgba(30, 30, 30, 0.95);
-  overflow: hidden;
+  padding-bottom: 1em;
   -webkit-transition: background-color .1s linear;
           transition: background-color .1s linear;
   -webkit-transform: translatey(0);
@@ -9164,6 +9164,9 @@ video {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 

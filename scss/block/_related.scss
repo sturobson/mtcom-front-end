@@ -132,7 +132,7 @@
       .b-relatedcontent__item {
         float: left;
         clear: none;
-        @include rem(height, $type_tablet_height);
+        height: 36rem;
         // @include vendor(transition, #{all .3s ease});
         width: 30.333%;
 
@@ -150,7 +150,7 @@
         @include vendor(align-items, flex-start);
 
         @include rem(padding, 24px, !important);
-        @include rem(height, $type_tablet_height);
+        height: 36rem;
       }
 
       .b-teaser_list__item-image {
