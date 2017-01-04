@@ -9484,6 +9484,12 @@ video {
   }
 }
 
+@media only screen and (min-width: 1024px) and (min-height: 1141px) {
+  .b-typetester.b-typetester--home .b-typetester__write {
+    font-size: 51.3px;
+  }
+}
+
 /* Responsive styling */
 @media screen and (max-width: 1023px) {
   .b-typetester.b-typetester--home .b-typetester__meta-select {
