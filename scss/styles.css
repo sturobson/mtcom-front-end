@@ -3754,7 +3754,6 @@ body:after {
   margin: 0rem 0rem 1.5rem;
   width: 100%;
   clear: both;
-  height: 36rem;
 }
 
 @media screen and (max-width: 1023px) {
@@ -3786,7 +3785,6 @@ body:after {
   overflow: hidden;
   -webkit-transition: border 0.1s ease;
   transition: border 0.1s ease;
-  height: 36rem;
 }
 
 .b-relatedcontent .b-relatedcontent__inner:after {
@@ -7535,6 +7533,15 @@ section.b-expertise + section.b-byline {
 @media only screen and (max-width: 500px) {
   .b-masonry__inner-list__social-networks .b-masonry__inner-item {
     margin: 3.75rem 1rem 0 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 748px) {
+  .b-related .b-resourcescontent .b-resourcescontent__list .b-resourcescontent__item {
+    height: 36rem;
+  }
+  .b-related .b-resourcescontent .b-resourcescontent__list .b-resourcescontent__item {
+    height: 36rem;
   }
 }
 
