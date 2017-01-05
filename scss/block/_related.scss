@@ -24,6 +24,7 @@
     @include rem(margin, 0 0 24px);
     width: 100%;
     clear: both;
+    height: 36rem;
   }
 
   .b-relatedcontent__inner {
@@ -37,6 +38,7 @@
     @include rem(padding, 12px, !important);
     overflow: hidden;
     @include vendor(transition, #{border .1s ease});
+    height: 36rem;
 
     &:after { content: ''; display: table; clear: both; }
 
