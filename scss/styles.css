@@ -7540,7 +7540,7 @@ section.b-expertise + section.b-byline {
   .b-related .b-resourcescontent .b-resourcescontent__list .b-resourcescontent__item {
     height: 36rem;
   }
-  .b-related .b-resourcescontent .b-resourcescontent__list .b-resourcescontent__item {
+  .b-related .b-resourcescontent .b-resourcescontent__list .b-resourcescontent__inner {
     height: 36rem;
   }
 }
