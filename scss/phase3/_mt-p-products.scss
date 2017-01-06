@@ -20,8 +20,10 @@
 #mel {
   .b-head {
     background-color: #333;
-    a:hover {
-      border-bottom: 1px solid $brand__color--mel;
+    @media (min-width: 1025px) {
+      .mt-b-nav__link:hover {
+        border-bottom: 1px solid $brand__color--mel;
+      }
     }
   }
   .mt-b-nav__link,
@@ -90,8 +92,10 @@
 }
 #mls {
   .b-head {
-    a:hover {
-      border-bottom: 1px solid $brand__color--mls;
+    @media (min-width: 1025px) {
+      .mt-b-nav__link:hover {
+        border-bottom: 1px solid $brand__color--mls;
+      }
     }
   }
   .mt-e-button:not(.mt-e-button--ghost) {
