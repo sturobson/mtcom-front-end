@@ -8358,7 +8358,8 @@ a.text-center {
 }
 
 .mt-b-blurb .mt-e-paragraph a {
-  font-family: "Malabar W04 Bold Italic", Georgia, Times, "Times New Roman", serif;
+  font-family: Malabar W04 Italic,Georgia,Times,Times New Roman,serif;
+  line-height: 1.15;
 }
 
 .mt-b-blurb__image {
