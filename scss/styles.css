@@ -7862,6 +7862,10 @@ a.text-center {
   }
 }
 
+.mt-b-footer-legal {
+  margin-bottom: 2em;
+}
+
 .mt-b-legal__list {
   list-style: none;
   padding-top: 0.75rem;
