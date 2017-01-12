@@ -247,11 +247,21 @@
 }
 .mt-b-mobile-search__input {
   @media (max-width: 767px) {
+    text-align: center;
+    font-size: 1.25em;
+    width: 90%;
+    padding: 0 1em;
+  }
+  @media (min-width: 768px) {
+    width: 110%;
+    margin-left: -5%;
+    padding: 0 5%;
+    font-size: .75em;
+    text-align: left;
+  }
+  @media (max-width: 1024px) {
     background: white;
     line-height: 2;
-    width: 100%;
-    text-align: center;
-    padding: 0 1em;
   }
 }
 

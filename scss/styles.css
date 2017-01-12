@@ -8692,7 +8692,7 @@ a.text-center {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .mt-b-nav__items--breadcrumbs {
     display: none !important;
   }
@@ -8836,11 +8836,27 @@ a.text-center {
 
 @media (max-width: 767px) {
   .mt-b-mobile-search__input {
+    text-align: center;
+    font-size: 1.25em;
+    width: 90%;
+    padding: 0 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .mt-b-mobile-search__input {
+    width: 110%;
+    margin-left: -5%;
+    padding: 0 5%;
+    font-size: .75em;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mt-b-mobile-search__input {
     background: white;
     line-height: 2;
-    width: 100%;
-    text-align: center;
-    padding: 0 1em;
   }
 }
 
