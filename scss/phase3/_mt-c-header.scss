@@ -141,13 +141,12 @@
   }
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .mt-b-nav__items--drawer .mt-b-nav__item--alt {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .mt-b-nav__items--meta .mt-b-nav__item--alt {
     display: none;
   }
@@ -157,7 +156,6 @@
     display: none !important;
   }
 }
-
 
 .mt-c-header {
   float: left;
