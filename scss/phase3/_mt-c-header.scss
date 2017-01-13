@@ -20,7 +20,7 @@
   width: auto;
   @media (min-width: 768px) {
     float: left;
-    width: 84.7%;
+    width: calc(100% - 5.125em);
   }
 
 }
