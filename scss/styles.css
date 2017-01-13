@@ -8571,7 +8571,7 @@ a.text-center {
 @media (min-width: 768px) {
   .mt-b-nav {
     float: left;
-    width: 84.7%;
+    width: calc(100% - 5.125em);
   }
 }
 
