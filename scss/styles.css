@@ -7576,6 +7576,24 @@ section.b-expertise + section.b-byline {
   left: 0;
 }
 
+.b-masonry__inner-list__social-networks .b-masonry__inner-link__flkr .b-masonry__inner-link {
+  background: url("../images/expertise-icons/flkr.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+
+.b-masonry__inner-list__social-networks .b-masonry__inner-link__pin .b-masonry__inner-link {
+  background: url("../images/expertise-icons/pin.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .b-masonry__inner-list__social-networks .b-masonry__inner-item {
   margin: 0 !important;
   width: 45%;
