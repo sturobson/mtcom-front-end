@@ -4745,17 +4745,26 @@ body:after {
   float: left;
   border: 1px solid #1E1E1E;
   border-radius: 0;
-  padding: 0.375rem 0 0.375rem 0.75rem;
+  padding: 0.375rem 1.875rem 0.375rem 0.75rem;
   background: url("../images/select.png");
   background-repeat: no-repeat;
   background-size: 6px;
-  background-position: 176px center;
+  background-position: right 0.75rem center;
   min-width: 12rem;
   /*192px*/
+  position: relative;
 }
 
 .b-typetester__meta-select-mobile:focus, .b-typetester__meta-select:focus {
   outline: none;
+}
+
+.b-typetester__meta-select-mobile:after, .b-typetester__meta-select:after {
+  content: '';
+  background: url("../images/select.png");
+  background-color: red;
+  position: absolute;
+  right: 0;
 }
 
 .b-typetester__meta-select-mobile {
@@ -8571,7 +8580,7 @@ a.text-center {
 @media (min-width: 768px) {
   .mt-b-nav {
     float: left;
-    width: calc(100% - 5.125em);
+    width: 84.7%;
   }
 }
 
@@ -8629,7 +8638,6 @@ a.text-center {
 @media (max-width: 767px) {
   .mt-b-nav__items--drawer.is-active {
     padding-top: 4rem;
-    text-align: center;
   }
 }
 
@@ -8713,13 +8721,13 @@ a.text-center {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
   .mt-b-nav__items--drawer .mt-b-nav__item--alt {
     display: none;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .mt-b-nav__items--meta .mt-b-nav__item--alt {
     display: none;
   }
@@ -8735,6 +8743,12 @@ a.text-center {
   float: left;
   padding-bottom: 1.5em;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .mt-c-header .mt-b-nav {
+    width: 86.5%;
+  }
 }
 
 .mt-c-header .mt-b-nav__items--breadcrumbs {
@@ -8861,29 +8875,17 @@ a.text-center {
   margin-top: 2rem;
 }
 
+.mt-b-search__submit {
+  display: block !important;
+  margin: 12px 24px;
+}
+
 @media (max-width: 767px) {
-  .mt-b-mobile-search__input {
-    text-align: center;
-    font-size: 1.25em;
-    width: 90%;
-    padding: 0 1em;
-  }
-}
-
-@media (min-width: 768px) {
-  .mt-b-mobile-search__input {
-    width: 110%;
-    margin-left: -5%;
-    padding: 0 5%;
-    font-size: .75em;
-    text-align: left;
-  }
-}
-
-@media (max-width: 1024px) {
   .mt-b-mobile-search__input {
     background: white;
     line-height: 2;
+    width: 100%;
+    padding: 0 24px;
   }
 }
 
