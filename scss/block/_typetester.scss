@@ -400,16 +400,8 @@
   background-size:6px;
   background-position:right (2 * $spacing-unit) center;
   min-width:12rem;/*192px*/
-  position: relative;
   &:focus {
     outline:none;
-  }
-  &:after {
-    content: '';
-    background:url('../images/select.png');
-    background-color: red;
-    position: absolute;
-    right: 0;
   }
 }
 // Type Tester Select Fields

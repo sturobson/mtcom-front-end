@@ -4752,19 +4752,10 @@ body:after {
   background-position: right 0.75rem center;
   min-width: 12rem;
   /*192px*/
-  position: relative;
 }
 
 .b-typetester__meta-select-mobile:focus, .b-typetester__meta-select:focus {
   outline: none;
-}
-
-.b-typetester__meta-select-mobile:after, .b-typetester__meta-select:after {
-  content: '';
-  background: url("../images/select.png");
-  background-color: red;
-  position: absolute;
-  right: 0;
 }
 
 .b-typetester__meta-select-mobile {
