@@ -272,7 +272,7 @@ gulp.task('dev', ['copyit', 'sass',  'watch', 'php-serve']);
 // used for when ready to publish
 gulp.task('build', ['sass:build', 'copyBuild']);
 // build task to deploy for monotype.com
-gulp.task('deploy', ['sass:deploy', 'copyBuild']);
+gulp.task('deploy', ['sass:deploy']);
 
 
 gulp.task('css', ['sass',  'watch']);
