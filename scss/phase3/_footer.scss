@@ -71,6 +71,9 @@ $mt-b-legal__list__font: $kootenay;
   float: left;
   font-family: $mt-b-legal__list__font;
   width: 100%;
+  a {
+    text-decoration: underline;
+  }
 }
 
 
