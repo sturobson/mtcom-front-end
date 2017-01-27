@@ -101,7 +101,8 @@ gulp.task('sass:deploy', function () {
     .src(SassInput)
     .pipe(sass())
     .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(replace('../images/', '../../'))
+    .pipe(replace('../../images/', '../../image/'))
+    .pipe(replace('../images/', '../../image/'))
     .pipe(cssnano())
     .pipe(gulp.dest(SassOutputBuild));
 });
