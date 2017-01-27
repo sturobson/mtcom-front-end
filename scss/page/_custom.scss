@@ -831,3 +831,16 @@ table td input[type="checkbox"] {
         border-bottom: 0 none;
     }
 }
+
+
+/* ------------------------------------------------------------
+  Progress Bar
+  ------------------------------------------------------------ */
+.thin-progress-bar {
+   transition: all 1s ease 0s;
+   width: 0%;
+   height: 3px;
+   background:$color-five;
+   position: absolute;
+   bottom:0;
+}
