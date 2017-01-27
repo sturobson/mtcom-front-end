@@ -3,5 +3,4 @@ bower_components/
 *.log
 .DS_Store
 build/
-dist/
 tmp/
