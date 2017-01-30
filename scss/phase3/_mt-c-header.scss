@@ -287,6 +287,6 @@
 
   .mt-b-logo__link {
     font-size:1.125rem;line-height: 1.5rem; /*stays 18px and 24px, no responsive-text-size*/
-    font-family: $kootenay;
+    font-family: $kootenay--always;
   }
 }
