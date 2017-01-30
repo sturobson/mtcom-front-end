@@ -247,9 +247,11 @@
 .mt-b-mobile-search {
   margin-top: 2rem;
 }
-.mt-b-search__submit {
-  display: block !important;
-  margin: 12px 24px;
+.mt-b-mobile-search {
+  .mt-b-search__submit {
+    display: block !important;
+    margin: 12px 24px;
+  }
 }
 .mt-b-mobile-search__input {
   @media (max-width: 767px) {
