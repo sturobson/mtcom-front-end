@@ -32,7 +32,7 @@ $mt-e-button-transition: $transition !default;
   text-align: center;
   transition: border $mt-e-button-transition ease-in, background $mt-e-button-transition ease-in;
   user-select: none;
-  white-space: nowrap;
+  // white-space: nowrap; removed because of JP
 
   @media (max-width: $medium) {
     min-width:7rem;
