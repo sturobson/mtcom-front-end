@@ -333,3 +333,31 @@
     }
   }
 }
+
+
+// When social tile is 1x1
+
+.b-resourcescontent__type-1x1 {
+  .b-masonry__inner-list__social-networks {
+    @media (max-width: 767px) {
+      margin-top: 2em;
+      padding: 0 20%;
+    }
+    @media (min-width: 768px) {
+      position: relative;
+      margin-top: 1em;
+    }
+  }
+}
+
+.b-resourcescontent__type-2x1 {
+  .b-masonry__inner-list__social-networks {
+    @media (min-width: 410px) and (max-width: 1023px) {
+      margin-top: 2em;
+      padding: 0 20%;
+    }
+    @media (max-width: 1024px) {
+      padding: 0 5%;
+    }
+  }
+}
