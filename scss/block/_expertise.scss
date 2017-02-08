@@ -4,7 +4,7 @@
 
 .p-article,
 .p-expertise {
-  margin: 0; padding: 0; @include vendor(box-sizing, border-box); overflow: hidden;
+  margin: 0; padding: 0; box-sizing: border-box; overflow: hidden;
 }
 .p-expertise {
   .b-form.b-form--contact {
@@ -78,18 +78,18 @@
     width: 100%;
     position: relative;
     text-decoration: none;
-    @include vendor(box-shadow, 0px 0px 0px 1px $color-three);
+    box-shadow: 0px 0px 0px 1px $color-three;
     //border: 1px solid $color-three;
     background: #fff;
     @include rem(padding, 12px, !important);
     overflow: hidden;
-    @include vendor(transition, #{border .1s ease});
+    transition: border .1s ease;
 
     &:after { content: ''; display: table; clear: both; }
 
-    &:hover { @include vendor(box-shadow, 0px 0px 0px 1px $color-one); }
+    &:hover { box-shadow: 0px 0px 0px 1px $color-one; }
 
-    &:visited { @include vendor(box-shadow, 0px 0px 0px 1px $color-three);}
+    &:visited { box-shadow: 0px 0px 0px 1px $color-three; }
 
   }
 
@@ -115,10 +115,10 @@
 
   .b-masonry__type-common .b-masonry__inner {
     background: $color-five;
-    @include vendor(box-shadow, 0px 0px 0px 1px $color-two);
+    box-shadow: 0px 0px 0px 1px $color-two;
 
     &:hover {
-      @include vendor(box-shadow, 0px 0px 0px 1px $color-one);
+      box-shadow: 0px 0px 0px 1px $color-one;
     }
 
     .b-teaser_list__item-title {
@@ -160,7 +160,7 @@
         float: left;
         clear: none;
         @include rem(height, $type_tablet_height);
-        // @include vendor(transition, #{all .3s ease});
+        // transition: all .3s ease;
         width: 30.95238095%;
         @include rem(width, $type_1_tablet_width);
         margin-left: 2.380952381%;
@@ -173,8 +173,8 @@
         display: -ms-flexbox;
         display: flex;
 
-        @include vendor(flex-direction, column);
-        @include vendor(align-items, flex-start);
+        flex-direction: column;
+        align-items: flex-start;
 
         @include rem(padding, 24px, !important);
         @include rem(height, $type_tablet_height);
@@ -477,7 +477,7 @@
     opacity: .2;
     width: 100%;
     height: 100%;
-    @include vendor(transition, #{opacity .3s ease});
+    transition: opacity .3s ease;
 
     &:hover  { opacity: 1 !important; }
     &:visited  { opacity: .2 !important; }
@@ -613,7 +613,7 @@
 
     @include rem(font-size, 20px);
     @include rem(line-height, 30px);
-    @include vendor(appearance, none);
+    appearance: none;
 
     @media only screen and (min-width: $breakpoint_tablet) {
       @include rem(font-size, 14px);
@@ -640,11 +640,11 @@
     margin-top:0;
     font-family: $kootenay-bold;
     width: 100%;
-    @include vendor(margin, 0);
+    margin: 0;
     color: $color-five;
     background: $color-one;
     cursor: pointer;
-    @include vendor(transition, #{background .3s ease});
+    transition: background .3s ease;
 
     &.b-button--inactive {
       background: #cc4b54;
@@ -692,7 +692,7 @@
         display: block;
         background: url(../../images/expertise-icons/dropdown-arrow.png) no-repeat 100% -14px;
         @include image-2x('../../images/expertise-icons/dropdown-arrow-@2x.png', 16px, 38px);
-        @include vendor(transition, none);
+        transition: none;
         padding:0;
       }
       .b-filters__link {
@@ -722,7 +722,7 @@
       }
       .b-hover-list__item--selected,
       .b-hover-list__item--selected .b-hover-list__link {
-        @include vendor(transition, none);
+        transition: none;
       }
       .b-filters__item--toggler {
         display: none !important;

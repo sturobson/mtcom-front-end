@@ -32,17 +32,17 @@
     width: 100%;
     position: relative;
     text-decoration: none;
-    @include vendor(box-shadow, 0px 0px 0px 1px $color-three);
+    box-shadow: 0px 0px 0px 1px $color-three;
     background: #fff;
     @include rem(padding, 12px, !important);
     overflow: hidden;
-    @include vendor(transition, #{border .1s ease});
+    transition: border .1s ease;
 
     &:after { content: ''; display: table; clear: both; }
 
-    &:hover { @include vendor(box-shadow, 0px 0px 0px 1px $color-one); }
+    &:hover { box-shadow: 0px 0px 0px 1px $color-one; }
 
-    &:visited { @include vendor(box-shadow, 0px 0px 0px 1px $color-three);}
+    &:visited { box-shadow: 0px 0px 0px 1px $color-three; }
 
   }
 
@@ -63,22 +63,22 @@
       max-width: 100%;
     }
   }
-  
+
   .b-teaser_list__item-heroimage {
-	  display: block; 
-	  width: auto; 
-	  margin-top: 10px; 
-	  z-index: 1; 
+	  display: block;
+	  width: auto;
+	  margin-top: 10px;
+	  z-index: 1;
 	  margin-bottom: 15px;
-	  
+
   }
 
   .b-relatedcontent__type-common .b-relatedcontent__inner {
     background: $color-five;
-    @include vendor(box-shadow, 0px 0px 0px 1px $color-two);
+    box-shadow: 0px 0px 0px 1px $color-two;
 
     &:hover {
-      @include vendor(box-shadow, 0px 0px 0px 1px $color-one);
+      box-shadow: 0px 0px 0px 1px $color-one;
     }
 
     .b-teaser_list__item-title {
@@ -100,7 +100,7 @@
     overflow: hidden;
     margin: 0 !important;
   }
-  
+
   .b-teaser_list__item-description {
   	font-size: 12px;
   	line-height: 1.6;
@@ -115,7 +115,7 @@
 
   @media only screen and (min-width: $breakpoint_tablet) {
     padding: 48px 0 0 0;
-    
+
     .b-teaser_list__item-title,
     .b-teaser_list__item-paragraph {
 	    font-size: 14px;
@@ -127,13 +127,13 @@
     }
 
     .b-relatedcontent__list {
-        
+
 
       .b-relatedcontent__item {
         float: left;
         clear: none;
         @include rem(height, $type_tablet_height);
-        // @include vendor(transition, #{all .3s ease});
+        // transition: all .3s ease;
         width: 30.333%;
 
         margin-left: 2.380952381%;
@@ -146,8 +146,8 @@
         display: -ms-flexbox;
         display: flex;
 
-        @include vendor(flex-direction, column);
-        @include vendor(align-items, flex-start);
+        flex-direction: column;
+        align-items: flex-start;
 
         @include rem(padding, 24px, !important);
         @include rem(height, $type_tablet_height);
@@ -176,7 +176,7 @@
         }
       }
 
-	
+
 
       .b-relatedcontent__type-1x1 {
         .b-teaser_list__item-paragraph {
@@ -189,13 +189,13 @@
     }
 
     @media only screen and (min-width: $breakpoint_desktop) {
-    
+
 		.b-teaser_list__item-title,
 		.b-teaser_list__item-paragraph {
 		    font-size: 20px;
 		    line-height: 1.5;
 		}
-		
+
       .b-relatedcontent__list {
       	width: 103%;
       	margin-left:-3%; // manual horizontal centering
@@ -211,7 +211,7 @@
         }
 
 
-        
+
         .b-teaser_list__item-description {
         	font-size: 14px;
         	line-height: 1.8;
@@ -229,15 +229,8 @@
           }
         }
 
-        
+
       }
     }
   }
 }
-
-
-
-
-
-
-

@@ -1,13 +1,13 @@
 .b-lead {
-  @include responsive-text-size('saturn');  
+  @include responsive-text-size('saturn');
   font-family: $malabar-heavy;
-  color:$color-one;  
-  
+  color:$color-one;
+
   p {
     a {
       border-bottom: 1px solid $color-one;
-      @include vendor(transition, border-bottom $transition);
-      
+      transition: border-bottom $transition;
+
       &:hover {
         border-bottom: 1px solid $color-five;
       }

@@ -1,18 +1,18 @@
 .b-paragraph {
-  @include responsive-text-size('neptune');  
+  @include responsive-text-size('neptune');
   font-family: $malabar;
   margin-top:2 * $spacing-unit;
-  
+
   p, ul {
     margin-top:1.875rem;
-    
+
     @include breakpoint(medium) {
-      margin-top:1.6875rem;    
+      margin-top:1.6875rem;
     }
     @include breakpoint(small) {
-      margin-top:1.5rem;    
-    }    
-    
+      margin-top:1.5rem;
+    }
+
     &:first-child {
       margin-top:0;
     }
@@ -22,24 +22,24 @@
       margin-left:1em;
     }
   }
-  
+
   h3 {
   	font-family: 'Malabar ET W08 Italic',Georgia,Times,Times New Roman,serif;
   	margin-top: 1em;
   }
-  
+
   h3 + p {
   	margin-top: 0;
   }
-  
+
   a {
     border-bottom:1px solid $color-one;
     padding-bottom: 0.0625rem;
-    @include vendor(transition, border-bottom $transition);
-    
+    transition: border-bottom $transition;
+
     &:hover {
       border-bottom:1px solid $color-five;
-    }      
+    }
   }
-  
+
 }

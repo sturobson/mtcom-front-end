@@ -2,10 +2,10 @@
   margin-top:4 * $spacing-unit;
 }
 .b-address-list__list {
-  @include responsive-text-size('europa'); 
+  @include responsive-text-size('europa');
   font-family: $malabar;
   list-style:none;
-  
+
   &:last-child {
     @include breakpoint(fromAdaptiveToFluid) {
       margin-top:8 * $spacing-unit;
@@ -14,7 +14,7 @@
       margin-top:0;
     }
   }
-  
+
   // Remove margin-top on first list item in first list
   @include breakpoint(small) {
     &:first-child {
@@ -23,46 +23,46 @@
           margin-top:0;
         }
       }
-    }    
+    }
   }
 }
 .b-address-list__list-item {
   margin-top:8 * $spacing-unit;
-  
+
   @include breakpoint(small) {
     margin-top:4 * $spacing-unit;
   }
-  
+
   &:first-child {
     margin-top:0;
-    
+
     @include breakpoint(small) {
       margin-top:4 * $spacing-unit;
     }
   }
-  
+
   .b-address-list__item-title {
     font-family:$malabar-bold;
-    text-transform: uppercase;    
+    text-transform: uppercase;
   }
   .b-address-list__item-phone {
     font-family:$malabar-bold;
-    
+
     &:before {
       content:"+ ";
       margin-left:-0.875rem;/*Fine tuning 14px*/
-      
+
       @include breakpoint(small) {
         margin-left:0;
       }
     }
   }
   .b-address-list__item-map-link, .b-address-list__item-email-link {
-     @include vendor (transition, border-bottom $transition);
-     border-bottom:1px solid $color-two;     
-    
+     transition: border-bottom $transition;
+     border-bottom:1px solid $color-two;
+
     &:hover {
       border-bottom:1px solid $color-five;
     }
-  }  
+  }
 }

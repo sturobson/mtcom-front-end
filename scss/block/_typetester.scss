@@ -8,13 +8,13 @@
   vertical-align: middle;
   min-height:20.25rem;/*384px*/
   background-color:$color-seven;
-  @include vendor(box-shadow, 0px 0px 0px 1px $color-three); //box shadow to prevent grid issues
+  box-shadow: 0px 0px 0px 1px $color-three; //box shadow to prevent grid issues
   padding-left:0;
   padding-right:0;
   overflow:hidden;
 
   &:hover {
-    @include vendor(box-shadow, 0px 0px 0px 1px $color-one); //box shadow to prevent grid issues
+    box-shadow: 0px 0px 0px 1px $color-one; //box shadow to prevent grid issues
   }
 
   @include breakpoint(medium) {
@@ -104,7 +104,7 @@
 }
 .b-typetester__about {
   float:right;
-  @include vendor (transition, border-bottom $transition);
+  transition: border-bottom $transition;
   border-bottom:1px solid $color-two;
 
   &:hover {
@@ -143,7 +143,7 @@
 
     .b-typetester__list-item .b-typetester__list-trigger {
       border-radius: 0.1875rem;
-      @include vendor(transition, background-color $transition);
+      transition: background-color $transition;
 
       &:hover {
         background-color: $color-four;
@@ -199,7 +199,7 @@
    Show Control Elements on Focus
    ------------------------------------------------------------ */
 .b-typetester__meta-list {
-    @include vendor(transition, opacity ease-in-out 0.3s);
+    transition: opacity ease-in-out 0.3s;
     opacity: 0;
 
     &.b-typetester__meta-list--visible {
@@ -208,7 +208,7 @@
 }
 .b-typetester__meta-list-home {
   .b-typetester__meta-list {
-      @include vendor(transition, none);
+      transition: none;
       opacity: 1;
 
       &.b-typetester__meta-list--visible {
@@ -227,7 +227,7 @@
   color: $color-five;
   opacity: 1;
   transform: translateY(0.02em);
-  @include vendor(animation, 1.5s blink step-end infinite);
+  animation: 1.5s blink step-end infinite;
 }
 .b-typetester.b-typetester--home {
   .b-typetester__cursor {
@@ -292,7 +292,7 @@
       cursor:pointer;
       z-index:100;
       border-bottom:1px solid $color-one;
-      @include vendor(transition, border-bottom $transition);
+      transition: border-bottom $transition;
 
       &:hover {
         border-bottom: 1px solid $color-five;

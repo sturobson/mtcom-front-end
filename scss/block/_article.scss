@@ -79,7 +79,7 @@
 		color: #282828;
 		text-decoration: none;
 		border-bottom: 1px solid #282828;
-		@include vendor(transition, #{all $transition ease});
+		transition: all $transition ease;
 		&:hover {
 			border-bottom-color: #fff;
 		}
@@ -162,10 +162,10 @@
 
 		@media only screen and (min-width: $breakpoint_tablet) {
 			font-size: 1.5rem;
-			line-height: 2.375rem;    
+			line-height: 2.375rem;
 
 			@media only screen and (min-width: $breakpoint_desktop_mini + 1) {
-				font-size: 1.625rem;   
+				font-size: 1.625rem;
 			}
 		}
 	}
@@ -398,7 +398,7 @@
 					@include rem(margin-left, -144px);
 				}
 			}
-			
+
 			img {
 				width: 100%;
 			}

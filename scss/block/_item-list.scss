@@ -65,7 +65,7 @@
             font-family: $kootenay;
             padding-bottom: 0.0625rem;
             border-bottom: 1px solid $color-five;
-            @include vendor(transition, $transition);
+            transition: $transition;
          }
 
         }

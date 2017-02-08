@@ -16,7 +16,7 @@
 
     .b-footer-list__link, .b-footer-list__secondlevel-link {
       @include responsive-text-size('venus');
-      @include vendor(transition, border-bottom $transition);
+      transition: border-bottom $transition;
       border-bottom:1px solid transparent;
       float:left;
       display:block;
@@ -33,8 +33,8 @@
 
   @include breakpoint(fromAdaptiveToFluid) {
     display:block;
-    @include vendor(column-count, 2);
-    @include vendor(column-gap, 1.5rem);
+    column-count: 2;
+    column-gap: 1.5rem;
     overflow: hidden;
   }
 

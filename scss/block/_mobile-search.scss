@@ -35,7 +35,7 @@
   padding:(2 * $spacing-unit) (3 * $spacing-unit);
   border:1px solid $color-eight;
   cursor:pointer;
-  @include vendor(transition, $transition);
+  transition: $transition;
   display:table;
   width:100%;
 }

@@ -1,9 +1,9 @@
 .b-footer-legal {
   @include responsive-text-size('proteus');
-  font-family: $kootenay; 
-  color:$color-one;  
+  font-family: $kootenay;
+  color:$color-one;
   border-top:1px solid $color-three;
-  
+
   // Hide Legal Footer on Mobile Devices. On Mobile it is part of the normal footer list. See block b-footer-list.
   @include breakpoint(fromAdaptiveToFluid) {
     display:none;
@@ -17,13 +17,13 @@
 .b-footer-legal__item {
   float:left;
   margin-right:2 * $spacing-unit;
-  @include vendor(transition, border-bottom $transition);
+  transition: border-bottom $transition;
   border-bottom:1px solid transparent;
-  
+
   &:hover {
-    border-bottom:1px solid $color-two;    
+    border-bottom:1px solid $color-two;
   }
-  
+
   &:last-child {
     margin-right:0;
   }
@@ -35,14 +35,14 @@
   @include breakpoint(fromAdaptiveToFluid) {
     .b-footer-legal {
       display:block;
-    }    
+    }
   }
   .b-typetester.b-typetester--home .b-typetester__meta-wrapper .g-block .g-row .b-footer-legal__list.g-col {
     padding-top:2 * $spacing-unit;
     padding-bottom:2 * $spacing-unit;
-    
+
     @include breakpoint(medium) {
-      padding:(2 * $spacing-unit) (5 * $spacing-unit) (2 * $spacing-unit) (2 * $spacing-unit);      
+      padding:(2 * $spacing-unit) (5 * $spacing-unit) (2 * $spacing-unit) (2 * $spacing-unit);
     }
-  } 
+  }
 }
