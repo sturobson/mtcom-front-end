@@ -114,8 +114,8 @@
     overflow: hidden;
     text-indent: -9999px;
     
-    background: url(../../image/expertise-icons/arrows-tablet.png);
-    @include image-2x('../../image/expertise-icons/arrows-tablet-@2x.png', 800px, 26px);
+    background: url(../image/expertise-icons/arrows-tablet.png);
+    @include image-2x('../image/expertise-icons/arrows-tablet-@2x.png', 800px, 26px);
 
     &.b-nav__prev__link {
       background-position: 0 50%;
@@ -125,8 +125,8 @@
     }
     
     @media only screen and (min-width: $breakpoint_desktop) {
-      background: url(../../image/expertise-icons/arrows-desktop.png);
-      @include image-2x('../../image/expertise-icons/arrows-desktop-@2x.png', 120px, 30px);
+      background: url(../image/expertise-icons/arrows-desktop.png);
+      @include image-2x('../image/expertise-icons/arrows-desktop-@2x.png', 120px, 30px);
     }
     
   }
