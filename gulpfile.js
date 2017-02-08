@@ -7,7 +7,7 @@ const gulp              = require('gulp');
 
 // Sass and CSS Stuff
 const sass              = require('gulp-sass');
-const sassGlob          = require('gulp-sass-glob');
+const cssnano           = require('gulp-cssnano');
 const autoprefixer      = require('gulp-autoprefixer');
 const notify            = require("gulp-notify");
 
