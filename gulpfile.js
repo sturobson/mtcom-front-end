@@ -3,98 +3,51 @@
 // -----------------------------------------------------------------------------
 // Dependencies
 // -----------------------------------------------------------------------------
-
-var gulp            = require('gulp');
+const gulp              = require('gulp');
 
 // Sass and CSS Stuff
+const sass              = require('gulp-sass');
+const sassGlob          = require('gulp-sass-glob');
+const autoprefixer      = require('gulp-autoprefixer');
+const notify            = require("gulp-notify");
 
-var sass            = require('gulp-sass');
-var sourcemaps      = require('gulp-sourcemaps');
-var autoprefixer    = require('gulp-autoprefixer');
-var notify          = require("gulp-notify");
-var cssnano         = require('gulp-cssnano');
+// JS Things
+const concat            = require('gulp-concat');
 
-// Image Stuff
-
-var imagemin        = require('gulp-imagemin');
 
 // Local Server Stuff
+const browserSync       = require('browser-sync').create();
+const reload            = browserSync.reload;
 
-var browserSync     = require('browser-sync').create();
-var php             = require('gulp-connect-php');
-var httpProxy       = require('http-proxy');
-var replace         = require('gulp-replace-path');
-var path            = require('path');
+// Housekeeping
 
-var proxy           = httpProxy.createProxyServer({});
-var reload          = browserSync.reload;
-var rename          = require('gulp-rename');
-
-// Housekeeping Stuff
-
-var del             = require('del');
-var git             = require('gulp-git');
-var bump            = require('gulp-bump');
-var filter          = require('gulp-filter');
-var tag_version     = require('gulp-tag-version');
-var stylestats      = require('gulp-stylestats');
-var checkFilesize   = require("gulp-check-filesize");
+const fractal           = require('./fractal.js');
+const logger            = fractal.cli.console;
 
 // -----------------------------------------------------------------------------
 // Configuration
 // -----------------------------------------------------------------------------
 
-// Files and Folders Configarables
-
-var DevFolder = './dev';
-var DistFolder = './dist';
-
 // Sass Configarables
-var SassInput = './scss/**/*.scss';
-var SassOutput = './tmp/css';
-var SassOutputBuild = './dist/css/';
-var SassOptions = { outputStyle: 'expanded' };
-var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
-var CSSUrl = 'http://www.monotype.com/Content/Vendor/image/'
 
-// JavaScript Configarables
-
-var JSInput   = ['./scripts/monotype.js'];
-var JSConcat  = ['./javascript/block/**/*.js', './javascript/global/**/*.js'];
-var JSOutput  = './tmp/scripts/';
-
-// Images Configurables
-
-var ImagesFolder = './image';
-
-// BrowserSync Files to watch changes for
-
-var watchFiles = ['tmp/**/*.php', 'css/**/*.css', 'tmp/**/*.css', 'tmp/**/*.js', '**/*.scss'];
+const autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 
 // -----------------------------------------------------------------------------
-// Sass compilation
+// Sass and CSS Tasks
 // -----------------------------------------------------------------------------
 
-gulp.task('sass', function () {
-  return gulp
-    .src(SassInput)
-    .pipe(sass(SassOptions)).on('error', notify.onError(function (error) {return "Problem file : " + error.message;}))
-    .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(browserSync.stream())
-    .pipe(gulp.dest(SassOutput))
-    .pipe(gulp.dest('./scss/'));
+gulp.task('css', function() {
+  return gulp.src('./scss/styles.scss')
+  .pipe(sass({
+    sourcemap: true,
+    sourcemapPath: './patterns/',
+  })).on('error', notify.onError(function (error) {return "Problem file : " + error.message;}))
+  .pipe(autoprefixer(autoprefixerOptions))
+  .pipe(browserSync.stream())
+  .pipe(gulp.dest('./public/css'));
 });
 
 // Production build
-
-gulp.task('sass:build', function () {
-  return gulp
-    .src(SassInput)
-    .pipe(sass())
-    .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(cssnano())
-    .pipe(gulp.dest('./scss/'));
-});
 
 gulp.task('sass:deploy', function () {
   return gulp
@@ -107,80 +60,9 @@ gulp.task('sass:deploy', function () {
     .pipe(gulp.dest(SassOutputBuild));
 });
 
-gulp.task('urls', function(){
-  gulp.src(['./dist/css/style.css'])
-    .pipe(replace('../images/', 'http://www.monotype.com/Content/Vendor/image/'))
-    .pipe(gulp.dest('./dist/css/'));
-});
-
 // -----------------------------------------------------------------------------
-// Image Optimisation
+// i18n Tasks
 // -----------------------------------------------------------------------------
-
-gulp.task('images', function () {
-  return gulp.src('dev/images/*')
-  .pipe(imagemin({
-    progressive: true,
-    svgoPlugins: [{removeViewBox: false}],
-    use: [pngquant()]
-  }))
-  .pipe(gulp.dest('dist/image'));
-});
-
-// -----------------------------------------------------------------------------
-// Local Server and BrowserSync
-// -----------------------------------------------------------------------------
-
-gulp.task('php-serve', function () {
-  php.server({
-    port: 9001,
-    open: false
-  });
-
-  browserSync.init({
-    notify: false,
-    port  : 9000,
-    files : watchFiles,
-    server: {
-      baseDir   : ['tmp'],
-      routes    : {
-        '/bower_components': 'bower_components'
-      },
-      middleware: function (req, res, next) {
-        var url = req.url;
-        if (!url.match(/^\/(css|bower_components)\//)) {
-          proxy.web(req, res, { target: 'http://127.0.0.1:9001' });
-        } else {
-          next();
-        }
-      }
-    }
-  });
-});
-
-gulp.task('copyit', function() {
-  gulp.src('css/**/*')
-  .pipe(gulp.dest('tmp/css'))
-});
-
-
-gulp.task('copyBuild', function() {
-  gulp.src('doc/**/*')
-  .pipe(gulp.dest('dist/doc'));
-  gulp.src(['**/*.php', '!node_modules/**/*.php'])
-  .pipe(gulp.dest('dist/'));
-  gulp.src('images/**/*')
-  .pipe(gulp.dest('dist/images'));
-  gulp.src('javascript/**/*')
-  .pipe(gulp.dest('dist/javascript'));
-  gulp.src('markup/**/*')
-  .pipe(gulp.dest('dist/markup'));
-  gulp.src('sg-assets/**/*')
-  .pipe(gulp.dest('dist/sg-assets'));
-  gulp.src('data.json')
-  .pipe(gulp.dest('dist/'));
-});
-
 
 gulp.task('copyFontsUK', function() {
   del('./scss/global/variables/_v-fonts.scss');
@@ -197,82 +79,81 @@ gulp.task('copyFontsJP', function() {
 });
 
 // -----------------------------------------------------------------------------
-// Watchers
-// -----------------------------------------------------------------------------
-
-gulp.task('watch', function() {
-  gulp.watch(SassInput, ['sass'])
-  gulp.watch(JSConcat, ['concatScripts']);
-  gulp.watch([
-    '**/*.html',
-    '*.php',
-    'css/*.css',
-    'scss/*.scss',
-    'images/**/*',
-    'scripts/**/*'
-  ]).on('change', reload);
-  gulp.watch(['tmp/css/**/*.css']);
-});
-
-// -----------------------------------------------------------------------------
-// Delete Everything in Dist
-// -----------------------------------------------------------------------------
-
-gulp.task('del', function() {
-  del([
-    './dist', './tmp'
-  ]);
-});
-
-// -----------------------------------------------------------------------------
-// Git Tag Bumps
-// -----------------------------------------------------------------------------
-
-function inc(importance) {
-    // get all the files to bump version in
-    return gulp.src(['./package.json', './bower.json'])
-        // bump the version number in those files
-        .pipe(bump({type: importance}))
-        // save it back to filesystem
-        .pipe(gulp.dest('./'))
-        // commit the changed version number
-        .pipe(git.commit('bumps package version'))
-
-        // read only one file to get the version number
-        .pipe(filter('package.json'))
-        // **tag it in the repository**
-        .pipe(tag_version());
-}
-
-gulp.task('patch', function() { return inc('patch'); })
-gulp.task('feature', function() { return inc('minor'); })
-gulp.task('release', function() { return inc('major'); })
-
-// -----------------------------------------------------------------------------
 // Performance Tasks
 // -----------------------------------------------------------------------------
 
 gulp.task('stats', function () {
-  gulp.src('./tmp/**/*.css')
+  gulp.src('./dist/css/*.css')
     .pipe(stylestats())
     .pipe(checkFilesize({enableGzip: true}));
 });
 
+gulp.task('extract', function() {
+    gulp.src('./dist/css/JPstyles.css')
+     .pipe(extract({
+        properties: ['font-family']
+    }))
+    .pipe(gulp.dest('./dist'))
+});
+
+
 // -----------------------------------------------------------------------------
-// Default task
+// JavaScript Tasks
 // -----------------------------------------------------------------------------
+
+gulp.task('scripts', function() {
+  return gulp.src(['./patterns/**/*.js'])
+  .pipe(concat('scripts.js'))
+  .pipe(gulp.dest('./public/javascript/'));
+});
+
+// -----------------------------------------------------------------------------
+// Fractal Tasks
+// -----------------------------------------------------------------------------
+
+gulp.task('frctlStart', function(){
+  const server = fractal.web.server({
+    sync: true
+  });
+  server.on('error', err => logger.error(err.message));
+  return server.start().then(() => {
+    logger.success(`Fractal server is now running at ${server.url}`);
+  });
+});
+
+gulp.task('frctlBuild', function () {
+  const builder = fractal.web.builder();
+  builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
+  builder.on('error', err => logger.error(err.message));
+  return builder.build().then(() => {
+    logger.success('Fractal build completed!');
+  });
+});
+
+gulp.task('watchCSS', function(done) {
+  gulp.watch('./dev/assets/**/*.scss', gulp.series('css')).on('change', reload);
+  done();
+});
+
+gulp.task('watchJS', function(done) {
+  gulp.watch('./patterns/blocks/**/*.js', gulp.series('scripts')).on('change', reload);
+  done();
+});
+
+
+
+// -----------------------------------------------------------------------------
+// Default Tasks
+// -----------------------------------------------------------------------------
+
+
+gulp.task('watch', gulp.parallel('watchCSS', 'watchJS'));
+
+gulp.task('dev', gulp.parallel('frctlStart', 'css', 'watch'));
 
 // all the tasks in the world
-gulp.task('default', ['sass', 'watch', 'php-serve']);
-gulp.task('setup:english', ['copyFontsUK']);
-gulp.task('setup:japan', ['copyFontsJP']);
+gulp.task('english', gulp.series('copyFontsUK'));
+gulp.task('japan', gulp.series('copyFontsJP'));
 
-// used for when making things
-gulp.task('dev', ['copyit', 'sass',  'watch', 'php-serve']);
-// used for when ready to publish
-gulp.task('build', ['sass:build', 'copyBuild']);
 // build task to deploy for monotype.com
-gulp.task('deploy', ['sass:deploy']);
-
-
-gulp.task('css', ['sass',  'watch']);
+gulp.task('deploy', gulp.series('sass:deploy'));
