@@ -55,6 +55,8 @@ gulp.task('sass:deploy', function () {
   return gulp.src('./assets/scss/styles.scss')
     .pipe(sass())
     .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(replace('../../images/', '../../image/'))
+    .pipe(replace('../images/', '../../image/'))
     .pipe(cssnano())
     .pipe(gulp.dest('./dist/css'));
 });
@@ -63,6 +65,8 @@ gulp.task('sass:deployJP', function () {
   return gulp.src('./assets/scss/styles.scss')
     .pipe(sass())
     .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(replace('../../images/', '../../image/'))
+    .pipe(replace('../images/', '../../image/'))
     .pipe(cssnano())
     .pipe(rename('JPstyles.css'))
     .pipe(gulp.dest('./dist/css'));
