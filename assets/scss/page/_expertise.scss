@@ -34,7 +34,7 @@
             
       > .g-block:first-child {
         .g-row:first-child {
-          background: url('../../images/separator.png') center top no-repeat; /*needs to be a PNG since SVG browser rendering is inconsistent*/
+          background: url('../../image/separator.png') center top no-repeat; /*needs to be a PNG since SVG browser rendering is inconsistent*/
           background-size: ( span(12 of 12) - 2 * gutter(12) ) 1px;
           padding-top:14 * $spacing-unit;
           
