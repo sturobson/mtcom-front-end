@@ -9,11 +9,13 @@ const gulp              = require('gulp');
 const sass              = require('gulp-sass');
 const cssnano           = require('gulp-cssnano');
 const autoprefixer      = require('gulp-autoprefixer');
-const notify            = require("gulp-notify");
+const notify            = require('gulp-notify');
+const replace           = require('gulp-replace-path');
+const del               = require('del');
+const rename            = require('gulp-rename');
 
 // JS Things
 const concat            = require('gulp-concat');
-
 
 // Local Server Stuff
 const browserSync       = require('browser-sync').create();
@@ -50,32 +52,41 @@ gulp.task('css', function() {
 // Production build
 
 gulp.task('sass:deploy', function () {
-  return gulp
-    src('./assets/scss/styles.scss')
+  return gulp.src('./assets/scss/styles.scss')
     .pipe(sass())
     .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(replace('../../images/', '../../image/'))
-    .pipe(replace('../images/', '../../image/'))
     .pipe(cssnano())
     .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('sass:deployJP', function () {
+  return gulp.src('./assets/scss/styles.scss')
+    .pipe(sass())
+    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(cssnano())
+    .pipe(rename('JPstyles.css'))
+    .pipe(gulp.dest('./dist/css'));
+    done();
 });
 
 // -----------------------------------------------------------------------------
 // i18n Tasks
 // -----------------------------------------------------------------------------
 
-gulp.task('copyFontsUK', function() {
-  del('./scss/global/variables/_v-fonts.scss');
-  gulp.src('./scss/global/variables/_v-fonts--english.scss')
+gulp.task('copyFontsUK', function(done) {
+  del('./assets/scss/global/variables/_v-fonts.scss');
+  gulp.src('./assets/scss/global/variables/_v-fonts--english.scss')
   .pipe(rename('_v-fonts.scss'))
-  .pipe(gulp.dest('./scss/global/variables/'))
+  .pipe(gulp.dest('./assets/scss/global/variables/'))
+  done();
 });
 
-gulp.task('copyFontsJP', function() {
-  del('./scss/global/variables/_v-fonts.scss');
-  gulp.src('./scss/global/variables/_v-fonts--japan.scss')
+gulp.task('copyFontsJP', function(done) {
+  del('./assets/scss/global/variables/_v-fonts.scss');
+  gulp.src('./assets/scss/global/variables/_v-fonts--japan.scss')
   .pipe(rename('_v-fonts.scss'))
-  .pipe(gulp.dest('./scss/global/variables/'))
+  .pipe(gulp.dest('./assets/scss/global/variables/'))
+  done();
 });
 
 // -----------------------------------------------------------------------------
@@ -156,4 +167,4 @@ gulp.task('english', gulp.series('copyFontsUK'));
 gulp.task('japan', gulp.series('copyFontsJP'));
 
 // build task to deploy for monotype.com
-gulp.task('deploy', gulp.series('sass:deploy'));
+gulp.task('deploy', gulp.series('sass:deploy', 'copyFontsJP', 'sass:deployJP', 'copyFontsUK'));
