@@ -37,7 +37,7 @@ const autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR
 // -----------------------------------------------------------------------------
 
 gulp.task('css', function() {
-  return gulp.src('./scss/styles.scss')
+  return gulp.src('./assets/scss/styles.scss')
   .pipe(sass({
     sourcemap: true,
     sourcemapPath: './patterns/',
@@ -51,13 +51,13 @@ gulp.task('css', function() {
 
 gulp.task('sass:deploy', function () {
   return gulp
-    .src(SassInput)
+    src('./assets/scss/styles.scss')
     .pipe(sass())
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(replace('../../images/', '../../image/'))
     .pipe(replace('../images/', '../../image/'))
     .pipe(cssnano())
-    .pipe(gulp.dest(SassOutputBuild));
+    .pipe(gulp.dest('./dist/css'));
 });
 
 // -----------------------------------------------------------------------------
