@@ -438,6 +438,7 @@ table td input[type="checkbox"] {
         width: 100%;
     }
 }
+/*
 .b-navigation__nav {
     float: left;
 }
@@ -467,6 +468,7 @@ table td input[type="checkbox"] {
         width: 100%;
     }
 }
+*/
 :root {
     @include vertical-breakpoint(narrow) {
         -ms-overflow-style: -ms-autohiding-scrollbar;
