@@ -10,7 +10,7 @@ const fractal    = module.exports = require('@frctl/fractal').create();
 const mandelbrot = require('@frctl/mandelbrot');
 
 
-fractal.set('project.title', 'Simple Component Library');
+fractal.set('project.title', 'Monotype - Pattern Library');
 
 /* Configure components */
 
@@ -26,6 +26,18 @@ fractal.docs.set('indexLabel', 'Welcome');
 fractal.web.set('builder.dest', __dirname + '/live');
 
 /* Configure web */
+
+const monotypeTheme = mandelbrot({
+    "styles": [
+        "http://fast.fonts.net/cssapi/f1a10791-4f75-42fd-86a0-69db3131970b.css",
+        "default",
+        "/_theme/css/theme.css"
+    ],
+    "format": 'YAML'
+});
+
+fractal.web.theme(monotypeTheme);
+
 
 fractal.web.set('static.path', `${__dirname}/public`);
 fractal.web.set('server.sync', true);
