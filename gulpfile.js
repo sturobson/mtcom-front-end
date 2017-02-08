@@ -54,6 +54,7 @@ gulp.task('css', function() {
 gulp.task('sass:deploy', function () {
   return gulp.src('./assets/scss/styles.scss')
     .pipe(sass())
+    .pipe(replace('../image/', '/Content/Vendor/image/'))
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(cssnano())
     .pipe(gulp.dest('./dist/css'));
@@ -62,6 +63,7 @@ gulp.task('sass:deploy', function () {
 gulp.task('sass:deployJP', function () {
   return gulp.src('./assets/scss/styles.scss')
     .pipe(sass())
+    .pipe(replace('../image/', '/Content/Vendor/image/'))
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(cssnano())
     .pipe(rename('JPstyles.css'))
@@ -161,10 +163,6 @@ gulp.task('watchJS', function(done) {
 gulp.task('watch', gulp.parallel('watchCSS', 'watchJS'));
 
 gulp.task('dev', gulp.parallel('frctlStart', 'css', 'watch'));
-
-// all the tasks in the world
-gulp.task('english', gulp.series('copyFontsUK'));
-gulp.task('japan', gulp.series('copyFontsJP'));
 
 // build task to deploy for monotype.com
 gulp.task('deploy', gulp.series('sass:deploy', 'copyFontsJP', 'sass:deployJP', 'copyFontsUK'));
