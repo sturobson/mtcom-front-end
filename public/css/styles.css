@@ -211,7 +211,7 @@ textarea {
    Mixins for Breakpoints/Typography, based on Matt Hinchliffe's work
    ------------------------------------------------------------ */
 /* ------------------------------------------------------------
-   <img src="../images/placeholder.png" alt="a placeholder image" /> Mixin (used for unifying text color)
+   <img src="../image/placeholder.png" alt="a placeholder image" /> Mixin (used for unifying text color)
    ------------------------------------------------------------ */
 /* ------------------------------------------------------------
    Expertise Vendors
@@ -619,10 +619,10 @@ body:after {
    Accordion Global Classes, mainly used for JS
    ------------------------------------------------------------ */
 .g-accordion-toggle .g-accordion-toggle__icon {
-  background: url("../images/icon-triangle-down.svg") no-repeat center right; }
+  background: url("../image/icon-triangle-down.svg") no-repeat center right; }
 
 .g-accordion-toggle--selected .g-accordion-toggle__icon {
-  background: url("../images/icon-triangle-up.svg") no-repeat center right; }
+  background: url("../image/icon-triangle-up.svg") no-repeat center right; }
 
 /* ------------------------------------------------------------
    Pages
@@ -689,7 +689,7 @@ body:after {
         .p-overview .b-main .g-container {
           padding-bottom: 2.625rem; } }
       .p-overview .b-main .g-container > .g-block:first-child .g-row:first-child {
-        background: url("../../images/separator.png") center top no-repeat;
+        background: url("../image/separator.png") center top no-repeat;
         /*needs to be a PNG since SVG browser rendering is inconsistent*/
         background-size: 97.22222% 1px;
         padding-top: 5.25rem; }
@@ -746,7 +746,7 @@ body:after {
   .p-article .b-main {
     border-bottom: 1px solid #C8C8C8; }
     .p-article .b-main .g-container > .g-block:first-child .g-row:first-child {
-      background: url("../../images/separator.png") center top no-repeat;
+      background: url("../image/separator.png") center top no-repeat;
       /*needs to be a PNG since SVG browser rendering is inconsistent*/
       background-size: 97.22222% 1px;
       padding-top: 5.25rem; }
@@ -818,7 +818,7 @@ body:after {
         .p-expertise .b-main .g-container {
           padding-bottom: 2.625rem; } }
       .p-expertise .b-main .g-container > .g-block:first-child .g-row:first-child {
-        background: url("../../images/separator.png") center top no-repeat;
+        background: url("../image/separator.png") center top no-repeat;
         /*needs to be a PNG since SVG browser rendering is inconsistent*/
         background-size: 97.22222% 1px;
         padding-top: 5.25rem; }
@@ -1212,10 +1212,10 @@ body:after {
     padding: 0 0.25rem;
     overflow: hidden;
     text-indent: -9999px;
-    background: url(../../images/expertise-icons/arrows-tablet.png); }
+    background: url(../image/expertise-icons/arrows-tablet.png); }
     @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
       .b-carousel__prev-next .b-nav__prev-next__link {
-        background-image: url("../../images/expertise-icons/arrows-tablet-@2x.png");
+        background-image: url("../image/expertise-icons/arrows-tablet-@2x.png");
         background-size: 800px 26px; } }
     .b-carousel__prev-next .b-nav__prev-next__link.b-nav__prev__link {
       background-position: 0 50%; }
@@ -1223,10 +1223,10 @@ body:after {
       background-position: 100% 50%; }
     @media only screen and (min-width: 1023px) {
       .b-carousel__prev-next .b-nav__prev-next__link {
-        background: url(../../images/expertise-icons/arrows-desktop.png); } }
+        background: url(../image/expertise-icons/arrows-desktop.png); } }
   @media only screen and (min-width: 1023px) and (min--moz-device-pixel-ratio: 1.3), only screen and (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-width: 1023px) and (min-device-pixel-ratio: 1.3), only screen and (min-width: 1023px) and (min-resolution: 1.3dppx) {
     .b-carousel__prev-next .b-nav__prev-next__link {
-      background-image: url("../../images/expertise-icons/arrows-desktop-@2x.png");
+      background-image: url("../image/expertise-icons/arrows-desktop-@2x.png");
       background-size: 120px 30px; } }
 
 .b-error-message {
@@ -1406,7 +1406,7 @@ body:after {
   .b-form .b-form__select {
     float: left;
     width: 100%;
-    background: url("../images/icon-triangle-down.svg") no-repeat center right;
+    background: url("../image/icon-triangle-down.svg") no-repeat center right;
     border-right: 12px solid transparent; }
     .b-form .b-form__select .b-form__select-item--disabled {
       color: #787878 !important; }
@@ -1835,7 +1835,7 @@ body:after {
 .b-item-checkbox-list__checkbox {
   position: relative;
   -webkit-appearance: none;
-  background: url("../images/checkbox-inactive.svg") no-repeat center/0.875rem;
+  background: url("../image/checkbox-inactive.svg") no-repeat center/0.875rem;
   width: 0.875rem;
   cursor: pointer;
   margin-top: -1px; }
@@ -1843,7 +1843,7 @@ body:after {
     .b-item-checkbox-list__checkbox {
       float: left; } }
   .b-item-checkbox-list__checkbox:checked {
-    background: url("../images/checkbox-active.svg") no-repeat center/0.875rem; }
+    background: url("../image/checkbox-active.svg") no-repeat center/0.875rem; }
 
 .b-item-checkbox-list__label {
   cursor: pointer;
@@ -2420,7 +2420,7 @@ body:after {
   width: 100%;
   height: 100%;
   display: inline-block;
-  background: url("../../images/mobile-nav-bg.png") repeat; }
+  background: url("../image/mobile-nav-bg.png") repeat; }
 
 /* ------------------------------------------------------------
    Grid Adaptations on Mobile
@@ -3010,10 +3010,10 @@ body:after {
         background-color: #D2D2D2;
         border-radius: 0.1875rem; }
   .b-typetester__meta-list.b-typetester__meta-list--style .b-typetester__list-item .b-typetester__list-trigger {
-    background: url("../images/checkbox-inactive.png") no-repeat left/0.8125rem;
+    background: url("../image/checkbox-inactive.png") no-repeat left/0.8125rem;
     padding-left: 1.125rem; }
   .b-typetester__meta-list.b-typetester__meta-list--style .b-typetester__list-item--selected .b-typetester__list-trigger {
-    background: url("../images/checkbox-active.png") no-repeat left/0.8125rem;
+    background: url("../image/checkbox-active.png") no-repeat left/0.8125rem;
     border-radius: 0; }
 
 .b-typetester__list-item {
@@ -3205,7 +3205,7 @@ body:after {
   border: 1px solid #1E1E1E;
   border-radius: 0;
   padding: 0.375rem 1.875rem 0.375rem 0.75rem;
-  background: url("../images/select.png");
+  background: url("../image/select.png");
   background-repeat: no-repeat;
   background-size: 6px;
   background-position: right 0.75rem center;
@@ -3818,10 +3818,10 @@ body:after {
     padding: 0 0.25rem;
     overflow: hidden;
     text-indent: -9999px;
-    background: url(../../images/expertise-icons/arrows-tablet.png); }
+    background: url(../image/expertise-icons/arrows-tablet.png); }
     @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
       .b-carousel__prev-next .b-nav__prev-next__link {
-        background-image: url("../../images/expertise-icons/arrows-tablet-@2x.png");
+        background-image: url("../image/expertise-icons/arrows-tablet-@2x.png");
         background-size: 800px 26px; } }
     .b-carousel__prev-next .b-nav__prev-next__link.b-nav__prev__link {
       background-position: 0 50%; }
@@ -3829,10 +3829,10 @@ body:after {
       background-position: 100% 50%; }
     @media only screen and (min-width: 1023px) {
       .b-carousel__prev-next .b-nav__prev-next__link {
-        background: url(../../images/expertise-icons/arrows-desktop.png); } }
+        background: url(../image/expertise-icons/arrows-desktop.png); } }
   @media only screen and (min-width: 1023px) and (min--moz-device-pixel-ratio: 1.3), only screen and (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-width: 1023px) and (min-device-pixel-ratio: 1.3), only screen and (min-width: 1023px) and (min-resolution: 1.3dppx) {
     .b-carousel__prev-next .b-nav__prev-next__link {
-      background-image: url("../../images/expertise-icons/arrows-desktop-@2x.png");
+      background-image: url("../image/expertise-icons/arrows-desktop-@2x.png");
       background-size: 120px 30px; } }
 
 /* ------------------------------------------------------------
@@ -4273,7 +4273,7 @@ body:after {
     opacity: .2 !important; }
 
 .b-masonry__type-common__social-networks .b-masonry__inner-link__tw .b-masonry__inner-link {
-  background: url(../../images/expertise-icons/tw.svg);
+  background: url(../image/expertise-icons/tw.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -4281,7 +4281,7 @@ body:after {
   left: 0; }
 
 .b-masonry__type-common__social-networks .b-masonry__inner-link__fb .b-masonry__inner-link {
-  background: url(../../images/expertise-icons/fb.svg);
+  background: url(../image/expertise-icons/fb.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -4289,7 +4289,7 @@ body:after {
   left: 0; }
 
 .b-masonry__type-common__social-networks .b-masonry__inner-link__li .b-masonry__inner-link {
-  background: url(../../images/expertise-icons/li.svg);
+  background: url(../image/expertise-icons/li.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -4297,7 +4297,7 @@ body:after {
   left: 0; }
 
 .b-masonry__type-common__social-networks .b-masonry__inner-link__em .b-masonry__inner-link {
-  background: url(../../images/expertise-icons/em.svg);
+  background: url(../image/expertise-icons/em.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -4305,7 +4305,7 @@ body:after {
   left: 0; }
 
 .b-masonry__type-common__social-networks .b-masonry__inner-link__flkr .b-masonry__inner-link {
-  background: url(../../images/expertise-icons/flkr.svg);
+  background: url(../image/expertise-icons/flkr.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -4313,7 +4313,7 @@ body:after {
   left: 0; }
 
 .b-masonry__type-common__social-networks .b-masonry__inner-link__pin .b-masonry__inner-link {
-  background: url(../../images/expertise-icons/pin.svg);
+  background: url(../image/expertise-icons/pin.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -4566,13 +4566,13 @@ body:after {
           border-bottom: 0; }
       .b-filters-masonry .b-filters-list__list .b-filters__item--toggler {
         display: block;
-        background: url(../../images/expertise-icons/dropdown-arrow.png) no-repeat 100% -14px;
+        background: url(../image/expertise-icons/dropdown-arrow.png) no-repeat 100% -14px;
         -webkit-transition: none;
                 transition: none;
         padding: 0; } }
       @media only screen and (max-width: 747px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 747px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 747px) and (min-device-pixel-ratio: 1.3), only screen and (max-width: 747px) and (min-resolution: 1.3dppx) {
         .b-filters-masonry .b-filters-list__list .b-filters__item--toggler {
-          background-image: url("../../images/expertise-icons/dropdown-arrow-@2x.png");
+          background-image: url("../image/expertise-icons/dropdown-arrow-@2x.png");
           background-size: 16px 38px; } }
 
 @media only screen and (max-width: 747px) {
@@ -4817,17 +4817,17 @@ body:after {
   color: #ccc; }
 
 .selectionSharer a.tweet {
-  background: url("../../images/Social-Shareable/tw_white.png") no-repeat;
+  background: url("../image/Social-Shareable/tw_white.png") no-repeat;
   background-position: 2px 1px;
   background-size: 100%; }
 
 .selectionSharer a.facebook {
-  background: url("../../images/Social-Shareable/fb_white.png") no-repeat;
+  background: url("../image/Social-Shareable/fb_white.png") no-repeat;
   background-size: 93%;
   background-position: 1px 2px; }
 
 .selectionSharer a.email {
-  background: url("../../images/Social-Shareable/em_white.png") no-repeat;
+  background: url("../image/Social-Shareable/em_white.png") no-repeat;
   background-size: 20px;
   background-position: 0px 1px; }
 
@@ -4972,7 +4972,7 @@ section.b-expertise + section.b-byline {
   min-height: 300px; }
 
 .b-resources-latest-nav .b-carousel__prev-next .b-nav__prev-next__link {
-  background: url(../../images/arrows-featured-tablet.png); }
+  background: url(../image/arrows-featured-tablet.png); }
 
 .b-resources-latest-nav .b-carousel__prev-next {
   width: 100%;
@@ -4983,7 +4983,7 @@ section.b-expertise + section.b-byline {
 
 @media only screen and (min-width: 1023px) {
   .b-resources-latest-nav .b-carousel__prev-next .b-nav__prev-next__link {
-    background: url(../../images/arrows-featured.png); } }
+    background: url(../image/arrows-featured.png); } }
 
 @media only screen and (min-width: 748px) {
   .b-resources-latest-nav .b-carousel__prev-next {
@@ -5178,7 +5178,7 @@ section.b-expertise + section.b-byline {
   transition: opacity .3s ease; }
 
 .b-masonry__inner-list__social-networks .b-masonry__inner-link__tw .b-masonry__inner-link {
-  background: url("../images/expertise-icons/tw.svg");
+  background: url("../image/expertise-icons/tw.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -5186,7 +5186,7 @@ section.b-expertise + section.b-byline {
   left: 0; }
 
 .b-masonry__inner-list__social-networks .b-masonry__inner-link__fb .b-masonry__inner-link {
-  background: url("../images/expertise-icons/fb.svg");
+  background: url("../image/expertise-icons/fb.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -5194,7 +5194,7 @@ section.b-expertise + section.b-byline {
   left: 0; }
 
 .b-masonry__inner-list__social-networks .b-masonry__inner-link__li .b-masonry__inner-link {
-  background: url("../images/expertise-icons/li.svg");
+  background: url("../image/expertise-icons/li.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -5202,7 +5202,7 @@ section.b-expertise + section.b-byline {
   left: 0; }
 
 .b-masonry__inner-list__social-networks .b-masonry__inner-link__em .b-masonry__inner-link {
-  background: url("../images/expertise-icons/em.svg");
+  background: url("../image/expertise-icons/em.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -5210,7 +5210,7 @@ section.b-expertise + section.b-byline {
   left: 0; }
 
 .b-masonry__inner-list__social-networks .b-masonry__inner-link__flkr .b-masonry__inner-link {
-  background: url("../images/expertise-icons/flkr.svg");
+  background: url("../image/expertise-icons/flkr.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -5218,7 +5218,7 @@ section.b-expertise + section.b-byline {
   left: 0; }
 
 .b-masonry__inner-list__social-networks .b-masonry__inner-link__pin .b-masonry__inner-link {
-  background: url("../images/expertise-icons/pin.svg");
+  background: url("../image/expertise-icons/pin.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -6326,7 +6326,7 @@ a.text-center {
         border-bottom: none; }
 
 .p-overview .b-main .g-container > .g-block:first-child .g-row-wide:first-child {
-  background: url(../../images/separator.png) center top no-repeat;
+  background: url(../image/separator.png) center top no-repeat;
   background-size: 97.22222% 1px;
   padding-top: 5.25rem; }
 
@@ -6964,7 +6964,7 @@ video {
   max-width: 100%; }
 
 .marketo-contact-us-form .marketoform .mktoForm .mktoRequiredField select {
-  background: transparent url("../../image/icon-triangle-down.svg") no-repeat scroll right 11px;
+  background: transparent url("../image/icon-triangle-down.svg") no-repeat scroll right 11px;
   border-right: 12px solid transparent; }
 
 #umbracoMainPageBody #leftcolumn #applications i {
@@ -7121,31 +7121,37 @@ table td input[type="checkbox"] {
   .interaction-slider .g-row {
     width: 100%; } }
 
+/*
 .b-navigation__nav {
-  float: left; }
-
-@media screen and (max-width: 1023px) {
-  .b-navigation__breadcrumb__item.b-navigation__breadcrumb__item--selected a {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 270px; } }
-
-@media screen and (min-width: 1024px) {
-  .b-navigation__breadcrumb__item.b-navigation__breadcrumb__item--selected a {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 425px; } }
-
-@media screen and (max-width: 750px) {
-  .b-navigation__nav {
-    width: auto; }
-  .b-navigation {
-    width: 100%; } }
-
+    float: left;
+}
+@include breakpoint(medium) {
+    .b-navigation__breadcrumb__item.b-navigation__breadcrumb__item--selected a {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 270px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .b-navigation__breadcrumb__item.b-navigation__breadcrumb__item--selected a {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 425px;
+    }
+}
+@media screen and (max-width:750px) {
+    .b-navigation__nav {
+        width: auto;
+    }
+    .b-navigation {
+        width: 100%;
+    }
+}
+*/
 @media screen and (max-height: 400px) {
   :root {
     -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -7155,7 +7161,7 @@ table td input[type="checkbox"] {
   width: 100% !important; }
 
 #My_Company_Mainly_Works_On__c, #Country {
-  background: transparent url("../../image/icon-triangle-down.svg") no-repeat scroll right center;
+  background: transparent url("../image/icon-triangle-down.svg") no-repeat scroll right center;
   border-right: 12px solid transparent;
   float: left;
   width: 100%;
@@ -7347,7 +7353,7 @@ table td input[type="checkbox"] {
   .marketo-contactus-germen-form select:focus {
     outline: 0 none; }
   .marketo-contactus-germen-form select.My_Company_Mainly_Works_On__c {
-    background: transparent url("../../image/icon-triangle-down.svg") no-repeat scroll right center;
+    background: transparent url("../image/icon-triangle-down.svg") no-repeat scroll right center;
     border-right: 12px solid transparent;
     float: left;
     margin-left: -5px;
@@ -7422,7 +7428,7 @@ table td input[type="checkbox"] {
   border: 1px solid #1e1e1e;
   border-radius: 0;
   padding: .275rem 1.875rem .275rem .75rem;
-  background: url("../images/select.png");
+  background: url("../image/select.png");
   background-repeat: no-repeat;
   background-size: 6px;
   background-position: right .75rem centre;
