@@ -1,0 +1,123 @@
+
+
+
+@media only screen and (min-width: 748px) {
+
+	#gatedcontent .b-main {
+	    margin-top: -180px;
+	    z-index: 10;
+	    position: relative;
+	}
+
+}
+
+@media only screen and (min-width: 880px) {
+
+	#gatedcontent .b-main {
+	    margin-top: -250px;
+	}
+
+}
+
+@media only screen and (min-width: 1240px) {
+
+	#gatedcontent .b-main {
+	    margin-top: -400px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+
+	#gatedcontent .b-main {
+	    margin-top: -500px;
+	}
+
+}
+
+@media only screen and (min-width: 1700px) {
+
+	#gatedcontent .b-main {
+	    margin-top: -600px;
+	}
+
+}
+
+@media only screen and (min-width: 2000px) {
+
+	#gatedcontent .b-main {
+	    margin-top: -700px;
+	}
+
+}
+
+@media only screen and (min-width: 2240px) {
+
+	#gatedcontent .b-main {
+	    margin-top: -800px;
+	}
+
+}
+
+#gatedcontent .legaltext {
+	margin-top: 3em;
+	border-top: 1px solid #C8C8C8;
+	padding-top: 2em;
+	font-family: $malabar-italic;
+	font-size: 1rem;
+	line-height: 1.5em;
+}
+
+#gatedcontent .b-expertise__article-text .legaltext p {
+    margin-top: 1rem;
+}
+
+#gatedcontent .b-expertise__article-text p:first-child {
+	margin-top: 0;
+}
+
+
+#gatedcontent .b-form__form {
+	clear: both;
+	display: table;
+	background: #ffffff none repeat scroll 0 0;
+	border: 1px solid #c8c8c8;
+	height: 100%;
+	padding-bottom: 0.75rem;
+	padding-top: 0.75rem;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 605px;
+	text-align: left;
+}
+
+#gatedcontent .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap {
+    border-bottom: 1px solid #e6e6e6;
+    float: left;
+    font-family: $kootenay
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin: 0 4.7619%;
+    padding: 1.5rem 5px 0.4rem 5px;
+    position: relative;
+    width: 90.4762%;
+}
+
+#gatedcontent .mktoButtonRow {
+	width: 100%;
+	text-align: center;
+}
+
+#gatedcontent input, #gatedcontent textarea, #gatedcontent select {
+	    font-size: initial;
+	    color: #787878;
+}
+
+#gatedcontent .download {
+	border: 1px solid #73b4da;
+	padding: 2rem 3rem;
+}
