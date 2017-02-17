@@ -196,7 +196,7 @@
         padding: 0;
         margin: 0;
         text-align: center;
-        font-family: 'Kootenay Pro1277143';
+        font-family: $kootenay;
     }
     li {
         display: inline-block;
@@ -208,7 +208,7 @@
         vertical-align: bottom;
         &.name {
             line-height: 2.1;
-            font-family: 'Kootenay Pro SemiBold';
+            font-family: $kootenay-semibold;
         }
     }
     a {
@@ -375,7 +375,7 @@ table td input[type="checkbox"] {
         height: 100%;
         .b-form__input--textarea {
             float: left;
-            font-family: "Malabar ET W08 Regular",serif;
+            font-family: $malabar;
             height: 100%;
             padding: 1.5rem 7.14286% 0;
             resize: none;
@@ -396,7 +396,7 @@ table td input[type="checkbox"] {
 .marketoform .mktoFormRow .mktoFieldWrap {
     border-bottom: 1px solid #c8c8c8;
     float: left;
-    font-family: "Kootenay Pro1277143",sans-serif;
+    font-family: $kootenay;
     font-size: 1.125rem;
     line-height: 1.5rem;
     margin: 0 4.7619%;
@@ -408,7 +408,7 @@ table td input[type="checkbox"] {
     }
     label {
         color: #c8c8c8;
-        font-family: "Kootenay Pro1277143",sans-serif;
+        font-family: $kootenay;
         font-size: 1.125rem;
         left: 0;
         line-height: 1.5rem;
@@ -776,7 +776,7 @@ table td input[type="checkbox"] {
     padding-bottom: 0;
 }
 .b-footer-legal__item plain-text-item strong {
-    font-family: "Kootenay Pro",Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-family: $kootenay-bold;
 }
 
 .g-container.b-footer-legal {
@@ -819,7 +819,7 @@ table td input[type="checkbox"] {
 }
 
 .g-container.b-footer-legal .b-footer-legal__item.plain-text-item strong {
-    font-family: Kootenay Pro,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-family: $kootenay-bold;
     font-weight: normal;
 }
 
