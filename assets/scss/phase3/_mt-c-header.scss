@@ -164,13 +164,6 @@
   float: left;
   padding-bottom: 1.5em;
   width: 100%;
-  .mt-b-nav {
-
-    @media (min-width: 768px) {
-      // makes navigation fill all the rest of the space
-      width: 86.5%;
-    }
-  }
 
   .mt-b-nav__items--breadcrumbs {
     display: block;
