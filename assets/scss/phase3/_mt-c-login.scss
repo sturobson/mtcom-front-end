@@ -84,3 +84,22 @@
     transition: 0;
   }
 }
+
+$error-msg-color--bg: $color-eleven;
+
+// error notifications for login page
+.f-ajax-message {
+  background-color: $error-msg-color--bg;
+  color: $color-seven;
+  font-family: $kootenay;
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top: 0.5em;
+  padding-bottom: 0.8em;
+}
+
+.f-ajax-message .validation-summary-errors ul li {
+  color: $color-seven;
+  list-style: none;
+  margin-bottom: 0.5em;
+}
