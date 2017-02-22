@@ -6542,7 +6542,8 @@ video {
   padding-top: 0.5em;
   padding-bottom: 0.8em; }
 
-.error--is-active .validation-summary-errors ul li {
+.error--is-active .validation-summary-errors ul li,
+.validation-summary-errors ul li {
   color: #FFFFFF;
   list-style: none;
   margin-bottom: 0.5em; }
