@@ -584,7 +584,7 @@ body:after {
     border-bottom: 1px solid #FFFFFF !important; }
 
 .g-container--video {
-  background-color: #51514e; }
+  background-color: #EE2E22; }
   .g-container--video h1, .g-container--video h2, .g-container--video h3, .g-container--video h4, .g-container--video h5, .g-container--video h6 {
     color: #FFFFFF; }
   .g-container--video p, .g-container--video p > a {
@@ -6532,6 +6532,20 @@ video {
     display: none;
     -webkit-transition: 0;
             transition: 0; }
+
+.f-ajax-message {
+  background-color: #EE2E22;
+  color: #FFFFFF;
+  font-family: "Tazugane Gothic StdN W50 Rg", "Yu Gothic Std-TT M", "Yu Mincho", "Hirgano Mincho";
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top: 0.5em;
+  padding-bottom: 0.8em; }
+
+.f-ajax-message .validation-summary-errors ul li {
+  color: #FFFFFF;
+  list-style: none;
+  margin-bottom: 0.5em; }
 
 .mt-p-products h1, .mt-p-products h1 + p, .mt-p-products h2, .mt-p-products h2 + p {
   text-align: center; }
