@@ -88,7 +88,7 @@
 $error-msg-color--bg: $color-twelve;
 
 // error notifications for login page
-.f-ajax-message {
+.error--is-active {
   background-color: $error-msg-color--bg;
   color: $color-seven;
   font-family: $kootenay;
@@ -98,7 +98,7 @@ $error-msg-color--bg: $color-twelve;
   padding-bottom: 0.8em;
 }
 
-.f-ajax-message .validation-summary-errors ul li {
+.error--is-active .validation-summary-errors ul li {
   color: $color-seven;
   list-style: none;
   margin-bottom: 0.5em;
