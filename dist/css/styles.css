@@ -6549,7 +6549,7 @@ video {
     -webkit-transition: 0;
             transition: 0; }
 
-.f-ajax-message {
+.error--is-active {
   background-color: #EE2E22;
   color: #FFFFFF;
   font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -6558,7 +6558,7 @@ video {
   padding-top: 0.5em;
   padding-bottom: 0.8em; }
 
-.f-ajax-message .validation-summary-errors ul li {
+.error--is-active .validation-summary-errors ul li {
   color: #FFFFFF;
   list-style: none;
   margin-bottom: 0.5em; }
