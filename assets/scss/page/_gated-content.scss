@@ -64,7 +64,7 @@
 	margin-top: 3em;
 	border-top: 1px solid #C8C8C8;
 	padding-top: 2em;
-	font-family: 'Malabar ET W08 Italic', Georgia, Times, Times New Roman, serif;
+	font-family: $malabar-italic;
 	font-size: 1rem;
 	line-height: 1.5em;
 }
@@ -97,7 +97,7 @@
 #gatedcontent .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap {
     border-bottom: 1px solid #e6e6e6;
     float: left;
-    font-family: "Kootenay Pro1277143",sans-serif;
+    font-family: $kootenay;
     font-size: 1.125rem;
     line-height: 1.5rem;
     margin: 0 4.7619%;
