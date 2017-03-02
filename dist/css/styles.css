@@ -6512,26 +6512,18 @@ video {
   float: left;
   width: 100%;
   height: 56px;
-  line-height: 36px;
+  line-height: 26px;
   padding: 0 1rem;
   border: 1px solid #1E1E1E; }
 
 .mt-e-form__label {
   font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #1E1E1E;
-  font-size: 1rem;
   position: absolute;
-  top: 1rem;
   left: 1rem;
-  -webkit-transition: top .3s linear;
-          transition: top .3s linear; }
-
-.has-value--input {
   top: 3px;
   font-size: 12px;
-  line-height: 10px;
-  -webkit-transition: top .3s linear;
-          transition: top .3s linear; }
+  line-height: 10px; }
 
 .mt-b-switcher {
   margin-top: 1rem;
@@ -6551,18 +6543,39 @@ video {
 
 .error--is-active {
   background-color: #EE2E22;
-  color: #FFFFFF;
+  color: #fff;
   font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin: 0 auto;
   max-width: 400px;
-  padding-top: 0.5em;
-  padding-bottom: 0.8em; }
+  padding-top: .5em;
+  padding-bottom: .8em; }
 
-.error--is-active .validation-summary-errors ul li,
-.validation-summary-errors ul li {
-  color: #FFFFFF;
-  list-style: none;
-  margin-bottom: 0.5em; }
+p.error-message {
+  color: #fff;
+  margin-bottom: .5em; }
+
+.error-msg ul li {
+  color: #fff;
+  list-style-type: none;
+  background: #EE2E22;
+  display: inline-block;
+  padding: .5em 1em .8em;
+  height: 52px;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.success--message {
+  background-color: #598d08;
+  color: #fff;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top: .5em;
+  padding-bottom: .8em; }
+
+p.success--text {
+  color: #fff;
+  margin-bottom: .5em;
+  text-align: left; }
 
 .mt-p-products h1, .mt-p-products h1 + p, .mt-p-products h2, .mt-p-products h2 + p {
   text-align: center; }
