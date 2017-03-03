@@ -6853,7 +6853,8 @@ p.success--text {
   display: block; }
 
 #gatedcontent .marketo-contact-us-form .b-form__table-cell .marketoform {
-  display: block; }
+  display: block;
+  border-left: none; }
 
 #gatedcontent .marketo-contact-us-form .b-form__table-cell .marketoform form {
   width: 100% !important; }
@@ -7290,7 +7291,7 @@ table td input[type="checkbox"] {
 .mktoField.mktoHasWidth {
   width: 100% !important; }
 
-#My_Company_Mainly_Works_On__c, #Country {
+#My_Company_Mainly_Works_On__c, #Country, #Work_Environment__c {
   background: transparent url("/Content/Vendor/image/icon-triangle-down.svg") no-repeat scroll right center;
   border-right: 12px solid transparent;
   float: left;
