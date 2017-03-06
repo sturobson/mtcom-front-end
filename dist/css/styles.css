@@ -6838,7 +6838,7 @@ p.success--text {
   width: 100%;
   text-align: center; }
 
-#gatedcontent input, #gatedcontent textarea, #gatedcontent select {
+#gatedcontent input.mktoField, #gatedcontent textarea, #gatedcontent select {
   font-size: initial;
   color: #787878; }
 
