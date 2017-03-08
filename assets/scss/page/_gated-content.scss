@@ -3,145 +3,184 @@
 
 @media only screen and (min-width: 748px) {
 
-	#gatedcontent .b-main {
-	    margin-top: -180px;
-	    z-index: 10;
-	    position: relative;
-	}
+  #gatedcontent .b-main {
+    margin-top: -180px;
+    z-index: 10;
+    position: relative;
+  }
 
 }
 
 @media only screen and (min-width: 880px) {
 
-	#gatedcontent .b-main {
-	    margin-top: -250px;
-	}
+  #gatedcontent .b-main {
+    margin-top: -250px;
+  }
 
 }
 
 @media only screen and (min-width: 1240px) {
 
-	#gatedcontent .b-main {
-	    margin-top: -400px;
-	}
+  #gatedcontent .b-main {
+    margin-top: -400px;
+  }
 
 }
 
 
 @media only screen and (min-width: 1400px) {
 
-	#gatedcontent .b-main {
-	    margin-top: -500px;
-	}
+  #gatedcontent .b-main {
+    margin-top: -500px;
+  }
 
 }
 
 @media only screen and (min-width: 1700px) {
 
-	#gatedcontent .b-main {
-	    margin-top: -600px;
-	}
+  #gatedcontent .b-main {
+    margin-top: -600px;
+  }
 
 }
 
 @media only screen and (min-width: 2000px) {
 
-	#gatedcontent .b-main {
-	    margin-top: -700px;
-	}
+  #gatedcontent .b-main {
+    margin-top: -700px;
+  }
 
 }
 
 @media only screen and (min-width: 2240px) {
 
-	#gatedcontent .b-main {
-	    margin-top: -800px;
-	}
+  #gatedcontent .b-main {
+    margin-top: -800px;
+  }
 
 }
 
 #gatedcontent .legaltext {
-	margin-top: 3em;
-	border-top: 1px solid #C8C8C8;
-	padding-top: 2em;
-	font-family: $malabar-italic;
-	font-size: 1rem;
-	line-height: 1.5em;
+  margin-top: 3em;
+  border-top: 1px solid #C8C8C8;
+  padding-top: 2em;
+  font-family: $malabar-italic;
+  font-size: 1rem;
+  line-height: 1.5em;
 }
 
 #gatedcontent .b-expertise__article-text .legaltext p {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #gatedcontent .b-expertise__article-text p:first-child {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 
 #gatedcontent .b-form__form {
-	clear: both;
-	display: table;
-	background: #ffffff none repeat scroll 0 0;
-	height: 100%;
-	padding-bottom: 0.75rem;
-	padding-top: 0.75rem;
-	width: 100%;
-	margin-top: 1em;
-	margin-bottom: 3em;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 605px;
-	text-align: left;
+  clear: both;
+  display: table;
+  background: #ffffff none repeat scroll 0 0;
+  height: 100%;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 605px;
+  text-align: left;
 }
 
 #gatedcontent .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap {
-    border-bottom: 1px solid #e6e6e6;
-    float: left;
-    font-family: $kootenay;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    margin: 0 4.7619%;
-    padding: 1.5rem 5px 0.4rem 5px;
-    position: relative;
-    width: 90.4762%;
+  border-bottom: 1px solid #e6e6e6;
+  float: left;
+  font-family: $kootenay;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin: 0 4.7619%;
+  padding: 1.5rem 5px 0.4rem 5px;
+  position: relative;
+  width: 90.4762%;
 }
 
 #gatedcontent .mktoButtonRow {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
+<<<<<<< HEAD
+#gatedcontent input, #gatedcontent textarea, #gatedcontent select {
+  font-size: initial;
+  color: #787878;
+=======
 #gatedcontent input.mktoField, #gatedcontent textarea, #gatedcontent select {
 	    font-size: initial;
 	    color: #787878;
+>>>>>>> 6b06dc6a1ae494d86ed798d51128366297b75386
 }
 
 #gatedcontent .download {
-	border: 1px solid #73b4da;
-	padding: 2rem 3rem;
+  border: 1px solid #73b4da;
+  padding: 2rem 3rem;
 }
 
 #gatedcontent .marketo-contact-us-form .b-form__table-cell {
-	width: 100%;
-	clear: both;
-	display: block;
+  width: 100%;
+  clear: both;
+  display: block;
 
 }
 
 #gatedcontent .marketo-contact-us-form .b-form__table-cell .marketoform {
-	display: block;
+  display: block;
   border-left: none;
 }
 
 #gatedcontent .marketo-contact-us-form .b-form__table-cell .marketoform form {
-	width: 100%!important;
+  width: 100%!important;
 }
 
 #gatedcontent .marketo-contact-us-form .mktoFieldWrap.mktoRequiredField select {
-	line-height: 1.5rem!important;
+  line-height: 1.5rem!important;
 }
 
 #gatedcontent .mktoForm input[type=tel] {
-	padding: 2px 0px !important;
-	font-size: 18px !important;
+  padding: 2px 0px !important;
+  font-size: 18px !important;
 }
+<<<<<<< HEAD
+
+
+#gatedcontent input.mktoField, #gatedcontent select, #gatedcontent textarea {
+  font-size: medium;
+  color: #c8c8c8;
+}
+
+
+// Hacks for Marketo code
+
+// makes the label 'work'
+.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
+  position: absolute;
+  left: 1em;
+  top: 3px;
+}
+
+// to target the element -- this one could _really_ break as it's using nth-child
+#gatedcontent {
+  .marketo-contact-us-form .marketoform .mktoFormRow:nth-child(9) .mktoFieldWrap {
+    min-height: 4em;
+  }
+  @media (min-width: 545px) and (max-width: 747px) {
+    min-height: 3em;
+  }
+  @media (min-width: 1024px) {
+    min-height: 3em;
+  }
+
+}
+=======
+>>>>>>> 6b06dc6a1ae494d86ed798d51128366297b75386
