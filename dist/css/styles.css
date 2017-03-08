@@ -6885,6 +6885,9 @@ p.success--text {
   #gatedcontent {
     min-height: 3em; } }
 
+#gatedcontent .marketo-contact-us-form .b-form__table-cell:first-child {
+  height: 100% !important; }
+
 .p-home {
   height: calc(100% - 195px); }
 
