@@ -157,7 +157,7 @@
 
 // makes the label 'work'
 .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
-  position: absolute;
+  position: absolute !important;
   left: 1em;
   top: 3px;
 }
@@ -175,5 +175,8 @@
   }
   .marketo-contact-us-form .b-form__table-cell:first-child {
     height: 100% !important;
+  }
+  .marketoform {
+    border: none !important;
   }
 }
