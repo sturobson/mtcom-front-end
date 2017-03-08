@@ -6870,7 +6870,7 @@ p.success--text {
   color: #c8c8c8; }
 
 .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
-  position: absolute;
+  position: absolute !important;
   left: 1em;
   top: 3px; }
 
@@ -6887,6 +6887,9 @@ p.success--text {
 
 #gatedcontent .marketo-contact-us-form .b-form__table-cell:first-child {
   height: 100% !important; }
+
+#gatedcontent .marketoform {
+  border: none !important; }
 
 .p-home {
   height: calc(100% - 195px); }
