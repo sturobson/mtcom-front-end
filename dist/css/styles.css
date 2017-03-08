@@ -6865,10 +6865,6 @@ p.success--text {
   padding: 2px 0px !important;
   font-size: 18px !important; }
 
-#gatedcontent input.mktoField, #gatedcontent select, #gatedcontent textarea {
-  font-size: medium;
-  color: #c8c8c8; }
-
 .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
   position: absolute !important;
   left: 1em;
