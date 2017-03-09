@@ -6865,21 +6865,15 @@ p.success--text {
   padding: 2px 0px !important;
   font-size: 18px !important; }
 
-.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
-  position: absolute !important;
-  left: 1em;
-  top: 3px; }
-
-#gatedcontent .marketo-contact-us-form .marketoform .mktoFormRow:nth-child(9) .mktoFieldWrap {
-  min-height: 4em; }
-
-@media (min-width: 545px) and (max-width: 747px) {
-  #gatedcontent {
-    min-height: 3em; } }
-
-@media (min-width: 1024px) {
-  #gatedcontent {
-    min-height: 3em; } }
+#gatedcontent .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding-left: 3em !important;
+  position: static !important;
+  margin-top: -2em; }
 
 #gatedcontent .marketo-contact-us-form .b-form__table-cell:first-child {
   height: 100% !important; }
@@ -7611,10 +7605,11 @@ table td input[type="checkbox"] {
   position: absolute;
   bottom: 0; }
 
-.b-3-3-0-intro-contact .marketo-contact-us-form .marketoform .mktoFormRow:nth-child(9) .mktoFieldWrap {
-  min-height: 4em; }
-
-.b-3-3-0-intro-contact .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
-  osition: absolute;
-  left: 10px;
-  top: 5px; }
+.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding-left: 3em !important;
+  position: static !important; }
