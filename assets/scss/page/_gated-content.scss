@@ -149,23 +149,17 @@
 // Hacks for Marketo code
 
 // makes the label 'work'
-.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
-  position: absolute !important;
-  left: 1em;
-  top: 3px;
+#gatedcontent .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
+  flex-wrap: wrap;
+  display: flex !important;
+  padding-left: 3em !important;
+  position: static !important;
+  margin-top: -2em;
 }
 
 // to target the element -- this one could _really_ break as it's using nth-child
 #gatedcontent {
-  .marketo-contact-us-form .marketoform .mktoFormRow:nth-child(9) .mktoFieldWrap {
-    min-height: 4em;
-  }
-  @media (min-width: 545px) and (max-width: 747px) {
-    min-height: 3em;
-  }
-  @media (min-width: 1024px) {
-    min-height: 3em;
-  }
+
   .marketo-contact-us-form .b-form__table-cell:first-child {
     height: 100% !important;
   }
