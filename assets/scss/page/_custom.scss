@@ -849,15 +849,12 @@ table td input[type="checkbox"] {
 
 
 
-// this fixes the form element for the main contact form
+// new fix for the form element for the main contact form
 //
-.b-3-3-0-intro-contact {
-  .marketo-contact-us-form .marketoform .mktoFormRow:nth-child(9) .mktoFieldWrap {
-    min-height: 4em;
-  }
+
   .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
-    osition: absolute;
-    left: 10px;
-    top: 5px;
+    flex-wrap: wrap;
+    display: flex !important;
+    padding-left: 3em !important;
+    position: static !important;
   }
-}
