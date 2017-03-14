@@ -31,19 +31,19 @@ video {
   }
 }
 
-.mt-p-products .g-container--video .b-subtitle .b-subtitle__text {
+.g-container--video .b-subtitle .b-subtitle__text {
     font-size: 1.375rem;
     line-height: 2.226rem;
 }
 
 @media screen and (max-width: 748px) {
-	.mt-p-products .g-container--video .b-subtitle .b-subtitle__text {
+	.g-container--video .b-subtitle .b-subtitle__text {
 	    font-size: 1rem;
 	    line-height: 1.6875rem;
 	}
 }
 
-.mt-p-products .g-container--video .b-subtitle .b-subtitle__text p {
+.g-container--video .b-subtitle .b-subtitle__text p {
     margin-bottom: 1rem;
 }
 
