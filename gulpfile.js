@@ -16,10 +16,12 @@ const rename            = require('gulp-rename');
 
 // JS Things
 const concat            = require('gulp-concat');
-
+var fs = require('fs');
 // Local Server Stuff
 const browserSync       = require('browser-sync').create();
 const reload            = browserSync.reload;
+const connect           = require('gulp-connect');
+const backstopjs        = require('backstopjs');
 
 // Housekeeping
 
@@ -56,9 +58,7 @@ gulp.task('sass:deploy', function () {
     .pipe(sass())
     .pipe(replace('../image/', '/Content/Vendor/image/'))
     .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(gulp.dest('./dist/css'))
     .pipe(cssnano())
-    .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('./dist/css'));
 });
 
@@ -67,10 +67,8 @@ gulp.task('sass:deployJP', function () {
     .pipe(sass())
     .pipe(replace('../image/', '/Content/Vendor/image/'))
     .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(rename('JPstyles.css'))
-    .pipe(gulp.dest('./dist/css'))
     .pipe(cssnano())
-    .pipe(rename('JPstyles.min.css'))
+    .pipe(rename('JPstyles.css'))
     .pipe(gulp.dest('./dist/css'));
     done();
 });
@@ -157,7 +155,11 @@ gulp.task('watchJS', function(done) {
   done();
 });
 
-
+var backstopConfig = {
+  //Config file location
+  config: './backstopConfig.js'
+  //incremental reference image capturing
+}
 
 // -----------------------------------------------------------------------------
 // Default Tasks
@@ -170,3 +172,19 @@ gulp.task('dev', gulp.parallel('frctlStart', 'css', 'watch'));
 
 // build task to deploy for monotype.com
 gulp.task('deploy', gulp.series('sass:deploy', 'copyFontsJP', 'sass:deployJP', 'copyFontsUK'));
+
+
+gulp.task('backstop_reference', () => backstopjs('reference', backstopConfig));
+gulp.task('backstop_test', () => backstopjs('test', backstopConfig));
+gulp.task('tests', function(done) {
+  connect.server({
+    port: 8888
+  });
+  done();
+});
+gulp.task('testdone', function(done) {
+  connect.serverClose();
+  done();
+});
+gulp.task('VR', gulp.series('tests', 'css', 'backstop_reference', 'testdone'));
+gulp.task('VRR', gulp.series('tests', 'css', 'backstop_test', 'testdone'));
