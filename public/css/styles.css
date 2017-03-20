@@ -1118,6 +1118,10 @@ body:after {
       color: #C8C8C8;
       border: 1px solid #C8C8C8; }
 
+.js-tilesButtonDiv {
+  display: block !important;
+  margin-bottom: 2em; }
+
 .b-carousel {
   position: relative;
   overflow: hidden; }
@@ -2518,7 +2522,7 @@ body:after {
     .b-paragraph ul {
       margin-left: 1em; } }
   .b-paragraph h3 {
-    font-family: 'Malabar ET W08 Italic',Georgia,Times,Times New Roman,serif;
+    font-family: "Malabar ET W08 Italic", Georgia, Times, "Times New Roman", serif;
     margin-top: 1em; }
   .b-paragraph h3 + p {
     margin-top: 0; }
@@ -5079,7 +5083,7 @@ section.b-expertise + section.b-byline {
 
 /* Tile content */
 .b-resourcescontent__item h3 {
-  font-family: 'Malabar W04 Bold', Georgia, Times, Times New Roman, serif;
+  font-family: "Malabar ET W08 Bold", Georgia, Times, "Times New Roman", serif;
   margin-top: 2.125rem;
   font-size: 1.175rem;
   line-height: 1.526rem;
@@ -5089,12 +5093,12 @@ section.b-expertise + section.b-byline {
   margin-top: 1.125rem; }
 
 .b-resourcescontent__item .description {
-  font-family: 'Malabar ET W08 Italic', Georgia, Times, Times New Roman, serif;
+  font-family: "Malabar ET W08 Italic", Georgia, Times, "Times New Roman", serif;
   font-size: 1rem;
   line-height: 1.5em; }
 
 .b-resourcescontent__item .tags {
-  font-family: 'Kootenay Pro1277143', Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.675em;
   line-height: 1.5em;
   margin-top: 1em;
@@ -5104,7 +5108,7 @@ section.b-expertise + section.b-byline {
   width: 80%; }
 
 .b-resourcescontent__item .category {
-  font-family: 'Kootenay Pro1277143', Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.925em;
   line-height: 1.5em;
   position: absolute;
@@ -5868,8 +5872,7 @@ a.text-center {
     margin-left: 0;
     margin-right: 0; }
   .mt-b-blurb .mt-e-paragraph a {
-    font-family: "MalabarETW08-BoldItalic", Georgia, Times, "Times New Roman", serif;
-    line-height: 1.15; }
+    font-family: "MalabarETW08-BoldItalic", Georgia, Times, "Times New Roman", serif; }
 
 .mt-b-blurb__image {
   position: relative; }
@@ -6070,9 +6073,6 @@ a.text-center {
   float: left;
   padding-bottom: 1.5em;
   width: 100%; }
-  @media (min-width: 768px) {
-    .mt-c-header .mt-b-nav {
-      width: 86.5%; } }
   .mt-c-header .mt-b-nav__items--breadcrumbs {
     display: block;
     float: left;
@@ -6370,16 +6370,16 @@ video {
     .mt-video__paragraph a:hover {
       border-bottom: 1px solid #73b4da; }
 
-.mt-p-products .g-container--video .b-subtitle .b-subtitle__text {
+.g-container--video .b-subtitle .b-subtitle__text {
   font-size: 1.375rem;
   line-height: 2.226rem; }
 
 @media screen and (max-width: 748px) {
-  .mt-p-products .g-container--video .b-subtitle .b-subtitle__text {
+  .g-container--video .b-subtitle .b-subtitle__text {
     font-size: 1rem;
     line-height: 1.6875rem; } }
 
-.mt-p-products .g-container--video .b-subtitle .b-subtitle__text p {
+.g-container--video .b-subtitle .b-subtitle__text p {
   margin-bottom: 1rem; }
 
 /*black*/
@@ -6510,26 +6510,19 @@ video {
   color: #1E1E1E;
   float: left;
   width: 100%;
-  line-height: 56px;
+  height: 56px;
+  line-height: 26px;
   padding: 0 1rem;
   border: 1px solid #1E1E1E; }
 
 .mt-e-form__label {
   font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #1E1E1E;
-  font-size: 1rem;
   position: absolute;
-  top: 1rem;
   left: 1rem;
-  -webkit-transition: top .3s linear;
-          transition: top .3s linear; }
-
-.has-value--input {
   top: 3px;
   font-size: 12px;
-  line-height: 10px;
-  -webkit-transition: top .3s linear;
-          transition: top .3s linear; }
+  line-height: 10px; }
 
 .mt-b-switcher {
   margin-top: 1rem;
@@ -6546,6 +6539,42 @@ video {
     display: none;
     -webkit-transition: 0;
             transition: 0; }
+
+.error--is-active {
+  background-color: #EE2E22;
+  color: #fff;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top: .5em;
+  padding-bottom: .8em; }
+
+p.error-message {
+  color: #fff;
+  margin-bottom: .5em; }
+
+.error-msg ul li {
+  color: #fff;
+  list-style-type: none;
+  background: #EE2E22;
+  display: inline-block;
+  padding: .5em 1em .8em;
+  height: 52px;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.success--message {
+  background-color: #598d08;
+  color: #fff;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top: .5em;
+  padding-bottom: .8em; }
+
+p.success--text {
+  color: #fff;
+  margin-bottom: .5em;
+  text-align: left; }
 
 .mt-p-products h1, .mt-p-products h1 + p, .mt-p-products h2, .mt-p-products h2 + p {
   text-align: center; }
@@ -6735,6 +6764,123 @@ video {
 /* ------------------------------------------------------------
    Custom CSS
    ------------------------------------------------------------ */
+@media only screen and (min-width: 748px) {
+  #gatedcontent .b-main {
+    margin-top: -180px;
+    z-index: 10;
+    position: relative; } }
+
+@media only screen and (min-width: 880px) {
+  #gatedcontent .b-main {
+    margin-top: -250px; } }
+
+@media only screen and (min-width: 1240px) {
+  #gatedcontent .b-main {
+    margin-top: -400px; } }
+
+@media only screen and (min-width: 1400px) {
+  #gatedcontent .b-main {
+    margin-top: -500px; } }
+
+@media only screen and (min-width: 1700px) {
+  #gatedcontent .b-main {
+    margin-top: -600px; } }
+
+@media only screen and (min-width: 2000px) {
+  #gatedcontent .b-main {
+    margin-top: -700px; } }
+
+@media only screen and (min-width: 2240px) {
+  #gatedcontent .b-main {
+    margin-top: -800px; } }
+
+#gatedcontent .legaltext {
+  margin-top: 3em;
+  border-top: 1px solid #C8C8C8;
+  padding-top: 2em;
+  font-family: "Malabar ET W08 Italic", Georgia, Times, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.5em; }
+
+#gatedcontent .b-expertise__article-text .legaltext p {
+  margin-top: 1rem; }
+
+#gatedcontent .b-expertise__article-text p:first-child {
+  margin-top: 0; }
+
+#gatedcontent .b-form__form {
+  clear: both;
+  display: table;
+  background: #ffffff none repeat scroll 0 0;
+  height: 100%;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 605px;
+  text-align: left; }
+
+#gatedcontent .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap {
+  border-bottom: 1px solid #e6e6e6;
+  float: left;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin: 0 4.7619%;
+  padding: 1.5rem 5px 0.4rem 5px;
+  position: relative;
+  width: 90.4762%; }
+
+#gatedcontent .mktoButtonRow {
+  width: 100%;
+  text-align: center; }
+
+#gatedcontent input, #gatedcontent textarea, #gatedcontent select {
+  font-size: initial;
+  color: #787878; }
+
+#gatedcontent .download {
+  border: 1px solid #73b4da;
+  padding: 2rem 3rem; }
+
+#gatedcontent .marketo-contact-us-form .b-form__table-cell {
+  width: 100%;
+  clear: both;
+  display: block; }
+
+#gatedcontent .marketo-contact-us-form .b-form__table-cell .marketoform {
+  display: block;
+  border-left: none; }
+
+#gatedcontent .marketo-contact-us-form .b-form__table-cell .marketoform form {
+  width: 100% !important; }
+
+#gatedcontent .marketo-contact-us-form .mktoFieldWrap.mktoRequiredField select {
+  line-height: 1.5rem !important; }
+
+#gatedcontent .mktoForm input[type=tel] {
+  padding: 2px 0px !important;
+  font-size: 18px !important; }
+
+#gatedcontent .marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding-left: 3em !important;
+  position: static !important;
+  margin-top: -2em; }
+
+#gatedcontent .marketo-contact-us-form .b-form__table-cell:first-child {
+  height: 100% !important; }
+
+#gatedcontent .marketoform {
+  border: none !important; }
+
 .p-home {
   height: calc(100% - 195px); }
 
@@ -6903,7 +7049,7 @@ video {
   padding: 0;
   margin: 0;
   text-align: center;
-  font-family: 'Kootenay Pro1277143'; }
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .js .tabs__navigation li {
   display: inline-block;
@@ -6915,7 +7061,7 @@ video {
   vertical-align: bottom; }
   .js .tabs__navigation li.name {
     line-height: 2.1;
-    font-family: 'Kootenay Pro SemiBold'; }
+    font-family: "Kootenay Pro SemiBold", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .js .tabs__navigation a {
   color: #000;
@@ -7067,7 +7213,7 @@ table td input[type="checkbox"] {
     height: 100%; }
     .marketo-contact-us-form .b-form__table-cell .b-form__input--textarea {
       float: left;
-      font-family: "Malabar ET W08 Regular",serif;
+      font-family: "Malabar ET W08 Regular", Georgia, Times, "Times New Roman", serif;
       height: 100%;
       padding: 1.5rem 7.14286% 0;
       resize: none;
@@ -7085,7 +7231,7 @@ table td input[type="checkbox"] {
 .marketoform .mktoFormRow .mktoFieldWrap {
   border-bottom: 1px solid #c8c8c8;
   float: left;
-  font-family: "Kootenay Pro1277143",sans-serif;
+  font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.125rem;
   line-height: 1.5rem;
   margin: 0 4.7619%;
@@ -7096,7 +7242,7 @@ table td input[type="checkbox"] {
     margin-top: -0.75rem; }
   .marketoform .mktoFormRow .mktoFieldWrap label {
     color: #c8c8c8;
-    font-family: "Kootenay Pro1277143",sans-serif;
+    font-family: "Kootenay Pro1277143", Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.125rem;
     left: 0;
     line-height: 1.5rem;
@@ -7160,7 +7306,7 @@ table td input[type="checkbox"] {
 .mktoField.mktoHasWidth {
   width: 100% !important; }
 
-#My_Company_Mainly_Works_On__c, #Country {
+#My_Company_Mainly_Works_On__c, #Country, #Work_Environment__c {
   background: transparent url("../image/icon-triangle-down.svg") no-repeat scroll right center;
   border-right: 12px solid transparent;
   float: left;
@@ -7401,7 +7547,7 @@ table td input[type="checkbox"] {
   padding-bottom: 0; }
 
 .b-footer-legal__item plain-text-item strong {
-  font-family: "Kootenay Pro",Arial,"Helvetica Neue",Helvetica,sans-serif; }
+  font-family: "Kootenay Pro", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .g-container.b-footer-legal .g-block .g-row {
   width: 91.5%; }
@@ -7435,7 +7581,7 @@ table td input[type="checkbox"] {
   min-width: 12rem; }
 
 .g-container.b-footer-legal .b-footer-legal__item.plain-text-item strong {
-  font-family: Kootenay Pro,Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-family: "Kootenay Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal; }
 
 #categoriesSelection.b-typetester__meta-select + .b-typetester__meta-list {
@@ -7458,3 +7604,12 @@ table td input[type="checkbox"] {
   background: #73b4da;
   position: absolute;
   bottom: 0; }
+
+.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding-left: 3em !important;
+  position: static !important; }
