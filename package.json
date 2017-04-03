@@ -8,7 +8,6 @@
   "bugs": {
     "url": "https://github.com/monotype-digital-design/UILibraryissues"
   },
-  "private": true,
   "dependencies": {
     "@frctl/fractal": "^1.1.0",
     "@frctl/handlebars-helpers": "^0.2.0",
