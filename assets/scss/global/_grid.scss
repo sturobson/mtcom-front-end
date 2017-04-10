@@ -1,6 +1,7 @@
-/* ------------------------------------------------------------
-   Grid System thanks to lovely Susy susy.oddbird.net
-   ------------------------------------------------------------ */
+// ------------------------------------------------------------
+//   Grid System thanks to lovely Susy susy.oddbird.net
+// ------------------------------------------------------------
+
 // General Grid Definition
 $susy: (
   columns: 14,
@@ -18,9 +19,10 @@ $grid-desktop-wide: 14 (48px 24px) split inside;
 $grid-tablet: 12 (30px 24px) split static;
 $grid-tablet-wide: 14 (30px 24px) split static;
 
-/* ------------------------------------------------------------
-   Grid Container and Wrappers
-   ------------------------------------------------------------ */
+// ------------------------------------------------------------
+//   Grid Container and Wrappers
+// ------------------------------------------------------------
+
 .g-container {
   padding-left: gutter(14) / 2;
   padding-right: gutter(14) / 2;
@@ -96,9 +98,9 @@ $grid-tablet-wide: 14 (30px 24px) split static;
   	.g-col-13 { @include span(13 of 14); }
   }
 }
-/* ------------------------------------------------------------
-   Responsive Behavior of the columns
-   ------------------------------------------------------------ */
+// ------------------------------------------------------------
+//   Responsive Behavior of the columns
+// ------------------------------------------------------------
 @include breakpoint(medium) {
   .g-container {
     padding-left: 0;

@@ -1,8 +1,7 @@
+// ------------------------------------------------------------
+//    Expertise Breakpoints
+// ------------------------------------------------------------
 
-
-/* ------------------------------------------------------------
-   Expertise Breakpoints
-   ------------------------------------------------------------ */
 $tweakpoint_mobile: map-get($breakpoints, small);
 $tweakpoint_tablet: map-get($breakpoints, phablet);
 $breakpoint_tablet: map-get($breakpoints, fromAdaptiveToFluid);

@@ -1,31 +1,30 @@
-/* ------------------------------------------------------------
-   Font Variables
-   ------------------------------------------------------------ */
-/*
+// ------------------------------------------------------------
+//    Font Variables
+// ------------------------------------------------------------
 
-'Malabar ET W08 Regular'
-'Malabar ET W08 Italic'
-'Malabar ET W08 Bold'
-'MalabarETW08-BoldItalic'
-
-
-'Malabar W04 Regular';
-'Malabar W04 Italic';
-'Malabar W04 Bold';
-'Malabar W04 Bold Italic';
-'Malabar W04 Heavy';
-'Malabar W04 Heavy Italic';
+// 'Malabar ET W08 Regular'
+// 'Malabar ET W08 Italic'
+// 'Malabar ET W08 Bold'
+// 'MalabarETW08-BoldItalic'
 
 
-'Kootenay Pro1277143'; // regular
-'Kootenay Pro1277141'; // regular italic
-'Kootenay Pro SemiBold';
-'Kootenay Pro SemiBold1280370';// semibold italic
-'Kootenay Pro'; // bold
-'Kootenay Pro1277139'; // bold italic
-'Kootenay Pro ExtraBold';
-'Kootenay Pro ExtraBold1280365'; // extrabold italic
-*/
+// 'Malabar W04 Regular';
+// 'Malabar W04 Italic';
+// 'Malabar W04 Bold';
+// 'Malabar W04 Bold Italic';
+// 'Malabar W04 Heavy';
+// 'Malabar W04 Heavy Italic';
+
+
+// 'Kootenay Pro1277143'; // regular
+// 'Kootenay Pro1277141'; // regular italic
+// 'Kootenay Pro SemiBold';
+// 'Kootenay Pro SemiBold1280370';// semibold italic
+// 'Kootenay Pro'; // bold
+// 'Kootenay Pro1277139'; // bold italic
+// 'Kootenay Pro ExtraBold';
+// 'Kootenay Pro ExtraBold1280365'; // extrabold italic
+
 
 $malabar: 'Malabar ET W08 Regular', Georgia, Times, "Times New Roman", serif;
 $malabar-italic: 'Malabar ET W08 Italic', Georgia, Times, "Times New Roman", serif;
@@ -44,7 +43,8 @@ $kootenay-extrabold-italic: 'Kootenay Pro ExtraBold1280365', Arial, "Helvetica N
 $kootenay--always: 'Kootenay Pro1277143', Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 
-/* ------------------------------------------------------------
-   Font Size Variables
-   ------------------------------------------------------------ */
+// ------------------------------------------------------------
+//   Font Size Variables
+// ------------------------------------------------------------
+
 $main-font-size: 1rem;

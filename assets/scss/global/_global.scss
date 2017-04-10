@@ -1,9 +1,10 @@
-/* ------------------------------------------------------------
-   Global Site Settings
-   ------------------------------------------------------------ */
+// ------------------------------------------------------------
+//   Global Site Settings
+// ------------------------------------------------------------
+
 html {
-  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
-  width:100%;/*needed for IE*/
+  -webkit-text-size-adjust: 100%; // Prevent font scaling in landscape while allowing user zoom
+  width:100%; // needed for IE
 }
 * {
   font-size: 100%;
@@ -11,7 +12,7 @@ html {
   color:$color-one;
 
   &:focus {
-    //outline:1px solid $color-ten;
+    // outline:1px solid $color-ten;
     outline:none;
   }
   select:focus {
@@ -19,9 +20,9 @@ html {
   }
 }
 body {
-  font-size: $main-font-size;/*16px base font size*/
+  font-size: $main-font-size; // 16px base font size
   background-color:$color-six;
-  width:100%;/*needed for IE*/
+  width:100%; // needed for IE
   position:relative;
 }
 img {
@@ -34,13 +35,13 @@ input, input[type="search"] {
 
 // Selections in
 ::selection {
-  background: lighten(#0080BC, 10%); /* WebKit/Blink Browsers */
+  background: lighten(#0080BC, 10%); // WebKit/Blink Browsers
 }
 ::-moz-selection {
-  background: lighten(#0080BC, 10%); /* Gecko Browsers */
+  background: lighten(#0080BC, 10%); // Gecko Browsers
 }
 
-//Remove X from IE
+// Remove X from IE
 input::-ms-clear {
     display: none;
 }

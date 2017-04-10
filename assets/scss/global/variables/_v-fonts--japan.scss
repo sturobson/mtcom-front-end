@@ -1,17 +1,17 @@
-/* ------------------------------------------------------------
-   Japanese Font Variables
-   ------------------------------------------------------------ */
+// ------------------------------------------------------------
+//   Japanese Font Variables
+// ------------------------------------------------------------
+
 $jp-overide: 'Yu Mincho', 'Hirgano Mincho';
 
-/**
-  * font-family:'Yu Gothic Std-TT D';
-  * font-family:'Yu Gothic Std-TT M';
-  * font-family:'Yu Gothic Std-TT B';
-  * font-family:'Yu Gothic Std-TT E1215143';
-  * font-family:'Tazugane Gothic BETA W50 Black';
-  * font-family:'Tazugane Gothic BETA W50 Bold';
-  * font-family:'Tazugane Gothic BETA W50 Rg';
-  */
+
+// font-family:'Yu Gothic Std-TT D';
+// font-family:'Yu Gothic Std-TT M';
+// font-family:'Yu Gothic Std-TT B';
+// font-family:'Yu Gothic Std-TT E1215143';
+// font-family:'Tazugane Gothic BETA W50 Black';
+// font-family:'Tazugane Gothic BETA W50 Bold';
+// font-family:'Tazugane Gothic BETA W50 Rg';
 
 $malabar: 'Tazugane Gothic StdN W50 Rg', 'Yu Gothic Std-TT M', $jp-overide;
 $malabar-italic: 'Tazugane Gothic StdN W50 Rg', 'Yu Gothic Std-TT M', $jp-overide;
@@ -29,15 +29,8 @@ $kootenay-extrabold: 'Tazugane Gothic StdN W50 Bold', 'Yu Gothic Std-TT E1215143
 $kootenay-extrabold-italic: 'Tazugane Gothic StdN W50 Bold', 'Yu Gothic Std-TT E1215143', $jp-overide;
 $kootenay--always: 'Kootenay Pro1277143', Arial, "Helvetica Neue", Helvetica, sans-serif;
 
-/* ------------------------------------------------------------
-   Font Size Variables
-   ------------------------------------------------------------ */
-$main-font-size: 1rem;
+// ------------------------------------------------------------
+//   Font Size Variables
+// ------------------------------------------------------------
 
-// p {
-//   line-height: 41px !important;
-// }
-//
-// p.standfirst {
-//   line-height: 36px !important;
-// }
+$main-font-size: 1rem;

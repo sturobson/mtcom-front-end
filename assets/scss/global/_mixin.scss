@@ -1,6 +1,6 @@
-/* ------------------------------------------------------------
-   Mixins for Breakpoints/Typography, based on Matt Hinchliffe's work
-   ------------------------------------------------------------ */
+// ------------------------------------------------------------
+//   Mixins for Breakpoints/Typography, based on Matt Hinchliffe's work
+// ------------------------------------------------------------
 
 // Responsiveness
 @mixin breakpoint($breakpoint-name) {
@@ -38,10 +38,6 @@
   }
 }
 
-/* ------------------------------------------------------------
-   <img src="../image/placeholder.png" alt="a placeholder image" /> Mixin (used for unifying text color)
-   ------------------------------------------------------------ */
-
 
 @mixin placeholder {
     ::-webkit-input-placeholder {@content}
@@ -50,9 +46,9 @@
     :-ms-input-placeholder      {@content}
 }
 
-/* ------------------------------------------------------------
-   Expertise Vendors
-   ------------------------------------------------------------ */
+// ------------------------------------------------------------
+//   Expertise Vendors
+// ------------------------------------------------------------
 
 // Vendor prefixes
 @mixin vendor($property, $value, $vendors: webkit moz ms o) {

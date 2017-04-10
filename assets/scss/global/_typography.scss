@@ -1,6 +1,6 @@
-/* ------------------------------------------------------------
-   Responsive Typography, based on Matt Hinchliffe's work
-   ------------------------------------------------------------ */
+// ------------------------------------------------------------
+//   Responsive Typography, based on Matt Hinchliffe's work
+// ------------------------------------------------------------
 $text-sizing: (
   mercury: (
     large: (
@@ -19,7 +19,7 @@ $text-sizing: (
       font-size: 0.8125rem, // 13px
       line-height: 1.1875rem // 19px
     )
-  ),  
+  ),
   venus: (
     large: (
       font-size: 0.9375rem, // 15px
@@ -28,7 +28,7 @@ $text-sizing: (
     medium: (
       font-size: 0.875rem, // 14px
       line-height: 1.3125rem // 21px
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 0.875rem, // 14px
       line-height: 1.3125rem // 21px
@@ -42,12 +42,12 @@ $text-sizing: (
     medium: (
       font-size: 0.875rem, // 14px
       line-height: 1.1875rem // 19px
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 0.875rem, // 14px
       line-height: 1.1875rem // 19px
     )
-  ),  
+  ),
   arcturus: (
     large: (
       font-size: 1rem, // 16px
@@ -56,7 +56,7 @@ $text-sizing: (
     medium: (
       font-size: 0.875rem, // 14px
       line-height: 1.3125rem // 21px
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 0.875rem, // 14px
       line-height: 1.3125rem // 21px
@@ -70,12 +70,12 @@ $text-sizing: (
     medium: (
       font-size: 0.875rem, // 14px
       line-height: 1.3125rem // 21px
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 0.875rem, // 14px
       line-height: 1.3125rem // 21px
     )
-  ),  
+  ),
   earth: (
     large: (
       font-size: 1.125rem, // 18px
@@ -94,7 +94,7 @@ $text-sizing: (
     medium: (
       font-size: 1.125rem, // 18px
       line-height: 1.6875rem // 27px
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 1rem, // 16px
       line-height: 1.5rem // 24px
@@ -108,21 +108,21 @@ $text-sizing: (
     medium: (
       font-size: 0.9375rem, // 15px
       line-height: 1.3125rem // 21px
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 1rem, // 16px
       line-height: 1.5rem // 24px
     )
-  ),  
+  ),
   uranus: (
     large: (
       font-size: 1.875rem, // 30px
       line-height: 2.626rem // 42px
     ),
     medium: (
-      font-size: 1.5rem, // 24px 
+      font-size: 1.5rem, // 24px
       line-height: 2.0625rem // 33px
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 1.25rem, // 20px
       line-height: 1.6875rem // 27px
@@ -136,7 +136,7 @@ $text-sizing: (
     medium: (
       font-size: 2.0625rem, // 33px
       line-height: 2.625rem // 42px
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 1.625rem, // 26px
       line-height: 2rem // 32px
@@ -151,7 +151,7 @@ $text-sizing: (
     medium: (
       font-size: 6rem,// 96px
       line-height: 1.3em
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 3rem, // 48px
       line-height: 1.3em
@@ -166,7 +166,7 @@ $text-sizing: (
     medium: (
       font-size: 3rem,// 48px
       line-height: inherit
-    ),        
+    ),
     fromAdaptiveToFluid: (
       font-size: 2.625rem, // 42px
       line-height: inherit
