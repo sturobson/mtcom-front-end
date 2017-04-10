@@ -53,12 +53,15 @@ gulp.task('css', function() {
 
 // Production build
 
+
 gulp.task('sass:deploy', function () {
   return gulp.src('./assets/scss/styles.scss')
     .pipe(sass())
     .pipe(replace('../image/', '/Content/Vendor/image/'))
     .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(cssnano())
+    .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('./dist/css'));
 });
 
@@ -67,11 +70,14 @@ gulp.task('sass:deployJP', function () {
     .pipe(sass())
     .pipe(replace('../image/', '/Content/Vendor/image/'))
     .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(cssnano())
     .pipe(rename('JPstyles.css'))
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(cssnano())
+    .pipe(rename('JPstyles.min.css'))
     .pipe(gulp.dest('./dist/css'));
     done();
 });
+
 
 // -----------------------------------------------------------------------------
 // i18n Tasks
