@@ -858,3 +858,38 @@ table td input[type="checkbox"] {
     padding-left: 3em !important;
     position: static !important;
   }
+
+
+
+// Typetester changes because there's a silly old custom.css full of thin-progress-bar
+.b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--weight {
+  clear: both;
+  float: left;
+  margin-top: 6px;
+  position: relative;
+  left: -19px;
+}
+
+.b-typetester.b-typetester--home  .b-typetester__meta-list--weight .b-typetester__list-item {
+  margin-top: $spacing-unit;
+}
+// Typetester hacks for 'upto desktop'
+@media (min-width: 500px) and (max-width: 1023px) {
+  // make the select centered
+  .b-typetester.b-typetester--home  #fontSelector {
+    max-width: 20em;
+    margin-bottom: 12px;
+    margin: 0 auto 12px;
+    float: none;
+  }
+  // uses flex to make the font weights centered
+  .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--weight {
+    justify-content: center;
+    display: flex;
+  }
+  // uses flex to make font style centered
+  .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--style {
+    justify-content: center;
+    display: flex;
+  }
+}
