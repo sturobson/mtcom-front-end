@@ -21,6 +21,11 @@
           margin-top: 0;
           margin-right: 1.38889%;
         }
+        > .mt-b-blurb__body:first-child {
+          flex: unset;
+          margin-left: 0;
+          width: 100%;
+        }
         .mt-b-blurb__body {
           flex: 0 0 calc(60% - 1.38889%);
           margin-left: 1.38889%;
