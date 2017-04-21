@@ -147,83 +147,9 @@ textarea {
 /* ------------------------------------------------------------
    Global Project Styles
    ------------------------------------------------------------ */
-/* darker grey video background */
-/* ------------------------------------------------------------
-   Color Variables
-   ------------------------------------------------------------ */
-/*black*/
-/*dark grey*/
-/*grey*/
-/*light grey*/
-/*red*/
-/*blue*/
-/*sepia (background)*/
-/*white*/
-/*border color*/
-/*border color hover*/
-/*soft grey*/
-/* ------------------------------------------------------------
-   Font Variables
-   ------------------------------------------------------------ */
-/*
-
-'Malabar ET W08 Regular'
-'Malabar ET W08 Italic'
-'Malabar ET W08 Bold'
-'MalabarETW08-BoldItalic'
-
-
-'Malabar W04 Regular';
-'Malabar W04 Italic';
-'Malabar W04 Bold';
-'Malabar W04 Bold Italic';
-'Malabar W04 Heavy';
-'Malabar W04 Heavy Italic';
-
-
-'Kootenay Pro1277143'; // regular
-'Kootenay Pro1277141'; // regular italic
-'Kootenay Pro SemiBold';
-'Kootenay Pro SemiBold1280370';// semibold italic
-'Kootenay Pro'; // bold
-'Kootenay Pro1277139'; // bold italic
-'Kootenay Pro ExtraBold';
-'Kootenay Pro ExtraBold1280365'; // extrabold italic
-*/
-/* ------------------------------------------------------------
-   Font Size Variables
-   ------------------------------------------------------------ */
-/* ------------------------------------------------------------
-   Animations & Transitions
-   ------------------------------------------------------------ */
-/*3px*/
-/* ------------------------------------------------------------
-   Spacing Variables
-   ------------------------------------------------------------ */
-/*6px*/
-/* ------------------------------------------------------------
-   Expertise Breakpoints
-   ------------------------------------------------------------ */
-/* ------------------------------------------------------------
-   Functions for Breakpoints/Typography, based on Matt Hinchliffe's work
-   ------------------------------------------------------------ */
-/* ------------------------------------------------------------
-   Mixins for Breakpoints/Typography, based on Matt Hinchliffe's work
-   ------------------------------------------------------------ */
-/* ------------------------------------------------------------
-   <img src="/Content/Vendor/image/placeholder.png" alt="a placeholder image" /> Mixin (used for unifying text color)
-   ------------------------------------------------------------ */
-/* ------------------------------------------------------------
-   Expertise Vendors
-   ------------------------------------------------------------ */
-/* ------------------------------------------------------------
-   Global Site Settings
-   ------------------------------------------------------------ */
 html {
   -webkit-text-size-adjust: 100%;
-  /* Prevent font scaling in landscape while allowing user zoom */
-  width: 100%;
-  /*needed for IE*/ }
+  width: 100%; }
 
 * {
   font-size: 100%;
@@ -236,10 +162,8 @@ html {
 
 body {
   font-size: 1rem;
-  /*16px base font size*/
   background-color: #FAF7F5;
   width: 100%;
-  /*needed for IE*/
   position: relative; }
 
 img {
@@ -250,16 +174,13 @@ input, input[type="search"] {
   border-radius: 0; }
 
 ::-moz-selection {
-  background: #00a3ef;
-  /* WebKit/Blink Browsers */ }
+  background: #00a3ef; }
 
 ::selection {
-  background: #00a3ef;
-  /* WebKit/Blink Browsers */ }
+  background: #00a3ef; }
 
 ::-moz-selection {
-  background: #00a3ef;
-  /* Gecko Browsers */ }
+  background: #00a3ef; }
 
 input::-ms-clear {
   display: none; }
@@ -296,12 +217,6 @@ body:after {
   font-weight: inherit !important;
   vertical-align: baseline !important; }
 
-/* ------------------------------------------------------------
-   Grid System thanks to lovely Susy susy.oddbird.net
-   ------------------------------------------------------------ */
-/* ------------------------------------------------------------
-   Grid Container and Wrappers
-   ------------------------------------------------------------ */
 .g-container {
   padding-left: 0.59524%;
   padding-right: 0.59524%;
@@ -539,9 +454,6 @@ body:after {
       padding-left: 1.19048%;
       padding-right: 1.19048%; }
 
-/* ------------------------------------------------------------
-   Responsive Behavior of the columns
-   ------------------------------------------------------------ */
 @media screen and (max-width: 1023px) {
   .g-container {
     padding-left: 0;
@@ -612,12 +524,6 @@ body:after {
 .g-container--push {
   margin-top: 2rem; }
 
-/* ------------------------------------------------------------
-   Responsive Typography, based on Matt Hinchliffe's work
-   ------------------------------------------------------------ */
-/* ------------------------------------------------------------
-   Accordion Global Classes, mainly used for JS
-   ------------------------------------------------------------ */
 .g-accordion-toggle .g-accordion-toggle__icon {
   background: url("/Content/Vendor/image/icon-triangle-down.svg") no-repeat center right; }
 
@@ -6222,6 +6128,12 @@ a.text-center {
                     flex: 0 0 40%;
             margin-top: 0;
             margin-right: 1.38889%; }
+          .mt-c-features .mt-b-blurb > .mt-b-blurb__body:first-child {
+            -webkit-box-flex: unset;
+                -ms-flex: unset;
+                    flex: unset;
+            margin-left: 0;
+            width: 100%; }
           .mt-c-features .mt-b-blurb .mt-b-blurb__body {
             -webkit-box-flex: 0;
                 -ms-flex: 0 0 calc(60% - 1.38889%);
