@@ -7181,33 +7181,33 @@ table td input[type="checkbox"] {
 
 /*
 .b-navigation__nav {
-    float: left;
+float: left;
 }
 @include breakpoint(medium) {
-    .b-navigation__breadcrumb__item.b-navigation__breadcrumb__item--selected a {
-        display: inline-block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 270px;
-    }
+.b-navigation__breadcrumb__item.b-navigation__breadcrumb__item--selected a {
+display: inline-block;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 270px;
+}
 }
 @media screen and (min-width:1024px) {
-    .b-navigation__breadcrumb__item.b-navigation__breadcrumb__item--selected a {
-        display: inline-block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 425px;
-    }
+.b-navigation__breadcrumb__item.b-navigation__breadcrumb__item--selected a {
+display: inline-block;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 425px;
+}
 }
 @media screen and (max-width:750px) {
-    .b-navigation__nav {
-        width: auto;
-    }
-    .b-navigation {
-        width: 100%;
-    }
+.b-navigation__nav {
+width: auto;
+}
+.b-navigation {
+width: 100%;
+}
 }
 */
 @media screen and (max-height: 400px) {
@@ -7506,8 +7506,8 @@ table td input[type="checkbox"] {
     border-bottom: 0 none; }
 
 /* ------------------------------------------------------------
-  Progress Bar
-  ------------------------------------------------------------ */
+Progress Bar
+------------------------------------------------------------ */
 .thin-progress-bar {
   -webkit-transition: all 1s ease 0s;
           transition: all 1s ease 0s;
@@ -7526,33 +7526,36 @@ table td input[type="checkbox"] {
   padding-left: 3em !important;
   position: static !important; }
 
-.b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--weight {
-  clear: both;
-  float: left;
-  margin-top: 6px;
-  position: relative;
-  left: -19px; }
+@media (min-width: 1024px) {
+  .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--weight {
+    clear: both;
+    float: left;
+    margin-top: 6px;
+    position: relative;
+    left: -19px; } }
 
 .b-typetester.b-typetester--home .b-typetester__meta-list--weight .b-typetester__list-item {
   margin-top: 0.375rem; }
 
+.b-typetester.b-typetester--home #fontSelector {
+  margin-bottom: 12px !important; }
+
 @media (min-width: 500px) and (max-width: 1023px) {
   .b-typetester.b-typetester--home #fontSelector {
-    max-width: 20em;
-    margin-bottom: 12px;
-    margin: 0 auto 12px;
-    float: none; }
+    margin-bottom: 12px !important;
+    margin-left: 12px;
+    max-width: calc(50% - 5%); }
   .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--weight {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
   .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--style {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
+
+@media (max-width: 749px) {
+  .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--weight {
+    padding-left: 0; }
+  .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--style {
+    padding-left: 0; } }
