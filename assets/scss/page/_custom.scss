@@ -884,7 +884,6 @@ Progress Bar
   // make the select centered
   .b-typetester.b-typetester--home  #fontSelector {
     margin-bottom: 12px !important; // TODO
-    margin-left: 12px;
     max-width: calc(50% - 5%);
   }
   // uses flex to make the font weights centered
@@ -903,5 +902,11 @@ Progress Bar
   }
   .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--style {
     padding-left: 0;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1023px) {
+  .b-typetester.b-typetester--home  #fontSelector {
+    margin-left: 12px;
   }
 }

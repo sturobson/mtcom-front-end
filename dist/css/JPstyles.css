@@ -7543,7 +7543,6 @@ Progress Bar
 @media (min-width: 500px) and (max-width: 1023px) {
   .b-typetester.b-typetester--home #fontSelector {
     margin-bottom: 12px !important;
-    margin-left: 12px;
     max-width: calc(50% - 5%); }
   .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--weight {
     display: -webkit-box;
@@ -7559,3 +7558,7 @@ Progress Bar
     padding-left: 0; }
   .b-typetester.b-typetester--home .b-typetester__meta-list.b-typetester__meta-list--style {
     padding-left: 0; } }
+
+@media (min-width: 750px) and (max-width: 1023px) {
+  .b-typetester.b-typetester--home #fontSelector {
+    margin-left: 12px; } }
