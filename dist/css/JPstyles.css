@@ -4823,7 +4823,7 @@ body:after {
           width: 50%; } }
     .b-byline .b-byline__boxout .g-row p, .b-byline .b-byline__boxout .g-row h2 {
       color: #FAF7F5 !important; }
-    .b-byline .b-byline__boxout .g-row .b-paragraph a {
+    .b-byline .b-byline__boxout .g-row .b-paragraph__text a {
       color: #FAF7F5 !important;
       border-color: #FAF7F5 !important; }
     .b-byline .b-byline__boxout .g-row {
