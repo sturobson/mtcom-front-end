@@ -179,7 +179,7 @@ $grid-tablet-wide: 14 (30px 24px) split static;
     color: $color-seven !important; // TODO: check to see if this is needed?
   }
   p a {
-    border-bottom: 1px solid $color-seven !important; // TODO: check to see if this is needed?
+    border-bottom: 1px solid rgba($color-seven, .5) !important; // TODO: check to see if this is needed?
   }
 }
 
