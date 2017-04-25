@@ -6154,7 +6154,12 @@ a.text-center {
             margin-left: 1.38889%; }
           .mt-c-features .mt-b-blurb:nth-child(even) .mt-b-blurb__body {
             margin-left: 0;
-            margin-right: 1.38889%; } } }
+            margin-right: 1.38889%; } }
+      .mt-c-features .mt-b-blurb .mt-b-blurb__link > h3 {
+        -webkit-transition: border-bottom .2s ease 0s;
+        transition: border-bottom .2s ease 0s; }
+        .mt-c-features .mt-b-blurb .mt-b-blurb__link > h3:hover {
+          border-bottom: 1px solid #1e1e1e; } }
     @media (max-width: 767px) {
       .mt-c-features .mt-b-blurb {
         margin-top: 2rem; }
