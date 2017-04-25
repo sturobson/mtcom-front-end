@@ -42,6 +42,13 @@
           }
         }
       }
+      .mt-b-blurb__link > h3 {
+      	-webkit-transition: border-bottom .2s ease 0s;
+      	  transition: border-bottom .2s ease 0s;
+      	&:hover {
+      	  border-bottom: 1px solid #1e1e1e;
+      	}
+      }
     }
     @media (max-width: 767px) {
       margin-top: 2rem;
