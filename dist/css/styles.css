@@ -6242,7 +6242,7 @@ a.text-center {
     .mt-c-products .mt-e-paragraph-title a {
       border-bottom: none; }
       .mt-c-products .mt-e-paragraph-title a:hover {
-        border-bottom: none; }
+        border-bottom: 1px solid rgba(30, 30, 30, 0.5); }
 
 .p-overview .b-main .g-container > .g-block:first-child .g-row-wide:first-child {
   background: url(/Content/Vendor/image/separator.png) center top no-repeat;
