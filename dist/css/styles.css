@@ -6159,7 +6159,7 @@ a.text-center {
         -webkit-transition: border-bottom .2s ease 0s;
         transition: border-bottom .2s ease 0s;
         display: inline-block;
-        border-bottom: 1px solid #73b4da; }
+        border-bottom: 1px solid #FFFFFF; }
         .mt-c-features .mt-b-blurb .mt-b-blurb__link > h3:hover {
           border-bottom: 1px solid #1E1E1E; } }
     @media (max-width: 767px) {
