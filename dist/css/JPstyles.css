@@ -509,7 +509,11 @@ body:after {
   .g-container--alt h1, .g-container--alt h2, .g-container--alt h3, .g-container--alt h4, .g-container--alt h5, .g-container--alt h6, .g-container--alt p, .g-container--alt a {
     color: #FFFFFF !important; }
   .g-container--alt p a {
-    border-bottom: 1px solid #FFFFFF !important; }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+    -webkit-transition: border-bottom .2s;
+            transition: border-bottom .2s; }
+    .g-container--alt p a:hover {
+      border-bottom: 1px solid rgba(115, 180, 218, 0.5); }
 
 .g-container--video {
   background-color: #51514e; }
