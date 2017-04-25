@@ -45,8 +45,10 @@
       .mt-b-blurb__link > h3 {
       	-webkit-transition: border-bottom .2s ease 0s;
       	  transition: border-bottom .2s ease 0s;
+      	  display: inline-block;
+      	  border-bottom: 1px solid $color-five;
       	&:hover {
-      	  border-bottom: 1px solid #1e1e1e;
+      	  border-bottom: 1px solid $color-one;
       	}
       }
     }
