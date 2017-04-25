@@ -515,7 +515,7 @@ body:after {
     .g-container--alt p a:hover {
       border-bottom: 1px solid #73b4da; }
   .g-container--alt .mt-e-paragraph-title a:hover {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important; }
 
 .g-container--video {
   background-color: #51514e; }
