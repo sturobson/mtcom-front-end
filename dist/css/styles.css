@@ -4915,6 +4915,12 @@ section.b-expertise + section.b-byline {
   .b-resources-latest-nav .b-carousel__prev-next ul {
     border-right: none; } }
 
+.b-resources-latest .b-media.b-media--full-width.g-block {
+  margin-top: 0; }
+
+.b-resources-latest .b-lead {
+  margin-bottom: 3.375rem; }
+
 .resources .b-main {
   background-color: #fff; }
 
