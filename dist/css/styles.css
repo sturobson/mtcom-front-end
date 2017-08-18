@@ -6807,6 +6807,12 @@ p.success--text {
   position: static !important;
   margin-top: -2em; }
 
+.mktoFieldDescriptor a {
+  text-decoration: underline; }
+
+.mktoFieldDescriptor a:hover {
+  text-decoration: none; }
+
 #gatedcontent .marketo-contact-us-form .b-form__table-cell:first-child {
   height: 100% !important; }
 
