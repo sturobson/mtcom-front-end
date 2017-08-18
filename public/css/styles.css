@@ -509,7 +509,13 @@ body:after {
   .g-container--alt h1, .g-container--alt h2, .g-container--alt h3, .g-container--alt h4, .g-container--alt h5, .g-container--alt h6, .g-container--alt p, .g-container--alt a {
     color: #FFFFFF !important; }
   .g-container--alt p a {
-    border-bottom: 1px solid #FFFFFF !important; }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-transition: border-bottom .2s;
+            transition: border-bottom .2s; }
+    .g-container--alt p a:hover {
+      border-bottom: 1px solid #73b4da; }
+  .g-container--alt .mt-e-paragraph-title a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important; }
 
 .g-container--video {
   background-color: #51514e; }
@@ -4823,7 +4829,7 @@ body:after {
           width: 50%; } }
     .b-byline .b-byline__boxout .g-row p, .b-byline .b-byline__boxout .g-row h2 {
       color: #FAF7F5 !important; }
-    .b-byline .b-byline__boxout .g-row .b-paragraph a {
+    .b-byline .b-byline__boxout .g-row .b-paragraph__text a {
       color: #FAF7F5 !important;
       border-color: #FAF7F5 !important; }
     .b-byline .b-byline__boxout .g-row {
@@ -4908,6 +4914,12 @@ section.b-expertise + section.b-byline {
     border-left: none; }
   .b-resources-latest-nav .b-carousel__prev-next ul {
     border-right: none; } }
+
+.b-resources-latest .b-media.b-media--full-width.g-block {
+  margin-top: 0; }
+
+.b-resources-latest .b-lead {
+  margin-bottom: 3.375rem; }
 
 .resources .b-main {
   background-color: #fff; }
@@ -5818,6 +5830,7 @@ a.text-center {
   height: 65px;
   float: left;
   margin-right: 1rem;
+  margin-bottom: 0.5rem;
   top: 6px;
   position: relative; }
 
@@ -6147,7 +6160,14 @@ a.text-center {
             margin-left: 1.38889%; }
           .mt-c-features .mt-b-blurb:nth-child(even) .mt-b-blurb__body {
             margin-left: 0;
-            margin-right: 1.38889%; } } }
+            margin-right: 1.38889%; } }
+      .mt-c-features .mt-b-blurb .mt-b-blurb__link > h3 {
+        -webkit-transition: border-bottom .2s ease 0s;
+        transition: border-bottom .2s ease 0s;
+        display: inline-block;
+        border-bottom: 1px solid #FFFFFF; }
+        .mt-c-features .mt-b-blurb .mt-b-blurb__link > h3:hover {
+          border-bottom: 1px solid #1E1E1E; } }
     @media (max-width: 767px) {
       .mt-c-features .mt-b-blurb {
         margin-top: 2rem; }
@@ -6235,7 +6255,7 @@ a.text-center {
     .mt-c-products .mt-e-paragraph-title a {
       border-bottom: none; }
       .mt-c-products .mt-e-paragraph-title a:hover {
-        border-bottom: none; }
+        border-bottom: 1px solid rgba(30, 30, 30, 0.5); }
 
 .p-overview .b-main .g-container > .g-block:first-child .g-row-wide:first-child {
   background: url(../image/separator.png) center top no-repeat;
@@ -6786,6 +6806,12 @@ p.success--text {
   padding-left: 3em !important;
   position: static !important;
   margin-top: -2em; }
+
+.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] a {
+  text-decoration: underline; }
+
+.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] a:hover {
+  text-decoration: none; }
 
 #gatedcontent .marketo-contact-us-form .b-form__table-cell:first-child {
   height: 100% !important; }

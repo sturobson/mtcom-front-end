@@ -157,6 +157,14 @@
   margin-top: -2em;
 }
 
+.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] a {
+  text-decoration: underline;
+}
+
+.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] a:hover {
+  text-decoration: none;
+}
+
 // to target the element -- this one could _really_ break as it's using nth-child
 #gatedcontent {
 
