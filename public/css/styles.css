@@ -6807,10 +6807,10 @@ p.success--text {
   position: static !important;
   margin-top: -2em; }
 
-.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] a {
+.mktoFieldDescriptor a {
   text-decoration: underline; }
 
-.marketo-contact-us-form .marketoform .mktoFormRow .mktoFieldWrap label[for="Mailing_List_Opt_in__c"] a:hover {
+.mktoFieldDescriptor a:hover {
   text-decoration: none; }
 
 #gatedcontent .marketo-contact-us-form .b-form__table-cell:first-child {
