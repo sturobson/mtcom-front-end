@@ -840,7 +840,6 @@ body:after {
   overflow: visible; }
 
 .b-3-4-0-intro-full-width .b-media__image img {
-  display: block;
   border-bottom: 1px solid #C8C8C8; }
 
 @media screen and (max-width: 748px) {
